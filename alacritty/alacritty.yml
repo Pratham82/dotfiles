@@ -1,0 +1,76 @@
+###* XTerm's default colors
+colors:
+    # Default colors
+    primary:
+        background: "#000000"
+        foreground: "#ffffff"
+    # Normal colors
+    normal:
+        black: "#000000"
+        red: "#cd0000"
+        green: "#00cd00"
+        yellow: "#cdcd00"
+        blue: "#0000ee"
+        magenta: "#cd00cd"
+        cyan: "#00cdcd"
+        white: "#e5e5e5"
+
+    # Bright colors
+    bright:
+        black: "#7f7f7f"
+        red: "#ff0000"
+        green: "#00ff00"
+        yellow: "#ffff00"
+        blue: "#5c5cff"
+        magenta: "#ff00ff"
+        cyan: "#00ffff"
+        white: "#ffffff"
+
+background_opacity: 1
+
+font:
+    normal:
+        family: "FiraCode Nerd Font"
+        style: Regular
+    bold:
+        family: "FiraCode Nerd Font"
+        style: Bold
+    italic:
+        family: "FiraCode Nerd Font"
+        style: Italic
+    bold_italic:
+        family: "FiraCode Nerd Font"
+        style: Bold Italic
+
+    # Point size
+    size: 12.0
+
+    offset:
+        x: 0
+        y: 0
+    glyph_offset:
+        x: 0
+        y: 0
+
+window:
+    padding:
+        x: 2
+        y: 2
+
+scrolling:
+    # Maximum number of lines in the scrollback buffer.
+    # Specifying '0' will disable scrolling.
+    history: 10000
+
+    # Number of lines the viewport will move for every line scrolled when
+    # scrollback is enabled (history > 0).
+    multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+    semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+    save_to_clipboard: true
+
+live_config_reload: true
