@@ -9,9 +9,15 @@ export ZSH="/home/pratham82/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="oxide"
-ZSH_THEME="spaceship"
+ZSH_THEME="oxide"
+#ZSH_THEME="spaceship"
+#ZSH_THEME="af-magic"
+#ZSH_THEME="bullet-train"
+#ZSH_THEME="darkblood"
+#ZSH_THEME="xiong-chiamiov"
+#ZSH_THEME="ys"
 #ZSH_THEME="pure"
+
 #ZSH_THEME="agnoster"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,6 +114,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
+# Export path for lsd
+export PATH=/home/pratham82/.cargo/bin:$PATH
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -115,6 +123,9 @@ alias zs="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
+alias as="vim ~/.config/alacritty/alacritty.yml"
+alias asd="cd ~/.config/alacritty/"
+
 
 # System aliases
 alias cc="cd ~"
@@ -122,6 +133,7 @@ alias dev="cd ~/Dev"
 alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
 alias ap="sudo apt install"
+alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js} /home/pratham82/dotfiles";
 
 # Git aliases
 alias gs="git status"
@@ -137,6 +149,13 @@ alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
 
+# Shortcuts for lsd
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
 # Important shortcuts
 alias c.="code ."
 
@@ -144,3 +163,5 @@ alias c.="code ."
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
 
 neofetch
+source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
