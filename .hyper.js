@@ -9,9 +9,9 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 13,
     // font family with optional fallbacks
-    fontFamily: 'Fira code',
+    fontFamily: 'FiraCode Nerd Font',
     //'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace'
     
     // default font weight: 'normal' or 'bold'
@@ -149,13 +149,16 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  // 	Themes: 'hyperterm-gruvbox-dark', 'hyper-material-theme'
+  // 	Themes: 'hyperterm-gruvbox-dark', 'hyper-material-theme', "hyper-city-lights"
   plugins: [
     'hypercwd',
     'hyperterm-dibdabs',
     'hyper-blink',
     'hyperterm-tabs',
-    'hyper-materialshell'
+    'hyper-materialshell',
+    "status-line",
+    "gitrocket",
+    "hyper-hide-title"
   ],
 
   // in development, you can create a directory under
