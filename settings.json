@@ -1,0 +1,174 @@
+{
+	"window.zoomLevel": 1,
+	"editor.fontFamily": "Operator mono",
+
+	"editor.fontLigatures": true,
+	"editor.fontWeight": "360",
+	"cSpell.ignoreWords": ["prathamesh"],
+	"cSpell.userWords": ["EBAY", "conscised", "modulous"],
+	/*
+	Most fav fonts:
+	1. Operator mono
+	2. Dank Mono
+	3. Fira code
+	4. Jetbrains Mono
+	5. IBM PLex Mono
+
+		Fira code, Operator mono, Cascadia code, Dank Mono,Victor Mono,Bahnschrift,Inconsolata,Fira code iScript, Fantasque Sans Mono, Jetbrains Mono,Hack,Monoid,Bitstream Vera Sans Mono,IBM PLex Mono, Rec Mono Duotone, Rec Mono Linear"
+	*/
+	"workbench.statusBar.visible": true,
+	"cSpell.enabledLanguageIds": [
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"git-commit",
+		"go",
+		"handlebars",
+		"haskell",
+		"html",
+		"jade",
+		"java",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"latex",
+		"less",
+		"markdown",
+		"php",
+		"plaintext",
+		"pug",
+		"python",
+		"restructuredtext",
+		"rust",
+		"scala",
+		"scss",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"yaml",
+		"yml"
+	],
+	"editor.lineHeight": 20,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"python.jediEnabled": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.rulers": [80]
+	},
+	"java.home": "C:\\Program Files\\Java\\jdk-8",
+	"java.help.firstView": "gettingStarted",
+	"liveServer.settings.donotVerifyTags": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"editor.renderLineHighlight": "none", //Very very important
+	"editor.rulers": [80], // Regular
+	"[python]": {
+		"editor.rulers": [80],
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	//"editor.wordWrapColumn": 0,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.wordWrap": "bounded",
+	"chaliceIcons.showArrows": true,
+	"workbench.activityBar.visible": false,
+	"sync.forceUpload": true,
+	"editor.renderWhitespace": "boundary",
+	"breadcrumbs.enabled": true,
+	"editor.renderControlCharacters": false,
+	"window.menuBarVisibility": "default",
+	"markdown.extension.preview.autoShowPreviewToSide": true,
+	"emojisense.markupCompletionsEnabled": true,
+	"emojisense.unicodeCompletionsEnabled": true,
+	"emojisense.languages": {
+		"markdown": true,
+		"git-commit": true,
+		"plaintext": true,
+		"json": true,
+		"javascript": true,
+		"python": true,
+		"html": true,
+		"javascriptreact": true
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"name": "One Dark italic",
+				"scope": [
+					"comment",
+					"entity.other.attribute-name",
+					"keyword",
+					"markup.underline.link",
+					"storage.modifier",
+					"storage.type",
+					"string.url",
+					"variable.language.super",
+					"variable.language.this"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "One Dark italic reset",
+				"scope": [
+					"keyword.operator",
+					"keyword.other.type",
+					"storage.modifier.import",
+					"storage.modifier.package",
+					"storage.type.built-in",
+					"storage.type.function.arrow",
+					"storage.type.generic",
+					"storage.type.java",
+					"storage.type.primitive"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+
+	"liveshare.presence": false,
+	"editor.renameOnType": true,
+	"wrapSelection.patterns": {},
+	"glassit.alpha": 200,
+	"quokka.darkTheme.error.decorationAttachmentRenderOptions": {},
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.tabSize": 4,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.cursorBlinking": "expand",
+	"python.autoComplete.addBrackets": true,
+	"python.languageServer": "Microsoft",
+	"workbench.startupEditor": "welcomePage",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.iconTheme": "mosmmy-icons-vscode",
+	"workbench.colorTheme": "Popping and Locking Black Theme",
+	"editor.minimap.enabled": false
+}
+
