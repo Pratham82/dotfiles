@@ -9,7 +9,7 @@ export ZSH="/home/pratham82/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="oxide"
+#ZSH_THEME="oxide"
 #ZSH_THEME="spaceship"
 #ZSH_THEME="af-magic"
 #ZSH_THEME="bullet-train"
@@ -17,6 +17,7 @@ ZSH_THEME="oxide"
 #ZSH_THEME="xiong-chiamiov"
 #ZSH_THEME="ys"
 #ZSH_THEME="pure"
+ZSH_THEME="lambda-mod"
 
 #ZSH_THEME="agnoster"
 # Set list of themes to pick from when loading at random
@@ -116,6 +117,11 @@ fpath+=$HOME/.zsh/pure
 
 # Export path for lsd
 export PATH=/home/pratham82/.cargo/bin:$PATH
+
+# Lmabda mode theme
+export LAMBDA_MOD_N_DIR_LEVELS=3
+#load `lambda-mod` and `oh-my-zsh`
+
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
