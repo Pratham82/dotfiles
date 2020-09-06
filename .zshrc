@@ -131,7 +131,7 @@ alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
 alias as="vim ~/.config/alacritty/alacritty.yml"
 alias asd="cd ~/.config/alacritty/"
-
+alias sht="cd Dev/Shell-scripting"
 
 # System aliases
 alias cc="cd ~"
@@ -140,6 +140,8 @@ alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
 alias ap="sudo apt install"
 alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js} /home/pratham82/dotfiles";
+alias mk="mkdir"
+
 
 # Git aliases
 alias gs="git status"
@@ -156,11 +158,11 @@ alias gcb="git chekout -b"
 alias gco="git chekout"
 
 # Shortcuts for lsd
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+#alias ls='lsd'
+#alias l='ls -l'
+#alias la='ls -a'
+#alias lla='ls -la'
+#alias lt='ls --tree'
 
 # Important shortcuts
 alias c.="code ."
