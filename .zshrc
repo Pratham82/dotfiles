@@ -138,7 +138,8 @@ alias cc="cd ~"
 alias dev="cd ~/Dev"
 alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
-alias ap="sudo apt install"
+alias api="sudo apt install"
+alias ap="sudo apt"
 alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles";
 alias mk="mkdir"
 
@@ -173,4 +174,4 @@ alias c.="code ."
 
 neofetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
