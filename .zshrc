@@ -78,7 +78,7 @@ ZSH_THEME="lambda-mod"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -166,6 +166,8 @@ alias lt='ls --tree'
 
 # Important shortcuts
 alias c.="code ."
+
+bindkey -v
 
 
 
