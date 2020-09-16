@@ -157,6 +157,11 @@ alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
 
+# MongoDB aliases
+alias startmo="sudo service mongod start"
+alias stopmo="sudo service mongod stop"
+alias statmo="sudo service mongod status"
+
 # Shortcuts for lsd
 alias ls='lsd'
 alias l='ls -l'
