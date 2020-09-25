@@ -10,14 +10,15 @@ export ZSH="/home/pratham82/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="oxide"
-#ZSH_THEME="spaceship"
+ZSH_THEME="spaceship"
 #ZSH_THEME="af-magic"
 #ZSH_THEME="bullet-train"
 #ZSH_THEME="darkblood"
 #ZSH_THEME="xiong-chiamiov"
 #ZSH_THEME="ys"
 #ZSH_THEME="pure"
-ZSH_THEME="lambda-mod"
+#ZSH_THEME="lambda-mod"
+#ZSH_THEME="dpoggi"
 
 #ZSH_THEME="agnoster"
 # Set list of themes to pick from when loading at random
@@ -174,7 +175,26 @@ alias c.="code ."
 
 bindkey -v
 
+function zle-keymap-select zle-line-init
+{
+    # change cursor shape in iTerm2
+    case $KEYMAP in
+        vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
+        viins|main) print -n -- "\E]50;CursorShape=1\C-G";;  # line cursor
+    esac
 
+    zle reset-prompt
+    zle -R
+}
+
+function zle-line-finish
+{
+    print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
+}
+
+zle -N zle-line-init
+zle -N zle-line-finish
+zle -N zle-keymap-select
 
 # Drive ss
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
