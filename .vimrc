@@ -36,7 +36,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 call plug#end()
 
-
+let g:rainbow_active = 1
 
 "Plug 'valloric/youcompleteme'
 
