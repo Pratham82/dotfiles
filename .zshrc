@@ -79,7 +79,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions vi-mode)
+plugins=(git zsh-autosuggestions vi-mode fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,13 +126,13 @@ export LAMBDA_MOD_N_DIR_LEVELS=3
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zs="vim ~/.zshrc"
+alias zs="nvim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
 alias nvs="nvim ~/.config/nvim/init.vim"
 alias nvp="nvim .config/nvim/vim-plug/plugins.vim"
-alias as="vim ~/.config/alacritty/alacritty.yml"
+alias as="nvim ~/.config/alacritty/alacritty.yml"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
 
@@ -199,9 +199,21 @@ zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
 
+fzf-history-widget-accept() {
+  fzf-history-widget
+  zle accept-line
+}
+zle     -N     fzf-history-widget-accept
+bindkey '^X^R' fzf-history-widget-accept
+
+
 # Drive ss
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
 
 neofetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Source fzf
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
