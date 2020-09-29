@@ -130,6 +130,7 @@ alias zs="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
+alias nvs="nvim ~/.config/nvim/init.vim"
 alias as="vim ~/.config/alacritty/alacritty.yml"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
@@ -141,7 +142,8 @@ alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
 alias api="sudo apt install"
 alias ap="sudo apt"
-alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles";
+alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/nvim;
+sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias mk="mkdir"
 
 # Git aliases
