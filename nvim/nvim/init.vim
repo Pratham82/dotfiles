@@ -6,11 +6,13 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
-
+source $HOME/.config/nvim/themes/oceanic-next.vim
 
 
 " Setting background theme
-source $HOME/.config/nvim/themes/onedark.vim
+"set background=dark
+"colorscheme oceanic_material
+"source $HOME/.config/nvim/themes/onedark.vim
 " set bg=dark
 " colorscheme gurvbox
 

@@ -8,25 +8,28 @@
     "html",
     "yaml",
     "json",
-    "python"
+    "python",
+    "javascriptreact",
+    "typescriptreact",
+    "typescript.tsx"
   ],
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/utils/snips"
-  ],
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
   // explorer
-  "explorer.width": 30,
+  "explorer.width": 25,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
-    "v": "open:vsplit"
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit",
+    "eslint:filetypes": [
+      "javasript",
+      "typescript",
+      "javascriptreact",
+      "typescriptreact",
+      "typescript.tsx"
+    ]
   }
 }

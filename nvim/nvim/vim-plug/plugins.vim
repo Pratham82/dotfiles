@@ -38,5 +38,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'junegunn/fzf.vim'
 		Plug 'airblade/vim-rooter'
 		Plug 'airblade/vim-rooter'
+		Plug 'hardcoreplayers/oceanic-material'
+		Plug 'mhartington/oceanic-next'
+		Plug 'honza/vim-snippets'
 
 call plug#end()

@@ -135,6 +135,7 @@ alias nvp="nvim .config/nvim/vim-plug/plugins.vim"
 alias as="nvim ~/.config/alacritty/alacritty.yml"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
+alias cnv="cd ~/.config/nvim"
 
 # System aliases
 alias cc="cd ~"
@@ -146,6 +147,7 @@ alias ap="sudo apt"
 alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/nvim;
 sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias mk="mkdir"
+
 
 # Git aliases
 alias gs="git status"
@@ -214,6 +216,3 @@ neofetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Source fzf
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
