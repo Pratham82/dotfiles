@@ -41,5 +41,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'hardcoreplayers/oceanic-material'
 		Plug 'mhartington/oceanic-next'
 		Plug 'honza/vim-snippets'
-
+		Plug 'peitalin/vim-jsx-typescript'
 call plug#end()

@@ -136,6 +136,7 @@ alias as="nvim ~/.config/alacritty/alacritty.yml"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
 alias cnv="cd ~/.config/nvim"
+alias kas="tmux kill-server"
 
 # System aliases
 alias cc="cd ~"

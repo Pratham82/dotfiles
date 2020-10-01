@@ -34,6 +34,7 @@ Plug 'flazz/vim-colorschemes'
 Plug '/home/mpaulson/personal/vim-be-good'
 Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 let g:rainbow_active = 1

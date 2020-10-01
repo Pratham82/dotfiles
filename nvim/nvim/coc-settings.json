@@ -11,8 +11,11 @@
     "python",
     "javascriptreact",
     "typescriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "java"
   ],
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
@@ -23,13 +26,6 @@
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings": {
     "<cr>": ["expandable?", "expand", "open"],
-    "v": "open:vsplit",
-    "eslint:filetypes": [
-      "javasript",
-      "typescript",
-      "javascriptreact",
-      "typescriptreact",
-      "typescript.tsx"
-    ]
+    "v": "open:vsplit"
   }
 }
