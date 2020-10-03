@@ -147,7 +147,7 @@ alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
 alias api="sudo apt install"
 alias ap="sudo apt"
-alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/nvim;
+alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/;
 sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias mk="mkdir"
 
