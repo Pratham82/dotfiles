@@ -138,6 +138,7 @@ alias sht="cd ~/Dev/Shell-scripting"
 alias cnv="cd ~/.config/nvim"
 alias kas="tmux kill-server"
 alias ts="nvim ~/.tmux.conf"
+alias robo='/usr/local/bin/robomongo/bin/robo3t'
 
 # System aliases
 alias cc="cd ~"

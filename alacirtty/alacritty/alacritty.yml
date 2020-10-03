@@ -1,4 +1,3 @@
-# Colors (One Dark)
 colors:
   # Default colors
   primary:
@@ -28,13 +27,14 @@ colors:
     magenta: "#d3869b"
     cyan: "#8ec07c"
     white: "#ebdbb2"
+
 background_opacity: 1.0
 
 # Favourite fonts
 font:
   normal:
     family: "BlexMono Nerd Font"
-    style: medium
+    style: Regular
   bold:
     family: "BlexMono Nerd Font"
     style: Bold
@@ -45,8 +45,22 @@ font:
     family: "BlexMono Nerd Font"
     style: Bold Italic
 
+    #font:
+    #  normal:
+    #    family: "BlexMono Nerd Font"
+    #    style: Regular
+    #  bold:
+    #    family: "BlexMono Nerd Font"
+    #    style: Bold
+    #  italic:
+    #    family: "BlexMono Nerd Font"
+    #    style: Italic
+    #  bold_italic:
+    #    family: "BlexMono Nerd Font"
+    #    style: Bold Italic
+
   # Point size
-  size: 11.5
+  size: 10.5
 
   offset:
     x: 0

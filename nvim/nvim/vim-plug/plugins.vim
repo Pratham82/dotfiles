@@ -39,6 +39,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'honza/vim-snippets'
 		Plug 'peitalin/vim-jsx-typescript'
 		Plug  'Yggdroot/indentLine'
-
+		Plug 'norcalli/nvim-colorizer.lua'	
+		Plug 'junegunn/rainbow_parentheses.vim'
+		Plug 'mhinz/vim-startify'
+		Plug 'mhinz/vim-signify'
+		Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+		Plug 'junegunn/gv.vim'
+		Plug 'justinmk/vim-sneak'
+		Plug 'unblevable/quick-scope'
+		Plug 'liuchengxu/vim-which-key'
+		Plug 'voldikss/vim-floaterm'
 		
 call plug#end()
