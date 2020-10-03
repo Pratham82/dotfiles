@@ -12,34 +12,33 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+  	Plug 'jiangmiao/auto-pairs'
 
+	" Themes
     Plug 'joshdick/onedark.vim'
-
     Plug 'morhetz/gruvbox'
-	
-		Plug 'drewtempelmeyer/palenight.vim'
-	
+		Plug 'drewtempelmeyer/palenight.vim'	
 		Plug 'kristijanhusak/vim-hybrid-material'
+		Plug 'mhartington/oceanic-next'
+		Plug 'dracula/vim', { 'as': 'dracula' }
+		Plug 'ayu-theme/ayu-vim'
+		Plug 'hardcoreplayers/oceanic-material'
+
 	
 		" Intellisense
 		" Stable version of coc
 		Plug 'neoclide/coc.nvim', {'branch': 'release'}
-				
-		Plug 'luochen1990/rainbow'
-		
+		Plug 'luochen1990/rainbow'	
 		Plug 'vim-airline/vim-airline'
 		Plug 'vim-airline/vim-airline-themes'
-		
 		Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-		
 		Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 		Plug 'junegunn/fzf.vim'
 		Plug 'airblade/vim-rooter'
 		Plug 'airblade/vim-rooter'
-		Plug 'hardcoreplayers/oceanic-material'
-		Plug 'mhartington/oceanic-next'
 		Plug 'honza/vim-snippets'
 		Plug 'peitalin/vim-jsx-typescript'
+		Plug  'Yggdroot/indentLine'
+
+		
 call plug#end()
