@@ -10,9 +10,9 @@ I've switched my current programming setup to a linux mahchine and in the proces
 - Terminal Multiplexer: **tmux**
 - Terminal Font: **BlexMono Nerd Font**
 - Text Editor: **Neovim 0.4.4**
+- Specs:
 
 
-- My PC Specs:
 ![](https://github.com/Pratham82/dotfiles/blob/master/PC%20Specs.png)
 
 
