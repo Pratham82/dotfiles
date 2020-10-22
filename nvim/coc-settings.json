@@ -1,6 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
-    "css",
     "markdown",
     "javascript",
     "typescript",
@@ -12,9 +11,24 @@
     "javascriptreact",
     "typescriptreact",
     "typescript.tsx",
-    "java"
+    "java",
+    "vim",
+    "go",
+    "html",
+    "css",
+    "scss"
   ],
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "snippets.extends": {
+    "cpp": ["c"],
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "typescriptreact": ["typescriptreact"],
+    "typescriptreact": ["typescript"]
+  },
 
   // python config
   "python.linting.enabled": true,
@@ -28,5 +42,7 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "clangd.path": "/home/pratham82/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+  "clangd.path": "/home/pratham82/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
+  "explorer.buffer.showHiddenBuffers": true,
+  "explorer.file.showHiddenFiles": true
 }

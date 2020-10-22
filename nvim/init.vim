@@ -15,7 +15,7 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
-source  $HOME/.config/nvim/plug-config/start-screen.vim
+source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
@@ -23,15 +23,51 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
+
+"set background=dark
+"colorscheme vim-material
+
+
+" Material Themes
+" Palenight
+"let g:material_style='palenight'
+"set background=dark
+"colorscheme vim-material
+
+" Oceanic
+let g:material_style='oceanic'
+set background=dark
+colorscheme vim-material
+"let g:airline_theme='material'
+
 "Setting background theme
 "set background=dark
 "colorscheme oceanic_material
-"source $HOME/.config/nvim/themes/onedark.vim
 "source $HOME/.config/nvim/themes/oceanic-next.vim
 
 
-set bg=dark
-colorscheme gruvbox
+" Onedark 
+"source $HOME/.config/nvim/themes/onedark.vim
+
+" Nighowl
+"if (has("termguicolors"))
+" set termguicolors
+"endif
+
+" For Neovim 0.1.3 and 0.1.4
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+""""" enable the theme
+
+"syntax enable
+"colorscheme night-owl
+
+
+
+
+
+"set bg=dark
+"colorscheme gruvbox
 
 "set background=dark
 "colorscheme oceanic_material
@@ -43,11 +79,11 @@ colorscheme gruvbox
 "let ayucolor="dark"   " for dark version of theme
 "colorscheme ayu
 
-let g:rainbow_active = 1
+"let g:rainbow_active = 1
 
-"let g:rainbow#max_level = 16
-"let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
-"autocmd FileType * RainbowParentheses
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+autocmd FileType * RainbowParentheses
 
 "let g:rainbow_active = 1
 "let g:airline_theme="gruvbox"

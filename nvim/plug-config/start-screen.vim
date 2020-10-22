@@ -26,10 +26,11 @@ let g:startify_fortune_use_unicode = 1
 let g:startify_session_persistence = 1
 
 let g:startify_bookmarks = [
-            \ { 't': '~/.tmux.conf' },
             \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 't': '~/.tmux.conf' },
             \ { 'z': '~/.zshrc' },
-            \ '~/Dev/Nodejs-tutorial',
-            \ '~/Dev/React-framework',
-            \ '~/Dev/JavaScript-programming',
+            \ { 'n':  '~/Dev/Nodejs-tutorial'},
+            \ { 'r':'~/Dev/React-framework'},
             \ ]
+
+let g:startify_files_number =10

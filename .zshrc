@@ -113,6 +113,9 @@ export PATH=/opt/firefox/firefox:$PATH
 export DENO_INSTALL="/home/pratham82/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# Adding Go binary to the Path
+export PATH=$PATH:/usr/local/go/bin
+
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
@@ -140,6 +143,10 @@ alias kas="tmux kill-server"
 alias ts="nvim ~/.tmux.conf"
 alias robo='/usr/local/bin/robomongo/bin/robo3t'
 
+# Project starters aliases
+alias ns="npm start"
+alias cra="npx create-react-app"
+
 # System aliases
 alias cc="cd ~"
 alias dev="cd ~/Dev"
@@ -157,6 +164,7 @@ alias gs="git status"
 alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
+alias gcl="git clone"
 alias gp="git push"
 alias gl="git log"
 alias gr="git reset"    
@@ -165,6 +173,8 @@ alias gpu="git pull"
 alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
+
+
 
 # MongoDB aliases
 alias startmo="sudo service mongod start"

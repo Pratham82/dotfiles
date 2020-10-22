@@ -23,6 +23,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'dracula/vim', { 'as': 'dracula' }
 		Plug 'ayu-theme/ayu-vim'
 		Plug 'hardcoreplayers/oceanic-material'
+		Plug 'hzchirs/vim-material'
+		Plug 'haishanh/night-owl.vim'
+		Plug 'rakr/vim-one'
 
 	
 		" Intellisense
@@ -38,17 +41,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'airblade/vim-rooter'
 		Plug 'honza/vim-snippets'
 		Plug 'peitalin/vim-jsx-typescript'
-		Plug  'Yggdroot/indentLine'
+	"	Plug  'Yggdroot/indentLine'
 		Plug 'norcalli/nvim-colorizer.lua'	
 		Plug 'junegunn/rainbow_parentheses.vim'
 		Plug 'mhinz/vim-startify'
 		Plug 'mhinz/vim-signify'
 		Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
+		Plug 'tpope/vim-rhubarb'
 		Plug 'junegunn/gv.vim'
 		Plug 'justinmk/vim-sneak'
 		Plug 'unblevable/quick-scope'
 		Plug 'liuchengxu/vim-which-key'
 		Plug 'voldikss/vim-floaterm'
-		
+		Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }		
 call plug#end()
