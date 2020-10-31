@@ -25,10 +25,13 @@
   "snippets.extends": {
     "cpp": ["c"],
     "javascriptreact": ["javascript"],
+    "javascript": ["javascriptreact"],
     "typescript": ["javascript"],
     "typescriptreact": ["typescriptreact"],
     "typescriptreact": ["typescript"]
   },
+
+  "prettier.semi": false,
 
   // python config
   "python.linting.enabled": true,

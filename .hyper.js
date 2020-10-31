@@ -9,11 +9,12 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 12,
+
     // font family with optional fallbacks
-    fontFamily: 'FiraCode Nerd Font',
-    //'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace'
-    
+    fontFamily: "FiraCode Nerd Font",
+	
+    //'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
 
@@ -21,7 +22,7 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // line height as a relative unit
-    lineHeight: 1.15,
+    lineHeight: 1,
 
     // letter spacing as a relative unit
     letterSpacing: 0,
@@ -44,9 +45,6 @@ module.exports = {
     // terminal background color
     // opacity is only supported on macOS
     backgroundColor: '#000',
-    
-     opacity: 0.50,
-    
 
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
@@ -149,17 +147,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  // 	Themes: 'hyperterm-gruvbox-dark', 'hyper-material-theme', "hyper-city-lights"
-  plugins: [
-    'hypercwd',
-    'hyperterm-dibdabs',
-    'hyper-blink',
-    'hyperterm-tabs',
-    'hyper-materialshell',
-    "status-line",
-    "gitrocket",
-    "hyper-hide-title"
-  ],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

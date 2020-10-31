@@ -6,87 +6,41 @@
 
 
 set termguicolors     " enable true colors support
-
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
-source $HOME/.config/nvim/plug-config/quickscope.vim
-source $HOME/.config/nvim/keys/which-key.vim
-source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
+
+
+" Lua Plugins
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
+" Themes
 
-"set background=dark
-"colorscheme vim-material
-
-
-" Material Themes
-" Palenight
-"let g:material_style='palenight'
-"set background=dark
-"colorscheme vim-material
+"source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
 let g:material_style='oceanic'
 set background=dark
 colorscheme vim-material
-"let g:airline_theme='material'
 
-"Setting background theme
-"set background=dark
-"colorscheme oceanic_material
-"source $HOME/.config/nvim/themes/oceanic-next.vim
+"let g:lightline = { 'colorscheme': 'nightfly' }
+"let g:moonflyIgnoreDefaultColors = 1
+"colorscheme nightfly;w 🚨
 
+" Ale setup
+let g:ale_sign_error = '🚨'
+let g:ale_sign_warning = '🔧'
 
-" Onedark 
-"source $HOME/.config/nvim/themes/onedark.vim
-
-" Nighowl
-"if (has("termguicolors"))
-" set termguicolors
-"endif
-
-" For Neovim 0.1.3 and 0.1.4
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-""""" enable the theme
-
-"syntax enable
-"colorscheme night-owl
-
-
-
-
-
-"set bg=dark
-"colorscheme gruvbox
-
-"set background=dark
-"colorscheme oceanic_material
-"let g:oceanic_material_allow_italic=1
-
-"set termguicolors     " enable true colors support
-"let ayucolor="light"  " for light version of theme
-"let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
-"colorscheme ayu
-
-"let g:rainbow_active = 1
+"Setting Airline theme
+let g:airline_theme="serene"
 
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 autocmd FileType * RainbowParentheses
 
-"let g:rainbow_active = 1
-"let g:airline_theme="gruvbox"
-
-"set background=dark
-"colorscheme palenight
