@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+    function fn1(){
+        var name = document.getElementById("id1").value;
+        var contact = document.getElementById("id2").value;
+        var password1 =document.getElementById("id3").value;
+        var password2= document.getElementById("id4").value;
+        if(name==""&&contact==""){
+            document.getElementById("err1").innerHTML="This filed is required"
+            return false;
+        }
+
+        if(!(isNaN(name))){
+            document.getElementById("err1").innerHTML="Numbers aren't allowed in this filed"
+            return false;
+        }
+        
+        if(isNaN(contact)){
+            document.getElementById("err2").innerHTML="Please enter correct contact number"
+            return false;
+        }
+
+        if(contact.length<10||contact.length>10){
+            document.getElementById("err2").innerHTML="Please enter correct contact number"
+            return false;
+        }
+        
+        if(password1!=password2){
+            document.getElementById("err3").innerHTML="Password should be same"
+            return false;
+        }
+        
+        if((password1.length<8)&&(password2.length<8)){
+            document.getElementById("err3").innerHTML="Password length should be more than 8"
+            return false;
+        }
+        return true;
+    }
+</script>
+<form onsubmit="return fn1()">
+<table>
+    <tr>
+        <td>Name: </td>
+        <td><input type="text" name="name" placeholder="Enter your name" id ="id1">
+            <td><span id ="err1" style="color: red;"></span></td>
+        </td>
+    </tr>
+    <tr>
+        <td>contact: </td>
+        <td><input type="text" name="contact" placeholder="Enter your contact number" id ="id2">
+            <td><span id ="err2" style="color: red;"></span></td>
+        </td>
+    </tr>
+    <tr>
+        <td>Password: </td>
+        <td><input type="password" name="email" placeholder="Enter password" id ="id3">
+            <td><span id ="err3" style="color: red;"></span></td>
+        </td>
+    </tr>
+    <tr>
+        <td>Confirm Password: </td>
+        <td><input type="password" name="email" placeholder="Enter password" id ="id4">
+            <td><span id ="err3" style="color: red;"></span></td>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" name ="submit" value="Submit"></td>
+        <td><input type="reset" name="reset" value="Reset"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

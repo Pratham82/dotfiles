@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("button").click(function(){
+            //Fade in
+            /*
+            //For fading in we have to hide out elements first using display none in CSS 
+            $("#id1").fadeIn("fast");
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(5000);
+
+            //Fade Out
+            //For fading out we have to show our objects first then make them fade away
+            $("#id1").fadeOut();
+            $("#div1").fadeOut("slow");
+            $("#div2").fadeOut(2000)
+            $("#div3").fadeOut("fast")
+            
+            //Fade to
+            //The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+            $("#id1").fadeTo("slow",0.25);
+            $("#div1").fadeTo("slow",0.35);
+            $("#div2").fadeTo("fast",0.45);
+            $("#div3").fadeTo("fast",0.65);
+            */
+            //Fade toggle
+            $("#id1").fadeToggle();
+            $("#div1").fadeToggle("slow");
+            $("#div2").fadeToggle("fast");
+            $("#div3").fadeToggle("fast");
+
+        });
+    });
+</script>
+<style>
+
+</style>
+</head>
+
+<body>
+    <h1>Effects in jQuery</h1>
+    <h3>Fade effects</h3>
+    <button>Click to fade objects</button><br><br>
+
+    <!--ELements for fade in
+        <div id="id1" style="display:none">Text 1 </div>
+    <div id="id2"></div><br>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:orange;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:green;"></div><br> 
+
+    -->
+    <div id="id1" >Text 1 </div>
+    <div id="id2"></div><br>
+    <div id="div1" style="width:80px;height:80px;background-color:orange;"></div><br>
+    <div id="div2" style="width:80px;height:80px;background-color:blue;"></div><br>
+    <div id="div3" style="width:80px;height:80px;background-color:green;"></div><br> 
+</body>
+</html>

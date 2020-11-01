@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DOM By Tag Name</title>
+</head>
+<body>
+    <script>
+        function ChangePara(){
+            document.getElementsByTagName("p")[0].innerHTML="New 1st para"
+            document.getElementsByTagName("p")[1].innerHTML="New 2nd para"
+        }
+    </script>
+<p>This is first para</p>
+<p>This is second para</p>
+<button onclick="ChangePara()" value="Click here">Click to change para</button>
+
+</body>
+</html>

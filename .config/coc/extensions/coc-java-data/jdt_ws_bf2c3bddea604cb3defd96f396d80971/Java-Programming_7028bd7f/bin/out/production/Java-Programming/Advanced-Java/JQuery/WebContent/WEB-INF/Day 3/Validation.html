@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script>
+        $(function () {
+            $("form").validate({
+                rules: {
+                    username:{
+                        required:true
+                    },
+                    contact:{
+                        required:true,
+                        maxlength:10,
+                        minlength: 10
+                    }, 
+                
+                    con_pass:{
+                        required:true,
+                        maxlength:16,
+                        minlength:8,
+                        equalTo:"#id3"
+                    }
+                }
+            });
+        });
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Validation in jQuery</h1>
+    <form onsubmit="return fn1()">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="username" placeholder="Enter your name" id ="id1">
+                    <td><span id ="err1" style="color: red;"></span></td>
+                </td>
+            </tr>
+            <tr>
+                <td>contact: </td>
+                <td><input type="text" name="contact" placeholder="Enter your contact number" id ="id2">
+                    <td><span id ="err2" style="color: red;"></span></td>
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="pass" placeholder="Enter password" id ="id3">
+                    <td><span id ="err3" style="color: red;"></span></td>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password: </td>
+                <td><input type="password" name="con_pass" placeholder="Enter password" id ="id4">
+                    <td><span id ="err3" style="color: red;"></span></td>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name ="submit" value="Submit"></td>
+                <td><input type="reset" name="reset" value="Reset"></td>
+            </tr>
+        </table>
+        </form>
+
+</body>
+
+</html>

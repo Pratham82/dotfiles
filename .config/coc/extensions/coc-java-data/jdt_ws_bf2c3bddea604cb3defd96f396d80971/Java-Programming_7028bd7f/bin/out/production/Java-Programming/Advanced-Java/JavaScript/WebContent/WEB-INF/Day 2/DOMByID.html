@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DOM by ID</title>
+</head>
+<body>
+<script>
+function f1(){
+    alert("Button clicked")
+    var a= document.getElementById("id1").value
+    document.write("Entered Name: "+ a)
+}
+
+function ValueChanger(){
+    //Storing value of h4 id in name
+    var name = document.getElementById("h4").innerHTML
+    alert("Previous value: "+name)
+    //Changing the value by innerHTML and storing new value in ID h4
+    document.getElementById("h4").innerHTML="This is new Text"
+}
+
+</script>
+Name: <input type ="text" name ="Enter name here" id ="id1">
+<input type="button" value= "Click here" onclick ="f1()">
+
+<h4 id ="h4">This is old Text</h4>
+<button onclick="ValueChanger()" value="Change the text">Change the value</button>
+
+</body>
+</html>

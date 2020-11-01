@@ -1,0 +1,162 @@
+!SESSION 2020-11-01 11:56:14.631 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/pratham82/.config/coc/extensions/coc-java-data/jdt_ws_bf2c3bddea604cb3defd96f396d80971
+
+!ENTRY org.eclipse.osgi 4 0 2020-11-01 11:56:14.986
+!MESSAGE Error installing bundle: reference:file:plugins/com.google.gson_2.8.2.v20180104-1110.jar
+!STACK 0
+org.osgi.framework.BundleException: Error occurred installing a bundle.
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:760)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:182)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.installBundles(EclipseStarter.java:984)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:596)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:331)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
+Caused by: java.util.zip.ZipException: Exception in opening zip file: /home/pratham82/.config/coc/extensions/coc-java-data/server/plugins/com.google.gson_2.8.2.v20180104-1110.jar
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:349)
+	at org.eclipse.osgi.storage.bundlefile.ZipBundleFile.doOpen(ZipBundleFile.java:48)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.open(CloseableBundleFile.java:135)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.open(CloseableBundleFile.java:411)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:724)
+	... 13 more
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1567)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1462)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1469)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1274)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1237)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:727)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:844)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:247)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:191)
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:335)
+	... 17 more
+Root exception:
+java.util.zip.ZipException: Exception in opening zip file: /home/pratham82/.config/coc/extensions/coc-java-data/server/plugins/com.google.gson_2.8.2.v20180104-1110.jar
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:349)
+	at org.eclipse.osgi.storage.bundlefile.ZipBundleFile.doOpen(ZipBundleFile.java:48)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.open(CloseableBundleFile.java:135)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.open(CloseableBundleFile.java:411)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:724)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:182)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.installBundles(EclipseStarter.java:984)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.loadBasicBundles(EclipseStarter.java:596)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:331)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1567)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1462)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1469)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1274)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1237)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:727)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:844)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:247)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:191)
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:335)
+	... 17 more
+
+!ENTRY org.eclipse.buildship.core 4 0 2020-11-01 11:56:15.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.core [12]
+  Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2020-11-01 11:56:15.489
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.ls.core [48]
+  Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="2.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core; bundle-version="1.0.18"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.5.v20200806-2157-s"; singleton:="true"
+       org.eclipse.buildship.core [12]
+         Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.osgi 4 0 2020-11-01 11:56:15.490
+!MESSAGE Bundle initial@reference:file:plugins/org.eclipse.jdt.ls.core_0.64.0.202010310313.jar was not resolved.
+
+!ENTRY org.eclipse.jdt.ls.core 2 0 2020-11-01 11:56:15.500
+!MESSAGE Could not resolve module: org.eclipse.jdt.ls.core [48]
+  Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="2.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core; bundle-version="1.0.18"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.5.v20200806-2157-s"; singleton:="true"
+       org.eclipse.buildship.core [12]
+         Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="[2.7.0,3.0.0)"
+
+
+!ENTRY org.eclipse.lsp4j.jsonrpc 2 0 2020-11-01 11:56:15.500
+!MESSAGE Could not resolve module: org.eclipse.lsp4j.jsonrpc [50]
+  Unresolved requirement: Import-Package: com.google.gson; version="[2.8.0,3.0.0)"
+
+
+!ENTRY org.eclipse.lsp4j 2 0 2020-11-01 11:56:15.501
+!MESSAGE Could not resolve module: org.eclipse.lsp4j [49]
+  Unresolved requirement: Import-Package: com.google.gson; version="[2.8.0,3.0.0)"
+
+
+!ENTRY org.eclipse.buildship.core 2 0 2020-11-01 11:56:15.501
+!MESSAGE Could not resolve module: org.eclipse.buildship.core [12]
+  Unresolved requirement: Require-Bundle: com.google.gson; bundle-version="[2.7.0,3.0.0)"
+
+
+!ENTRY org.eclipse.osgi 4 0 2020-11-01 11:56:15.501
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "org.eclipse.jdt.ls.core.id1" could not be found in the registry. The applications available are: org.eclipse.ant.core.antRunner, org.eclipse.equinox.app.error, org.eclipse.jdt.apt.core.aptBuild, org.eclipse.jdt.core.JavaIndexer.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:252)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:33)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)

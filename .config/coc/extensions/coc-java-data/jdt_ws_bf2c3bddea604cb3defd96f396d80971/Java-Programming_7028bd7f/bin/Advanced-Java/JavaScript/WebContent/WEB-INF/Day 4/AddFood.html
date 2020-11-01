@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    table{
+        text-align: center;
+        width: 500px;
+        height: 150px;
+        border:1px solid black;
+        
+    }
+    .td1{
+        text-align: right;
+    }
+    .td2{
+        text-align: left;
+    }
+</style>
+
+<script>
+    function AddFood(){
+        food_name = document.getElementById("id1").value;
+        food_category= document.getElementById("id2").value;
+        food_price= document.getElementById("id3").value
+        
+        //Food  name validation
+        if(food_name==""){
+            document.getElementById("err1").innerHTML="This filed should not be empty"
+            return false;
+        }
+        
+        if(!isNaN(food_name)){
+            document.getElementById("err1").innerHTML="Food name should not contain numbers"
+            return false
+        }
+        //Food category validation
+        if(food_category==""){
+            document.getElementById("err2").innerHTML="This filed should not be empty"
+            return false;
+        }
+        
+        if(isNaN(food_category)){
+            document.getElementById("err2").innerHTML="Food category should not contain numbers"
+        }
+        //Food price validation
+        if(food_price==""){
+            document.getElementById("err3").innerHTML="This filed should not be empty"
+            return false;
+        }
+        
+        if(isNaN(food_price)){
+            document.getElementById("err3").innerHTML="Price should always be in numbers"
+            return false;
+        }
+        
+    }
+</script>
+</head>
+<body>
+    <form onsubmit="return AddFood()">
+        <table align="center" border=1px>
+            <caption><h2>Add Food details</h2></caption>
+            <tr>
+                <td class="td1">Food name: </td>
+                <td class ="td2">
+                    <input type="text" name ="food name" id ="id1" placeholder="Enter food name">
+                </td>
+                <td class ="td2">
+                    <span id ="err1" style ="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1">Food Category: </td>
+                <td class ="td2">
+                    <input type="text" name =category placeholder="Enter food category" id ="id2">
+                </td>
+                <td>
+                    <span id ="err2" style ="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1">Food Price: </td>
+                <td class ="td2">
+                    <input type="Food price" name =name placeholder="Enter food price" id ="id3">
+                </td>
+                <td >
+                    <span id ="err3" style ="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name ="submit" value="Submit"></td>
+                <td><input type="reset" name="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

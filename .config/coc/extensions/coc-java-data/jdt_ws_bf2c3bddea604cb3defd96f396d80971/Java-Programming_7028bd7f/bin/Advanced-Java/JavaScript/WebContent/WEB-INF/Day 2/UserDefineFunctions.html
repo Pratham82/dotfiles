@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Defined functions</title>
+</head>
+<body>
+<script>
+function show(){
+	document.write("This is show function")
+}
+//Calling show function
+show()
+document.write("<br><br>");
+function square(num){
+	document.write("Square of "+ num+": "+num*num)
+}
+square(12)
+document.write("<br><br>");
+
+function factorial(n1){
+	f = 1
+	for(i =1;i<= n1; i++){
+		f = f * i 
+	}
+	document.write("Factorial of "+n1+": "+ f)
+}
+
+factorial(5)
+
+
+//Dynamic function
+document.write("<br><br>");
+
+num1 = prompt("Enter number to find its cube")
+
+function cube(num1){
+	cube = num1*num1*num1
+	document.write("Cube of number "+num1+": "+ cube)
+	alert("Cube of number "+num1+": "+ cube)
+}
+cube(num1)
+</script>
+</body>
+</html>
