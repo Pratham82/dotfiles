@@ -78,6 +78,7 @@ alias ap="sudo apt"
 alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/;
 sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias mk="mkdir"
+alias sleep="shutdown now"
 
 
 # Git aliases
@@ -108,6 +109,9 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+
+# Aliases for Arch
+alias i3c='nvim ~/.i3/config'
 
 # Important shortcuts
 alias c.="code ."
@@ -153,3 +157,4 @@ source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
