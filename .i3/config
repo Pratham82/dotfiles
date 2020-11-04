@@ -1,8 +1,12 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-
+# Setting display layout
 exec autorandr docked
+
+# Setting My fav wallpaper
+exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
+
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
@@ -62,7 +66,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 #bindsym $mod+F2 exec palemoon
 bindsym $mod+F2 exec firefox-developer-edition
-bindsym $mod+F3 exec pcmanfm
+#bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F3 exec nautilus
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -105,6 +110,7 @@ bindsym $mod+Shift+Right move right
 workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Shift+a focus parent,kill
 
 # split orientation
 bindsym $mod+h split h;exec notify-send 'tile horizontally'
@@ -302,8 +308,8 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-#exec --no-startup-id start_conky_maia
-# exec --no-startup-id start_conky_green
+# exec --no-startup-id start_conky_maia
+exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor

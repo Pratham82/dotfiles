@@ -75,7 +75,9 @@ alias c="clear"
 alias cgs="clear && git status"
 alias api="sudo apt install"
 alias ap="sudo apt"
-alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/;
+#alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
+#sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
+alias dot="cp /home/pratham82/{.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias mk="mkdir"
 alias sleep="shutdown now"
@@ -99,7 +101,10 @@ alias gco="git chekout"
 
 
 # MongoDB aliases
-alias startmo="sudo service mongod start"
+#alias startmo="sudo service mongod start"
+#alias stopmo="sudo service mongod stop"
+#alias statmo="sudo service mongod status"
+alias startmo="sudo systemctl start monogdb"
 alias stopmo="sudo service mongod stop"
 alias statmo="sudo service mongod status"
 
