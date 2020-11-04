@@ -8,9 +8,8 @@ exec autorandr docked
 
 # Setting My fav wallpaper
 #exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
-exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
 
-
+exec feh --bg-scale  ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4

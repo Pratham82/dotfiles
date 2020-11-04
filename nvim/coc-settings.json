@@ -52,5 +52,6 @@
   "explorer.buffer.showHiddenBuffers": true,
   "explorer.file.showHiddenFiles": true,
   "coc.source.emoji.filetypes": ["markdown", "javascript", "javascriptreact"],
-  "coc.source.emoji.triggerCharacters": [":"]
+  "coc.source.emoji.triggerCharacters": [":"],
+  "typescript.showUnused": false
 }

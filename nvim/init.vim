@@ -21,7 +21,6 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " Themes
-
 "source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
@@ -31,29 +30,52 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " Gruvbox
 colorscheme gruvbox
+"colorscheme happy_hacking 
+"colorscheme jellybeans
+"colorscheme nord
+
+" Ocea Material *****
+"set background=dark
+"colorscheme oceanic_material
+
+
+"let g:airline_theme='one'
+"colorscheme one
+"set background=dark " for the dark version
+
 
 " Adding transperncy
-highlight Normal guibg=none
-highlight NonText guibg=none
-
 "highlight Normal guibg=none
 "highlight NonText guibg=none
 
+highlight Normal guibg=none
+highlight NonText guibg=none
+
 "let g:lightline = { 'colorscheme': 'nightfly' }
 "let g:moonflyIgnoreDefaultColors = 1
-"colorscheme nightfly;w 🚨
+"colorscheme nightfly;w 🚨🔶
 
-
-
-" Ale setup
 let g:ale_sign_error = '🚨'
-let g:ale_sign_warning = '🔧'
+let g:ale_sign_warning ='🔧'
+let g:ale_sign_info = '🔔'
+" Ale setup
 
 "Setting Airline theme
-let g:airline_theme="jellybeans"
+let g:airline_theme="serene"
+"let g:airline_theme='base_16'
 
 let g:rainbow#max_level = 16
-let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+let g:rainbow#pairs = [['(', ')'], ['[', ']']]
+
+" List of colors that you do not want. ANSI code or #RRGGBB
 autocmd FileType * RainbowParentheses
+let g:rainbow#blacklist = [233, 234]
 
+"let g:rainbow#max_level = 16
+"let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+"autocmd FileType * RainbowParentheses
 
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL

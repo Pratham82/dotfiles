@@ -20,10 +20,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'rakr/vim-one'
     Plug 'bluz71/vim-nightfly-guicolors'
     Plug 'gruvbox-community/gruvbox'
+    Plug 'yorickpeterse/happy_hacking.vim'
+    Plug 'nanotech/jellybeans.vim'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'glepnir/oceanic-material'
 
 
     " Ale installation
-    Plug 'dense-analysis/ale'
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
