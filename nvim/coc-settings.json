@@ -33,6 +33,8 @@
   },
 
   "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
 
   // python config
   "python.linting.enabled": true,

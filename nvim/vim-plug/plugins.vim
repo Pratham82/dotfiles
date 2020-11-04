@@ -19,6 +19,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'hzchirs/vim-material'
 		Plug 'rakr/vim-one'
     Plug 'bluz71/vim-nightfly-guicolors'
+    Plug 'gruvbox-community/gruvbox'
+
 
     " Ale installation
     Plug 'dense-analysis/ale'

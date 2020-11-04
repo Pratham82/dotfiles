@@ -25,13 +25,25 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 "source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
-let g:material_style='oceanic'
-set background=dark
-colorscheme vim-material
+"let g:material_style='oceanic'
+"set background=dark
+"colorscheme vim-material
+
+" Gruvbox
+colorscheme gruvbox
+
+" Adding transperncy
+highlight Normal guibg=none
+highlight NonText guibg=none
+
+"highlight Normal guibg=none
+"highlight NonText guibg=none
 
 "let g:lightline = { 'colorscheme': 'nightfly' }
 "let g:moonflyIgnoreDefaultColors = 1
 "colorscheme nightfly;w 🚨
+
+
 
 " Ale setup
 let g:ale_sign_error = '🚨'
