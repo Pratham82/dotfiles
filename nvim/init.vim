@@ -24,12 +24,12 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 "source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
-"let g:material_style='oceanic'
-"set background=dark
-"colorscheme vim-material
+let g:material_style='oceanic'
+set background=dark
+colorscheme vim-material
 
 " Gruvbox
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme happy_hacking 
 "colorscheme jellybeans
 "colorscheme nord
