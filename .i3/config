@@ -1,16 +1,20 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod4
+
+
 # Setting display layout
 exec autorandr docked
 
 # Setting My fav wallpaper
 exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
+exec $mod+shift+R
 
 #exec feh --bg-scale  ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
 
-# Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod4
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -37,13 +41,14 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+g exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal alacritty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -303,8 +308,8 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-#exec --no-startup-id feh --restore; sleep 1; picom -b
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -313,8 +318,8 @@ exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
-#exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id start_conky_green
+#exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -380,7 +385,8 @@ set_from_resource $term_color15    color15
 #}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+#bindsym $mod+m bar mode toggle
+bindsym $mod+m exec polybar-msg cmd toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
@@ -451,4 +457,3 @@ mode "$mode_gaps_outer" {
 
 # Polybar Startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-

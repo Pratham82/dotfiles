@@ -21,12 +21,12 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " Themes
-"source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
-let g:material_style='oceanic'
-set background=dark
-colorscheme vim-material
+"let g:material_style='oceanic'
+"set background=dark
+"colorscheme vim-material
 
 " Gruvbox
 "colorscheme gruvbox
@@ -56,7 +56,7 @@ highlight NonText guibg=none
 "colorscheme nightfly;w 🚨🔶
 
 let g:ale_sign_error = '🚨'
-let g:ale_sign_warning ='🔧'
+let g:ale_sign_warning ="🔶"
 let g:ale_sign_info = '🔔'
 " Ale setup
 
