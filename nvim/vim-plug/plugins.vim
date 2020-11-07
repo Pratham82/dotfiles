@@ -24,7 +24,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nanotech/jellybeans.vim'
     Plug 'arcticicestudio/nord-vim'
     Plug 'glepnir/oceanic-material'
+    Plug 'overcache/NeoSolarized'
 
+    "Multiple cursor 
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
     " Ale installation
 

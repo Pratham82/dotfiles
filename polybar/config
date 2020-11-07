@@ -65,11 +65,11 @@ separator = "|"
 
 
 font-0 = fixed:pixelsize=12;1
-font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=false;0
+font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
 font-2 = siji:pixelsize=10;1
-;font-3 = Font Awesome 5 Free:pixelsize=12;2
-;font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
-;font-5 = Font Awesome 5 Brands:pixelsize=12;2
+font-3 = Font Awesome 5 Free:pixelsize=12;2
+font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
+font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 
 ;font-0 = "Inconsolata CondensedBlack:size=12;3"
@@ -400,6 +400,12 @@ ramp-capacity-foreground = ${colors.foreground-alt}
 ;animation-charging-0 ="   "
 ;animation-charging-1 ="   "
 ;animation-charging-2 ="   "
+
+;animation-charging-0 = 
+;animation-charging-1 = 
+;animation-charging-2 = 
+;animation-charging-3 = 
+;animation-charging-4 = 
 
 animation-charging-0 ="   "
 animation-charging-1 ="   "

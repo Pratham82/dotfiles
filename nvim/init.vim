@@ -21,7 +21,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " Themes
-source $HOME/.config/nvim/themes/onedark.vim
+"source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
 "let g:material_style='oceanic'
@@ -33,6 +33,15 @@ source $HOME/.config/nvim/themes/onedark.vim
 "colorscheme happy_hacking 
 "colorscheme jellybeans
 "colorscheme nord
+
+colorscheme NeoSolarized
+"colorscheme nord
+
+"Solarized
+"syntax enable
+"set background=dark
+"colorscheme solarized
+
 
 " Ocea Material *****
 "set background=dark
@@ -61,8 +70,11 @@ let g:ale_sign_info = '🔔'
 " Ale setup
 
 "Setting Airline theme
-let g:airline_theme="serene"
+let g:airline_theme="solarized_flood"
 "let g:airline_theme='base_16'
+
+
+"let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']']]
@@ -70,6 +82,9 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']']]
 " List of colors that you do not want. ANSI code or #RRGGBB
 autocmd FileType * RainbowParentheses
 let g:rainbow#blacklist = [233, 234]
+
+
+
 
 "let g:rainbow#max_level = 16
 "let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]

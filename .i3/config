@@ -74,8 +74,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 #bindsym $mod+F2 exec palemoon
 bindsym $mod+F2 exec firefox-developer-edition
-#bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec nautilus
+bindsym $mod+F3 exec pcmanfm
+#bindsym $mod+F3 exec nautilus
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -403,7 +403,7 @@ bindsym $mod+m exec polybar-msg cmd toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+gaps inner 12
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
