@@ -1,79 +1,58 @@
-# Colors (iTerm 2 default theme)
+# Colors (Solarized Dark)
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '0xfffbf6'
+    background: '#000000' # base03
+    #background: '#001e26' # base03
+    foreground: '#839496' # base0
+
+  # Cursor colors
+  cursor:
+    text: '#002b36' # base03
+    cursor: '#839496' # base0
 
   # Normal colors
   normal:
-    black: '0x2e2e2e'
-    red: '0xeb4129'
-    green: '0xabe047'
-    yellow: '0xf6c744'
-    blue: '0x47a0f3'
-    magenta: '0x7b5cb0'
-    cyan: '0x64dbed'
-    white: '0xe5e9f0'
+    black: '#073642' # base02
+    red: '#dc322f' # red
+    green: '#859900' # green
+    yellow: '#b58900' # yellow
+    blue: '#268bd2' # blue
+    magenta: '#d33682' # magenta
+    cyan: '#2aa198' # cyan
+    white: '#eee8d5' # base2
 
   # Bright colors
   bright:
-    black: '0x565656'
-    red: '0xec5357'
-    green: '0xc0e17d'
-    yellow: '0xf9da6a'
-    blue: '0x49a4f8'
-    magenta: '0xa47de9'
-    cyan: '0x99faf2'
-    white: '0xffffff'
+    black: '#002b36' # base03
+    red: '#cb4b16' # orange
+    green: '#586e75' # base01
+    yellow: '#657b83' # base00
+    blue: '#839496' # base0
+    magenta: '#6c71c4' # violet
+    cyan: '#93a1a1' # base1
+    white: '#fdf6e3' # base3
+
 background_opacity: 0.85
 
 # Favourite fonts
 
-#font:
-#  normal:
-#    family: 'CaskaydiaCove Nerd Font'
-#    style: Regular
-#  bold:
-#    family: 'CaskaydiaCove Nerd  Font'
-#    style: Bold
-#  italic:
-#    family: 'CaskaydiaCove Nerd Font'
-#    style: Italic
-#  bold_italic:
-#    family: 'CaskaydiaCove Nerd Font'
-#    style: Bold Italic
-
 font:
   normal:
-    family: 'Hack Nerd Font'
+    family: 'JetBrains Mono Nerd Font'
     style: Regular
-  bold:
-    family: 'Hack Nerd  Font'
-    style: Bold
-  italic:
-    family: 'Hack Nerd Font'
-    style: Italic
-  bold_italic:
-    family: 'Hack Nerd Font'
-    style: Bold Italic
-
-  #font:
-  # normal:
-  #   family: 'BlexMono Nerd Font'
-  #   style: Regular
-  # bold:
-  #   family: 'BlexMono   Nerd  Font'
-  #   style: Bold
-  # italic:
-  #   family: 'BlexMono   Nerd Font'
-  #   style: Italic
-  # bold_italic:
-  #   family: 'BlexMono   Nerd Font'
-  #   style: Bold Italic
+    #  bold:
+    #    family: 'JetBrains Mono Nerd Font'
+    #    style: Bold
+    #  italic:
+    #    family: 'JetBrains Mono Nerd Font'
+    #    style: Italic
+    #  bold_italic:
+    #    family: 'JetBrains Mono Nerd Font'
+    #    style: Bold Italic
 
   # Font size
-  size: 11
+  size: 12
 
   offset:
     x: 0

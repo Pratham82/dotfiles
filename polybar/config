@@ -19,7 +19,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-background = #85050505
+background = #25050505
 background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
 foreground = #fff
@@ -33,7 +33,7 @@ alert = #bd2c40
 #monitor = ${env:MONITOR:HDMI-1}
 #[..]
 width = 100%
-height = 22
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 enable-ipc = true
@@ -46,14 +46,14 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 2
+border-size = 0
 border-color = #000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 separator = "|"
 
@@ -65,11 +65,13 @@ separator = "|"
 
 
 font-0 = fixed:pixelsize=12;1
-font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
+#font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
+font-1 = HackNerdFont:fontformat=truetype:size=11:antialias=true;0
 font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Free:pixelsize=12;2
-font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
-font-5 = Font Awesome 5 Brands:pixelsize=12;2
+font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
+;font-3 = Font Awesome 5 Free:pixelsize=12;2
+;font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
+;font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 
 ;font-0 = "Inconsolata CondensedBlack:size=12;3"
@@ -79,11 +81,13 @@ font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 
 ; Positioning modules
-modules-left =i3 xbacklight pulseaudio 
+modules-left =i3 date 
 ;modules-center = mpd 
 modules-center = xwindow spotify 
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
-modules-right = cpu memory  wlan battery  date powermenu
+modules-right =   cpu memory battery xbacklight 
+;modules-right = memory 
+;Unused modules: pulseaudio
 
 tray-position = right
 tray-padding = 0
@@ -106,7 +110,7 @@ cursor-scroll = ns-resize
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = "   "
+format-prefix = " "
 format = <label>
 exec = python /home/pratham82/.config/polybar/spotify_status.py  -f '{artist}: {song}'
 format-underline = #1db954
@@ -121,8 +125,9 @@ click-right = cmus-remote -s
 click-left = cmus-remote -p
 
 [module/xwindow]
+;✨💫⭐
 type = internal/xwindow
-label = %title:0:30:...%
+label = ⭐ %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -179,6 +184,16 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
+;📽️📂💻🚀🇮🔱👑🤓🎯📂
+;        
+ws-icon-0 = 1;📂
+ws-icon-1 = 2;🔱
+ws-icon-2 = 3;🌊
+ws-icon-3 = 4;🎧
+;ws-icon-0 = 1; 🚀 
+;ws-icon-0 = 2; 🌊
+;ws-icon-0 = 3; 🎧
+
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -188,23 +203,27 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+;label-focused = %index%
+label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+;label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+;label-visible = %index%
+label-visible = %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+;label-urgent = %index%
+label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -231,9 +250,10 @@ label-song-ellipsis = true
 type = internal/xbacklight
 
 format = <label> <bar>
-label = "   "
+;label = "   "
+label = "🔆 "
 
-bar-width = 10
+bar-width = 3
 bar-indicator = |
 bar-indicator-foreground = #fff
 bar-indicator-font = 2
@@ -252,27 +272,31 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix ="  "
+format-prefix ="   🧠"
+;format-prefix ="🧠"
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label =" %percentage:2%%  "
+;format-underline = #f90000
+label =" %percentage:2%%"
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "   "
+;format-prefix = "   🔥"
+format-prefix = "🔥"
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+;format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlan1 
+;interface = wlan1 
+interface = wlp4s0 
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+;format-connected-underline = #9f78e1
 label-connected = %essid%
+
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -280,11 +304,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 📶
+;ramp-signal-1 = 
+;ramp-signal-2 = 
+;ramp-signal-3 =  📶
+;ramp-signal-4 =  📶
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
@@ -295,7 +319,7 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = %local_ip% 
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -314,9 +338,10 @@ date-alt = " %Y-%m-%d %a "
 time = %I:%M 
 time-alt = %H:%M:%S
 
-format-prefix = "   "
+;format-prefix = "   ⌛"
+format-prefix = "🕓"
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+;format-underline = #0a6cf5
 
 label = %date% %time%
 
@@ -324,7 +349,8 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume =     %percentage%%
+;label-volume = 🔊   %percentage%%
+label-volume =  🔊  %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted ="  x"
@@ -382,15 +408,15 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+;format-charging-underline = #ffb52a
 
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = "🔋"
 #format-full-prefix = "   "
 format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 ="   "
 ramp-capacity-1 ="   "
@@ -407,15 +433,21 @@ ramp-capacity-foreground = ${colors.foreground-alt}
 ;animation-charging-3 = 
 ;animation-charging-4 = 
 
-animation-charging-0 ="   "
-animation-charging-1 ="   "
-animation-charging-2 ="   "
+;animation-charging-0 ="   🔌"
+;animation-charging-1 ="   🔌"
+;animation-charging-2 ="   🔌"
+animation-charging-0 =" 🔌"
+animation-charging-1 =" 🔌"
+animation-charging-2 =" 🔌"
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 ="   "
-animation-discharging-1 ="   "
-animation-discharging-2 ="   "
+;animation-discharging-0 ="   "
+;animation-discharging-1 ="   "
+;animation-discharging-2 ="   "
+animation-discharging-0 ="🔋"
+animation-discharging-1 ="🔋"
+animation-discharging-2 ="🔋"
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
@@ -432,7 +464,7 @@ format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label ="   %temperature-c%  "
-label-warn ="   %temperature-c%  "
+label-warn ="   %temperature-c% 🌡️ " 
 label-warn-foreground = ${colors.secondary}
 ;label-warn-background = #F82C00
 

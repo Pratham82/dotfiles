@@ -43,7 +43,7 @@ colorscheme NeoSolarized
 "colorscheme solarized
 
 
-" Ocea Material *****
+" Oceanic Material *****
 "set background=dark
 "colorscheme oceanic_material
 
