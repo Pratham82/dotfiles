@@ -31,6 +31,7 @@ luafile $HOME/.config/nvim/lua/treesitter.lua
 let g:material_style='oceanic'
 "let g:material_style='palenight'
 set background=dark
+"colorscheme vim-material
 colorscheme vim-material
 
 " Gruvbox
@@ -40,6 +41,7 @@ colorscheme vim-material
 "colorscheme jellybeans
 "colorscheme nord
 
+"let g:colorscheme='oceanic_material'
 
 
 " Solarized
@@ -67,7 +69,10 @@ colorscheme vim-material
 "let g:airline_theme='one'
 "colorscheme one
 "set background=dark " for the dark version
-let g:airline_theme="material"
+"let g:airline_theme="material"
+"
+"
+let g:airline_theme="onedark"
 
 
 " Adding transperncy

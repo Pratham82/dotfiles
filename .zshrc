@@ -96,7 +96,6 @@ alias ns="npm start"
 alias cra="npx create-react-app"
 
 # System aliases
-alias cc="cd ~"
 alias dev="cd ~/Dev"
 alias py="cd ~/Dev/Python-Programming"
 alias c="clear"

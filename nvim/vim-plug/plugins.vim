@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'glepnir/oceanic-material'
     Plug 'overcache/NeoSolarized'
     Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'fxn/vim-monochrome'
+
 
     "Multiple cursor 
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
