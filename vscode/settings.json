@@ -193,7 +193,7 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "Solarized Dark+",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "editor.fontSize": 15,
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right"

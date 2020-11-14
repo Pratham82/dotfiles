@@ -19,22 +19,38 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 
 " Lua Plugins
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+luafile $HOME/.config/nvim/lua/treesitter.lua
+
+" Treesitter
+
 
 " Themes
 "source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
-"let g:material_style='oceanic'
-"set background=dark
-"colorscheme vim-material
+let g:material_style='oceanic'
+"let g:material_style='palenight'
+set background=dark
+colorscheme vim-material
 
 " Gruvbox
 "colorscheme gruvbox
+"set background=dark
 "colorscheme happy_hacking 
 "colorscheme jellybeans
 "colorscheme nord
 
-colorscheme NeoSolarized
+
+
+" Solarized
+"colorscheme NeoSolarized
+"let g:airline_theme="solarized_flood"
+"set background=light
+
+
+
+"colorscheme dracula
+
 "colorscheme nord
 
 "Solarized
@@ -51,6 +67,7 @@ colorscheme NeoSolarized
 "let g:airline_theme='one'
 "colorscheme one
 "set background=dark " for the dark version
+let g:airline_theme="material"
 
 
 " Adding transperncy
@@ -62,17 +79,18 @@ highlight NonText guibg=none
 
 "let g:lightline = { 'colorscheme': 'nightfly' }
 "let g:moonflyIgnoreDefaultColors = 1
-"colorscheme nightfly;w 🚨🔶
+"colorscheme nightfly;w 🚨🔶❌
 
-let g:ale_sign_error = '🚨'
-let g:ale_sign_warning ="🔶"
+"let g:ale_sign_error = 'E'
+"let g:ale_sign_warning ="W"
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning ='🔶'
 let g:ale_sign_info = '🔔'
 " Ale setup
 
-"Setting Airline theme
-let g:airline_theme="solarized_flood"
-"let g:airline_theme='base_16'
 
+"Setting Airline theme
+"let g:airline_theme="gruvbox"
 
 "let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 

@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'arcticicestudio/nord-vim'
     Plug 'glepnir/oceanic-material'
     Plug 'overcache/NeoSolarized'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
     "Multiple cursor 
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -49,7 +50,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " For setting the current directory as the main directory
     Plug 'airblade/vim-rooter'
-    
+
+    "Indent lines
+
     "FZF and others
      Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
      Plug 'junegunn/fzf.vim'
@@ -72,7 +75,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Colors in terminal
     Plug 'norcalli/nvim-colorizer.lua'
-    
+
+    "Treesitter
+    Plug 'nvim-treesitter/nvim-treesitter'
+
+
     " Airline and airline themes
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'

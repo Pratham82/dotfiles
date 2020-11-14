@@ -19,7 +19,8 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-background = #25050505
+#background = #75050505
+background = #050505
 background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
 foreground = #fff
@@ -33,7 +34,7 @@ alert = #bd2c40
 #monitor = ${env:MONITOR:HDMI-1}
 #[..]
 width = 100%
-height = 30
+height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 enable-ipc = true
@@ -81,9 +82,9 @@ font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
 
 
 ; Positioning modules
-modules-left =i3 date 
+modules-left =i3 date spotify
 ;modules-center = mpd 
-modules-center = xwindow spotify 
+modules-center = xwindow 
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
 modules-right =   cpu memory battery xbacklight 
 ;modules-right = memory 
@@ -110,7 +111,7 @@ cursor-scroll = ns-resize
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = "  "
 format = <label>
 exec = python /home/pratham82/.config/polybar/spotify_status.py  -f '{artist}: {song}'
 format-underline = #1db954
@@ -127,7 +128,7 @@ click-left = cmus-remote -p
 [module/xwindow]
 ;✨💫⭐
 type = internal/xwindow
-label = ⭐ %title:0:30:...%
+label = ✨ %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -204,26 +205,30 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 ;label-focused = %index%
-label-focused = %icon%
+;label-focused = %icon%
+label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 ;label-unfocused = %index%
-label-unfocused = %icon%
+;label-unfocused = %icon%
+label-unfocused = %index%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
 ;label-visible = %index%
-label-visible = %icon%
+;label-visible = %icon%
+label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 ;label-urgent = %index%
-label-urgent = %icon%
+;label-urgent = %icon%
+label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -272,8 +277,8 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix ="   🧠"
-;format-prefix ="🧠"
+;format-prefix ="   🧠"
+format-prefix ="🧠"
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #f90000
 label =" %percentage:2%%"
@@ -286,6 +291,7 @@ format-prefix = "🔥"
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #4bffdc
 label = %percentage_used%%
+;label = %gb_used%
 
 [module/wlan]
 type = internal/network

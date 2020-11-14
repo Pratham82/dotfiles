@@ -1,4 +1,4 @@
-# i3 config file (v4)
+# i3 config file (v4) 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 
@@ -7,11 +7,11 @@ set $mod Mod4
 
 
 # Setting display layout
-exec autorandr docked
+#exec autorandr docked
+exec autorandr docked 
 
 # Setting My fav wallpaper
 exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
-exec $mod+shift+R
 
 #exec feh --bg-scale  ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
 
@@ -42,6 +42,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec terminal
 bindsym $mod+Return exec kitty 
+#bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -321,7 +322,7 @@ exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
-exec --no-startup-id start_conky_green
+#exec --no-startup-id start_conky_green
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -406,7 +407,7 @@ bindsym $mod+m exec polybar-msg cmd toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 12
+gaps inner 8
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
