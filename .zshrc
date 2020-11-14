@@ -1,7 +1,30 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+#
+#fi
+
 export ZSH="/home/pratham82/.oh-my-zsh"
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
+#ZSH_THEME="fishy"
+#ZSH_THEME="fino"
+#ZSH_THEME="gentoo"
+ZSH_THEME="gianu"
+#ZSH_THEME="pure"
+#ZSH_THEME="trapd00r"
+#ZSH_THEME="passion"
+#ZSH_THEME="oxide"
+#ZSH_THEME="lambda-mod"
+#ZSH_THEME="zeta"
+#ZSH_THEME="jovial"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+#POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(git zsh-autosuggestions vi-mode fzf)
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -36,6 +59,10 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Adding Go binary to the Path
 export PATH=$PATH:/usr/local/go/bin
 
+export PATH=$PATH:/usr/local/bin/nvim
+#alias nvim=/usr/local/bin/nvim.appimage
+
+
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
@@ -56,6 +83,7 @@ alias sv="source ~/.vimrc"
 alias nvs="nvim ~/.config/nvim/init.vim"
 alias nvp="nvim .config/nvim/vim-plug/plugins.vim"
 alias as="nvim ~/.config/alacritty/alacritty.yml"
+alias kc="nvim ~/.config/kitty/kitty.conf"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
 alias cnv="cd ~/.config/nvim"
@@ -77,10 +105,13 @@ alias api="sudo apt install"
 alias ap="sudo apt"
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
-alias dot="cp /home/pratham82/{.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
-sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
+alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
+sudo cp -r ~/.config/alacritty dotfiles/alacirtty;sudo cp -r ~/.config/kitty dotfiles/kitty; sudo cp -r ~/.config/polybar dotfiles/;  sudo cp -r ~/.config/Code/User/* dotfiles/vscode;";
 alias mk="mkdir"
 alias sleep="shutdown now"
+
+# tmux aliases
+alias ide=~/ide
 
 
 # Git aliases
@@ -115,8 +146,14 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+## Projects structure
+alias ltp='lt node_modules --depth 0&& lt --ignore-glob node_modules'
+
 # Aliases for Arch
 alias i3c='nvim ~/.i3/config'
+alias pc='nvim ~/.config/polybar/config'
+alias drc='nvim ~/.dmenurc'
+alias pac='sudo pacman -S'
 
 # Important shortcuts
 alias c.="code ."
@@ -155,7 +192,12 @@ bindkey '^X^R' fzf-history-widget-accept
 # Drive ss
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
 
-neofetch
+
+# Loading pure theme
+#autoload -U promptinit; promptinit
+#prompt pure
+
+#neofetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -163,3 +205,8 @@ source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
