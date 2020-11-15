@@ -29,6 +29,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fxn/vim-monochrome'
 
 
+    " Code formatting (for c++)
+    Plug 'google/vim-maktaba'
+    Plug 'google/vim-codefmt'
+    Plug 'google/vim-glaive'
+
+
+
     "Multiple cursor 
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 

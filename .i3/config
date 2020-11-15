@@ -8,10 +8,14 @@ set $mod Mod4
 
 # Setting display layout
 #exec autorandr docked
-exec autorandr docked 
+#exec autorandr docked 
+exec ~/display-fix
 
 # Setting My fav wallpaper
-exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
+#exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
+exec feh --bg-scale ~/Wallpapers/Nov2020/janis-fasel-0TvsqeCebkQ-unsplash.jpg
+
+
 
 #exec feh --bg-scale  ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
 
@@ -20,7 +24,7 @@ exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 3
 default_floating_border normal
 
 # Hide borders
@@ -41,8 +45,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec terminal
-bindsym $mod+Return exec kitty 
-#bindsym $mod+Return exec alacritty 
+#bindsym $mod+Return exec kitty 
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill

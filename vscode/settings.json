@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontFamily": "FiraCode Nerd Font",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -52,7 +52,7 @@
     "yaml",
     "yml"
   ],
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 18,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
@@ -92,7 +92,7 @@
   "editor.formatOnType": true,
   "editor.wordWrap": "bounded",
   "chaliceIcons.showArrows": true,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "sync.forceUpload": true,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,

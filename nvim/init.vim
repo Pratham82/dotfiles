@@ -23,6 +23,7 @@ luafile $HOME/.config/nvim/lua/treesitter.lua
 
 " Treesitter
 
+autocmd FileType c,cpp,proto, AutoFormatBuffer clang-format
 
 " Themes
 "source $HOME/.config/nvim/themes/onedark.vim
@@ -33,6 +34,9 @@ let g:material_style='oceanic'
 set background=dark
 "colorscheme vim-material
 colorscheme vim-material
+
+
+
 
 " Gruvbox
 "colorscheme gruvbox

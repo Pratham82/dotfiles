@@ -63,6 +63,8 @@ export PATH=$PATH:/usr/local/bin/nvim
 #alias nvim=/usr/local/bin/nvim.appimage
 
 
+
+
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
