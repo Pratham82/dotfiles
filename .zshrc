@@ -104,6 +104,7 @@ alias c="clear"
 alias cgs="clear && git status"
 alias api="sudo apt install"
 alias ap="sudo apt"
+alias pfetch='~/.zsh/pfetch/pfetch'
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.i3 dotfiles/.config;
@@ -199,6 +200,7 @@ bindkey '^X^R' fzf-history-widget-accept
 #prompt pure
 
 #neofetch
+~/.zsh/pfetch/pfetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

@@ -29,11 +29,13 @@ autocmd FileType c,cpp,proto, AutoFormatBuffer clang-format
 "source $HOME/.config/nvim/themes/onedark.vim
 
 " Oceanic
-let g:material_style='oceanic'
-"let g:material_style='palenight'
-set background=dark
+"let g:material_style='oceanic'
+"set background=dark
 "colorscheme vim-material
-colorscheme vim-material
+
+"let g:material_style='palenight'
+"colorscheme vim-material
+
 
 "colorscheme gruvbox
 
@@ -56,7 +58,7 @@ colorscheme vim-material
 
 "colorscheme dracula
 
-"colorscheme nord
+colorscheme nord
 
 "Solarized
 "syntax enable
