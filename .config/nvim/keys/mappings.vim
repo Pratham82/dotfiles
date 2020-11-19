@@ -15,6 +15,11 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
+" Window splits
+
+nnoremap ss :split<Return><C-w>w
+nnoremap sv :vsplit<Return><C-w>w
+
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
@@ -45,4 +50,9 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+" Lines 
+nnoremap <space>:Lines<CR>
+
+
 

@@ -19,9 +19,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'hzchirs/vim-material'
 		Plug 'rakr/vim-one'
     Plug 'bluz71/vim-nightfly-guicolors'
+    Plug 'gruvbox-community/gruvbox'
+    Plug 'yorickpeterse/happy_hacking.vim'
+    Plug 'nanotech/jellybeans.vim'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'glepnir/oceanic-material'
+    Plug 'overcache/NeoSolarized'
+    Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'fxn/vim-monochrome'
+
+
+    " Code formatting (for c++)
+    Plug 'google/vim-maktaba'
+    Plug 'google/vim-codefmt'
+    Plug 'google/vim-glaive'
+
+
+
+    "Multiple cursor 
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
     " Ale installation
-    Plug 'dense-analysis/ale'
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -41,7 +59,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " For setting the current directory as the main directory
     Plug 'airblade/vim-rooter'
-    
+
+    "Indent lines
+
     "FZF and others
      Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
      Plug 'junegunn/fzf.vim'
@@ -64,7 +84,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Colors in terminal
     Plug 'norcalli/nvim-colorizer.lua'
-    
+
+    "Treesitter
+    Plug 'nvim-treesitter/nvim-treesitter'
+
+
     " Airline and airline themes
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
