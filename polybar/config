@@ -338,7 +338,7 @@ type = internal/date
 interval = 1
 
 ;date =  %I:%M | %d-%m %b %a
-date =  %I:%M | %d-%b %a
+date =  %I:%M %p | %d-%b %a
 ;date-alt = " %Y-%m-%d %a "
 date-alt = " %Y-%m-%d %a "
 

@@ -35,8 +35,7 @@ set background=dark
 "colorscheme vim-material
 colorscheme vim-material
 
-
-
+"colorscheme gruvbox
 
 " Gruvbox
 "colorscheme gruvbox

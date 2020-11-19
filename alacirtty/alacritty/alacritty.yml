@@ -27,7 +27,7 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-background_opacity: 0.85
+background_opacity: 0.70
 
 # Favourite fonts
 font:

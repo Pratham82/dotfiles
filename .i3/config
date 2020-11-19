@@ -13,7 +13,9 @@ exec ~/display-fix
 
 # Setting My fav wallpaper
 #exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
-exec feh --bg-scale ~/Wallpapers/Nov2020/janis-fasel-0TvsqeCebkQ-unsplash.jpg
+#exec feh --bg-scale ~/Wallpapers/Nov2020/janis-fasel-0TvsqeCebkQ-unsplash.jpg
+exec feh --bg-scale ~/Wallpapers/Nov2020/protocolo_sombra_wallpaper_4k_by_kanji2_dafamnh.png
+
 
 
 
@@ -396,22 +398,33 @@ set_from_resource $term_color15    color15
 #bindsym $mod+m bar mode toggle
 bindsym $mod+m exec polybar-msg cmd toggle
 
+
+# class                 border  backgr. text    indicator child_border
+#client.focused          #4c7899 #285577  #ffffff #2e9ef4   #285577
+client.focused          #4c7899 #285577  #ffffff #2e9ef4  #0687d1
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+#  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+#  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+#  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+#  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+# client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
-  client.background       #2B2C2B
+ # client.background       #2B2C2B
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-gaps inner 8
+gaps inner 10
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
