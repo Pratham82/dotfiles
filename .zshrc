@@ -106,8 +106,8 @@ alias api="sudo apt install"
 alias ap="sudo apt"
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
-alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
-sudo cp -r ~/.config/alacritty dotfiles/alacirtty;sudo cp -r ~/.config/kitty dotfiles/kitty; sudo cp -r ~/.config/polybar dotfiles/;  sudo cp -r ~/.config/Code/User/* dotfiles/vscode;";
+alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.i3 dotfiles/.config;
+sudo cp -r ~/.config/alacritty dotfiles/.config;sudo cp -r ~/.config/kitty dotfiles/.config; sudo cp -r ~/.config/polybar dotfiles/.config;  sudo cp -r ~/.config/Code/User/* dotfiles/.config/vscode;";
 alias mk="mkdir"
 alias sleep="shutdown now"
 
