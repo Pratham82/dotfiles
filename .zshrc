@@ -24,7 +24,7 @@ ZSH_THEME="gianu"
 #POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(git zsh-autosuggestions vi-mode fzf)
 source $ZSH/oh-my-zsh.sh
-
+BROWSER=/usr/bin/google-chrome-stable
 
 # User configuration
 
@@ -83,7 +83,7 @@ alias sz="source ~/.zshrc"
 alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
 alias nvs="nvim ~/.config/nvim/init.vim"
-alias nvp="nvim .config/nvim/vim-plug/plugins.vim"
+alias nvp="nvim ~/.config/nvim/vim-plug/plugins.vim"
 alias as="nvim ~/.config/alacritty/alacritty.yml"
 alias kc="nvim ~/.config/kitty/kitty.conf"
 alias asd="cd ~/.config/alacritty/"
@@ -92,6 +92,8 @@ alias cnv="cd ~/.config/nvim"
 alias kas="tmux kill-server"
 alias ts="nvim ~/.tmux.conf"
 alias robo='/usr/local/bin/robomongo/bin/robo3t'
+alias space='sudo du -sh'
+alias spaced='sudo du -h --max-depth=1'
 
 # Project starters aliases
 alias ns="npm start"
@@ -115,6 +117,10 @@ alias sleep="shutdown now"
 # tmux aliases
 alias ide=~/ide
 
+# Postgres
+alias pgs='sudo systemctl status postgresql'
+alias pgu='sudo systemctl start postgresql'
+alias pgd='sudo systemctl stop postgresql'
 
 # Git aliases
 alias gs="git status"
@@ -131,6 +137,9 @@ alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
 
+# Fast node manager
+  export PATH=/home/pratham82/.local/bin:$PATH
+  eval "`fnm env`"
 
 
 # MongoDB aliases
@@ -213,3 +222,7 @@ source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
+# fnm
+export PATH=/home/pratham82/.local/bin:$PATH
+eval "`fnm env`"

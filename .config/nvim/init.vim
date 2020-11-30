@@ -1,4 +1,4 @@
-"    ____      _ __        _
+"'wakatime/vim-wakatime'    ____      _ __        _
 "   /  _/___  (_) /__   __(_)___ ___
 "   / // __ \/ / __/ | / / / __ `__ \
 " _/ // / / / / /__| |/ / / / / / / /
@@ -15,6 +15,7 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/rainbow.vim
 
 
 " Lua Plugins
@@ -22,22 +23,29 @@ luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 luafile $HOME/.config/nvim/lua/treesitter.lua
 
 " Treesitter
-
 autocmd FileType c,cpp,proto, AutoFormatBuffer clang-format
+
+" Spotify Status
+let g:spotify_status_style = 'emoji'
+
+let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
+
+
+
+
 
 " Themes
 "source $HOME/.config/nvim/themes/onedark.vim
-
 " Oceanic
 "let g:material_style='oceanic'
 "set background=dark
 "colorscheme vim-material
 
-"let g:material_style='palenight'
-"colorscheme vim-material
+" Palenight
+set background=dark
+colorscheme palenight
 
 
-"colorscheme gruvbox
 
 " Gruvbox
 "colorscheme gruvbox
@@ -46,38 +54,28 @@ autocmd FileType c,cpp,proto, AutoFormatBuffer clang-format
 "colorscheme jellybeans
 "colorscheme nord
 
-"let g:colorscheme='oceanic_material'
-
 
 " Solarized
 "colorscheme NeoSolarized
 "let g:airline_theme="solarized_flood"
-"set background=light
 
-
-
-"colorscheme dracula
-
-colorscheme nord
 
 "Solarized
 "syntax enable
 "set background=dark
 "colorscheme solarized
 
-
 " Oceanic Material *****
 "set background=dark
 "colorscheme oceanic_material
-
 
 "let g:airline_theme='one'
 "colorscheme one
 "set background=dark " for the dark version
 "let g:airline_theme="material"
-"
-"
+
 let g:airline_theme="onedark"
+"let g:airline_theme="base16_grayscale"
 
 
 " Adding transperncy
@@ -104,19 +102,12 @@ let g:ale_sign_info = '🔔'
 
 "let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
-let g:rainbow#max_level = 16
-let g:rainbow#pairs = [['(', ')'], ['[', ']']]
+
 
 " List of colors that you do not want. ANSI code or #RRGGBB
-autocmd FileType * RainbowParentheses
-let g:rainbow#blacklist = [233, 234]
-
-
-
-
-"let g:rainbow#max_level = 16
-"let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 "autocmd FileType * RainbowParentheses
+"let g:rainbow#blacklist = [233, 234]
+
 
 packloadall
 " Load all of the helptags now, after plugins have been loaded.

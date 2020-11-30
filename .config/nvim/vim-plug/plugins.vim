@@ -21,12 +21,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'bluz71/vim-nightfly-guicolors'
     Plug 'gruvbox-community/gruvbox'
     Plug 'yorickpeterse/happy_hacking.vim'
-    Plug 'nanotech/jellybeans.vim'
     Plug 'arcticicestudio/nord-vim'
     Plug 'glepnir/oceanic-material'
     Plug 'overcache/NeoSolarized'
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'fxn/vim-monochrome'
+    Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'chriskempson/base16-vim'
+
+    " Spotify control
+    Plug 'stsewd/spotify.nvim', { 'do': ':UpdateRemotePlugins' }
 
 
     " Code formatting (for c++)
@@ -34,7 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'google/vim-codefmt'
     Plug 'google/vim-glaive'
 
-
+    Plug 'wakatime/vim-wakatime'
 
     "Multiple cursor 
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -49,8 +53,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     " Rainbow brackets
-    Plug 'luochen1990/rainbow'	
+    " Plug 'luochen1990/rainbow'	
     Plug 'junegunn/rainbow_parentheses.vim'
+
 
     " Snippets
     Plug 'peitalin/vim-jsx-typescript'

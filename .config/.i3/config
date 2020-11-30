@@ -14,7 +14,20 @@ exec ~/display-fix
 # Setting My fav wallpaper
 #exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
 #exec feh --bg-scale ~/Wallpapers/Nov2020/janis-fasel-0TvsqeCebkQ-unsplash.jpg
-exec feh --bg-scale ~/Wallpapers/Nov2020/protocolo_sombra_wallpaper_4k_by_kanji2_dafamnh.png
+#exec feh --bg-scale ~/Wallpapers/Nov2020/protocolo_sombra_wallpaper_4k_by_kanji2_dafamnh.png
+#exec feh --bg-scale ~/Wallpapers/Nier automata/wallhaven-eyl1xr.jpg
+
+exec feh --bg-scale ~/Wallpapers/Nier\ automata/wallhaven-eyl1xr.jpg
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
 
 
 
@@ -54,8 +67,10 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+g exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal alacritty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+#bindsym $mod+d exec --no-startup-id dmenu_recency
+#bindsym $mod+g exec "rofi -show-icons -modi window,drun,run -show drun -sidebar-mode -terminal alacritty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+d exec "rofi -show-icons -modi window,drun,run -show drun -sidebar-mode -terminal alacritty" 
+
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -92,16 +107,21 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Shift+semicolon exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -110,10 +130,15 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+h move right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -128,8 +153,8 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 bindsym $mod+Shift+a focus parent,kill
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
+#bindsym $mod+h split h;exec notify-send 'tile horizontally'
+#bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
@@ -401,7 +426,7 @@ bindsym $mod+m exec polybar-msg cmd toggle
 
 # class                 border  backgr. text    indicator child_border
 #client.focused          #4c7899 #285577  #ffffff #2e9ef4   #285577
-client.focused          #4c7899 #285577  #ffffff #2e9ef4  #0687d1
+client.focused          #4c7899 #285577  #ffffff #2e9ef4   #e6e6e6
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -426,8 +451,8 @@ client.background       #ffffff
 # Set inner/outer gaps
 #gaps inner 10
 #gaps outer -2
-gaps inner 0
-gaps outer -2
+gaps inner 1
+gaps outer -1
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

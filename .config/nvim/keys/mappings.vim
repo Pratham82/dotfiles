@@ -11,6 +11,10 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
+" Buffer delete
+nnoremap <leader>d :bdelete<CR>
+
+
 " I hate escape more than anything else
 inoremap jk <Esc>
 inoremap kj <Esc>
@@ -54,5 +58,9 @@ nnoremap <Leader>O O<Esc>^Da
 " Lines 
 nnoremap <space>:Lines<CR>
 
-
+" Spotify controls
+nnoremap <leader><Right> :Spotify next<CR>
+nnoremap <leader><Left> :Spotify prev<CR>
+nnoremap <leader><Up> :Spotify status<CR>
+nnoremap <leader><Down> :Spotify play/pause<CR>
 
