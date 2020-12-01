@@ -1,4 +1,4 @@
-"'wakatime/vim-wakatime'    ____      _ __        _
+"    ____        __
 "   /  _/___  (_) /__   __(_)___ ___
 "   / // __ \/ / __/ | / / / __ `__ \
 " _/ // / / / / /__| |/ / / / / / / /
@@ -46,6 +46,17 @@ set background=dark
 colorscheme palenight
 
 
+"let g:solarized_termcolors=256
+"syntax enable
+"set background=dark
+"colorscheme solarized
+"
+"if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
+
 
 " Gruvbox
 "colorscheme gruvbox
@@ -54,6 +65,7 @@ colorscheme palenight
 "colorscheme jellybeans
 "colorscheme nord
 
+"colorscheme base16-horizon-dark
 
 " Solarized
 "colorscheme NeoSolarized

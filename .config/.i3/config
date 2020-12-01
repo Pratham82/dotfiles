@@ -17,7 +17,11 @@ exec ~/display-fix
 #exec feh --bg-scale ~/Wallpapers/Nov2020/protocolo_sombra_wallpaper_4k_by_kanji2_dafamnh.png
 #exec feh --bg-scale ~/Wallpapers/Nier automata/wallhaven-eyl1xr.jpg
 
-exec feh --bg-scale ~/Wallpapers/Nier\ automata/wallhaven-eyl1xr.jpg
+# Nier automata
+#exec feh --bg-scale ~/Wallpapers/Nier\ automata/wallhaven-eyl1xr.jpg
+
+# Orange space
+exec feh --bg-scale ~/Wallpapers/Nov2020/wallhaven-pk37qp.jpg
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

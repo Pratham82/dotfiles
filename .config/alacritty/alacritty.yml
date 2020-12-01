@@ -1,8 +1,8 @@
 colors:
   # Default colors
   primary:
-    #background: '#101421'
-    background: '#000000'
+    background: '#101421'
+    #background: '#000000'
     foreground: '#fffbf6'
 
   # Normal colors
@@ -27,7 +27,7 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-background_opacity: 0.70
+background_opacity: 0.85
 
 # Old font config
 #style: Medium
@@ -56,23 +56,23 @@ background_opacity: 0.70
 font:
   # Normal (roman) font face
   normal:
-    family: Operator Mono Nerd Font
+    family: Caskaydia cove Nerd Font
     #style: Regular
     style: Medium
 
   # Bold font face
   bold:
-    family: Operator Mono Nerd Font
+    family: Caskaydia cove Nerd Font
     style: Bold
 
   # Italic font face
   italic:
-    family: Operator Mono Nerd Font
+    family: Caskaydia cove Nerd Font
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Operator Mono Nerd Font
+    family: Caskaydia cove Nerd Font
     style: Bold Italic
 
   # Font size
@@ -80,6 +80,8 @@ font:
   #size: 12.5
   #For Operator Mon
   size: 11.50
+
+  size: 12
   offset:
     x: 0
     y: 0

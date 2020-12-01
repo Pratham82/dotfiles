@@ -19,7 +19,7 @@ ZSH_THEME="gianu"
 #ZSH_THEME="oxide"
 #ZSH_THEME="lambda-mod"
 #ZSH_THEME="zeta"
-#ZSH_THEME="jovial"
+#SH_THEME="jovial"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 #POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(git zsh-autosuggestions vi-mode fzf)
@@ -147,8 +147,8 @@ alias gco="git chekout"
 #alias stopmo="sudo service mongod stop"
 #alias statmo="sudo service mongod status"
 alias startmo="sudo systemctl start monogdb"
-alias stopmo="sudo service mongod stop"
-alias statmo="sudo service mongod status"
+alias stopmo="sudo systemctl stop monogdb"
+alias statmo="sudo systemctl status mongodb"
 
 # Shortcuts for lsd
 alias ls='lsd'
