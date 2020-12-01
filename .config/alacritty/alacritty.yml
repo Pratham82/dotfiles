@@ -58,7 +58,7 @@ font:
   normal:
     family: Caskaydia cove Nerd Font
     #style: Regular
-    style: Medium
+    style: Regular
 
   # Bold font face
   bold:
@@ -79,7 +79,7 @@ font:
   #size: 10.75
   #size: 12.5
   #For Operator Mon
-  size: 11.50
+  #size: 11.50
 
   size: 12
   offset:
