@@ -11,7 +11,7 @@ set $mod Mod4
 #exec autorandr docked 
 #exec ~/display-fix
 
-exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+#exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
 
 # Setting My fav wallpaper
@@ -32,8 +32,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 
 

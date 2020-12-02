@@ -117,6 +117,9 @@ alias sleep="shutdown now"
 # tmux aliases
 alias ide=~/ide
 
+# Github automation
+alias ghstart=~/start-project.sh
+
 # Postgres
 alias pgs='sudo systemctl status postgresql'
 alias pgu='sudo systemctl start postgresql'

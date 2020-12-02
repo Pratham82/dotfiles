@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "Dank Mono",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -52,7 +52,7 @@
     "yaml",
     "yml"
   ],
-  "editor.lineHeight": 18,
+  "editor.lineHeight": 20,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
@@ -193,8 +193,8 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "One Dark Pro",
-  "editor.fontSize": 15,
+  "workbench.colorTheme": "SynthWave '84",
+  "editor.fontSize": 17,
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right"
 }
