@@ -65,11 +65,11 @@ def truncate(name, trunclen):
     return name
 
 
+
 # Default parameters
 output = fix_string(u'{play_pause} {artist}: {song}')
 trunclen = 35
-# first character is play, second is paused
-play_pause = fix_string(u'\u25B6,\u23F8')
+play_pause = fix_string(u'\u25B6,\u23F8') # first character is play, second is paused
 
 label_with_font = '%{{T{font}}}{label}%{{T-}}'
 font = args.font
@@ -97,10 +97,8 @@ try:
         'org.freedesktop.DBus.Properties'
     )
 
-    metadata = spotify_properties.Get(
-        'org.mpris.MediaPlayer2.Player', 'Metadata')
-    status = spotify_properties.Get(
-        'org.mpris.MediaPlayer2.Player', 'PlaybackStatus')
+    metadata = spotify_properties.Get('org.mpris.MediaPlayer2.Player', 'Metadata')
+    status = spotify_properties.Get('org.mpris.MediaPlayer2.Player', 'PlaybackStatus')
 
     # Handle play/pause label
 
@@ -114,17 +112,13 @@ try:
         play_pause = str()
 
     if play_pause_font:
-        play_pause = label_with_font.format(
-            font=play_pause_font, label=play_pause)
+        play_pause = label_with_font.format(font=play_pause_font, label=play_pause)
 
     # Handle main label
 
-    artist = fix_string(metadata['xesam:artist'][0]
-                        ) if metadata['xesam:artist'] else ''
-    song = fix_string(metadata['xesam:title']
-                      ) if metadata['xesam:title'] else ''
-    album = fix_string(metadata['xesam:album']
-                       ) if metadata['xesam:album'] else ''
+    artist = fix_string(metadata['xesam:artist'][0]) if metadata['xesam:artist'] else ''
+    song = fix_string(metadata['xesam:title']) if metadata['xesam:title'] else ''
+    album = fix_string(metadata['xesam:album']) if metadata['xesam:album'] else ''
 
     if (quiet and status == 'Paused') or (not artist and not song and not album):
         print('')
@@ -135,9 +129,9 @@ try:
             album = label_with_font.format(font=font, label=album)
 
         # Add 4 to trunclen to account for status symbol, spaces, and other padding characters
-        print(truncate(output.format(artist=artist,
-                                     song=song,
-                                     play_pause=play_pause,
+        print(truncate(output.format(artist=artist, 
+                                     song=song, 
+                                     play_pause=play_pause, 
                                      album=album), trunclen + 4))
 
 except Exception as e:

@@ -24,7 +24,8 @@ ZSH_THEME="gianu"
 #POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(git zsh-autosuggestions vi-mode fzf)
 source $ZSH/oh-my-zsh.sh
-BROWSER=/usr/bin/google-chrome-stable
+#BROWSER=/usr/bin/google-chrome-stable
+BROWSER=/usr/bin/firefox-developer-edition
 
 # User configuration
 
@@ -71,6 +72,8 @@ fpath+=$HOME/.zsh/pure
 # Export path for lsd
 export PATH=/home/pratham82/.cargo/bin:$PATH
 
+# Export Path for google-chrome-ubstable
+
 # Lmabda mode theme
 export LAMBDA_MOD_N_DIR_LEVELS=3
 #load `lambda-mod` and `oh-my-zsh`
@@ -106,7 +109,7 @@ alias c="clear"
 alias cgs="clear && git status"
 alias api="sudo apt install"
 alias ap="sudo apt"
-alias pfetch='~/.zsh/pfetch/pfetch'
+#alias pfetch='~/.zsh/pfetch/pfetch'
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.i3 dotfiles/.config;
@@ -121,9 +124,12 @@ alias ide=~/ide
 alias ghstart=~/start-project.sh
 
 # Postgres
+# Enable postgresql: sudo systemctl enable postgresql.service
 alias pgs='sudo systemctl status postgresql'
 alias pgu='sudo systemctl start postgresql'
 alias pgd='sudo systemctl stop postgresql'
+
+
 
 # Git aliases
 alias gs="git status"
@@ -141,8 +147,8 @@ alias gcb="git chekout -b"
 alias gco="git chekout"
 
 # Fast node manager
-  export PATH=/home/pratham82/.local/bin:$PATH
-  eval "`fnm env`"
+#  export PATH=/home/pratham82/.local/bin:$PATH
+#  eval "`fnm env`"
 
 
 # MongoDB aliases
@@ -212,13 +218,10 @@ bindkey '^X^R' fzf-history-widget-accept
 #prompt pure
 
 #neofetch
-~/.zsh/pfetch/pfetch
-source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#pfetch
+nerdfetch
 
-
-source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+#~/.zsh/pfetch/pfetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -229,3 +232,10 @@ source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fnm
 export PATH=/home/pratham82/.local/bin:$PATH
 eval "`fnm env`"
+export PATH="/tmp/fnm_multishell_20949_1607351516223/bin":$PATH
+export FNM_MULTISHELL_PATH="/tmp/fnm_multishell_20949_1607351516223"
+export FNM_DIR="/home/pratham82/.fnm"
+export FNM_LOGLEVEL="info"
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+
+#eval "$(starship init zsh)"

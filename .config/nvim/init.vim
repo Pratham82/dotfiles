@@ -30,7 +30,13 @@ let g:spotify_status_style = 'emoji'
 
 let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 
-
+augroup hover
+	autocmd!
+	autocmd CursorHold * silent if ! coc#util#has_float()
+		\| call CocActionAsync('doHover')
+	\| endif
+	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
+augroup end
 
 
 
@@ -40,6 +46,9 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 "let g:material_style='oceanic'
 "set background=dark
 "colorscheme vim-material
+
+"colorscheme apprentice
+"colorscheme nord
 
 " Palenight
 set background=dark
@@ -88,8 +97,6 @@ colorscheme palenight
 
 let g:airline_theme="onedark"
 "let g:airline_theme="base16_grayscale"
-
-
 " Adding transperncy
 "highlight Normal guibg=none
 "highlight NonText guibg=none

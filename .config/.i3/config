@@ -1,52 +1,18 @@
-# i3 config file (v4) 
+# i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+# Display fix
+exec ./display-fix.sh
 
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-
-# Setting display layout
-#exec autorandr docked
-#exec autorandr docked 
-#exec ~/display-fix
-
-#exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
-
-
-# Setting My fav wallpaper
-#exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/ED6GtF6.jpg 
-#exec feh --bg-scale ~/Wallpapers/Nov2020/janis-fasel-0TvsqeCebkQ-unsplash.jpg
-#exec feh --bg-scale ~/Wallpapers/Nov2020/protocolo_sombra_wallpaper_4k_by_kanji2_dafamnh.png
-#exec feh --bg-scale ~/Wallpapers/Nier automata/wallhaven-eyl1xr.jpg
-
-# Nier automata
-#exec feh --bg-scale ~/Wallpapers/Nier\ automata/wallhaven-eyl1xr.jpg
-
-# Orange space
-exec feh --bg-scale ~/Wallpapers/Nov2020/wallhaven-pk37qp.jpg
-
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
-
-
-
-
-#exec feh --bg-scale  ~/Wallpapers/Walls\ From\ Chris/c4hLdu3.jpg
-
-
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 3
+default_border pixel 2
 default_floating_border normal
 
 # Hide borders
@@ -60,24 +26,20 @@ bindsym $mod+n border normal
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font xft:URWGothic-Book 11
-#font CaskaydiaCove Nerd Font 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec terminal
-#bindsym $mod+Return exec kitty 
-bindsym $mod+Return exec alacritty 
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-#bindsym $mod+g exec "rofi -show-icons -modi window,drun,run -show drun -sidebar-mode -terminal alacritty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 bindsym $mod+d exec "rofi -show-icons -modi window,drun,run -show drun -sidebar-mode -terminal alacritty" 
-
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -86,7 +48,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
@@ -95,16 +57,13 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
-
-#bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-#bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-#bindsym $mod+F2 exec palemoon
-bindsym $mod+F2 exec firefox-developer-edition
+bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
-#bindsym $mod+F3 exec nautilus
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -114,21 +73,16 @@ bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart du
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+semicolon exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
 # change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+semicolon focus right
-
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -137,15 +91,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+h move right
-
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -157,11 +106,10 @@ bindsym $mod+Shift+Right move right
 workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
-bindsym $mod+Shift+a focus parent,kill
 
 # split orientation
-#bindsym $mod+h split h;exec notify-send 'tile horizontally'
-#bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
@@ -199,17 +147,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-
-
-
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -305,22 +250,6 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-## Manual management of external displays
-# Set the shortcuts and what they do
-set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
-mode "$mode_display" {
-    bindsym v exec --no-startup-id xrandr --output VGA1 --auto --right-of LVDS1, mode "default"
-    bindsym h exec --no-startup-id xrandr --output HDMI1 --auto --right-of LVDS1, mode "default"
-    bindsym x exec --no-startup-id xrandr --output VGA1 --auto --off, mode "default"
-    bindsym y exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
-
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-# Declare here the shortcut to bring the display selection menu
-bindsym $mod+x mode "$mode_display"
-
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -351,17 +280,17 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id picom -b
+exec --no-startup-id  picom -b
 #exec --no-startup-id manjaro-hello
-exec --no-startup-id nm-applet
+##exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
+##exec --no-startup-id pamac-tray
+##exec --no-startup-id clipit
+ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-# exec --no-startup-id start_conky_maia
-#exec --no-startup-id start_conky_green
-#exec --no-startup-id xautolock -time 10 -locker blurlock
+#exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_green
+exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -400,7 +329,7 @@ set_from_resource $term_color15    color15
 #bar {
 #	i3bar_command i3bar
 #	status_command i3status
-#	position top
+#	position bottom
 #
 ### please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 ##	tray_output primary
@@ -412,8 +341,7 @@ set_from_resource $term_color15    color15
 #	strip_workspace_numbers yes
 #
 #    colors {
-#        #background #222D31
-#        background #000000
+#        background #222D31
 #        statusline #F9FAF9
 #        separator  #454947
 #
@@ -428,38 +356,34 @@ set_from_resource $term_color15    color15
 
 # hide/unhide i3status bar
 #bindsym $mod+m bar mode toggle
+
+# Toggle Polybar
 bindsym $mod+m exec polybar-msg cmd toggle
 
 
-# class                 border  backgr. text    indicator child_border
-#client.focused          #4c7899 #285577  #ffffff #2e9ef4   #285577
-client.focused          #4c7899 #285577  #ffffff #2e9ef4   #e6e6e6
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-client.background       #ffffff
-
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-#  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-#  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-#  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-#  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-# client.placeholder      #000000 #0c0c0c #ffffff #000000 
+#  client.focused          #fff #f0f0f0  #80FFF9 #FDF6E3
+#  client.focused          #fff #027df7 #80FFF9 #FDF6E3
+  client.focused          #fff #E0B0C6 #80FFF9 #FDF6E3
+  #
+  
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
- # client.background       #2B2C2B
+  client.background       #2B2C2B
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-#gaps inner 10
+#gaps inner 14
+gaps inner 5
 #gaps outer -2
-gaps inner 1
-gaps outer -1
+gaps outer 5
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -510,5 +434,17 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Polybar Startup
+# Wallpaper engine
+#exec feh --bg-scale ~/Wallpapers/Nov2020/wallhaven-pk37qp.jpg
+#exec feh --bg-scale ~/Wallpapers/Favs/raindrops-1_FHD.jpg
+exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-oxmxpl.jpg
+#exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-392rjy.jpg
+
+
+#exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+
+
+# Polybar launch
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/lauch_polybar.sh
+

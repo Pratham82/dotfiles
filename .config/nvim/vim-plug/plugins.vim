@@ -33,13 +33,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Spotify control
     Plug 'stsewd/spotify.nvim', { 'do': ':UpdateRemotePlugins' }
 
-
     " Code formatting (for c++)
     Plug 'google/vim-maktaba'
     Plug 'google/vim-codefmt'
     Plug 'google/vim-glaive'
 
-    Plug 'wakatime/vim-wakatime'
+    " Function signature
+    "Plug 'davidhalter/jedi-vim'
+
+    "Plug 'wakatime/vim-wakatime'
 
     "Multiple cursor 
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}

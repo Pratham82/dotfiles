@@ -19,23 +19,25 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-;background = #75050505
-background = #99050505
+#background = #75050505
+background = #65050505
 ;background = #050505
-;background-alt = #75050505
-background-alt = #050505
-
+background-alt= #65050505
+;background-alt= #050505
+;background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
 foreground = #fff
-#foreground-alt = #555
 foreground-alt = #fff
-primary = #d53763
+;primary = #d53763
+primary = #4287f5
 secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-#monitor = ${env:MONITOR:HDMI-1}
-#[..]
+;monitor = ${env:MONITOR:}
+;[..]
+;monitor = HDMI1
+;monitor = eDP1
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -50,8 +52,12 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 5
+#border-size = 0
+#border-color = #000000
+
+border-size =  5
 border-color = #00000000
+#border-color = #fff
 
 padding-left = 1
 padding-right = 2
@@ -59,20 +65,22 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-separator = 
+;separator = ""
 
 
 ;default fonts:
-;font-0 = fixed:pixelsize=11.5;1
-;font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
-;font-2 = siji:pixelsize=10;1
+#font-0 = fixed:pixelsize=11.5;1
+#font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
+#font-2 = siji:pixelsize=10;1
 
-
-font-0 = fixed:pixelsize=14;1
-#font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
+# Current
+font-0 = fixed:pixelsize=12;1
 font-1 = HackNerdFont:fontformat=truetype:size=11:antialias=true;0
 font-2 = siji:pixelsize=10;1
 font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
+
+
+#font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
 ;font-3 = Font Awesome 5 Free:pixelsize=12;2
 ;font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 ;font-5 = Font Awesome 5 Brands:pixelsize=12;2
@@ -85,19 +93,23 @@ font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
 
 
 ; Positioning modules
-modules-left =i3 date xwindow
+modules-left =i3 xwindow spotify
 ;modules-center = mpd 
-modules-center = spotify 
+modules-center = date 
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
 modules-right =   cpu memory battery alsa xbacklight notification
 ;modules-right = memory 
 ;Unused modules: pulseaudio
 
 
-; System Tray
-tray-position = right
+; System tray
+;tray-position = right
 ;tray-padding = 0
-;tray-background = #0063ff
+;tray-background = #75050505
+;tray-background = #50112233
+
+#tray-background = #
+
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -118,8 +130,9 @@ type = custom/script
 interval = 1
 format-prefix = "  "
 format = <label>
-exec = python /home/pratham82/.config/polybar/spotify_status.py  -f '{artist}: {song}'
-;format-underline = #1db954
+#exec = python /path/to/spotify/script -f '{artist}: {song}'
+exec = python /home/pratham82/.config/polybar/spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
 
 [module/cmus]
 type = custom/ipc
@@ -133,7 +146,8 @@ click-left = cmus-remote -p
 [module/xwindow]
 ;✨💫⭐
 type = internal/xwindow
-label =  %title:0:30:...%
+;label = ✨ %title:0:30:...%
+label = %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -261,10 +275,10 @@ type = internal/xbacklight
 
 format = <label> <bar>
 ;label = "   "
-;label = "🔆 "
-label = " "
+;label = "🔆 "
+label = "  "
 
-bar-width = 3
+bar-width = 5
 bar-indicator = |
 bar-indicator-foreground = #fff
 bar-indicator-font = 2
@@ -279,13 +293,14 @@ bar-empty-foreground = ${colors.foreground-alt}
 inherit = module/xbacklight
 type = internal/backlight
 card = intel_backlight
+
 [module/cpu]
 type = internal/cpu
 interval = 2
 ;format-prefix ="   🧠"
 ;format-prefix =" 🧠  "
 format-prefix =" "
-format-prefix-foreground = ${col
+format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #f90000
 label =" %percentage:2%%"
 
@@ -295,11 +310,10 @@ interval = 2
 ;format-prefix = "   🔥    "
 ;format-prefix = "🔥    "
 format-prefix = "   "
-format-prefix-foreground = ${col
+format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #4bffdc
 label = %percentage_used%%
 ;label = %gb_used% - %gb_total%
-
 
 [module/wlan]
 type = internal/network
@@ -347,8 +361,6 @@ interval = 1
 
 ;date =  %I:%M | %d-%m %b %a
 ;date =  %I:%M %p | %d-%b %a
-;date =  %I:%M %p | %d %b %a
-;date =  %I:%M %p | %d %b
 date =  %I:%M %p | %d %b %a
 ;date-alt = " %Y-%m-%d %a "
 date-alt = " %Y-%m-%d %a "
@@ -376,7 +388,7 @@ label-volume-foreground = ${root.foreground}
 label-muted ="  x"
 label-muted-foreground = #666
 
-bar-volume-width = 10
+bar-volume-width = 3
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
@@ -479,7 +491,6 @@ animation-discharging-framerate = 750
 
 
 
-
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
@@ -531,7 +542,10 @@ menu-0-1-exec = systemctl poweroff
 
 [settings]
 screenchange-reload = true
+pseudo-transparency = false
+
 ;compositing-background = xor
+;compositing-background = source
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
@@ -542,3 +556,10 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+#[bar/eDP1]
+#monitor = eDP1
+#inherit = bar/example
+#modules-left   = i3
+#modules-center =date 
+#modules-right  = battery 
+
