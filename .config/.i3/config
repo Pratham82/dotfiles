@@ -286,7 +286,7 @@ exec --no-startup-id  picom -b
 exec --no-startup-id xfce4-power-manager
 ##exec --no-startup-id pamac-tray
 ##exec --no-startup-id clipit
- exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 #exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
@@ -364,8 +364,8 @@ bindsym $mod+m exec polybar-msg cmd toggle
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
 #  client.focused          #fff #f0f0f0  #80FFF9 #FDF6E3
-#  client.focused          #fff #027df7 #80FFF9 #FDF6E3
-  client.focused          #fff #E0B0C6 #80FFF9 #FDF6E3
+  client.focused          #fff #027df7 #80FFF9 #FDF6E3
+#  client.focused          #fff #E0B0C6 #80FFF9 #FDF6E3
   #
   
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
@@ -437,8 +437,18 @@ mode "$mode_gaps_outer" {
 # Wallpaper engine
 #exec feh --bg-scale ~/Wallpapers/Nov2020/wallhaven-pk37qp.jpg
 #exec feh --bg-scale ~/Wallpapers/Favs/raindrops-1_FHD.jpg
-exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-oxmxpl.jpg
+
+# Pink Jacket
+#exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-oxmxpl.jpg
 #exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-392rjy.jpg
+
+# Skulll /Hack style
+#exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-952jww.png
+# White abstract 
+exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-r2kjlm.jpg
+
+
+
 
 
 #exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off

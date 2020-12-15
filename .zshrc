@@ -12,8 +12,8 @@ export ZSH="/home/pratham82/.oh-my-zsh"
 #ZSH_THEME="fishy"
 #ZSH_THEME="fino"
 #ZSH_THEME="gentoo"
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="gianu"
-#ZSH_THEME="pure"
 #ZSH_THEME="trapd00r"
 #ZSH_THEME="passion"
 #ZSH_THEME="oxide"
@@ -129,7 +129,8 @@ alias pgs='sudo systemctl status postgresql'
 alias pgu='sudo systemctl start postgresql'
 alias pgd='sudo systemctl stop postgresql'
 
-
+# Colors
+alias cols="nvim ~/dotfiles/terminal-bg-colors.conf"
 
 # Git aliases
 alias gs="git status"
@@ -146,18 +147,22 @@ alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
 
+# Development shortcuts
+alias ecgen="npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D"
+
 # Fast node manager
 #  export PATH=/home/pratham82/.local/bin:$PATH
 #  eval "`fnm env`"
 
 
 # MongoDB aliases
+alias startmo="sudo systemctl start mongodb"
+alias stopmo="sudo systemctl stop mongodb"
+alias statmo="sudo systemctl status mongodb"
+
 #alias startmo="sudo service mongod start"
 #alias stopmo="sudo service mongod stop"
 #alias statmo="sudo service mongod status"
-alias startmo="sudo systemctl start monogdb"
-alias stopmo="sudo systemctl stop monogdb"
-alias statmo="sudo systemctl status mongodb"
 
 # Shortcuts for lsd
 alias ls='lsd'
@@ -208,6 +213,9 @@ fzf-history-widget-accept() {
 zle     -N     fzf-history-widget-accept
 bindkey '^X^R' fzf-history-widget-accept
 
+# Vi mode shortcut
+# ctrl + shift + space
+
 
 # Drive ss
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
@@ -220,6 +228,7 @@ bindkey '^X^R' fzf-history-widget-accept
 #neofetch
 #pfetch
 nerdfetch
+
 
 #~/.zsh/pfetch/pfetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

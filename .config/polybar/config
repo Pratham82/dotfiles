@@ -22,8 +22,9 @@
 ;background = #75050505
 background = #99050505
 ;background = #050505
-;background-alt = #75050505
-background-alt = #050505
+background-alt = #75050505
+;background-alt = #050505
+
 
 ;foreground = ${xrdb:color7:#222}
 foreground = #fff
@@ -68,9 +69,10 @@ separator =
 ;font-2 = siji:pixelsize=10;1
 
 
-font-0 = fixed:pixelsize=14;1
+font-0 = fixed:pixelsize=12;1
 #font-1 = Hack Nerd Font:fontformat=truetype:size=11:antialias=true;0
 font-1 = HackNerdFont:fontformat=truetype:size=11:antialias=true;0
+;font-1 = FiraCodeNerdFont:fontformat=truetype:size=11:antialias=true;0
 font-2 = siji:pixelsize=10;1
 font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
 ;font-3 = Font Awesome 5 Free:pixelsize=12;2
@@ -95,7 +97,7 @@ modules-right =   cpu memory battery alsa xbacklight notification
 
 
 ; System Tray
-tray-position = right
+;tray-position = right
 ;tray-padding = 0
 ;tray-background = #0063ff
 

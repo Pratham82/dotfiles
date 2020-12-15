@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "FiraCode nerd font",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -52,7 +52,7 @@
     "yaml",
     "yml"
   ],
-  "editor.lineHeight": 19,
+  "editor.lineHeight": 17,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
@@ -193,9 +193,9 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "Moonlight II Italic",
+  "workbench.colorTheme": "BeardedTheme Monokai Metallian",
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg"
 }

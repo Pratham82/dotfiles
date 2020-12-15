@@ -542,7 +542,7 @@
 			"id": "benawad.vsinder",
 			"uuid": "f0a0f9ee-cbb9-4826-b7fb-adddb46d456c"
 		},
-		"version": "1.12.0",
+		"version": "1.15.0",
 		"installed": true
 	},
 	{
@@ -650,7 +650,7 @@
 			"id": "ecmel.vscode-html-css",
 			"uuid": "aaee577c-f062-495a-9816-0cbd442f1d25"
 		},
-		"version": "1.1.2",
+		"version": "1.1.5",
 		"installed": true
 	},
 	{
@@ -1076,7 +1076,7 @@
 			"id": "viktorqvarfordt.vscode-pitch-black-theme",
 			"uuid": "28b20c66-dbb8-4c01-a0f9-590be00ec2d3"
 		},
-		"version": "1.2.3",
+		"version": "1.2.4",
 		"installed": true
 	},
 	{
@@ -1084,7 +1084,7 @@
 			"id": "vintharas.learn-vim",
 			"uuid": "159d930e-fdd0-42de-bbf8-5f62686e83a7"
 		},
-		"version": "0.0.25",
+		"version": "0.0.26",
 		"installed": true
 	},
 	{

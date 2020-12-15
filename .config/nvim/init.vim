@@ -30,98 +30,82 @@ let g:spotify_status_style = 'emoji'
 
 let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 
-augroup hover
-	autocmd!
-	autocmd CursorHold * silent if ! coc#util#has_float()
-		\| call CocActionAsync('doHover')
-	\| endif
-	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
-augroup end
+"##### Color Themes #####
 
+" OneDark
+source $HOME/.config/nvim/themes/onedark.vim
 
-
-" Themes
-"source $HOME/.config/nvim/themes/onedark.vim
-" Oceanic
+"##### Oceanic
 "let g:material_style='oceanic'
 "set background=dark
 "colorscheme vim-material
+"colorscheme nightfly
 
-"colorscheme apprentice
-"colorscheme nord
-
-" Palenight
-set background=dark
-colorscheme palenight
-
-
-"let g:solarized_termcolors=256
-"syntax enable
+" ##### Oceanic Material 
 "set background=dark
-"colorscheme solarized
-"
-"if has('gui_running')
-"    set background=light
-"else
-"    set background=dark
-"endif
+"colorscheme oceanic_material
+"colorscheme OceanicNext
+"let g:airline_theme="oceanicnext"
 
 
-" Gruvbox
+"##### Nord
+"colorscheme nord
+"let g:airline_theme="nord"
+
+"##### Palenight
+"set background=dark
+"colorscheme palenight
+
+"##### Gruvbox
 "colorscheme gruvbox
 "set background=dark
-"colorscheme happy_hacking 
-"colorscheme jellybeans
-"colorscheme nord
 
+"##### Happy hacking
+"colorscheme happy_hacking 
+
+"##### Horizon dark
 "colorscheme base16-horizon-dark
 
-" Solarized
+"##### NeoSolarized
 "colorscheme NeoSolarized
 "let g:airline_theme="solarized_flood"
 
+"##### Nightlify
+"colorscheme nightfly
+"let g:lightline = { 'colorscheme': 'nightfly' }
+"let g:moonflyIgnoreDefaultColors = 1
 
-"Solarized
-"syntax enable
-"set background=dark
-"colorscheme solarized
-
-" Oceanic Material *****
-"set background=dark
-"colorscheme oceanic_material
-
+"##### One dark
 "let g:airline_theme='one'
 "colorscheme one
 "set background=dark " for the dark version
 "let g:airline_theme="material"
 
-let g:airline_theme="onedark"
+
+"##### Monochrome
+"colorscheme monochrome
+
+
+"##### Airline Themes #####
+
+"let g:airline_theme="onedark"
 "let g:airline_theme="base16_grayscale"
+"let g:airline_theme="gruvbox"
+
 " Adding transperncy
 "highlight Normal guibg=none
 "highlight NonText guibg=none
 
+"##### Misc
+
 highlight Normal guibg=none
 highlight NonText guibg=none
 
-"let g:lightline = { 'colorscheme': 'nightfly' }
-"let g:moonflyIgnoreDefaultColors = 1
-"colorscheme nightfly;w 🚨🔶❌
-
-"let g:ale_sign_error = 'E'
-"let g:ale_sign_warning ="W"
+" Ale setup
+" 🚨🔶❌
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning ='🔶'
 let g:ale_sign_info = '🔔'
-" Ale setup
-
-
-"Setting Airline theme
-"let g:airline_theme="gruvbox"
-
-"let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
-
-
 
 " List of colors that you do not want. ANSI code or #RRGGBB
 "autocmd FileType * RainbowParentheses

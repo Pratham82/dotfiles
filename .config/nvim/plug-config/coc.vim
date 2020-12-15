@@ -62,7 +62,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+"nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent><space>d :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -156,6 +157,16 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" #####  Show Documentation 
+"augroup hover
+"	autocmd!
+"	autocmd CursorHold * silent if ! coc#util#has_float()
+"		\| call CocActionAsync('doHover')
+"	\| endif
+"	autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
+"augroup end
+
 
 " Explorer
 nmap <space>e :CocCommand explorer<CR>

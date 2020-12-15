@@ -12,7 +12,7 @@ nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
 " Buffer delete
-nnoremap <leader>d :bdelete<CR>
+"nnoremap <leader>d :bdelete<CR>
 
 
 " I hate escape more than anything else
