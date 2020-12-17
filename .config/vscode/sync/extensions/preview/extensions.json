@@ -542,7 +542,7 @@
 			"id": "benawad.vsinder",
 			"uuid": "f0a0f9ee-cbb9-4826-b7fb-adddb46d456c"
 		},
-		"version": "1.15.0",
+		"version": "1.18.0",
 		"installed": true
 	},
 	{
@@ -650,7 +650,7 @@
 			"id": "ecmel.vscode-html-css",
 			"uuid": "aaee577c-f062-495a-9816-0cbd442f1d25"
 		},
-		"version": "1.1.5",
+		"version": "1.1.6",
 		"installed": true
 	},
 	{
@@ -842,7 +842,7 @@
 			"id": "ms-python.python",
 			"uuid": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5"
 		},
-		"version": "2020.11.371526539",
+		"version": "2020.12.424452561",
 		"installed": true
 	},
 	{
@@ -1084,7 +1084,7 @@
 			"id": "vintharas.learn-vim",
 			"uuid": "159d930e-fdd0-42de-bbf8-5f62686e83a7"
 		},
-		"version": "0.0.26",
+		"version": "0.0.27",
 		"installed": true
 	},
 	{

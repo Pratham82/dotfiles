@@ -2,8 +2,8 @@ colors:
   # Default colors
   primary:
     #background: '#101421'
-    #background: '#1B2B34'
-
+    #OneDark:       #282C34
+    #Oceanic Next:   #1B2B34
     background: '#282C34'
     #background: '#000000'
     foreground: '#fffbf6'

@@ -19,10 +19,11 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-;background = #75050505
-background = #99050505
+background = #050505
+;background = #99050505
 ;background = #050505
-background-alt = #75050505
+;background-alt = #75050505
+background-alt = #525151
 ;background-alt = #050505
 
 
@@ -30,7 +31,8 @@ background-alt = #75050505
 foreground = #fff
 #foreground-alt = #555
 foreground-alt = #fff
-primary = #d53763
+primary = #bfbfbf
+#primary = #d53763
 secondary = #e60053
 alert = #bd2c40
 
@@ -42,7 +44,8 @@ height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 enable-ipc = true
-radius = 8.0
+#radius = 8.0
+radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -51,7 +54,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 5
+#border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 1

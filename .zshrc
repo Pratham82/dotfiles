@@ -226,8 +226,8 @@ bindkey '^X^R' fzf-history-widget-accept
 #prompt pure
 
 #neofetch
-#pfetch
-nerdfetch
+pfetch
+#nerdfetch
 
 
 #~/.zsh/pfetch/pfetch

@@ -32,7 +32,9 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec terminal
+#bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec alacritty
+bindsym $mod+Ctrl+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -364,7 +366,8 @@ bindsym $mod+m exec polybar-msg cmd toggle
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
 #  client.focused          #fff #f0f0f0  #80FFF9 #FDF6E3
-  client.focused          #fff #027df7 #80FFF9 #FDF6E3
+#  client.focused          #fff #027df7 #80FFF9 #FDF6E3
+  client.focused          #fff #fff #80FFF9 #FDF6E3
 #  client.focused          #fff #E0B0C6 #80FFF9 #FDF6E3
   #
   
@@ -383,7 +386,7 @@ bindsym $mod+m exec polybar-msg cmd toggle
 #gaps inner 14
 gaps inner 5
 #gaps outer -2
-gaps outer 5
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
