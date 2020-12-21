@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "FiraCode nerd font",
+  "editor.fontFamily": "CaskaydiaCove nerd font",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -193,9 +193,15 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "BeardedTheme Monokai Metallian",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right",
   "editor.fontSize": 14,
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg"
+  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }

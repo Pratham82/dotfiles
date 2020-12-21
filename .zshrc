@@ -128,6 +128,7 @@ alias ghstart=~/start-project.sh
 alias pgs='sudo systemctl status postgresql'
 alias pgu='sudo systemctl start postgresql'
 alias pgd='sudo systemctl stop postgresql'
+alias pgc='psql -d test'
 
 # Colors
 alias cols="nvim ~/dotfiles/terminal-bg-colors.conf"

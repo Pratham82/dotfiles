@@ -542,7 +542,7 @@
 			"id": "benawad.vsinder",
 			"uuid": "f0a0f9ee-cbb9-4826-b7fb-adddb46d456c"
 		},
-		"version": "1.18.0",
+		"version": "1.19.0",
 		"installed": true
 	},
 	{
@@ -630,7 +630,7 @@
 			"id": "dsznajder.es7-react-js-snippets",
 			"uuid": "19804510-b475-4dae-b0f7-6ca08fd1af0c"
 		},
-		"version": "3.0.0",
+		"version": "3.1.0",
 		"installed": true
 	},
 	{
@@ -650,7 +650,7 @@
 			"id": "ecmel.vscode-html-css",
 			"uuid": "aaee577c-f062-495a-9816-0cbd442f1d25"
 		},
-		"version": "1.1.6",
+		"version": "1.2.2",
 		"installed": true
 	},
 	{
@@ -754,7 +754,7 @@
 			"id": "inci-august.august-themes",
 			"uuid": "48ae7c99-20a7-46e2-ad55-bb870d763998"
 		},
-		"version": "2.2.0",
+		"version": "2.2.2",
 		"installed": true
 	},
 	{
@@ -916,7 +916,7 @@
 			"id": "ms-vsliveshare.vsliveshare",
 			"uuid": "5a6dc0d5-dc02-4121-8e24-cad33a2ff0af"
 		},
-		"version": "1.0.3303",
+		"version": "1.0.3375",
 		"installed": true
 	},
 	{
@@ -1148,7 +1148,7 @@
 			"id": "zhuangtongfa.material-theme",
 			"uuid": "26a529c9-2654-4b95-a63f-02f6a52429e6"
 		},
-		"version": "3.9.11",
+		"version": "3.9.12",
 		"installed": true
 	}
 ]

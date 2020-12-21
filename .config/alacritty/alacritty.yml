@@ -4,8 +4,9 @@ colors:
     #background: '#101421'
     #OneDark:       #282C34
     #Oceanic Next:   #1B2B34
-    background: '#282C34'
     #background: '#000000'
+    #background: '#292D3E'
+    #background: '#282C34'
     foreground: '#fffbf6'
 
   # Normal colors
@@ -31,7 +32,7 @@ colors:
     white: '#ffffff'
 
 #background_opacity: 0.60
-background_opacity: 0.95
+background_opacity: 0.90
 
 # Old font config
 #style: Medium
@@ -80,9 +81,6 @@ font:
     style: Bold Italic
 
   # Font size
-  #size: 10.75
-  #size: 12.5
-  #size: 11.50
   size: 10.50
 
   offset:
