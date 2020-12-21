@@ -3,10 +3,11 @@ colors:
   primary:
     #background: '#101421'
     #OneDark:       #282C34
-    #Oceanic Next:   #1B2B34
-    #background: '#000000'
-    #background: '#292D3E'
-    #background: '#282C34'
+    #Oceanic Next: '#1A2B34'
+    #material Oceanic: '#0f111a'
+    #Material Dark : '#27323a'
+    background: '#282C34'
+
     foreground: '#fffbf6'
 
   # Normal colors
@@ -32,7 +33,7 @@ colors:
     white: '#ffffff'
 
 #background_opacity: 0.60
-background_opacity: 0.90
+background_opacity: 1.0
 
 # Old font config
 #style: Medium

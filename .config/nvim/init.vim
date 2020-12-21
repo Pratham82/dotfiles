@@ -33,7 +33,20 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 "##### Color Themes #####
 
 " OneDark
-"source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/onedark.vim
+
+" Material themes
+
+" Oceanic
+"let g:material_style='oceanic'
+"set background=dark
+"colorscheme vim-material
+
+
+" Dark
+"set background=dark
+"colorscheme vim-material
+
 
 "##### Oceanic
 "let g:material_style='oceanic'
@@ -43,15 +56,8 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 
 " ##### Oceanic Material 
 "set background=dark
-"ndow -n nvim
-"tmux new-window -n server
-"tmux send-keys -t nvim nvim ENTER
-"tmux send-keys -t server 'tmux split-window && ltp' ENTER
-"
-"tmux select-window -t server
-"colorscheme oceanic_material
-colorscheme OceanicNext
-let g:airline_theme="oceanicnext"
+"colorscheme OceanicNext
+"let g:airline_theme="oceanicnext"
 
 "##### Nord
 "colorscheme nord
