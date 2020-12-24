@@ -92,12 +92,12 @@
   "editor.formatOnType": true,
   "editor.wordWrap": "bounded",
   "chaliceIcons.showArrows": true,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "sync.forceUpload": true,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": false,
-  "window.menuBarVisibility": "default",
+  "window.menuBarVisibility": "toggle",
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "emojisense.markupCompletionsEnabled": true,
   "emojisense.unicodeCompletionsEnabled": true,
@@ -193,7 +193,7 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Night Owl",
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right",
   "editor.fontSize": 14,
@@ -203,5 +203,6 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "terminal.integrated.fontFamily": "monospace"
 }
