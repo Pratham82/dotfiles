@@ -12,4 +12,4 @@ I've switched my current programming setup to a linux mahchine and in the proces
   ![](https://github.com/Pratham82/dotfiles/blob/master/Desktop.png)
 
 - Updated NeoVim Setup
-  ![](https://github.com/Pratham82/dotfiles/blob/master/Neovim%20Updated%20Setup.png)
+  ![](https://github.com/Pratham82/dotfiles/blob/master/Neovim.png)
