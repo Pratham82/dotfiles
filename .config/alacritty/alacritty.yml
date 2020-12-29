@@ -32,7 +32,7 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-#background_opacity: 0.60
+#background_opacity: 0.95
 background_opacity: 1.0
 
 # Old font config
@@ -63,22 +63,29 @@ font:
   # Normal (roman) font face
   normal:
     family: Caskaydia cove Nerd Font
-    #style: Regular
+    #family: Input Mono
+    #family: Operator Mono  nerd font
     style: Medium
 
   # Bold font face
   bold:
     family: Caskaydia cove Nerd Font
+    #family: Input Mono
+    #family: Operator Mono  nerd font
     style: Bold
 
   # Italic font face
   italic:
     family: Caskaydia cove Nerd Font
+    #family: Input Mono
+    #family: Operator Mono  nerd font
     style: Italic
 
   # Bold italic font face
   bold_italic:
     family: Caskaydia cove Nerd Font
+    #family: Input Mono
+    #family: Operator Mono  nerd font
     style: Bold Italic
 
   # Font size
