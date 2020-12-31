@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fxn/vim-monochrome'
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'chriskempson/base16-vim'
+    Plug 'voronianski/oceanic-next-color-scheme'   
     Plug 'altercation/vim-colors-solarized'
 
     " Spotify control

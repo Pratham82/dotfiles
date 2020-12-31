@@ -182,6 +182,13 @@ alias pc='nvim ~/.config/polybar/config'
 alias drc='nvim ~/.dmenurc'
 alias pac='sudo pacman -S'
 
+## Aliases for snap 
+alias startsnap='sudo systemctl enable --now snapd.socket'
+alias stopsnap='sudo systemctl stop --now snapd.socket'
+alias statsnap='sudo systemctl status --now snapd.socket'
+alias snapi='sudo snap install'
+alias snapun='sudo snap remove'
+
 # Important shortcuts
 alias c.="code ."
 

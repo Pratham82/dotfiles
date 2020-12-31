@@ -7,6 +7,7 @@ colors:
     #material Oceanic: '#0f111a'
     #Material Dark : '#27323a'
     background: '#282C34'
+    #background: '#000000'
 
     foreground: '#fffbf6'
 
@@ -32,7 +33,7 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-#background_opacity: 0.95
+    #background_opacity: 0.90
 background_opacity: 1.0
 
 # Old font config

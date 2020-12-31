@@ -52,7 +52,7 @@
     "yaml",
     "yml"
   ],
-  "editor.lineHeight": 17,
+  "editor.lineHeight": 18,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
@@ -192,8 +192,8 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "Night Owl",
+  "editor.renderWhitespace": "none",
+  "workbench.colorTheme": "One Dark Pro",
   "vim.vimrc.enable": true,
   "workbench.sideBar.location": "right",
   "editor.fontSize": 14,

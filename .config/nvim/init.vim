@@ -59,6 +59,10 @@ source $HOME/.config/nvim/themes/onedark.vim
 "colorscheme OceanicNext
 "let g:airline_theme="oceanicnext"
 
+" ##### OceanicNext
+"colorscheme OceanicNext
+
+
 "##### Nord
 "colorscheme nord
 "let g:airline_theme="nord"
