@@ -33,8 +33,8 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-    #background_opacity: 0.90
-background_opacity: 1.0
+background_opacity: 0.90
+#background_opacity: 1.0
 
 # Old font config
 #style: Medium

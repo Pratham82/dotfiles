@@ -113,8 +113,8 @@ alias ap="sudo apt"
 #alias pfetch='~/.zsh/pfetch/pfetch'
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
-alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.i3 dotfiles/.config;
-sudo cp -r ~/.config/alacritty dotfiles/.config;sudo cp -r ~/.config/kitty dotfiles/.config; sudo cp -r ~/.config/polybar dotfiles/.config;  sudo cp -r ~/.config/Code/User/* dotfiles/.config/vscode;";
+alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.config/i3 dotfiles/.config;
+sudo cp -r ~/.config/alacritty dotfiles/.config;sudo cp -r ~/.config/kitty dotfiles/.config; sudo cp -r ~/.config/polybar dotfiles/.config;  sudo cp -r ~/.config/Code/User/* dotfiles/.config/vscode; sudo cp ~/.config/picom.conf dotfiles/.config";
 alias mk="mkdir"
 alias sleep="shutdown now"
 
@@ -177,7 +177,7 @@ alias lt='ls --tree'
 alias ltp='lt node_modules --depth 0&& lt --ignore-glob node_modules'
 
 # Aliases for Arch
-alias i3c='nvim ~/.i3/config'
+alias i3c='nvim ~/.config/i3/config'
 alias pc='nvim ~/.config/polybar/config'
 alias drc='nvim ~/.dmenurc'
 alias pac='sudo pacman -S'
@@ -255,5 +255,5 @@ export FNM_MULTISHELL_PATH="/tmp/fnm_multishell_20949_1607351516223"
 export FNM_DIR="/home/pratham82/.fnm"
 export FNM_LOGLEVEL="info"
 export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
-
+export FZF_BASE=/path/to/fzf/install/dir
 #eval "$(starship init zsh)"

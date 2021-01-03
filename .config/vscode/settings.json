@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "CaskaydiaCove nerd font",
+  "editor.fontFamily": "Dank Mono,  Caskaydiacove nerd font",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -92,12 +92,12 @@
   "editor.formatOnType": true,
   "editor.wordWrap": "bounded",
   "chaliceIcons.showArrows": true,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "sync.forceUpload": true,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": false,
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "default",
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "emojisense.markupCompletionsEnabled": true,
   "emojisense.unicodeCompletionsEnabled": true,
@@ -192,17 +192,9 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "boundary",
   "workbench.colorTheme": "One Dark Pro",
+  "editor.fontSize": 15,
   "vim.vimrc.enable": true,
-  "workbench.sideBar.location": "right",
-  "editor.fontSize": 14,
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "terminal.integrated.fontFamily": "monospace"
+  "workbench.sideBar.location": "right"
 }
