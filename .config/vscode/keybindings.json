@@ -1,27 +1,11 @@
-// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "ctrl+tab",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+d",
-    "command": "editor.action.showDefinitionPreviewHover"
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
   }
 ]

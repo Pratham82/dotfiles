@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "editor.fontFamily": "Dank Mono,  Caskaydiacove nerd font",
+  "editor.fontFamily": "CaskaydiaCove nerd font",
 
   "editor.fontLigatures": true,
   "editor.fontWeight": 400,
@@ -16,7 +16,52 @@
 	6. IBM PLex Mono
 
 		Fira code, Operator mono, Cascadia code, Dank Mono,Victor Mono,Bahnschrift,Inconsolata,Fira code iScript, Fantasque Sans Mono, Jetbrains Mono,Hack,Monoid,Bitstream Vera Sans Mono,IBM PLex Mono, Rec Mono Duotone, Rec Mono Linear"
-	*/
+  */
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    }
+  ],
+  "vim.leader": "<space>",
   "workbench.statusBar.visible": true,
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -52,7 +97,7 @@
     "yaml",
     "yml"
   ],
-  "editor.lineHeight": 18,
+  "editor.lineHeight": 17,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
@@ -92,7 +137,7 @@
   "editor.formatOnType": true,
   "editor.wordWrap": "bounded",
   "chaliceIcons.showArrows": true,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "sync.forceUpload": true,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,
@@ -193,8 +238,9 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.renderWhitespace": "boundary",
-  "workbench.colorTheme": "One Dark Pro",
-  "editor.fontSize": 15,
+  "workbench.colorTheme": "Popping and Locking Black Theme",
+  "editor.fontSize": 16,
   "vim.vimrc.enable": true,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.editorAssociations": []
 }

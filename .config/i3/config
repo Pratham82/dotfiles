@@ -4,6 +4,8 @@
 # Display fix
 exec ./display-fix.sh
 
+#exec killall picom
+#exec picom --experimental-backends
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -31,10 +33,10 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec terminal
-#bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec alacritty
 bindsym $mod+Ctrl+Return exec kitty
+#bindsym $mod+Return exec kitty
+#bindsym $mod+Ctrl+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -79,6 +81,11 @@ bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
+#bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
+#bindsym $mod+Ctrl+w exec picom --experimental-backends ; exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
+bindsym $mod+Ctrl+w exec picom --experimental-backends ; exec feh --bg-scale ~/Wallpapers/Mac\ Walls/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2020-4096x2304-1455.jpg
+
+bindsym $Mod+0 exec --no-startup-id rofi_run -l
 # focus_follows_mouse no
 
 # change focus
@@ -237,7 +244,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+0 mode "$mode_system"
+#bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -283,7 +290,9 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id  picom -b
+#exec --no-startup-id nitrogen --restore 
+#exec --no-startup-id  picom -b
+#exec picom --experimental-backends
 #exec picom --experimental-backends
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
@@ -386,7 +395,7 @@ bindsym $mod+m exec polybar-msg cmd toggle
 
 # Set inner/outer gaps
 #gaps inner 14
-gaps inner 10
+gaps inner 8
 #gaps outer -2
 gaps outer 0
 
@@ -396,7 +405,7 @@ gaps outer 0
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+#smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
@@ -450,11 +459,15 @@ mode "$mode_gaps_outer" {
 # Skulll /Hack style
 #exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-952jww.png
 # White abstract 
-exec feh --bg-scale ~/Wallpapers/Dec2020/wallhaven-r2kjlm.jpg
 
 
 
-
+#exec killall picom
+exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
+exec killall picom
+#exec killall picom
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 
 #exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 

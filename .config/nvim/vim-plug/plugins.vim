@@ -10,26 +10,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Themes
     Plug 'joshdick/onedark.vim'
   	Plug 'hardcoreplayers/oceanic-material'
-    Plug 'mhartington/oceanic-next'
     Plug 'hzchirs/vim-material'
 		Plug 'kristijanhusak/vim-hybrid-material'
 		Plug 'mhartington/oceanic-next'
-		Plug 'ayu-theme/ayu-vim'
-		Plug 'hardcoreplayers/oceanic-material'
+		"Plug 'ayu-theme/ayu-vim'
+		"Plug 'hardcoreplayers/oceanic-material'
 		Plug 'hzchirs/vim-material'
 		Plug 'rakr/vim-one'
     Plug 'bluz71/vim-nightfly-guicolors'
     Plug 'gruvbox-community/gruvbox'
-    Plug 'yorickpeterse/happy_hacking.vim'
     Plug 'arcticicestudio/nord-vim'
-    Plug 'glepnir/oceanic-material'
-    Plug 'overcache/NeoSolarized'
-    Plug 'dracula/vim', { 'as': 'dracula' }
-    Plug 'fxn/vim-monochrome'
-    Plug 'drewtempelmeyer/palenight.vim'
-    Plug 'chriskempson/base16-vim'
-    Plug 'voronianski/oceanic-next-color-scheme'   
-    Plug 'altercation/vim-colors-solarized'
+    "Plug 'glepnir/oceanic-material'
+    "Plug 'overcache/NeoSolarized'
+    "Plug 'dracula/vim', { 'as': 'dracula' }
+    "Plug 'drewtempelmeyer/palenight.vim'
+    "Plug 'chriskempson/base16-vim'
+    "Plug 'voronianski/oceanic-next-color-scheme'   
+    "Plug 'altercation/vim-colors-solarized'
+    "Plug 'benbusby/vim-earthbound-themes'
+
+    
+    " New extensions
+    Plug 'tpope/vim-surround'
+    Plug 'tomtom/tcomment_vim'
 
     " Spotify control
     Plug 'stsewd/spotify.nvim', { 'do': ':UpdateRemotePlugins' }

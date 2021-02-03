@@ -88,13 +88,14 @@ alias vs="vim ~/.vimrc"
 alias sv="source ~/.vimrc"
 alias nvs="nvim ~/.config/nvim/init.vim"
 alias nvp="nvim ~/.config/nvim/vim-plug/plugins.vim"
-alias as="nvim ~/.config/alacritty/alacritty.yml"
+alias ac="nvim ~/.config/alacritty/alacritty.yml"
 alias kc="nvim ~/.config/kitty/kitty.conf"
 alias asd="cd ~/.config/alacritty/"
 alias sht="cd ~/Dev/Shell-scripting"
 alias cnv="cd ~/.config/nvim"
 alias kas="tmux kill-server"
 alias ts="nvim ~/.tmux.conf"
+alias pico="nvim ~/.config/picom.conf"
 alias robo='/usr/local/bin/robomongo/bin/robo3t'
 alias space='sudo du -sh'
 alias spaced='sudo du -h --max-depth=1'
@@ -102,6 +103,8 @@ alias spaced='sudo du -h --max-depth=1'
 # Project starters aliases
 alias ns="npm start"
 alias cra="npx create-react-app"
+alias nap="ng new"
+alias ras="ng serve --open"
 
 # System aliases
 alias dev="cd ~/Dev"
@@ -131,6 +134,34 @@ alias pgu='sudo systemctl start postgresql'
 alias pgd='sudo systemctl stop postgresql'
 alias pgc='psql -d test'
 
+# MongoDB aliases
+alias startmo="sudo systemctl start mongodb"
+alias stopmo="sudo systemctl stop mongodb"
+alias statmo="sudo systemctl status mongodb"
+
+# Docker
+alias dockerup="sudo systemctl start docker"
+alias dockerdown="sudo systemctl stop docker"
+alias dockerstat="sudo systemctl status docker"
+
+# Curl
+alias get="curl cheat.sh/"
+
+#Docker related
+# Setting docker for normal user
+#sudo gpasswd -a pratham82 docker
+#newgrp docker
+
+# Removing docker
+# suod pacman -Rns docker
+# sudo groupdel docker
+# suod rm -rf /var/lib/docker
+
+# TeamViewer
+alias teamup="sudo systemctl start teamviewerd.service"
+alias teamdown="sudo systemctl stop teamviewerd.service"
+alias teamstat="sudo systemctl status teamviewerd.service"
+
 # Colors
 alias cols="nvim ~/dotfiles/terminal-bg-colors.conf"
 
@@ -157,11 +188,6 @@ alias ecgen="npm i eslint prettier eslint-config-prettier eslint-plugin-prettier
 #  eval "`fnm env`"
 
 
-# MongoDB aliases
-alias startmo="sudo systemctl start mongodb"
-alias stopmo="sudo systemctl stop mongodb"
-alias statmo="sudo systemctl status mongodb"
-
 #alias startmo="sudo service mongod start"
 #alias stopmo="sudo service mongod stop"
 #alias statmo="sudo service mongod status"
@@ -181,6 +207,7 @@ alias i3c='nvim ~/.config/i3/config'
 alias pc='nvim ~/.config/polybar/config'
 alias drc='nvim ~/.dmenurc'
 alias pac='sudo pacman -S'
+alias pacr='sudo pacman -R'
 
 ## Aliases for snap 
 alias startsnap='sudo systemctl enable --now snapd.socket'
@@ -230,22 +257,18 @@ bindkey '^X^R' fzf-history-widget-accept
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
 
 
-# Loading pure theme
-#autoload -U promptinit; promptinit
-#prompt pure
-
+# Fetch tools
 #neofetch
 pfetch
+#ufetch
+#colorscript random
 #nerdfetch
 
 
-#~/.zsh/pfetch/pfetch
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
 
 # fnm
 export PATH=/home/pratham82/.local/bin:$PATH
@@ -257,3 +280,4 @@ export FNM_LOGLEVEL="info"
 export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
 export FZF_BASE=/path/to/fzf/install/dir
 #eval "$(starship init zsh)"
+[ -f "/home/pratham82/.ghcup/env" ] && source "/home/pratham82/.ghcup/env" # ghcup-env

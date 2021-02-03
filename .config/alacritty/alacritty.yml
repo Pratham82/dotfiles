@@ -6,8 +6,10 @@ colors:
     #Oceanic Next: '#1A2B34'
     #material Oceanic: '#0f111a'
     #Material Dark : '#27323a'
-    background: '#282C34'
-    #background: '#000000'
+    #Dracula: '#282a36'
+    #background: '#282C34'
+    #background: '#2E3440'
+    background: '#282828'
 
     foreground: '#fffbf6'
 
@@ -33,59 +35,66 @@ colors:
     cyan: '#99faf2'
     white: '#ffffff'
 
-background_opacity: 0.90
+#background_opacity: 0.90
 #background_opacity: 1.0
 
-# Old font config
-#style: Medium
-#  bold:
-#    family: 'JetBrains Mono Nerd Font'
-#    style: Bold
-#  italic:
-#    family: 'JetBrains Mono Nerd Font'
-#    style: Italic
-#  bold_italic:
-#    family: 'JetBrains Mono Nerd Font'
-#    style: Bold Italic
-# Favourite fonts
 #font:
-#normal:
-#family: 'Caskaydia cove nerd font'
-#family: 'Operator Mono nerd font'
-#family: 'Victor Mono nerd font'
-#family: 'Roboto Mono Nerd Font'
-#family: 'Hack Nerd Font'
-#family: 'Dank Mono'
-#family: 'BlexMono  Nerd Font'
-#family: 'JetBrains Mono Nerd Font'
-#family: 'Meslo LG M Nerd Font'
+#fontFamilies:
+# family-1:
+#    Caskaydia cove nerd font'
+# family-2:
+#   'Operator Mono nerd font'
+# family-3:
+#   'Victor Mono nerd font'
+# family-4:
+#   'Roboto Mono Nerd Font'
+# family-5:
+#   'Hack Nerd Font'
+# family-6:
+#   'Dank Mono'
+# family-7:
+#   'BlexMono  Nerd Font'
+# family-8:
+#   'JetBrains Mono Nerd Font'
+# family-9:
+#   'Meslo LG M Nerd Font'
+# family-10:
+#   'Input Mono'
 
 font:
   # Normal (roman) font face
   normal:
-    family: Caskaydia cove Nerd Font
-    #family: Input Mono
+    #family: Caskaydia cove Nerd Font
+    #family: JetBrains Mono Nerd Font
+    #family: FiraCode Nerd Font
+    family: Input Mono
     #family: Operator Mono  nerd font
-    style: Medium
+    style: Regular
 
   # Bold font face
   bold:
-    family: Caskaydia cove Nerd Font
-    #family: Input Mono
+    #family: Caskaydia cove Nerd Font
+    #family: JetBrains Mono Nerd Font
+    #family: FiraCode Nerd Font
+    family: Input Mono
     #family: Operator Mono  nerd font
     style: Bold
 
   # Italic font face
   italic:
-    family: Caskaydia cove Nerd Font
-    #family: Input Mono
+    #family: Caskaydia cove Nerd Font
+    #family: JetBrains Mono Nerd Font
+    #family: FiraCode Nerd Font
+    family: Input Mono
     #family: Operator Mono  nerd font
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Caskaydia cove Nerd Font
-    #family: Input Mono
+    #family: Caskaydia cove Nerd Font
+    #family: JetBrains Mono Nerd Font
+    #family: FiraCode Nerd Font
+    family: Input Mono
     #family: Operator Mono  nerd font
     style: Bold Italic
 
@@ -101,8 +110,8 @@ font:
 
 window:
   padding:
-    x: 2
-    y: 2
+    x: 0
+    y: 0
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -113,6 +122,8 @@ scrolling:
   # scrollback is enabled (history > 0).
   multiplier: 10
 
+env:
+  WINIT_X11_SCALE_FACTOR: '1.0'
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 

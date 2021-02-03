@@ -19,7 +19,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-background = #050505
+background = #55050505
 ;background = #99050505
 ;background = #050505
 ;background-alt = #75050505
@@ -93,11 +93,11 @@ font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
 
 
 ; Positioning modules
-modules-left =i3 date xwindow
+modules-left =i3 date xwindow 
 ;modules-center = mpd 
-modules-center = 
+modules-center = spotify wlan1
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
-modules-right =   cpu memory battery alsa xbacklight notification
+modules-right =   cpu memory battery alsa xbacklight notification 
 ;modules-right = memory 
 ;Unused modules: pulseaudio
 
@@ -303,11 +303,12 @@ type = internal/memory
 interval = 2
 ;format-prefix = "   🔥    "
 ;format-prefix = "🔥    "
-format-prefix = "  "
+format-prefix = "   "
 format-prefix-foreground = ${col
 ;format-underline = #4bffdc
-label = %percentage_used%%
-;label = %gb_used% - %gb_total%
+;label = %percentage_used%%
+label = %gb_used% of %gb_total%
+;label = %gb_used% 
 
 
 [module/wlan]
@@ -359,7 +360,7 @@ interval = 1
 ;date =  %I:%M %p | %d %b %a
 ;date =  %I:%M %p | %d %b
 ;date =  %I:%M %p | %d %b %a
-date =  %I:%M %p %d-%m %a 
+date =   %I:%M %p %d-%m %a 
 ;date-alt = " %Y-%m-%d %a "
 date-alt = " %Y-%m-%d %a "
 
