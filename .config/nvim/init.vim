@@ -16,6 +16,7 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
+" source $HOME/.config/nvim/plug-config/telescope.vim
 
 
 " Lua Plugins
@@ -33,14 +34,14 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 "##### Color Themes #####
 
 " OneDark
-source $HOME/.config/nvim/themes/onedark.vim
+ source $HOME/.config/nvim/themes/onedark.vim
 "colorscheme earthbound
 " Material themes
 
 " Oceanic
-"let g:material_style='oceanic'
-"set background=dark
-"colorscheme vim-material
+" let g:material_style='oceanic'
+" set background=dark
+" colorscheme vim-material
 
 " Dark
 "set background=dark
@@ -66,22 +67,19 @@ source $HOME/.config/nvim/themes/onedark.vim
 "let g:airline_theme="nord"
 
 "##### Palenight
-"set background=dark
-"colorscheme palenight
+" set background=dark
+" colorscheme palenight
 
 "##### Gruvbox
-"colorscheme gruvbox
-"set background=dark
+" colorscheme gruvbox
+" set background=dark
 
 "##### Happy hacking
 "colorscheme happy_hacking 
 
 "##### Horizon dark
-"colorscheme base16-horizon-dark
+" colorscheme base16-horizon-dark
 
-"##### NeoSolarized
-"colorscheme NeoSolarized
-"let g:airline_theme="solarized_flood"
 
 "##### Nightlify
 "colorscheme nightfly
@@ -103,7 +101,6 @@ source $HOME/.config/nvim/themes/onedark.vim
 
 
 "##### Airline Themes #####
-
 "let g:airline_theme="onedark"
 "let g:airline_theme="base16_grayscale"
 "let g:airline_theme="gruvbox"

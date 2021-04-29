@@ -8,12 +8,12 @@
 #fi
 
 export ZSH="/home/pratham82/.oh-my-zsh"
-#ZSH_THEME="spaceship"
+ZSH_THEME="spaceship"
 #ZSH_THEME="fishy"
 #ZSH_THEME="fino"
 #ZSH_THEME="gentoo"
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="gianu"
+# ZSH_THEME="gianu"
 #ZSH_THEME="trapd00r"
 #ZSH_THEME="passion"
 #ZSH_THEME="agnoster"
@@ -27,6 +27,7 @@ plugins=(git zsh-autosuggestions vi-mode fzf)
 source $ZSH/oh-my-zsh.sh
 #BROWSER=/usr/bin/google-chrome-stable
 BROWSER=/usr/bin/firefox-developer-edition
+export PATH=/opt/firefox/firefox:$PATH
 
 # User configuration
 
@@ -64,20 +65,23 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/bin/nvim
 #alias nvim=/usr/local/bin/nvim.appimage
 
-
-
-
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
 # Export path for lsd
 export PATH=/home/pratham82/.cargo/bin:$PATH
 
-# Export Path for google-chrome-ubstable
-
 # Lmabda mode theme
 export LAMBDA_MOD_N_DIR_LEVELS=3
 #load `lambda-mod` and `oh-my-zsh`
+
+# Adding path for flutter
+export PATH="$PATH:/home/pratham82/sdks/flutter/bin"
+# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+# Adding JAVA path
+ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ export PATH=$PATH:$JAVA_HOME/bin
+#  export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 
 
 # Example aliases
@@ -100,19 +104,29 @@ alias robo='/usr/local/bin/robomongo/bin/robo3t'
 alias space='sudo du -sh'
 alias spaced='sudo du -h --max-depth=1'
 
+###### ICONS fix for tmux and terminal ######
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
+
 # Project starters aliases
 alias ns="npm start"
+alias global="npm list -g --depth 0"
 alias cra="npx create-react-app"
 alias nap="ng new"
 alias ras="ng serve --open"
+alias nmdelete="~/delete-node-modules.sh"
 
 # System aliases
 alias dev="cd ~/Dev"
+alias work="cd ~/Work"
 alias py="cd ~/Dev/Python-Programming"
 alias c="clear"
 alias cgs="clear && git status"
 alias api="sudo apt install"
 alias ap="sudo apt"
+alias ssn="sudo shutdown now"
+alias ssr="sudo systemctl reboot"
+alias hs="history | grep -i"
 #alias pfetch='~/.zsh/pfetch/pfetch'
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
@@ -123,6 +137,9 @@ alias sleep="shutdown now"
 
 # tmux aliases
 alias ide=~/ide
+
+# SSH script
+alias gossh=~/go-ssh-cli.sh
 
 # Github automation
 alias ghstart=~/start-project.sh
@@ -135,15 +152,37 @@ alias pgd='sudo systemctl stop postgresql'
 alias pgc='psql -d test'
 
 # MongoDB aliases
-alias startmo="sudo systemctl start mongodb"
-alias stopmo="sudo systemctl stop mongodb"
-alias statmo="sudo systemctl status mongodb"
+#alias startmo="sudo systemctl start mongodb"
+#alias startmo="sudo systemctl start mongodb"
+#alias stopmo="sudo systemctl stop mongodb"
+alias statmo="sudo systemctl status mongod"
+alias stopmo="sudo systemctl stop mongod"
+alias startmo="sudo systemctl start mongod"
+
+# Redis
+alias redstat="sudo systemctl status redis"
+alias redstart="sudo systemctl start redis"
+alias redstop="sudo systemctl stop redis"
+
 
 # Docker
 alias dockerup="sudo systemctl start docker"
 alias dockerdown="sudo systemctl stop docker"
 alias dockerstat="sudo systemctl status docker"
+alias drmc="docker rm $(docker ps -a -q)"
+alias drmi="docker rmi -f $(docker images -a -q)"
+alias dockc="docker ps -a"
+alias docki="docker images -a"
+alias dockex="docker exec -it "
+alias ldock="lazydocker"
+# Run create a docker container witht the specific name
+# docker run -dit --name node-12 node:12-stretch bash
 
+# Kubernetes
+complete -F __start_kubectl k
+
+
+# docker rmi -f $(docker images -a -q)
 # Curl
 alias get="curl cheat.sh/"
 
@@ -166,12 +205,13 @@ alias teamstat="sudo systemctl status teamviewerd.service"
 alias cols="nvim ~/dotfiles/terminal-bg-colors.conf"
 
 # Git aliases
-alias gs="git status"
+# alias gs="git status"
 alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
 alias gcl="git clone"
 alias gp="git push"
+alias gpo="git push --set-upstream origin master"
 alias gl="git log"
 alias gr="git reset"    
 alias gre="git revert"
@@ -179,6 +219,7 @@ alias gpu="git pull"
 alias k8000="sudo fuser -k 8000/tcp"
 alias gcb="git chekout -b"
 alias gco="git chekout"
+alias lg='lazygit'
 
 # Development shortcuts
 alias ecgen="npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D"
@@ -200,7 +241,8 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 ## Projects structure
-alias ltp='lt node_modules --depth 0&& lt --ignore-glob node_modules'
+# alias ltp='lt  node_modules --depth 0&& lt --ignore-glob node_modules'
+alias ltp='la --tree  node_modules --depth 0&& lt --ignore-glob node_modules'
 
 # Aliases for Arch
 alias i3c='nvim ~/.config/i3/config'
@@ -215,6 +257,10 @@ alias stopsnap='sudo systemctl stop --now snapd.socket'
 alias statsnap='sudo systemctl status --now snapd.socket'
 alias snapi='sudo snap install'
 alias snapun='sudo snap remove'
+
+# SSH_CONNECTION
+alias manytrans='sshpass -p nNA3v72VB865u ssh root@164.68.101.124'
+alias ssh='TERM=xterm-256color ssh'
 
 # Important shortcuts
 alias c.="code ."
@@ -259,7 +305,7 @@ bindkey '^X^R' fzf-history-widget-accept
 
 # Fetch tools
 #neofetch
-pfetch
+#pfetch
 #ufetch
 #colorscript random
 #nerdfetch
@@ -272,7 +318,7 @@ source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fnm
 export PATH=/home/pratham82/.local/bin:$PATH
-eval "`fnm env`"
+#eval "`fnm env`"
 export PATH="/tmp/fnm_multishell_20949_1607351516223/bin":$PATH
 export FNM_MULTISHELL_PATH="/tmp/fnm_multishell_20949_1607351516223"
 export FNM_DIR="/home/pratham82/.fnm"
@@ -281,3 +327,15 @@ export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
 export FZF_BASE=/path/to/fzf/install/dir
 #eval "$(starship init zsh)"
 [ -f "/home/pratham82/.ghcup/env" ] && source "/home/pratham82/.ghcup/env" # ghcup-env
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+export PATH=/home/pratham82/.fnm:$PATH
+eval "`fnm env`"
+
+# fnm
+export PATH=/home/pratham82/.fnm:$PATH
+eval "`fnm env`"
+
+export PATH="$HOME/.poetry/bin:$PATH"

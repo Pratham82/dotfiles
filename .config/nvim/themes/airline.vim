@@ -19,8 +19,8 @@ set showtabline=1
 " We don't need to see things like -- INSERT -- anymore
 "set noshowmode
 "
-let g:airline_powerline_fonts = 1
-"let g:airline_powerline_fonts = 0
+"let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 "
 "  if !exists('g:airline_symbols')
 "    let g:airline_symbols = {}

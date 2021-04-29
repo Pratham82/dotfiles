@@ -19,10 +19,8 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #000
-background = #55050505
-;background = #99050505
-;background = #050505
-;background-alt = #75050505
+;background = #55050505
+background = #7530302e
 background-alt = #525151
 ;background-alt = #050505
 
@@ -37,15 +35,19 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-#monitor = ${env:MONITOR:HDMI-1}
-#[..]
+monitor = ${env:MONITOR:}
+; monitor = HDMI-1-1
+; monitor = eDP-1-1
+; [..]
+; monitor = ${env:MONITOR:HDMI-1}
+;[..]
 width = 100%
-height = 30
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 enable-ipc = true
 #radius = 8.0
-radius = 6.0
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
@@ -55,7 +57,7 @@ line-size = 3
 line-color = #f00
 
 #border-size = 5
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 1
@@ -65,6 +67,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 separator = 
+; bottom= true
 
 
 ;default fonts:
@@ -76,7 +79,7 @@ separator =
 ;font-0 = fixed:pixelsize=12;1
 ;    family: Caskaydia cove Nerd Font
 
-font-0 = Caskaydia cove Nerd Font:fontformat=truetype:size=12:antialias=true;3
+font-0 = Caskaydia cove Nerd Font:fontformat=truetype:size=9.5:antialias=true;3
 ;font-1 = HackNerdFont:fontformat=truetype:size=11:antialias=true;0
 ;font-1 = FiraCodeNerdFont:fontformat=truetype:size=11:antialias=true;0
 font-2 = siji:pixelsize=10;1
@@ -93,11 +96,12 @@ font-3 = NotoColorEmoji:fonfromat=truetype:scale=10:pixelsize=12;2
 
 
 ; Positioning modules
-modules-left =i3 date xwindow 
+modules-left =i3 xwindow 
 ;modules-center = mpd 
-modules-center = spotify wlan1
+; modules-center = spotify spotify-prev spotify-play-pause spotify-next
+modules-center = 
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
-modules-right =   cpu memory battery alsa xbacklight notification 
+modules-right = wlan  cpu memory battery alsa date xbacklight notification 
 ;modules-right = memory 
 ;Unused modules: pulseaudio
 
@@ -121,13 +125,41 @@ modules-right =   cpu memory battery alsa xbacklight notification
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+; [module/spotify]
+; type = custom/script
+; interval = 1
+; format-prefix = "  "
+; format = <label>
+; exec = python /home/pratham82/.config/polybar/spotify_status.py  -f '{artist}: {song}'
+; ;format-underline = #1db954
+
 [module/spotify]
 type = custom/script
-interval = 1
-format-prefix = "  "
-format = <label>
-exec = python /home/pratham82/.config/polybar/spotify_status.py  -f '{artist}: {song}'
-;format-underline = #1db954
+tail = true
+; prefix symbol is shown before the text
+; format-prefix = "<prefix-symbol>"
+; format-prefix = "  "
+; format = <label>
+exec = ~/.config/polybar/scroll_spotify_status.sh
+
+[module/spotify-prev]
+type = custom/script
+exec = echo "<previous-song-symbol>"
+format =  
+click-left = playerctl previous spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo "  " 
+hook-1 = echo "<pause-symbol> "
+initial = 1
+click-left = playerctl play-pause spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo "next-song-symbol"
+format =   
+click-left = playerctl next spotify
 
 [module/cmus]
 type = custom/ipc
@@ -303,11 +335,11 @@ type = internal/memory
 interval = 2
 ;format-prefix = "   🔥    "
 ;format-prefix = "🔥    "
-format-prefix = "   "
+format-prefix = "  "
 format-prefix-foreground = ${col
 ;format-underline = #4bffdc
 ;label = %percentage_used%%
-label = %gb_used% of %gb_total%
+label = %gb_used% / %gb_total%
 ;label = %gb_used% 
 
 
@@ -319,7 +351,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected =   %essid%
 
 
 format-disconnected =
@@ -362,7 +394,7 @@ interval = 1
 ;date =  %I:%M %p | %d %b %a
 date =   %I:%M %p %d-%m %a 
 ;date-alt = " %Y-%m-%d %a "
-date-alt = " %Y-%m-%d %a "
+date-alt = " %Y-%m-%d %a"
 
 ;time = %I:%M 
 time = 

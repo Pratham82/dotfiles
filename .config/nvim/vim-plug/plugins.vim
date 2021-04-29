@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " New extensions
     Plug 'tpope/vim-surround'
     Plug 'tomtom/tcomment_vim'
+    Plug 'tpope/vim-commentary'
 
     " Spotify control
     Plug 'stsewd/spotify.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -105,5 +106,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    " Telescope
+    " Plug 'nvim-lua/popup.nvim'
+    " Plug 'nvim-lua/plenary.nvim'
+    " Plug 'nvim-telescope/telescope.nvim'
+    " Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 call plug#end()

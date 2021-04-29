@@ -27,19 +27,14 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font xft:URWGothic-Book 12
-#font xft:FiraCode Nerd Font 12
-font xft:CaskaydiaCove Nerd Font 12
-#font FiraCode Nerd Font 12
+font xft:URWGothic-Book 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-# bindsym $mod+Ctrl+Return exec kitty
-# bindsym $mod+Ctrl+Return exec kitty
-bindsym $mod+Ctrl+Return exec gnome-terminal
+bindsym $mod+Ctrl+Return exec kitty
 #bindsym $mod+Return exec kitty
 #bindsym $mod+Ctrl+Return exec alacritty
 
@@ -49,7 +44,6 @@ bindsym $mod+Shift+q kill
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
 bindsym $mod+d exec "rofi -show-icons -modi window,drun,run -show drun -sidebar-mode -terminal alacritty" 
-bindsym $mod+space exec "rofi -show-icons -modi window -show window -sidebar-mode -terminal alacritty" 
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -59,7 +53,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 #exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
+bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -72,9 +66,8 @@ bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-#bindsym $mod+F2 exec firefox-developer-edition
-bindsym $mod+F2 exec google-chrome-stable
-bindsym $mod+F3 exec nautilus
+bindsym $mod+F2 exec firefox-developer-edition
+bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -87,14 +80,12 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-bindsym $mod+Ctrl+n exec /opt/navicat/navicat15-premium-en.AppImage
 
-# setw
-# bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
-# bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Poly+Lakeside.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
-bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Poly+Lakeside.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
+#bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
+#bindsym $mod+Ctrl+w exec picom --experimental-backends ; exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
+bindsym $mod+Ctrl+w exec picom --experimental-backends ; exec feh --bg-scale ~/Wallpapers/Mac\ Walls/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2020-4096x2304-1455.jpg
 
-#bindsym $Mod+0 exec --no-startup-id rofi_run -l
+bindsym $Mod+0 exec --no-startup-id rofi_run -l
 # focus_follows_mouse no
 
 # change focus
@@ -143,7 +134,7 @@ bindsym $mod+s layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
@@ -253,9 +244,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-# bindsym $Mod+0 mode "$mode_system"
-bindsym $Mod+0 exec rofi -show power-menu -modi power-menu:rofi-power-menu
-
+#bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -317,9 +306,6 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec sudo chmod 777 /var/run/docker.sock
-exec sudo chmod 666 /var/run/docker.sock
-# exec stretchly
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -353,33 +339,34 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-# bar {
-# 	i3bar_command i3bar
-# 	status_command i3status
-# 	position bottom
+#bar {
+#	i3bar_command i3bar
+#	status_command i3status
+#	position bottom
 #
-# ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-# #	tray_output primary
-# #	tray_output eDP1
+### please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+##	tray_output primary
+##	tray_output eDP1
 #
-# 	bindsym button4 nop
-# 	bindsym button5 nop
-# #   font xft:URWGothic-Book 11
-# 	strip_workspace_numbers yes
+#	bindsym button4 nop
+#	bindsym button5 nop
+##   font xft:URWGothic-Book 11
+#	strip_workspace_numbers yes
 #
 #    colors {
 #        background #222D31
 #        statusline #F9FAF9
 #        separator  #454947
 #
-# #                      border  backgr. text
+##                      border  backgr. text
 #        focused_workspace  #F9FAF9 #16a085 #292F34
 #        active_workspace   #595B5B #353836 #FDF6E3
 #        inactive_workspace #595B5B #222D31 #EEE8D5
 #        binding_mode       #16a085 #2C2C2C #F9FAF9
 #        urgent_workspace   #16a085 #FDF6E3 #E5201D
 #    }
-# }
+#}
+
 # hide/unhide i3status bar
 #bindsym $mod+m bar mode toggle
 
@@ -408,9 +395,9 @@ bindsym $mod+m exec polybar-msg cmd toggle
 
 # Set inner/outer gaps
 #gaps inner 14
-#gaps inner 8
+gaps inner 8
 #gaps outer -2
-#gaps outer 0
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -422,45 +409,44 @@ bindsym $mod+m exec polybar-msg cmd toggle
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-#smart_borders on
+smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
-#### Gaps commented
-#set $mode_gaps Gaps: (o) outer, (i) inner
-#set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-#set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-#bindsym $mod+Shift+g mode "$mode_gaps"
-#
-#mode "$mode_gaps" {
-#        bindsym o      mode "$mode_gaps_outer"
-#        bindsym i      mode "$mode_gaps_inner"
-#        bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#}
-#mode "$mode_gaps_inner" {
-#        bindsym plus  gaps inner current plus 5
-#        bindsym minus gaps inner current minus 5
-#        bindsym 0     gaps inner current set 0
-#
-#        bindsym Shift+plus  gaps inner all plus 5
-#        bindsym Shift+minus gaps inner all minus 5
-#        bindsym Shift+0     gaps inner all set 0
-#
-#        bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#}
-#mode "$mode_gaps_outer" {
-#        bindsym plus  gaps outer current plus 5
-#        bindsym minus gaps outer current minus 5
-#        bindsym 0     gaps outer current set 0
-#
-#        bindsym Shift+plus  gaps outer all plus 5
-#        bindsym Shift+minus gaps outer all minus 5
-#        bindsym Shift+0     gaps outer all set 0
-#
-#        bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#}
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 # Wallpaper engine
 #exec feh --bg-scale ~/Wallpapers/Nov2020/wallhaven-pk37qp.jpg
@@ -477,17 +463,16 @@ bindsym $mod+m exec polybar-msg cmd toggle
 
 
 #exec killall picom
-# exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg 
+exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
 exec killall picom
 #exec killall picom
-# exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 
 #exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
 
 # Polybar launch
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# exec_always --no-startup-id $HOME/.config/polybar/lauch_polybar.sh
-exec sudo chmod 777 /var/run/docker.sock
+#exec_always --no-startup-id $HOME/.config/polybar/lauch_polybar.sh
 
