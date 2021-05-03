@@ -1,11 +1,11 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#   typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 #
-#fi
+# fi
 
 export ZSH="/home/pratham82/.oh-my-zsh"
 ZSH_THEME="spaceship"
@@ -21,7 +21,7 @@ ZSH_THEME="spaceship"
 #ZSH_THEME="lambda-mod"
 #ZSH_THEME="zeta"
 #SH_THEME="jovial"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 #POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(git zsh-autosuggestions vi-mode fzf)
 source $ZSH/oh-my-zsh.sh
@@ -103,6 +103,7 @@ alias pico="nvim ~/.config/picom.conf"
 alias robo='/usr/local/bin/robomongo/bin/robo3t'
 alias space='sudo du -sh'
 alias spaced='sudo du -h --max-depth=1'
+alias colors_prompt="for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done"
 
 ###### ICONS fix for tmux and terminal ######
 export LC_ALL=en_IN.UTF-8
@@ -131,7 +132,7 @@ alias hs="history | grep -i"
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.config/i3 dotfiles/.config;
-sudo cp -r ~/.config/alacritty dotfiles/.config;sudo cp -r ~/.config/kitty dotfiles/.config; sudo cp -r ~/.config/polybar dotfiles/.config;  sudo cp -r ~/.config/Code/User/* dotfiles/.config/vscode; sudo cp ~/.config/picom.conf dotfiles/.config";
+sudo cp -r ~/.config/alacritty dotfiles/.config;sudo cp -r ~/.config/kitty dotfiles/.config; sudo cp -r ~/.config/polybar dotfiles/.config;  sudo cp -r ~/.config/Code/User/* dotfiles/.config/vscode; sudo cp ~/.config/picom/picom.conf dotfiles/.config";
 alias mk="mkdir"
 alias sleep="shutdown now"
 
@@ -314,7 +315,7 @@ bindkey '^X^R' fzf-history-widget-accept
 source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fnm
 export PATH=/home/pratham82/.local/bin:$PATH

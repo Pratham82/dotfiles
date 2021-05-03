@@ -20,6 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'bluz71/vim-nightfly-guicolors'
     Plug 'gruvbox-community/gruvbox'
     Plug 'arcticicestudio/nord-vim'
+    Plug 'folke/tokyonight.nvim'
     "Plug 'glepnir/oceanic-material'
     "Plug 'overcache/NeoSolarized'
     "Plug 'dracula/vim', { 'as': 'dracula' }

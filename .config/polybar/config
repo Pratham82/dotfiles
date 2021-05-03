@@ -21,7 +21,7 @@
 ;background = #000
 ;background = #55050505
 background = #7530302e
-background-alt = #525151
+background-alt = #52515100
 ;background-alt = #050505
 
 
@@ -101,7 +101,7 @@ modules-left =i3 xwindow
 ; modules-center = spotify spotify-prev spotify-play-pause spotify-next
 modules-center = 
 ;modules-right = cpu memory  wlan eth date temperature battery powermenu
-modules-right = wlan  cpu memory battery alsa date xbacklight notification 
+modules-right = wlan  cpu memory battery alsa date xbacklight notification  
 ;modules-right = memory 
 ;Unused modules: pulseaudio
 

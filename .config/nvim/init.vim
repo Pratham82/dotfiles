@@ -34,11 +34,15 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 "##### Color Themes #####
 
 " OneDark
- source $HOME/.config/nvim/themes/onedark.vim
+"  source $HOME/.config/nvim/themes/onedark.vim
 "colorscheme earthbound
 " Material themes
 
-" Oceanic
+" Tokyonight
+colorscheme tokyonight
+
+
+"Oceanic
 " let g:material_style='oceanic'
 " set background=dark
 " colorscheme vim-material
@@ -103,7 +107,7 @@ let g:spotify_status_format = ' {status} {artists} - {song} {decorator}'
 "##### Airline Themes #####
 "let g:airline_theme="onedark"
 "let g:airline_theme="base16_grayscale"
-"let g:airline_theme="gruvbox"
+" let g:airline_theme="gruvbox"
 
 " Adding transperncy
 "highlight Normal guibg=none

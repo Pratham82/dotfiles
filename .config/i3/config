@@ -92,7 +92,8 @@ bindsym $mod+Ctrl+n exec /opt/navicat/navicat15-premium-en.AppImage
 # setw
 # bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Walls\ From\ Chris/UEJLpxP.jpg
 # bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Poly+Lakeside.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
-bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Poly+Lakeside.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
+# bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/Poly+Lakeside.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
+bindsym $mod+Ctrl+w exec feh --bg-scale ~/Wallpapers/cyberpunk-astronaut.jpg; exec picom; exec echo 9892 | sudo -S chmod 777 /var/run/docker.sock 
 
 #bindsym $Mod+0 exec --no-startup-id rofi_run -l
 # focus_follows_mouse no
@@ -319,7 +320,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec sudo chmod 777 /var/run/docker.sock
 exec sudo chmod 666 /var/run/docker.sock
-# exec stretchly
+#exec stretchly
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
