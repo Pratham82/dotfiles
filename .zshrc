@@ -1,3 +1,9 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Include rbenv for ZSH
+#export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -7,14 +13,14 @@
 #
 #fi
 
-export ZSH="/home/pratham82/.oh-my-zsh"
-#ZSH_THEME="spaceship"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="spaceship"
 #ZSH_THEME="fishy"
 #ZSH_THEME="fino"
 #ZSH_THEME="gentoo"
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="gianu"
-#ZSH_THEME="trapd00r"
+##ZSH_THEME="trapd00r"
 #ZSH_THEME="passion"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="oxide"
@@ -64,9 +70,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/bin/nvim
 #alias nvim=/usr/local/bin/nvim.appimage
 
-
-
-
 # Aadding path for pure theme
 fpath+=$HOME/.zsh/pure
 
@@ -78,7 +81,6 @@ export PATH=/home/pratham82/.cargo/bin:$PATH
 # Lmabda mode theme
 export LAMBDA_MOD_N_DIR_LEVELS=3
 #load `lambda-mod` and `oh-my-zsh`
-
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -113,7 +115,7 @@ alias c="clear"
 alias cgs="clear && git status"
 alias api="sudo apt install"
 alias ap="sudo apt"
-#alias pfetch='~/.zsh/pfetch/pfetch'
+#alias pfetch/pfetch'
 #alias dot="cp /home/pratham82/{.zshrc,.vimrc,.hyper.js,.tmux.conf} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/; sudo cp -r ~/.i3 dotfiles;
 #sudo cp -r ~/.config/alacritty dotfiles/alacirtty";
 alias dot="cp /home/pratham82/{.tmux.conf,.zshrc} /home/pratham82/dotfiles; sudo cp -r ~/.config/nvim dotfiles/.config; sudo cp -r ~/.config/i3 dotfiles/.config;
@@ -177,16 +179,11 @@ alias gr="git reset"
 alias gre="git revert"
 alias gpu="git pull"
 alias k8000="sudo fuser -k 8000/tcp"
-alias gcb="git chekout -b"
-alias gco="git chekout"
+#jalias gcb="git checkout -b"
+#alias gco="git checkout"
 
 # Development shortcuts
 alias ecgen="npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D"
-
-# Fast node manager
-#  export PATH=/home/pratham82/.local/bin:$PATH
-#  eval "`fnm env`"
-
 
 #alias startmo="sudo service mongod start"
 #alias stopmo="sudo service mongod stop"
@@ -252,32 +249,40 @@ bindkey '^X^R' fzf-history-widget-accept
 # Vi mode shortcut
 # ctrl + shift + space
 
-
 # Drive ss
 # alias tuts="cd dev/sdb1/Downloads/Tutorials"
 
-
 # Fetch tools
 #neofetch
-pfetch
+#pfetch
 #ufetch
 #colorscript random
 #nerdfetch
 
-
-source /home/pratham82/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# fnm
-export PATH=/home/pratham82/.local/bin:$PATH
-eval "`fnm env`"
-export PATH="/tmp/fnm_multishell_20949_1607351516223/bin":$PATH
-export FNM_MULTISHELL_PATH="/tmp/fnm_multishell_20949_1607351516223"
-export FNM_DIR="/home/pratham82/.fnm"
-export FNM_LOGLEVEL="info"
-export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
 export FZF_BASE=/path/to/fzf/install/dir
 #eval "$(starship init zsh)"
 [ -f "/home/pratham82/.ghcup/env" ] && source "/home/pratham82/.ghcup/env" # ghcup-env
+source "$HOME/.zsh/spaceship/spaceship.zsh"
+
+export PATH="/Users/pratham82/Library/Caches/fnm_multishells/34182_1688615604306/bin":$PATH
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+export FNM_ARCH="arm64"
+export FNM_MULTISHELL_PATH="/Users/pratham82/Library/Caches/fnm_multishells/34182_1688615604306"
+export FNM_LOGLEVEL="info"
+export FNM_DIR="/Users/pratham82/Library/Application Support/fnm"
+export FNM_VERSION_FILE_STRATEGY="local"
+rehash
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+#echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc
+

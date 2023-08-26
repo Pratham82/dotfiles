@@ -13,30 +13,6 @@ nnoremap ; :
 let mapleader=","
 imap jj <Esc>
 
-call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'                                                         
-Plug 'jremmen/vim-ripgrep'
-Plug 'vim-utils/vim-man'
-Plug 'chriskempson/base16-vim'
-Plug 'davidhalter/jedi-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
-Plug '/home/mpaulson/personal/vim-be-good'
-Plug 'pangloss/vim-javascript'
-Plug 'mattn/emmet-vim'
-Plug 'leafgarland/typescript-vim'
-call plug#end()
-
 let g:rainbow_active = 1
 
 "Plug 'valloric/youcompleteme'
