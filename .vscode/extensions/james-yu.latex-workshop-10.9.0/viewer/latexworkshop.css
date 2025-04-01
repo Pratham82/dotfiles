@@ -1,0 +1,239 @@
+.visibleLargeView,
+.visibleMediumView,
+.visibleMediumView + .horizontalToolbarSeparator {
+  display: none !important;
+}
+
+html[dir='ltr'] .findbar {
+    left: 94px;
+}
+html[dir='rtl'] .findbar {
+    right: 94px;
+}
+
+@media all and (max-width: 860px) {
+    html[dir='ltr'] .findbar {
+      left: 20px;
+    }
+    html[dir='rtl'] .findbar {
+      right: 20px;
+    }
+}
+
+.findbar.wrapContainers > div {
+    clear: inherit;
+}
+
+#errorWrapper {
+    z-index: 100000;
+}
+
+#synctex-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    border: 0.2em solid red;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes synctex-indicator-fadeOut {
+    0% {
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    25% {
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.synctex-indicator-rect {
+    position: absolute;
+    z-index: 100000;
+    background-color: rgba(0, 0, 255, 0.5);
+    pointer-events: none;
+    animation: synctex-indicator-fadeOut 1s forwards;
+}
+
+#synctex-indicator.show {
+    transition: none;
+    opacity: 0.8;
+    height: 0.5em;
+    width: 0.5em;
+}
+
+#synctex-indicator.hide {
+    transition: opacity 0.5s, height 0.5s, width 0.5s;
+    opacity: 0;
+    height: 5em;
+    width: 5em;
+}
+
+#historyBack::before {
+    -webkit-mask-image: var(--findbarButton-previous-icon);
+    mask-image: var(--findbarButton-previous-icon);
+}
+
+#historyForward::before {
+    -webkit-mask-image: var(--findbarButton-next-icon);
+    mask-image: var(--findbarButton-next-icon);
+}
+
+#TrimButton::before{
+    -webkit-mask-image:var(--secondaryToolbarButton-spreadNone-icon);
+    mask-image:var(--secondaryToolbarButton-spreadNone-icon);
+}
+
+.spread {
+    margin-inline: 0 !important;
+}
+
+.pdfViewer.removePageBorders .page {
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 1px lightgrey;
+}
+
+:is(.pdfViewer .canvasWrapper) canvas{
+    position: relative !important;
+}
+
+.pdfViewer.removePageBorders > .page:last-of-type,
+.pdfViewer.removePageBorders .spread:last-of-type .page {
+    margin-bottom: 0px;
+}
+
+.pdfViewer.removePageBorders .spread .page:first-of-type {
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+}
+
+.pdfViewer.removePageBorders .spread .page:last-of-type {
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+
+.pdfViewer.removePageBorders.scrollHorizontal .page {
+    margin-bottom: 0px;
+}
+
+.pdfViewer.removePageBorders.scrollHorizontal .page:first-of-type {
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+}
+
+.pdfViewer.removePageBorders.scrollHorizontal .page:last-of-type {
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+
+.notransition {
+    transition: none !important;
+}
+
+.toolbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: all 0.2s cubic-bezier(.23,.96,.57,.99);
+}
+
+.toolbar.hide {
+    top: -32px;
+}
+
+.toolbar.hide:hover {
+    top: 0;
+}
+
+.pdfSidebarNotification::after {
+    display: none !important;
+}
+
+#viewerContainer {
+    top: 0;
+}
+
+#pageNumber {
+    font-size: 12px !important;
+}
+
+#viewBookmark {
+    display: none !important;
+}
+
+#secondaryViewBookmark {
+    display: none  !important;
+}
+
+#downloadButton {
+    display: none  !important;
+}
+
+#toolbarViewerRight .verticalToolbarSeparator {
+    display: none  !important;
+}
+
+#openFile,
+#secondaryOpenFile,
+#secondaryPrint,
+#secondaryDownload,
+#presentationMode,
+#secondaryPresentationMode {
+    display: none  !important;
+}
+
+#secondaryDownload + .horizontalToolbarSeparator {
+    display: none  !important;
+}
+
+#sidebarToggle::after {
+    display: none;
+}
+
+#synctexOnButton::before, #autoRefreshOnButton::before {
+    display: none;
+}
+
+#synctexOnButton, #autoRefreshOnButton {
+    padding-left: 12px;
+}
+
+#synctexOnButton > input, #autoRefreshOnButton > input {
+    margin: 1px;
+}
+
+#synctexOnButton > span, #autoRefreshOnButton > span {
+    padding-left: 1px;
+}
+
+.annotationLayer .popup {
+    margin: 0 calc(5px * var(--scale-factor));
+}
+
+.page-loading-mask {
+    border: none;
+    box-shadow: 0px 0px 0px 1px lightgrey;
+    outline: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.page-loading-mask img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.page-loading-mask.remove {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}

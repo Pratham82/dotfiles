@@ -1,0 +1,239 @@
+{
+	"name": "zoombar-vscode",
+	"displayName": "Zoom Bar",
+	"description": "Zoom UI in status bar for vscode.",
+	"icon": "images/zoomhex.128.png",
+	"version": "1.4.4",
+	"publisher": "wraith13",
+	"license": "SEE LICENSE IN LICENSE_1_0.txt",
+	"engines": {
+		"vscode": "^1.61.0"
+	},
+	"bugs": {
+		"url": "https://github.com/wraith13/zoombar-vscode/issues"
+	},
+	"homepage": "https://github.com/wraith13/zoombar-vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wraith13/zoombar-vscode.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"zoom",
+		"status bar",
+		"statusbar"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"x.browser": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "zoombar-vscode.selectZoom",
+				"title": "%zoombar-vscode.selectZoom.title%",
+				"category": "%zoombar-vscode.title%"
+			},
+			{
+				"command": "zoombar-vscode.resetZoom",
+				"title": "%zoombar-vscode.resetZoom.title%",
+				"category": "%zoombar-vscode.title%"
+			},
+			{
+				"command": "zoombar-vscode.zoomIn",
+				"title": "%zoombar-vscode.zoomIn.title%",
+				"category": "%zoombar-vscode.title%"
+			},
+			{
+				"command": "zoombar-vscode.zoomOut",
+				"title": "%zoombar-vscode.zoomout.title%",
+				"category": "%zoombar-vscode.title%"
+			}
+		],
+		"configuration": [
+			{
+				"title": "%zoombar-vscode.title%",
+				"properties": {
+					"zoombar.defaultZoom": {
+						"type": "number",
+						"default": 100,
+						"description": "%zoombar.defaultZoom.description%",
+						"scope": "window"
+					},
+					"zoombar.zoomUnit": {
+						"type": "number",
+						"default": 10,
+						"description": "%zoombar.zoomUnit.description%",
+						"scope": "window"
+					},
+					"zoombar.zoomUnitType": {
+						"type": "string",
+						"enum": [
+							"multiplicative",
+							"additive"
+						],
+						"default": "multiplicative",
+						"description": "%zoombar.zoomUnitType.description%",
+						"enumDescriptions": [
+							"%zoombar.zoomUnitType.multiplicative.description%",
+							"%zoombar.zoomUnitType.additive.description%"
+						],
+						"scope": "window"
+					},
+					"zoombar.preview": {
+						"type": "boolean",
+						"default": true,
+						"description": "%zoombar.preview.description%",
+						"scope": "window"
+					},
+					"zoombar.zoomPreset": {
+						"type": "array",
+						"items": {
+							"type": "number"
+						},
+						"default": [
+							300,
+							250,
+							200,
+							175,
+							150,
+							140,
+							130,
+							120,
+							110,
+							105,
+							100,
+							95,
+							90,
+							80,
+							75,
+							70,
+							60,
+							50
+						],
+						"description": "%zoombar.zoomPreset.description%",
+						"scope": "window"
+					},
+					"zoombar.zoomInLabel": {
+						"type": "string",
+						"default": "+",
+						"description": "%zoombar.zoomInLabel.description%",
+						"scope": "window"
+					},
+					"zoombar.zoomOutLabel": {
+						"type": "string",
+						"default": "-",
+						"description": "%zoombar.zoomOutLabel.description%",
+						"scope": "window"
+					},
+					"zoombar.fontZoomResetLabel": {
+						"type": "string",
+						"default": "$(text-size)",
+						"description": "%zoombar.fontZoomResetLabel.description%",
+						"scope": "window"
+					},
+					"zoombar.uiDisplayOrder": {
+						"type": "string",
+						"enum": [
+							"",
+							"@",
+							"%",
+							"@%",
+							"%@",
+							"+-",
+							"-+",
+							"@+-",
+							"@-+",
+							"+-@",
+							"-+@",
+							"+%-",
+							"+-%",
+							"%+-",
+							"%-+",
+							"-%+",
+							"-+%",
+							"@+%-",
+							"@+-%",
+							"@%+-",
+							"@%-+",
+							"@-%+",
+							"@-+%",
+							"+%-@",
+							"+-%@",
+							"%+-@",
+							"%-+@",
+							"-%+@",
+							"-+%@"
+						],
+						"default": "@+%-",
+						"description": "%zoombar.uiDisplayOrder.description%",
+						"scope": "window"
+					},
+					"zoombar.configurationTarget": {
+						"type": "string",
+						"default": "auto",
+						"enum": [
+							"auto",
+							"global",
+							"workspace"
+						],
+						"description": "%zoombar.configurationTarget.description%",
+						"enumDescriptions": [
+							"%zoombar.configurationTarget.auto.description%",
+							"%zoombar.configurationTarget.global.description%",
+							"%zoombar.configurationTarget.workspace.description%"
+						],
+						"scope": "window"
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=out/test/suite/index.js",
+		"pretest": "npm run compile-web",
+		"vscode:prepublish": "npm run package-web",
+		"compile-web": "webpack",
+		"watch-web": "webpack --watch",
+		"package-web": "webpack --mode production --devtool hidden-source-map",
+		"lint": "eslint src --ext ts",
+		"run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+	},
+	"devDependencies": {
+		"@types/mocha": "^9.0.0",
+		"@types/vscode": "^1.61.0",
+		"@types/webpack-env": "^1.16.2",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"@vscode/test-web": "^0.0.13",
+		"assert": "^2.0.0",
+		"eslint": "^7.32.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.1.1",
+		"process": "^0.11.10",
+		"ts-loader": "^9.2.5",
+		"typescript": "^4.4.3",
+		"webpack": "^5.52.1",
+		"webpack-cli": "^4.8.0"
+	},
+	"dependencies": {
+		"@wraith13/vscel": "^0.0.53"
+	},
+	"__metadata": {
+		"id": "03de82ee-b6a4-46c9-bde7-7b6793ffa232",
+		"publisherId": "e92c9e02-367b-406d-a982-5c08f564588a",
+		"publisherDisplayName": "wraith13",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062668841,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 259893
+	}
+}

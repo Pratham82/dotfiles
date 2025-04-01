@@ -1,0 +1,215 @@
+{
+	"name": "turbo-console-log",
+	"displayName": "Turbo Console Log",
+	"description": "Automating the process of writing meaningful log messages.",
+	"version": "2.14.0",
+	"publisher": "ChakrounAnas",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished",
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Turbo Console Log Configuration",
+			"properties": {
+				"turboConsoleLog.wrapLogMessage": {
+					"type": "boolean",
+					"default": false,
+					"description": "Determine if the log message should be wrapped or not."
+				},
+				"turboConsoleLog.logMessagePrefix": {
+					"type": "string",
+					"default": "🚀",
+					"description": "The prefix of the log message."
+				},
+				"turboConsoleLog.logMessageSuffix": {
+					"type": "string",
+					"default": ":",
+					"description": "The suffix of the log message."
+				},
+				"turboConsoleLog.includeFilename": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to include the file name of the log message."
+				},
+				"turboConsoleLog.includeLineNum": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to include the line number of the log message."
+				},
+				"turboConsoleLog.addSemicolonInTheEnd": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to add or not a semicolon in the end of the log message."
+				},
+				"turboConsoleLog.insertEnclosingClass": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to insert or not the enclosing class of the selected variable in the log message."
+				},
+				"turboConsoleLog.insertEnclosingFunction": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to insert or not the enclosing function of the selected variable in the log message."
+				},
+				"turboConsoleLog.insertEmptyLineBeforeLogMessage": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to insert an empty line before the log message or not."
+				},
+				"turboConsoleLog.insertEmptyLineAfterLogMessage": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to insert an empty line after the log message or not."
+				},
+				"turboConsoleLog.delimiterInsideMessage": {
+					"type": "string",
+					"default": "~",
+					"description": "The delimiter that will separate the different log message elements (file name, line number, class, function and variable)"
+				},
+				"turboConsoleLog.quote": {
+					"type": "string",
+					"enum": [
+						"\"",
+						"'",
+						"`"
+					],
+					"default": "\"",
+					"description": "Double quotes, single quotes or backtick"
+				},
+				"turboConsoleLog.logType": {
+					"type": "string",
+					"enum": [
+						"log",
+						"warn",
+						"error",
+						"debug",
+						"table"
+					],
+					"default": "log",
+					"description": "Select the log type"
+				},
+				"turboConsoleLog.logFunction": {
+					"type": "string",
+					"default": "log",
+					"description": "Specify a log function (when specified logType will be ignored)"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "turboConsoleLog.displayLogMessage",
+				"title": "Turbo Console Log: Display Turbo Log Message"
+			},
+			{
+				"command": "turboConsoleLog.commentAllLogMessages",
+				"title": "Turbo Console Log: Comment Turbo Log Messages"
+			},
+			{
+				"command": "turboConsoleLog.uncommentAllLogMessages",
+				"title": "Turbo Console Log: Uncomment Turbo Log Messages"
+			},
+			{
+				"command": "turboConsoleLog.deleteAllLogMessages",
+				"title": "Turbo Console Log: Delete Turbo Log Messages"
+			},
+			{
+				"command": "turboConsoleLog.correctAllLogMessages",
+				"title": "Turbo Console Log: Correct Turbo Log Messages"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "turboConsoleLog.displayLogMessage",
+				"key": "ctrl+alt+l",
+				"mac": "ctrl+alt+l"
+			},
+			{
+				"command": "turboConsoleLog.commentAllLogMessages",
+				"key": "alt+shift+c",
+				"mac": "alt+shift+c"
+			},
+			{
+				"command": "turboConsoleLog.uncommentAllLogMessages",
+				"key": "alt+shift+u",
+				"mac": "alt+shift+u"
+			},
+			{
+				"command": "turboConsoleLog.deleteAllLogMessages",
+				"key": "alt+shift+d",
+				"mac": "alt+shift+d"
+			},
+			{
+				"command": "turboConsoleLog.correctAllLogMessages",
+				"key": "alt+shift+x",
+				"mac": "alt+shift+x"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "rm -rf out && npm run esbuild-base -- --minify",
+		"esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+		"esbuild": "npm run esbuild-base -- --sourcemap",
+		"esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+		"watch": "npm run esbuild --watch",
+		"lint": "eslint src --ext ts",
+		"pretest": "yarn run esbuild-base",
+		"test:compile": "rm -rf out && tsc -p ./ && mkdir out/test/files && cp -r src/test/files/ out/test/files/",
+		"test": "npm run test:compile && node ./out/test/runTests.js",
+		"test:unit": "npm run test:compile && mocha --require ts-node/register 'src/test/unit/**/*.test.ts'"
+	},
+	"devDependencies": {
+		"@types/chai": "^5.0.0",
+		"@types/glob": "^7.1.3",
+		"@types/lodash": "^4.14.186",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.50.0",
+		"@typescript-eslint/eslint-plugin": "^4.33.0",
+		"@typescript-eslint/parser": "^4.33.0",
+		"chai": "^4.3.7",
+		"chalk": "^4.1.0",
+		"esbuild": "^0.17.7",
+		"eslint": "^7.9.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"prettier": "^2.7.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.0.2",
+		"vscode-test": "^1.6.1"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"bugs": {
+		"url": "https://github.com/Chakroun-Anas/turbo-console-log/issues",
+		"email": "chakroun.anas@outlook.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Chakroun-Anas/turbo-console-log"
+	},
+	"__metadata": {
+		"id": "6623619a-676d-4cde-943f-a3c193b44fc0",
+		"publisherDisplayName": "ChakrounAnas",
+		"publisherId": "4fecec8e-335d-44fc-ab16-5356745fb1ac",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1743361458256,
+		"size": 163660
+	},
+	"dependencies": {
+		"lodash": "^4.17.21"
+	}
+}

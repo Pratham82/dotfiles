@@ -1,0 +1,8 @@
+#!/bin/bash
+
+INSTALL_DIR="/Users/pratham82/.config/herd-lite/bin"
+
+# Remove the installation directory
+rm -rf "$INSTALL_DIR"
+
+echo "PHP has been uninstalled."

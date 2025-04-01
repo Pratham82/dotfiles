@@ -1,0 +1,27 @@
+{
+	"messages": [
+		"You have been removed from the collaboration session.",
+		"You have been blocked from the collaboration session.",
+		"More info",
+		"The companion audio extension: 'Live Share Audio' is now deprecated. Learn more about the future of audio calling in Live Share.",
+		"The host has ended the current collaboration session. Open folders and editors will now close.",
+		"The collaboration session expired. Please sign in and try again.",
+		"You have been removed from the collaboration session.",
+		"You have been blocked from the collaboration session.",
+		"You were disconnected from the collaboration session due to a connectivity problem or the host going offline.",
+		"The collaboration session has ended due to an internal error."
+	],
+	"keys": [
+		"agentless.userRemoved",
+		"agentless.userBlocked",
+		"generic.MoreInfo",
+		"notification.AudioDeprecation",
+		"agentless.sessionEnded",
+		"agentless.sessionExpired",
+		"agentless.userRemoved",
+		"agentless.userBlocked",
+		"agentless.connectionLost",
+		"agentless.internalError"
+	],
+	"filePath": "src\\extension"
+}

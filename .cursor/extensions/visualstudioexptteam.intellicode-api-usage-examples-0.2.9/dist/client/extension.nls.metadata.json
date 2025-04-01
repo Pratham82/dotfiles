@@ -1,0 +1,21 @@
+{
+	"messages": [
+		"Feedback Submitted. Thanks!",
+		"Could not submit feedback at the time. See output window for details.",
+		"Snippet was copied to the Clipboard.",
+		"Could not copy code snippet to clipboard. See output for details.",
+		"See Real World Examples From GitHub",
+		"Click here to see code examples from real world projects on GitHub.",
+		"See Real World Examples From GitHub"
+	],
+	"keys": [
+		"feedbackProvidedMessage",
+		"feedbackProvidedError",
+		"snippetCopyMessage",
+		"snippetCopyError",
+		"githubExamples",
+		"githubExamplesTooltip",
+		"githubExamples"
+	],
+	"filePath": "client\\extension"
+}

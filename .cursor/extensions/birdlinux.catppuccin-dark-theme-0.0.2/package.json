@@ -1,0 +1,53 @@
+{
+	"name": "catppuccin-dark-theme",
+	"displayName": "Catppuccin Dark Theme",
+	"description": "Catppuccin minimal Dark Theme",
+	"version": "0.0.2",
+	"icon": "images/cat.png",
+	"publisher": "birdlinux",
+	"engines": {
+		"vscode": "^1.79.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"purple",
+		"lavender",
+		"pink",
+		"minimal",
+		"catppuccin",
+		"magenta",
+		"dark",
+		"dark theme",
+		"minimal theme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/birdlinux/catppuccin-vscode.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Catppuccin Dark Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/CatppuccinDark.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "d095240b-d9ff-4f1b-b1d1-00447b2598bf",
+		"publisherId": "5c5b697c-2a74-4407-b92f-9612d29bfcd7",
+		"publisherDisplayName": "Birdlinux",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1741423490437,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 75495
+	}
+}

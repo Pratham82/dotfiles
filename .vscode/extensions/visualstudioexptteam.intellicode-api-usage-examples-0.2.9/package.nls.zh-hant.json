@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode API 使用方式範例",
+	"extension.description": "請從 GitHub 查看相關程式碼範例，以在編輯器中查看超過 10 萬個不同的 API。",
+	"extension.titleshort": "IntelliCode API 使用方式範例",
+	"settings.logging": "主機的記錄層級",
+	"settings.pythonEnabled": "啟用 Python 檔案的 API 使用範例",
+	"settings.typescriptEnabled": "啟用 Typescript/Javascript 檔案的 API 使用範例"
+}

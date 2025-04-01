@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="kanagawa" Version="1.5.1" Publisher="qufiwefefwoyn" />
+			<DisplayName>Kanagawa</DisplayName>
+			<Description xml:space="preserve">Port of the Kanagawa.nvim - dark theme inspired by the colors of the famous painting by Katsushika Hokusai.</Description>
+			<Tags>theme,contrast,dark,kanagawa,clean,elegant,calm,color-theme,__web_extension</Tags>
+			<Categories>Themes</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			<Badges><Badge Link="https://marketplace.visualstudio.com/items/qufiwefefwoyn.kanagawa" ImgUri="https://vsmarketplacebadge.apphb.com/version/qufiwefefwoyn.kanagawa.svg" Description="Extension version" />
+<Badge Link="https://marketplace.visualstudio.com/items/qufiwefefwoyn.kanagawa" ImgUri="https://vsmarketplacebadge.apphb.com/installs/qufiwefefwoyn.kanagawa.svg" Description="Extension installs" />
+<Badge Link="https://marketplace.visualstudio.com/items/qufiwefefwoyn.kanagawa" ImgUri="https://vsmarketplacebadge.apphb.com/rating/qufiwefefwoyn.kanagawa.svg" Description="Extension Rating" /></Badges>
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.63.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="ui,workspace,web" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/barklan/kanagawa.vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/barklan/kanagawa.vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/barklan/kanagawa.vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/barklan/kanagawa.vscode/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/barklan/kanagawa.vscode" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/assets/icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/assets/icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

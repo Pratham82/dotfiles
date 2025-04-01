@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Real World Examples of"
+	],
+	"keys": [
+		"gaia.resultsTitle"
+	],
+	"filePath": "client\\gaia-results\\gaiaResultsViewManager"
+}

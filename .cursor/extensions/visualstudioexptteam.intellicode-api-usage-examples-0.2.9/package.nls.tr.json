@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode API Kullanımı Örnekleri",
+	"extension.description": "100.000'den fazla farklı API için GitHub'dan ilgili kod örneklerine doğrudan düzenleyicinizde bakın.",
+	"extension.titleshort": "IntelliCode API Kullanımı Örnekleri",
+	"settings.logging": "Konsol için günlük kaydı düzeyi",
+	"settings.pythonEnabled": "Python dosyaları için API Kullanım Örneklerini Etkinleştirin",
+	"settings.typescriptEnabled": "TypeScript/Javascript dosyaları için API Kullanım Örneklerini Etkinleştirin"
+}

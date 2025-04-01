@@ -1,0 +1,69 @@
+{
+	"name": "vscode-great-icons",
+	"displayName": "VSCode Great Icons",
+	"description": "A big pack of icons (200+) for your files.",
+	"version": "2.1.116",
+	"publisher": "emmanuelbeziat",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"scripts": {
+		"publish": "npm run patch",
+		"patch": "vsce publish patch"
+	},
+	"categories": [
+		"Other",
+		"Themes"
+	],
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "vscode-great-icons",
+				"label": "VSCode Great Icons",
+				"path": "./icons.json"
+			}
+		]
+	},
+	"icon": "images/vscode-great-icons_icon.png",
+	"galleryBanner": {
+		"color": "#e0e0e0",
+		"theme": "light"
+	},
+	"keywords": [
+		"icons",
+		"theme",
+		"icon-theme",
+		"customization"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EmmanuelBeziat/vscode-great-icons.git"
+	},
+	"author": {
+		"email": "contact@emmanuelbeziat.com",
+		"name": "Emmanuel Béziat",
+		"url": "https://www.emmanuelbeziat.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/EmmanuelBeziat/vscode-great-icons/issues"
+	},
+	"homepage": "https://github.com/EmmanuelBeziat/vscode-great-icons#readme",
+	"devDependencies": {
+		"@vscode/vsce": "^3.3.0"
+	},
+	"__metadata": {
+		"id": "829a192d-496c-44ac-87f3-0a84ce36a853",
+		"publisherId": "c6e135ee-f6a2-45cb-b782-fd4de23acc84",
+		"publisherDisplayName": "Emmanuel Béziat",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1742576167793,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 1046772
+	}
+}

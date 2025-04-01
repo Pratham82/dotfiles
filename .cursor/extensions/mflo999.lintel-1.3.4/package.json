@@ -1,0 +1,191 @@
+{
+	"name": "lintel",
+	"version": "1.3.4",
+	"description": "VSCode extension to visualize ESLint configurations",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mflorence99/lintel.git"
+	},
+	"author": "Mark Florence",
+	"homepage": "https://github.com/mflorence99/lintel/blob/master/README.md",
+	"bugs": {
+		"email": "mflo999@gmail.com",
+		"url": "https://github.com/mflorence99/lintel/issues"
+	},
+	"main": "./dist/ext/lintel.js",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"scripts": {
+		"build": "rimraf dist && ng --aot --prod build && tsc -p ext/tsconfig.json",
+		"build:ext": "tsc -p ext/tsconfig.json -w",
+		"build:src": "ng --watch build",
+		"clean:caches": "jest --clearCache",
+		"clean:deps": "rm -rf node_modules && rm -f package-lock.json && npm -f install",
+		"extensions": "ts-node --dir bin eslint-extensions.ts",
+		"lint": "eslint --fix 'bin/**/*.ts' 'common/**/*.ts' 'ext/**/*.ts' 'src/app/**/*.ts' && stylelint --fix 'src/**/*.css' 'src/**/*.scss'",
+		"package": "npm run build && vsce package",
+		"postinstall": "ngcc && ts-node bin/patch.ts",
+		"prettier": "prettier --write .",
+		"publish": "npm run build && vsce publish patch",
+		"rules": "ts-node --dir bin eslint-rules.ts",
+		"simulator": "ng serve",
+		"test": "jest --runInBand --coverage && ts-node --dir bin coverage-icon.ts",
+		"test:nosnaps": "jest --runInBand --coverage=false --updateSnapshot",
+		"test:only": "jest --coverage=false -- %1"
+	},
+	"keywords": [
+		"eslint"
+	],
+	"dependencies": {
+		"eslint": "^7",
+		"js-yaml": "^4",
+		"rfdc": "^1",
+		"tslib": "^2"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "^0.1102.1",
+		"@angular-eslint/builder": "^1",
+		"@angular-eslint/eslint-plugin": "^1",
+		"@angular-eslint/eslint-plugin-template": "^1",
+		"@angular-eslint/schematics": "^1",
+		"@angular-eslint/template-parser": "^1",
+		"@angular-ru/common": "^15",
+		"@angular/cdk": "^11",
+		"@angular/cli": "^11",
+		"@angular/common": "^11",
+		"@angular/compiler": "^11",
+		"@angular/compiler-cli": "^11",
+		"@angular/core": "^11",
+		"@angular/forms": "^11",
+		"@angular/language-service": "^11",
+		"@angular/platform-browser": "^11",
+		"@angular/platform-browser-dynamic": "^11",
+		"@fortawesome/angular-fontawesome": "^0.8.2",
+		"@fortawesome/fontawesome-svg-core": "^1",
+		"@fortawesome/free-brands-svg-icons": "^5",
+		"@fortawesome/free-regular-svg-icons": "^5",
+		"@fortawesome/free-solid-svg-icons": "^5",
+		"@ngxs-labs/data": "^4",
+		"@ngxs/logger-plugin": "^3",
+		"@ngxs/store": "^3",
+		"@types/escodegen": "0.0.6",
+		"@types/eslint": "^7",
+		"@types/esprima": "^4.0.2",
+		"@types/jest": "^26",
+		"@types/js-yaml": "^4",
+		"@types/json5": "^2",
+		"@types/node": "^14",
+		"@types/vscode": "^1.53.0",
+		"@typescript-eslint/eslint-plugin": "^4",
+		"@typescript-eslint/parser": "^4",
+		"angular2-uuid": "^1.1.1",
+		"eslint-config-eslint": "^7",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-mflorence99": "latest",
+		"eslint-config-prettier": "^8",
+		"eslint-plugin-compat": "^3",
+		"eslint-plugin-import-splitnsort": "latest",
+		"eslint-plugin-jest": "^24",
+		"eslint-plugin-lodash": "^7.1.0",
+		"eslint-plugin-lodash-fp": "^2.2.0-a1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-react": "^7",
+		"eslint-plugin-react-hooks": "^4",
+		"eslint-plugin-react-native": "^3",
+		"eslint-plugin-react-redux": "^3",
+		"eslint-plugin-vue": "7.0.1",
+		"jest": "^26",
+		"jest-extended": "^0.11.5",
+		"jest-junit": "^12",
+		"jest-preset-angular": "^8",
+		"marked": "^2",
+		"ngx-contextmenu": "^5.4.0",
+		"prettier": "^2",
+		"prettier-plugin-package": "^1",
+		"rimraf": "^3.0.2",
+		"rxjs": "^6",
+		"stylelint": "^13",
+		"stylelint-config-standard": "^20",
+		"stylelint-order": "^4",
+		"stylelint-scss": "^3",
+		"ts-node": "^9",
+		"typescript": "^4",
+		"zone.js": "^0.11.4"
+	},
+	"activationEvents": [
+		"onCommand:lintel.start"
+	],
+	"badges": [
+		{
+			"description": "Jest Coverage",
+			"href": "https://github.com/mflorence99/lintel/issues",
+			"url": "https://img.shields.io/badge/coverage-96.94%25-blue"
+		},
+		{
+			"description": "License: MIT",
+			"href": "https://github.com/mflorence99/lintel/blob/master/LICENSE",
+			"url": "https://img.shields.io/badge/License-MIT-yellow.svg"
+		},
+		{
+			"description": "CircleCI",
+			"href": "https://circleci.com/gh/mflorence99/lintel",
+			"url": "https://circleci.com/gh/mflorence99/lintel.svg?style=shield"
+		}
+	],
+	"categories": [
+		"Linters"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"category": "Lintel",
+				"command": "lintel.start",
+				"title": "ESLint Configuration File Visualizer"
+			}
+		],
+		"configuration": {
+			"properties": {
+				"lintel.ignoredDirectories": {
+					"default": [
+						"node_modules",
+						"build",
+						"dist",
+						"out"
+					],
+					"description": "List of directories not searched for eslintrc files.",
+					"type": "array"
+				},
+				"lintel.updateDebounceTime": {
+					"default": 2500,
+					"description": "Debounce time as ESLint configuration files are updated.",
+					"minimum": 1,
+					"type": "number"
+				}
+			},
+			"title": "Lintel"
+		}
+	},
+	"displayName": "Lintel: ESLint Configuration File Visualizer",
+	"galleryBanner": {
+		"color": "#424242",
+		"theme": "dark"
+	},
+	"icon": "dist/lintel/assets/lintel.png",
+	"publisher": "mflo999",
+	"__metadata": {
+		"id": "068fc7a4-8517-43fd-bc69-55a20d01f6a1",
+		"publisherId": "633115e1-3e53-4230-8569-73c412d84173",
+		"publisherDisplayName": "Mark Florence",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062725747,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 21277204
+	}
+}

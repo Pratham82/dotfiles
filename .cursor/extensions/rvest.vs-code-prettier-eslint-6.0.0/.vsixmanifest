@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="vs-code-prettier-eslint" Version="6.0.0" Publisher="rvest" />
+			<DisplayName>Prettier ESLint</DisplayName>
+			<Description xml:space="preserve">A Visual Studio Extension to format JavaScript and Typescript code using prettier-eslint package</Description>
+			<Tags>eslint,prettier,prettier-eslint,multi-root ready,css,graphql,html,javascript,javascriptreact,json,jsonc,less,markdown,mdx,scss,svelte,typescript,typescriptreact,vue,yaml,linters,__sponsor_extension</Tags>
+			<Categories>Formatters</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.63.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.SponsorLink" Value="https://github.com/sponsors/idahogurl" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/idahogurl/vs-code-prettier-eslint.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/idahogurl/vs-code-prettier-eslint.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/idahogurl/vs-code-prettier-eslint.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/idahogurl/vs-code-prettier-eslint/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/idahogurl/vs-code-prettier-eslint#readme" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

@@ -1,0 +1,71 @@
+{
+  "name": "regexp-worker",
+  "version": "3.0.0",
+  "description": "Runs regular expressions on a background thread.",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib coverage",
+    "lint": "eslint \"src/**/*.ts\"",
+    "build": "npm run compile",
+    "clean-build": "npm run clean && npm run build",
+    "coverage": "jest --coverage",
+    "prepublish": "npm run clean-build",
+    "prepublishOnly": "npm run test-all",
+    "compile": "tsc -p .",
+    "watch": "tsc --watch -p .",
+    "release": "npx standard-version",
+    "release-alpha": "npm release -- -p alpha",
+    "tsc": "tsc -p .",
+    "test-watch": "jest --watch",
+    "test-js": "cross-env TEST_JS=true jest",
+    "test-ts": "cross-env TEST_TS=true jest --verbose",
+    "test-all": "npm run test-js && npm run test-ts",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/regexp-worker.git"
+  },
+  "keywords": [
+    "regexp",
+    "regular",
+    "expression",
+    "node",
+    "worker",
+    "thread"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/regexp-worker/issues"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "!**/*.test.*",
+    "!**/*.map"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^18.19.39",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "globals": "^15.8.0",
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.2",
+    "lorem-ipsum": "^2.0.8",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.7",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  },
+  "homepage": "https://github.com/streetsidesoftware/regexp-worker#readme"
+}

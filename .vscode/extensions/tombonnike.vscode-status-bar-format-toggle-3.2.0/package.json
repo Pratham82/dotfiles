@@ -1,0 +1,92 @@
+{
+	"name": "vscode-status-bar-format-toggle",
+	"displayName": "Formatting Toggle",
+	"version": "3.2.0",
+	"description": "A VS Code extension that allows you to toggle formatting settings ON and OFF with a simple click.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tom-Bonnike/vscode-formatting-toggle.git"
+	},
+	"publisher": "tombonnike",
+	"author": "Tom Bonnike (bonniketom@gmail.com)",
+	"icon": "icon.png",
+	"bugs": {
+		"url": "https://github.com/Tom-Bonnike/vscode-formatting-toggle/issues"
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle",
+	"engines": {
+		"vscode": "^1.82.0"
+	},
+	"keywords": [
+		"disable",
+		"toggle",
+		"format",
+		"formatting",
+		"prettier"
+	],
+	"categories": [
+		"Other",
+		"Formatters"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "formattingToggle.toggleFormat",
+				"title": "Toggle formatting"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Formatting Toggle’s configuration",
+			"properties": {
+				"formattingToggle.statusBarText": {
+					"type": "object",
+					"scope": "resource",
+					"default": {
+						"formattingEnabled": "Formatting: $(check)",
+						"formattingDisabled": "Formatting: $(x)"
+					},
+					"description": "The status bar text displayed when the formatting is enabled or disabled. It can include VS Code codicons."
+				},
+				"formattingToggle.affects": {
+					"scope": "resource",
+					"type": "array",
+					"default": [
+						"editor.formatOnPaste",
+						"editor.formatOnSave",
+						"editor.formatOnType"
+					],
+					"description": "The formatting settings the extension should toggle. Affects all formatting events by default."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"start": "tsc -watch -p ./",
+		"vscode:prepublish": "tsc -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.2",
+		"@types/vscode": "^1.82.0",
+		"typescript": "^5.2.2"
+	},
+	"__metadata": {
+		"id": "28fcf0b8-26a5-4e99-9b8d-02e990366c6f",
+		"publisherId": "89227cef-64e4-437d-bf66-0e4b431a4995",
+		"publisherDisplayName": "tombonnike",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062668301,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 29797
+	}
+}

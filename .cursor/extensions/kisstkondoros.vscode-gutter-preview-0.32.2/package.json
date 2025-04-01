@@ -1,0 +1,142 @@
+{
+	"name": "vscode-gutter-preview",
+	"private": true,
+	"description": "Shows image preview in the gutter and on hover",
+	"author": "Tamas Kiss",
+	"publisher": "kisstkondoros",
+	"license": "MIT",
+	"version": "0.32.2",
+	"displayName": "Image preview",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.88.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kisstkondoros/gutter-preview.git"
+	},
+	"keywords": [
+		"vscode",
+		"image",
+		"preview"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Image Preview configuration",
+			"properties": {
+				"gutterpreview.sourceFolder": {
+					"default": "src",
+					"scope": "resource",
+					"description": "Additional folder to consider when resolving relative urls",
+					"type": "string"
+				},
+				"gutterpreview.sourceFolders": {
+					"default": [
+						"static",
+						"public"
+					],
+					"scope": "resource",
+					"description": "Additional folders to consider when resolving relative urls",
+					"type": "array"
+				},
+				"gutterpreview.imagePreviewMaxHeight": {
+					"default": "100",
+					"scope": "resource",
+					"description": "The maximum height of the image preview",
+					"type": "number"
+				},
+				"gutterpreview.imagePreviewMaxWidth": {
+					"default": "-1",
+					"scope": "resource",
+					"description": "The maximum width of the image preview, if configured to > 0, it is used instead of the max height setting",
+					"type": "number"
+				},
+				"gutterpreview.showImagePreviewOnGutter": {
+					"default": true,
+					"scope": "resource",
+					"description": "A flag which indicates whether the image preview should be shown on the gutter",
+					"type": "boolean"
+				},
+				"gutterpreview.showUnderline": {
+					"default": true,
+					"scope": "resource",
+					"description": "A flag which indicates whether to underline recognized URLs",
+					"type": "boolean"
+				},
+				"gutterpreview.paths": {
+					"default": {},
+					"scope": "resource",
+					"description": "Specify path mapping to be computed relative to project root.",
+					"type": "object"
+				},
+				"gutterpreview.currentColorForSVG": {
+					"default": "white",
+					"scope": "resource",
+					"description": "The default color to be used in svg previews",
+					"type": "string"
+				},
+				"gutterpreview.enableReferenceLookup": {
+					"default": false,
+					"scope": "resource",
+					"description": "A flag which indicates whether resources should be resolved from references",
+					"type": "boolean"
+				},
+				"gutterpreview.urlDetectionPatterns": {
+					"default": [],
+					"scope": "resource",
+					"markdownDescription": "Sometimes image URLs without extensions (such as `https://example.com/pic/640?fmt=jpeg`) are not detected. You can now specify regular expressions to detect these URLs. configured values (such as `/^http(s)*://example.com/pic/i`) will be parsed using [regex-parser](https://github.com/IonicaBizau/regex-parser.js) and ignored if they are illegal regular expression strings.",
+					"type": "array"
+				}
+			}
+		}
+	},
+	"main": "./dist/extension",
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup && tsc --noEmit",
+		"vscode:prepublish": "npm run build"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.8",
+		"@types/node-fetch": "^2.6.11",
+		"@types/tmp": "^0.2.6",
+		"@types/vscode": "^1.88.0",
+		"filesize": "^10.1.1",
+		"husky": "^9.0.11",
+		"image-size": "^1.1.1",
+		"json5": "^2.2.3",
+		"node-fetch": "^3.3.2",
+		"prettier": "^3.2.5",
+		"regex-parser": "^2.3.0",
+		"slash": "^5.1.0",
+		"strip-bom": "^5.0.0",
+		"tmp": "^0.2.3",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5",
+		"vscode-languageclient": "^9.0.1",
+		"vscode-languageserver": "^9.0.1",
+		"vscode-languageserver-textdocument": "^1.0.11",
+		"vscode-uri": "^3.0.8"
+	},
+	"__metadata": {
+		"id": "eedfd044-d5ac-4389-973d-3ac1fdb98ad5",
+		"publisherId": "87e3e2a4-ac17-425a-a4b6-698bc44254fe",
+		"publisherDisplayName": "Kiss Tamás",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1733109891381,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 1786340
+	}
+}

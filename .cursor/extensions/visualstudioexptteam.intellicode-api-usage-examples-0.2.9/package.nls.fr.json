@@ -1,0 +1,8 @@
+{
+	"extension.title": "Exemples d’utilisation de l’API IntelliCode",
+	"extension.description": "Consultez des exemples de code pertinents de GitHub pour plus de 100 000 API différentes directement dans votre éditeur.",
+	"extension.titleshort": "Exemples d’utilisation de l’API IntelliCode",
+	"settings.logging": "Niveau de journalisation pour la console",
+	"settings.pythonEnabled": "Activer les exemples d’utilisation d’API pour les fichiers Python",
+	"settings.typescriptEnabled": "Activer des exemples d’utilisation d’API pour les fichiers Typescript/Javascript"
+}

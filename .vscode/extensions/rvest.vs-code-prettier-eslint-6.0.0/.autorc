@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "first-time-contributor",
+    "released",
+    [
+      "exec",
+      {
+        "version": "yarn version",
+        "publish": "yarn package"
+      }
+    ],
+    ["upload-assets", ["./*.vsix"]]
+  ],
+  "owner": "idahogurl",
+  "repo": "vs-code-prettier-eslint",
+  "name": "Rebecca Vest",
+  "email": "olserebe@hotmail.com",
+  "labels": [
+    {
+      "name": "continuous integration",
+      "changelogTitle": ":bricks: Continuous Integration"
+    },
+    {
+      "name": "ignore release",
+      "releaseType": "skip"
+    }
+  ]
+}

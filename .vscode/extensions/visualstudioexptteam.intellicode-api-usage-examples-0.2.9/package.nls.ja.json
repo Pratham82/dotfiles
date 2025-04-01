@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode API の使用例",
+	"extension.description": "エディターで直接、100,000 を超える異なる API について GitHub の関連するコード例をご覧ください。",
+	"extension.titleshort": "IntelliCode API の使用例",
+	"settings.logging": "コンソールのログ記録レベル",
+	"settings.pythonEnabled": "Python ファイルの API 使用例を有効にする",
+	"settings.typescriptEnabled": "Typescript/Javascript ファイルの API 使用例を有効にする"
+}

@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode API 使用示例",
+	"extension.description": "请直接在编辑器中查看 GitHub 中 10 万多个不同的 API 的相关代码示例。",
+	"extension.titleshort": "IntelliCode API 使用示例",
+	"settings.logging": "控制台的日志记录级别",
+	"settings.pythonEnabled": "为 Python 文件启用 API 使用示例",
+	"settings.typescriptEnabled": "为 Typescript/Javascript 文件启用 API 使用示例"
+}

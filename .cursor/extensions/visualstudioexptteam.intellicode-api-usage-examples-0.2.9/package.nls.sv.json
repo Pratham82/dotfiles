@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode API-användningsexempel",
+	"extension.description": "Se relevanta kodexempel från GitHub för över 100 000 olika API:er direkt i redigeringsprogrammet.",
+	"extension.titleshort": "IntelliCode API-användningsexempel",
+	"settings.logging": "Loggningsnivå för konsol",
+	"settings.pythonEnabled": "Aktivera API-användningsexempel för Python-filer",
+	"settings.typescriptEnabled": "Aktivera API-användningsexempel för Typescript-/Javascript-filer"
+}

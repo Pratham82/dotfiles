@@ -1,0 +1,56 @@
+{
+	"name": "catppuccin-noctis",
+	"displayName": "Catppuccin Noctis",
+	"description": "Catppuccin palette with Noctis syntax highlighting!",
+	"publisher": "alexdauenhauer",
+	"version": "3.1.5",
+	"icon": "images/logo.jpg",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexdauenhauer/catppuccin-noctis.git"
+	},
+	"galleryBanner": {
+		"color": "#1E1E2E",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Catppuccin Noctis Mocha",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Catppuccin Noctis Mocha-color-theme.json"
+			},
+			{
+				"label": "Catppuccin Alt Mocha",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Catppuccin Alt Mocha-color-theme.json"
+			},
+			{
+				"label": "Catppuccin Noctis Macchiato",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Catppuccin Noctis Macchiato-color-theme.json"
+			},
+			{
+				"label": "Catppuccin Noctis Frappé",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Catppuccin Noctis Frappé-color-theme.json"
+			},
+			{
+				"label": "Catppuccin Noctis Latte",
+				"uiTheme": "vs",
+				"path": "./themes/Catppuccin Noctis Latte-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1741636817471,
+		"size": 4487980
+	}
+}

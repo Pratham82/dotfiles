@@ -1,0 +1,78 @@
+{
+	"name": "moonlight",
+	"displayName": "Moonlight",
+	"description": "A VS Code theme with bubblegum colors on a moonlit background.",
+	"version": "0.11.1",
+	"publisher": "atomiks",
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/atomiks/moonlight-vscode-theme"
+	},
+	"keywords": [
+		"Theme",
+		"Dark Theme",
+		"Moonlight",
+		"Night Theme"
+	],
+	"scripts": {
+		"publish": "vsce publish",
+		"build": "bun scripts/build.ts",
+		"format": "npx @biomejs/biome format **/*.{ts,js} --write"
+	},
+	"galleryBanner": {
+		"color": "#061526",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Moonlight II",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moonlight-ii.json"
+			},
+			{
+				"label": "Moonlight II Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moonlight-ii-italic.json"
+			},
+			{
+				"label": "Moonlight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moonlight.json"
+			},
+			{
+				"label": "Moonlight Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moonlight-italic.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.5.1",
+		"prettier": "^3.1.1",
+		"vsce": "^2.15.0"
+	},
+	"__metadata": {
+		"id": "fe612a60-7107-41d4-a01e-4c3bebe3ffd8",
+		"publisherId": "ee8ecf26-6d35-4318-aeba-937d9a4cef37",
+		"publisherDisplayName": "atomiks",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062682958,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 2668007
+	}
+}

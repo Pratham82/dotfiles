@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/pratham82/.config/nvim/lua'
+let g:netrw_dirhist_3='/Users/pratham82/dev/DSA'
+let g:netrw_dirhist_2='/Users/pratham82/dev'
+let g:netrw_dirhist_1='/Users/pratham82/.zsh_sessions'

@@ -1,0 +1,165 @@
+{
+	"name": "swdc-vscode",
+	"displayName": "Code Time",
+	"version": "2.8.3",
+	"publisher": "softwaredotcom",
+	"description": "Code Time is an open source plugin that provides programming metrics right in Visual Studio Code.",
+	"author": {
+		"name": "Software.com"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"icon": "images/codetime-c-128.png",
+	"galleryBanner": {
+		"color": "#384356",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/swdotcom/swdc-vscode"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"codetime",
+		"flow",
+		"mode",
+		"time",
+		"productivity"
+	],
+	"capabilities": {
+		"supported": true
+	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"engines": {
+		"vscode": "^1.66.0"
+	},
+	"main": "./dist/extension.js",
+	"scripts": {
+		"lint": "tslint -p ./",
+		"build": "vsce package --yarn",
+		"watch": "tsc -watch -p ./",
+		"webpack": "yarn compile:extension & yarn compile:views",
+		"webpack-dev": "yarn watch:extension & yarn watch:views",
+		"compile:extension": "tsc -p ./",
+		"compile:views": "webpack --mode development",
+		"watch:extension": "tsc -watch -p ./",
+		"watch:views": "webpack --watch --mode development",
+		"vscode:prepublish": "webpack --mode production",
+		"test-compile": "tsc -p ./"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "codetime.viewProjectReports",
+				"title": "Code Time: Project reports"
+			},
+			{
+				"command": "codetime.displayReadme",
+				"title": "Code Time: Learn more"
+			},
+			{
+				"command": "codetime.manageSlackConnection",
+				"title": "Code Time: Manage Slack connection"
+			},
+			{
+				"command": "codetime.connectSlack",
+				"title": "Code Time: Connect Slack workspace"
+			},
+			{
+				"command": "codetime.viewDashboard",
+				"title": "Code Time: View Dashboard"
+			},
+			{
+				"command": "codetime.enableFlowMode",
+				"title": "Code Time: Enable Flow Mode"
+			},
+			{
+				"command": "codetime.exitFlowMode",
+				"title": "Code Time: Exit Flow Mode"
+			},
+			{
+				"command": "codetime.logout",
+				"title": "Code Time: Log out"
+			},
+			{
+				"command": "codetime.authSignIn",
+				"title": "Code Time: Software.com Sign In",
+				"icon": "$(sign-in)"
+			}
+		],
+		"configuration": [
+			{
+				"type": "object",
+				"title": "Code Time"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "code-time-sidebar",
+					"title": "Code Time",
+					"icon": "images/codetime-g-30.png"
+				}
+			]
+		},
+		"views": {
+			"code-time-sidebar": [
+				{
+					"id": "codetime.webView",
+					"type": "webview",
+					"name": "",
+					"icon": "images/codetime-g-30.png"
+				}
+			]
+		}
+	},
+	"devDependencies": {
+		"@types/copy-webpack-plugin": "^8.0.1",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^16.10.3",
+		"@types/vscode": "^1.52.0",
+		"@typescript-eslint/eslint-plugin": "^4.33.0",
+		"@typescript-eslint/parser": "^4.33.0",
+		"copy-webpack-plugin": "^11.0.0",
+		"file-loader": "^6.2.0",
+		"ts-loader": "^9.2.6",
+		"tslint": "^6.1.3",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^5.4.5",
+		"webpack": "^5.94.0",
+		"webpack-cli": "^4.10.0"
+	},
+	"dependencies": {
+		"@swdotcom/editor-flow": "1.1.3",
+		"@types/uuid": "^9.0.8",
+		"@types/ws": "^8.5.12",
+		"axios": "^1.7.4",
+		"date-fns": "^4.1.0",
+		"node-cache": "^5.1.2",
+		"open": "^8.4.2",
+		"swdc-tracker": "1.5.7",
+		"uuid": "^9.0.1",
+		"ws": "^8.18.0"
+	},
+	"__metadata": {
+		"id": "c919f1b2-3705-431b-9cfd-bb0f6f3c9720",
+		"publisherId": "3b7b96dc-d9f5-444b-9505-c8ab33b23927",
+		"publisherDisplayName": "Software",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062671794,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 1655834
+	}
+}

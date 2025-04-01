@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="shades-of-purple" Version="7.3.2" Publisher="ahmadawais" />
+			<DisplayName>Shades of Purple</DisplayName>
+			<Description xml:space="preserve">🦄 A professional theme suite with hand-picked &amp; bold shades of purple for your VS Code editor and terminal apps. One of the excellent, most downloaded, and top-rated VSCode Themes on the marketplace. Part of VSCode.pro course.</Description>
+			<Tags>Shades of Purple,Dark Theme,VSCode Power User,Shade of Purple,Cobalt,theme,color-theme,terminal,__web_extension</Tags>
+			<Categories>Themes</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			<Badges><Badge Link="https://VSCode.pro/?utm_source=EmojiLogVSCode" ImgUri="https://img.shields.io/badge/SUPPORT%20THIS%20PROJECT-Become%20a%20VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=131217&amp;colorB=5734F5&amp;style=flat" Description="Support this project!" /></Badges>
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.15.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="ui,workspace,web" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/ahmadawais/shades-of-purple-vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/ahmadawais/shades-of-purple-vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/ahmadawais/shades-of-purple-vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/ahmadawais/shades-of-purple-vscode/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/ahmadawais/shades-of-purple-vscode#readme" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#222145" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			
+			<Icon>extension/images/icon/logo.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/readme.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/changelog.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/icon/logo.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

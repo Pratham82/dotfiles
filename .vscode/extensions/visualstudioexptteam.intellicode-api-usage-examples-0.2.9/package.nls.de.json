@@ -1,0 +1,8 @@
+{
+	"extension.title": "IntelliCode-API-Verwendungsbeispiele",
+	"extension.description": "Sehen Sie sich relevante Codebeispiele aus GitHub für über 100.000 verschiedene APIs direkt in Ihrem Editor an.",
+	"extension.titleshort": "IntelliCode-API-Verwendungsbeispiele",
+	"settings.logging": "Der Level wird für die Konsole protokolliert",
+	"settings.pythonEnabled": "API-Verwendungsbeispiele für Python-Dateien aktivieren",
+	"settings.typescriptEnabled": "API-Verwendungsbeispiele für TypeScript-/Javascript-Dateien aktivieren"
+}

@@ -1,0 +1,75 @@
+{
+	"name": "nextjs-snippets",
+	"displayName": "Nextjs snippets",
+	"description": "snippets for nextjs",
+	"version": "1.0.2",
+	"engines": {
+		"vscode": "^1.88.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pulkitgangwar/next.js-snippets"
+	},
+	"publisher": "PulkitGangwar",
+	"icon": "images/icon.png",
+	"categories": [
+		"Snippets"
+	],
+	"bugs": {
+		"url": "https://github.com/pulkitgangwar/next.js-snippets/issues"
+	},
+	"keywords": [
+		"nextjs",
+		"next.js",
+		"next-js",
+		"nextjs13",
+		"nextjs 13",
+		"nextjs14",
+		"nextjs 14",
+		"snippets",
+		"nextjs snippets",
+		"next.js snippets",
+		"next-js snippets",
+		"snippets for nextjs",
+		"snippets for next.js",
+		"snippets for next-js",
+		"react",
+		"javascript",
+		"typescript"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/JavascriptReact/nextjs.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/JavascriptReact/nextjs.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/TypescriptReact/nextjs.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/TypescriptReact/nextjs.code-snippets"
+			}
+		]
+	},
+	"license": "MIT",
+	"__metadata": {
+		"id": "cf7acc1f-dea3-4456-9d09-ebff1d01806a",
+		"publisherId": "74adf96c-fd19-4352-9577-e5f63ca8065c",
+		"publisherDisplayName": "Pulkit Gangwar",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1731062668923,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 64036
+	}
+}

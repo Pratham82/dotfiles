@@ -1,0 +1,88 @@
+{
+  "name": "code-spell-checker-server",
+  "private": true,
+  "description": "Spell Checker Server",
+  "version": "2.0.0",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/vscode-spell-checker"
+  },
+  "bin": {
+    "build": "./build.mjs"
+  },
+  "type": "module",
+  "main": "dist/main.cjs",
+  "types": "out/main.d.cts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./out/main.js",
+      "require": "./out/main.cjs"
+    },
+    "./api": {
+      "import": "./out/api.js",
+      "require": "./out/api.cjs"
+    },
+    "./lib": {
+      "import": "./out/lib/index.js",
+      "require": "./out/lib/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.33",
+    "safe-stable-stringify": "^2.5.0",
+    "ts-json-schema-generator": "^2.3.0",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "@cspell/cspell-bundled-dicts": "^8.17.5",
+    "@cspell/cspell-pipe": "^8.17.5",
+    "@cspell/cspell-types": "^8.17.5",
+    "@cspell/url": "^8.17.5",
+    "@internal/common-utils": "file:../__utils",
+    "cspell-config-lib": "^8.17.5",
+    "cspell-gitignore": "^8.17.5",
+    "cspell-glob": "^8.17.5",
+    "cspell-io": "^8.17.5",
+    "cspell-lib": "^8.17.5",
+    "gensequence": "^7.0.0",
+    "json-rpc-api": "file:../json-rpc-api",
+    "rxjs": "^7.8.2",
+    "utils-disposables": "file:../utils-disposables",
+    "utils-logger": "file:../utils-logger",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12",
+    "vscode-languageserver-types": "^3.17.5",
+    "vscode-uri": "^3.1.0"
+  },
+  "scripts": {
+    "build": "tsup-node && npm run build:tsc && npm run build-schema",
+    "build-production": "npm run clean-build-production",
+    "build-schema": "node ./scripts/build-schema.mjs",
+    "build:production": "tsup-node --minify && npm run build-schema",
+    "x-build:production": "npm run build:esbuild -- --production && npm run build:api && npm run build-schema",
+    "build:esbuild": "node ./build.mjs",
+    "build:api": "npm run build:api.d.ts && npm run build:api.d.cts",
+    "build:api.d.ts": "tsc -p tsconfig.api.json",
+    "build:api.d.cts": "rollup -c rollup.config.mjs",
+    "build:tsc": "tsc -p tsconfig.test.json",
+    "#build:ts-json-schema-generator": "esbuild --bundle ../../../../code/clones/ts-json-schema-generator/dist/ts-json-schema-generator.js --outfile=scripts/ts-json-schema-generator.cjs  --platform=node --external:typescript",
+    "clean-build-production": "npm run clean && npm run build:production",
+    "clean-build": "npm run clean && npm run build",
+    "clean": "shx rm -rf dist temp out coverage lib",
+    "test-watch": "vitest",
+    "test": "vitest run",
+    "watch": "concurrently npm:watch:esbuild npm:watch:api npm:watch:tsc",
+    "watch:esbuild": "npm run build:esbuild -- --watch",
+    "watch:api": "npm run build:api.d.ts -- --watch",
+    "watch:tsc": "npm run build:tsc -- --watch"
+  },
+  "engines": {
+    "node": ">20.0.0"
+  }
+}

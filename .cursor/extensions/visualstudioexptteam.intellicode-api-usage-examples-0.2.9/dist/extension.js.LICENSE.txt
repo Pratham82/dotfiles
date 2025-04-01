@@ -1,0 +1,10 @@
+/*!
+ * NevWare21 Solutions LLC - ts-async, 0.5.2
+ * https://github.com/nevware21/ts-async
+ * Copyright (c) NevWare21 Solutions LLC and contributors. All rights reserved.
+ * Licensed under the MIT license.
+ */
+
+/*! Copyright (c) Microsoft Corporation. All rights reserved. */
+
+/*! https://github.com/nevware21/ts-utils v0.11.4 */

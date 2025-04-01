@@ -1,0 +1,8 @@
+{
+	"extension.title": "Příklady použití rozhraní IntelliCode API",
+	"extension.description": "Prohlížejte si relevantní příklady kódu z GitHubu pro více než 100 tisíc různých rozhraní API přímo ve svém editoru.",
+	"extension.titleshort": "Příklady použití rozhraní IntelliCode API",
+	"settings.logging": "Úroveň protokolování pro konzoli",
+	"settings.pythonEnabled": "Povolit příklady použití rozhraní API u souborů Python",
+	"settings.typescriptEnabled": "Povolit příklady použití rozhraní API u souborů Typescript/Javascript"
+}
