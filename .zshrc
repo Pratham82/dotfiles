@@ -72,7 +72,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -130,3 +130,48 @@ export PHP_INI_SCAN_DIR="/Users/pratham82/.config/herd-lite/bin:$PHP_INI_SCAN_DI
 
 
 export GH_EDITOR="vim"
+
+# Added by Windsurf
+export PATH="/Users/pratham82/.codeium/windsurf/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/pratham82/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# Change cursor shape based on mode (works in Ghostty)
+function zle-keymap-select {
+  if [[ $KEYMAP == vicmd ]]; then
+    echo -ne '\e[1 q'  # Block cursor for NORMAL mode
+  else
+    echo -ne '\e[5 q'  # Beam cursor for INSERT mode
+  fi
+  zle reset-prompt
+}
+zle -N zle-keymap-select
+
+function zle-line-init {
+  zle-keymap-select
+}
+zle -N zle-line-init
+
+function zle-line-finish {
+  echo -ne '\e[5 q'  # Beam after pressing Enter
+}
+zle -N zle-line-finish
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export PATH="/usr/local/texlive/2025basic/bin/universal-darwin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/pratham82/.antigravity/antigravity/bin:$PATH"
+
+# opencode
+export PATH=/Users/pratham82/.opencode/bin:$PATH

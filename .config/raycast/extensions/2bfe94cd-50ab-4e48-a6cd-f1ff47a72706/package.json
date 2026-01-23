@@ -13,7 +13,9 @@
     "urwrstkn8mare",
     "michalzuch",
     "validate",
-    "hrishabhn"
+    "hrishabhn",
+    "bogdan_bucur",
+    "xmok"
   ],
   "license": "MIT",
   "keywords": [
@@ -50,6 +52,13 @@
           "value": "25"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "required": false,
+      "name": "disableHUD",
+      "description": "Disable HUD notifications",
+      "label": "Disable HUD"
     }
   ],
   "commands": [
@@ -128,6 +137,14 @@
       "title": "Remove Current Track from Current Playlist",
       "subtitle": "Apple Music",
       "description": "Remove the currently playing track from the current playlist and skip to the next track.",
+      "disabledByDefault": true,
+      "mode": "no-view"
+    },
+    {
+      "name": "remove-current-playing-from-library",
+      "title": "Remove Current Track from Library",
+      "subtitle": "Apple Music",
+      "description": "Remove the currently playing track from the Library and skip to the next track.",
       "disabledByDefault": true,
       "mode": "no-view"
     },
@@ -270,6 +287,48 @@
         "volume",
         "volume-down",
         "decrease"
+      ]
+    },
+    {
+      "name": "currently-playing-menu-bar",
+      "title": "Menu Bar Player",
+      "description": "See what's currently playing in your Menu Bar. Click for further actions, such as Play/Pause. Refreshes every 10 seconds.",
+      "disabledByDefault": true,
+      "mode": "menu-bar",
+      "interval": "10s",
+      "preferences": [
+        {
+          "name": "hideIconWhenIdle",
+          "description": "If enabled, the icon in the Menu Bar will be hidden when Music is not running or when nothing is playing",
+          "type": "checkbox",
+          "label": "Hide icon when idle",
+          "default": false,
+          "required": false
+        },
+        {
+          "name": "hideArtistName",
+          "description": "If enabled, the artist's name will be hidden in the Menu Bar",
+          "type": "checkbox",
+          "label": "Hide artist's name",
+          "default": false,
+          "required": false
+        },
+        {
+          "name": "cleanupTitle",
+          "description": "If enabled cleans up extra info like remix titles or versions from the song name",
+          "type": "checkbox",
+          "label": "Cleanup song title",
+          "default": false,
+          "required": false
+        },
+        {
+          "name": "maxTextLength",
+          "title": "Now Playing Text Length",
+          "description": "Maximum number of characters to show for the currently playing track in the menu bar. Leave empty to use default (30 characters)",
+          "type": "textfield",
+          "default": "30",
+          "required": false
+        }
       ]
     }
   ],
@@ -1512,23 +1571,22 @@
     "instructions": "# Overview\nThis tool allows control of Apple Music via natural language requests, including playback control, track actions, and playlist management.\n\n---\n\n# 1. Playback Control\n\n1. Identifying Content to Play\n   - Use one of the following to locate the music the user wants to play:\n     • get-playlists\n     • get-library-albums\n     • get-library-tracks\n   - Once the relevant content is found, extract the unique IDs returned by the tool.\n   Note: User may want to simple play/pause the currently playing track. In this case, use get-currently-playing to get the track name and then use play with the track name. If user wants to pause the currently playing track, use pause.\n\n2. Starting Playback\n   - Depending on the content type (playlist, album, or track), use the corresponding tool with the retrieved ID:\n     • start-playlist\n     • play-library-album\n     • play-library-track\n   - Confirm or acknowledge the playback by repeating the track/album/playlist name.\n\n3. Shuffling Playback\n   - For a shuffled playback request (e.g., “Play [playlist] on shuffle”), set the shuffle flag to true in start-playlist.\n   - To get the current shuffle status, use get-current-shuffle.\n   - To toggle shuffle mode, use toggle-shuffle.\n   - To set the shuffle mode, use set-toggle-shuffle with the desired shuffle state (true/false). \n   - set-toggle-shuffle is a tool that if the shuffle state is true, it will turn it off, and vice versa.\n   - So if the user wants to turn shuffle on, we first get the current shuffle status, then if it's off, we turn it on, and if it's on, we should not do anything.\n\n---\n\n# 2. Track Actions\n\n1. Check Current Track\n   - Always call get-currently-playing before performing any track-specific actions (e.g., adding to library, adding to a playlist, disliking).\n\n2. Adding Tracks to Library\n   - If the user wants to add a track to their library (e.g., “Save this song to my library”), use add-to-library with the current track name obtained from get-currently-playing.\n   - Before calling add-to-library, call get-library-tracks with the track name to check if the track is already in the library.\n   - If the track is not in the library (if get-library-tracks returns an empty array), call add-to-library to add the track to the library.\n   - If the track is already in the library (if get-library-tracks returns a non-empty array), do nothing and acknowledge the user that the track is already in the library and ask if they want to add it again.\n   - If the user wants to add the track to the library again, call add-to-library again.\n   - Empty array example from get-library-tracks:\n     get-library-tracks\n     {\"_tag\": \"Right\", \"right\": [{}]}\n\n   - Non-empty array example from get-library-tracks:\n     get-library-tracks\n     {\"_tag\": \"Right\", \"right\": [{\"duration\": \"398,317993164062\", \"id\": \"10201\", \"album\": \"Snus\", \"name\": \"Snus\", \"artist\": \"Avicii & Sebastien Drums\"}]}\n\n\n3. Disliking\n   - When disliking a track (e.g., “I don't like this song”), use the track name from get-currently-playing.\n   - Then call get-dislike-status to check if the track is disliked.\n   - If it is, do nothing and acknowledge the user that the track is already disliked.\n   - If it is not, call dislike and acknowledge the user that the track is now disliked.\n   \n4. Favoriting\n   - When favoriting a track (e.g., “Add this song to my favorites”), use the track name from get-currently-playing.\n   - Then call get-favorite-status to check if the track is favorited.\n   - If it is, do nothing and acknowledge the user that the track is already favorited.\n   - If it is not, call favorite and acknowledge the user that the track is now favorited.\n\n5. Undisliking\n   - When undisliking a track (e.g., “Undislike this song”), use the track name from get-currently-playing.\n   - Then call get-dislike-status to check if the track is disliked.\n   - If it is, call undislike and acknowledge the user that the track is now undisliked.\n   - If it is not, do nothing and acknowledge the user that the track is not disliked.\n\n6. Unfavoriting\n   - When unfavoriting a track (e.g., “Remove this song from my favorites”), use the track name from get-currently-playing.\n   - Then call get-favorite-status to check if the track is favorited.\n   - If it is, call unfavorite and acknowledge the user that the track is now unfavorited.\n   - If it is not, do nothing and acknowledge the user that the track is not favorited.\n\n---\n\n# 3. Playlist Management\n\n1. Verifying Playlist Existence\n   - Before any playlist operation, call get-playlists to confirm the playlist name and ID exist.\n\n2. Adding the Current Track to a Playlist\n   - Use get-currently-playing to identify the track name.\n   - Then call get-playlists to confirm the target playlist exists.\n   - Finally, call add-to-playlist, passing in the target playlist name and the track name.\n\n# 4. Album Actions\n\n1. Verifying Album Existence\n   - Before any album operation, call get-library-albums to confirm the album name and ID exist.\n   - If the album is found, call play-library-album with the album name.\n   - If the album is not found or there are some ambiguities, call get-library-albums again WITHOUT a `search` term to find the album.\n   - If there are multiple albums, ask the user to specify the album they want to play.\n   - Then call play-library-album with the album name.\n\n---\n\n# 4. Tool-Specific Guidance\n\n- get-playlists  \n  Returns a list of playlists and their IDs. Required for any playlist operations.\n\n- start-playlist  \n  Requires a playlistId from get-playlists. Optional parameter shuffle (true/false).\n\n- toggle-shuffle  \n  No input is required. Returns the current shuffle status.\n\n- add-to-library  \n  Requires the current track name, obtained from get-currently-playing.\n\n- add-to-playlist  \n  Requires a playlist name (from get-playlists) and a track name (from get-currently-playing).\n\n- dislike / favorite  \n  Requires the current track name, obtained from get-currently-playing.\n\n- Volume controls\n  • Use set-volume with exact percentage levels (0-100).\n  • Use volume-up or volume-down to increase or decrease by predefined steps.\n\n---\n\n# 5. Error Handling\n\n- Return tool error messages verbatim to the user.\n- If a playlist isn't found, suggest running get-playlists to verify its existence.\n- Always check that a track is playable (i.e., retrieved via the correct tool) before performing a library operation.\n\n---\n\n# 6. Example Workflows\n\n1. Play a Shuffled Playlist\n   - User says: “Play 'Summer Hits' playlist on shuffle.”\n   - Calls:\n     1. get-playlists → locate “Summer Hits”\n     2. start-playlist with playlistId for “Summer Hits” and shuffle: true\n\n2. Add Current Song to Favorites Playlist\n   - User says: “Add this song to my Favorites playlist.”\n   - Calls:\n     1. get-currently-playing → get track name\n     2. get-playlists → verify “Favorites” playlist exists\n     3. add-to-playlist with “Favorites” and the current track name\n\n3. Dislike Current Track and Skip\n   - User says: \"I don't like this song. Skip it.\"\n   - Calls:\n     1. dislike → uses current track name from get-currently-playing\n     2. next-track\n"
   },
   "dependencies": {
-    "@raycast/api": "^1.93.1",
-    "@raycast/utils": "^1.19.0",
+    "@raycast/api": "^1.104.1",
+    "@raycast/utils": "^2.2.2",
     "fp-ts": "^2.12.1",
     "io-ts": "^2.2.19",
     "run-applescript": "^6.0.0",
     "ts-pattern": "^4.2.1"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^1.0.11",
-    "@types/node": "^20.3.0",
-    "@types/react": "^18.2.11",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^8.3.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
-    "react-devtools": "^5.2.0"
-  }
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "platforms": [
+    "macOS"
+  ]
 }

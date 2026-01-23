@@ -20,6 +20,14 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
     { import = "plugins" },
+    require("lazy").setup({
+      spec = {
+        { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+        { import = "plugins" },
+        require("config.vimtex"), -- add this line to load vimtex
+      },
+      -- rest of your lazy.lua remains unchanged
+    }),
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -40,9 +48,9 @@ require("lazy").setup({
       -- disable some rtp plugins
       disabled_plugins = {
         "gzip",
-        -- "matchit",
+        -- "matchit"e
         -- "matchparen",
-        -- "netrwPlugin",
+        -- "netrwPnugin",
         "tarPlugin",
         "tohtml",
         "tutor",

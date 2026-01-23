@@ -1,0 +1,4424 @@
+: 1731059723:0;echo >> /Users/pratham82/.zprofile
+: 1731059723:0;echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/pratham82/.zprofile
+: 1731059723:0;eval "$(/opt/homebrew/bin/brew shellenv)"
+: 1731059723:0;brew help
+: 1731059723:0;brew install git\
+
+: 1731059723:0;brew install git
+: 1731059723:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+: 1731059723:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\
+\
+
+: 1731059734:0;clear
+: 1731059774:0;brew install git\
+
+: 1731059820:0;git log
+: 1731059823:0;clear
+: 1731059863:0;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash\
+
+: 1731059874:0;nvm
+: 1731059899:0;vim .zshrc
+: 1731059935:0;nvm ls
+: 1731059944:0;nvm help
+: 1731060190:0;ssh-keygen -t ed25519 -C mali.prathamesh82@gmail.com
+: 1731060294:0;cd ~/.ssh/
+: 1731060295:0;ls
+: 1731060318:0;cd
+: 1731060319:0;eval "$(ssh-agent -s)"
+: 1731060337:0;touch ~/.ssh/config\
+
+: 1731060379:0;vim ~/.ssh/config
+: 1731060438:0;ssh-add --apple-use-keychain ~/.ssh/id_ed25519\
+
+: 1731060470:0;pbcopy < ~/.ssh/id_ed25519.pub
+: 1731060552:0;gcl git@github.com:Pratham82/Git-Testing.git
+: 1731060566:0;git log
+: 1731060571:0;cd Git-Testing
+: 1731060573:0;clear
+: 1731060573:0;ls
+: 1731060592:0;touch 08-11-2024
+: 1731060604:0;git push origin master
+: 1731060614:0;git log
+: 1731060620:0;git status
+: 1731060623:0;git add 08-11-2024 08-11-2024
+: 1731060625:0;clear
+: 1731060626:0;git log
+: 1731060633:0;git status
+: 1731060643:0;git commit -m "testing new setup"
+: 1731060662:0;cd
+: 1731060717:0;vim .gitconfig
+: 1731060739:0;git config --list --show-origin\
+
+: 1731060763:0;git commit -m "testing new setup"
+: 1731060767:0;cd Git-Testing
+: 1731060770:0;clear
+: 1731060771:0;git log
+: 1731060806:0;git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions\
+\
+
+: 1731060816:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting\
+\
+
+: 1731060822:0;git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting\
+\
+
+: 1731060830:0;git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete\
+\
+
+: 1731060847:0;vim .zshrc
+: 1731060871:0;cd Git-Testing
+: 1731060872:0;clear
+: 1731060875:0;git push origin master
+: 1731060908:0;cd
+: 1731060910:0;ld
+: 1731060911:0;ls
+: 1731060918:0;clear
+: 1731060918:0;ls
+: 1731060920:0;ls -la
+: 1731060930:0;cd .git
+: 1731060934:0;cd .config
+: 1731060934:0;ls
+: 1731060978:0;vim .gitconfig
+: 1731061050:0;cd Git-Testing
+: 1731061051:0;clear
+: 1731061052:0;ls
+: 1731061059:0;touch 08-11-2024-2
+: 1731061062:0;git add 08-11-2024-2
+: 1731061071:0;git commit -m "testing new setup 2"
+: 1731061089:0;git config --list --show-origin\
+
+: 1731061093:0;git push origin master
+: 1731061112:0;git config --global --edit
+: 1731061181:0;git log 
+: 1731061197:0;cd Git-Testing
+: 1731061199:0;clear
+: 1731061199:0;ls
+: 1731061205:0;touch 08-11-2024-3
+: 1731061207:0;git add 08-11-2024-3
+: 1731061214:0;git commit -m "testing new setup 3"
+: 1731061217:0;git push origin master
+: 1731086140:0;work
+: 1731086141:0;cd
+: 1731086144:0;clear
+: 1731086186:0;ls
+: 1731086189:0;clear
+: 1731086189:0;ls
+: 1731086190:0;dev
+: 1731086222:0;git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1\
+
+: 1731086227:0;ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"\
+
+: 1731086245:0;vim .zshrc
+: 1731086290:0;ls
+: 1731086309:0;mkdir work
+: 1731086313:0;mkdir dev
+: 1731086316:0;clear
+: 1731086318:0;vim .zshrc
+: 1731086412:0;dev
+: 1731086416:0;cd
+: 1731086417:0;l
+: 1731086422:0;cd .ssh
+: 1731086424:0;dev
+: 1731086428:0;work
+: 1731086429:0;ls
+: 1731086434:0;gcl git@github.com:rideblitz/reactjs-admin-management.git
+: 1731207754:0;gl
+: 1731207761:0;git log
+: 1731207772:0;git branch
+: 1731207778:0;git branch -a
+: 1731207789:0;gco feature/BT-2350-edit-orders 
+: 1731207790:0;gl
+: 1731207795:0;git log
+: 1731207806:0;npm run dev
+: 1731207811:0;nvm ls
+: 1731207820:0;nvm install lts
+: 1731207846:0;nvm install 20.10.0
+: 1731207884:0;npm i
+: 1731207933:0;npm run dev
+: 1731307246:0;ls -a
+: 1731307254:0;vim .vimirc
+: 1731307332:0;ls
+: 1731307338:0;ls -la
+: 1731307347:0;rm .vimirc
+: 1731307352:0;touch .vimrc
+: 1731324581:0;npm run dev
+: 1731384032:0;npm install -g git-cz\
+
+: 1731384045:0;git-cz
+: 1731384122:0;git push origin feature/BT-2350-edit-orders 
+: 1731384145:0;git-cz
+: 1731460764:0;git push origin feature/BT-2350-edit-orders 
+: 1731462297:0;git-cz
+: 1731462322:0;git push origin feature/BT-2350-edit-orders 
+: 1731463819:0;git-cz
+: 1731463846:0;git push origin feature/BT-2350-edit-orders 
+: 1731473502:0;git-cz
+: 1731473621:0;git push origin feature/BT-2350-edit-orders 
+: 1731473631:0;npm run build
+: 1731481310:0;git-cz
+: 1731481343:0;git push origin feature/BT-2350-edit-orders 
+: 1731481387:0;gco staging 
+: 1731481423:0;gl
+: 1731481430:0;git merge feature/BT-2350-edit-orders
+: 1731481807:0;npm i
+: 1731481825:0;npm run build
+: 1731481881:0;git push origin staging 
+: 1731482087:0;gco feature/BT-2350-edit-orders 
+: 1731482102:0;git-cz
+: 1731482113:0;git push origin feature/BT-2350-edit-orders 
+: 1731482118:0;gco staging 
+: 1731482121:0;git merge feature/BT-2350-edit-orders
+: 1731482135:0;git push origin staging 
+: 1731482349:0;gco feature/BT-2350-edit-orders 
+: 1731482370:0;npm run build
+: 1731493965:0;npm run b
+: 1731493968:0;npm run build
+: 1731494072:0;git-cz
+: 1731494103:0;git push origin feature/BT-2350-edit-orders 
+: 1731524062:0;gco master 
+: 1731524065:0;gl
+: 1731524078:0;git pull origin master
+: 1731524168:0;gcb BT-3320-shipping-fee-instant-setup
+: 1731525699:0;cd src
+: 1731525701:0;clear
+: 1731525706:0;cd features
+: 1731525708:0;clear
+: 1731525709:0;l
+: 1731525786:0;npm i -g plop
+: 1731525800:0;plop
+: 1731560518:0;git-cz
+: 1731560531:0;git-cvsserver
+: 1731560535:0;git-cz
+: 1731560574:0;git push origin BT-3320-shipping-fee-instant-setup 
+: 1731560596:0;git branch -m BT-3320-shipping-fee-instant-setup feature/BT-3320-shipping-fee
+: 1731560614:0;git push origin feature/BT-3320-shipping-fee 
+: 1731569612:0;gco feature/BT-2350-edit-orders 
+: 1731570167:0;git-cz
+: 1731570234:0;git push origin feature/BT-2350-edit-orders 
+: 1731570337:0;gco staging 
+: 1731570338:0;gl
+: 1731570345:0;npm run build
+: 1731570690:0;gco feature/BT-3320-shipping-fee
+: 1731570704:0;npm run dev
+: 1731573477:0;gco feature/BT-2350-edit-orders 
+: 1731573960:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1731574336:0;git-cz
+: 1731574374:0;git push origin feature/BT-2350-edit-orders 
+: 1731574382:0;npm run build
+: 1731575086:0;git-cz
+: 1731575105:0;git push origin feature/BT-2350-edit-orders 
+: 1731575181:0;npm run build
+: 1731578137:0;git-cz
+: 1731578161:0;git log
+: 1731578203:0;git-cz
+: 1731578223:0;git push origin feature/BT-2350-edit-orders 
+: 1731578321:0;npm run dev
+: 1731644233:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1731646563:0;npm run dev
+: 1731647000:0;git-cz
+: 1731647167:0;git push origin feature/BT-2350-edit-orders 
+: 1731653812:0;npm run build
+: 1731662849:0;git-cz
+: 1731662876:0;git push origin feature/BT-2350-edit-orders 
+: 1731662962:0;gco development 
+: 1731662963:0;gl
+: 1731663026:0;git merge feature/BT-2350-edit-orders
+: 1731663201:0;npm run build
+: 1731824577:0;gco feature/BT-3320-shipping-fee
+: 1731824582:0;c
+: 1731824585:0;clar
+: 1731824587:0;clear
+: 1731824727:0;ls
+: 1731824733:0;c
+: 1731824742:0;clear 
+: 1731824756:0;dev
+: 1731824761:0;cd
+: 1731824763:0;vim .zshrc
+: 1731824798:0;c
+: 1731824815:0;dev
+: 1731824816:0;c
+: 1731824826:0;ls
+: 1731824828:0;cd
+: 1731824830:0;work
+: 1731824835:0;cd reactjs-admin-management/
+: 1731824837:0;cd
+: 1731824882:0;work
+: 1731824884:0;ls
+: 1731824900:0;dev
+: 1731824901:0;ls
+: 1731824908:0;work
+: 1731824911:0;cd
+: 1731824948:0;dev
+: 1731824949:0;gcl git@github.com:Pratham82/DSA.git
+: 1731824956:0;cd DSA/
+: 1731824959:0;clear
+: 1731824959:0;ls
+: 1731824980:0;dev
+: 1731824981:0;gcl git@github.com:Pratham82/Frontend-interview-prep.git
+: 1731825134:0;open work
+: 1731825139:0;yes
+: 1731825145:0;cd
+: 1731825148:0;open work
+: 1731825155:0;open dev
+: 1731829423:0;dev
+: 1731829425:0;gcl git@github.com:t3dotgg/1app5stacks.git
+: 1731829433:0;cd 1app5stacks/
+: 1731829435:0;code .
+: 1731829626:0;go version
+: 1731829632:0;go --help
+: 1731829659:0;clear
+: 1731829822:0;npm run dev
+: 1731897479:0;gco feature/BT-2350-edit-orders
+: 1731897513:0;npm run dev
+: 1731897570:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1731898373:0;git-cz
+: 1731898453:0;git push origin feature/BT-2350-edit-orders 
+: 1731898531:0;npm run build
+: 1731901789:0;git-cz
+: 1731901848:0;git push origin feature/BT-2350-edit-orders 
+: 1731902187:0;git-cz
+: 1731902215:0;git push origin feature/BT-2350-edit-orders 
+: 1731904219:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1731906182:0;gco feature/BT-3320-shipping-fee
+: 1731906192:0;gco master 
+: 1731906194:0;gl
+: 1731906291:0;gco feature/BT-3320-shipping-fee 
+: 1731906294:0;npm run dev
+: 1731906309:0;npm i
+: 1731906314:0;npm run dev
+: 1731906334:0;npm i
+: 1731906339:0;npm run dev
+: 1731920790:0;git-cz
+: 1731920810:0;git push origin BT-3320-shipping-fee-instant-setup 
+: 1731920822:0;git push origin feature/BT-3320-shipping-fee-instant-setup
+: 1731920831:0;git push origin feature/BT-2350-edit-orders 
+: 1731920846:0;git push origin feature/BT-3320-shipping-fee 
+: 1731920893:0;gco feature/BT-2350-edit-orders 
+: 1731920939:0;git stash
+: 1731920942:0;gco feature/BT-2350-edit-orders 
+: 1731924096:0;npm run build
+: 1731924104:0;git-cz
+: 1731924122:0;git push origin feature/BT-2350-edit-orders 
+: 1731928163:0;gco staging
+: 1731928165:0;gl
+: 1731928175:0;gco master 
+: 1731928178:0;git branch -D staging 
+: 1731928181:0;clear
+: 1731928183:0;gco staging
+: 1731928184:0;gl
+: 1731928188:0;git log
+: 1731928190:0;git merge feature/BT-2350-edit-orders
+: 1731928316:0;git-cz
+: 1731928383:0;npm run build
+: 1731928442:0;git-cz
+: 1731928492:0;git log
+: 1731928543:0;gco feature/BT-3320-shipping-fee
+: 1731930826:0;git-cz
+: 1731930867:0;gco feature/BT-2350-edit-orders 
+: 1731932367:0;git-cz
+: 1731932389:0;git push origin feature/BT-2350-edit-orders 
+: 1731932877:0;git-cz
+: 1731986022:0;git log
+: 1731986041:0;gco feature/BT-3320-shipping-fee
+: 1731987013:0;gco  feature/BT-3320-shipping-fee 
+: 1731987027:0;gco feature/BT-2350-edit-orders 
+: 1731987052:0;git-cz
+: 1731987152:0;git push origin feature/BT-3320-shipping-fee 
+: 1731987157:0;gco feature/BT-2350-edit-orders 
+: 1731987988:0;git-cz
+: 1731988019:0;git push origin feature/BT-2350-edit-orders 
+: 1731988027:0;npm run bbuild
+: 1731988031:0;npm run build
+: 1731988640:0;gco feature/BT-3320-shipping-fee
+: 1731992461:0;cd features
+: 1731992465:0;..
+: 1731992469:0;cd reactjs-admin-management
+: 1731992470:0;l
+: 1731992482:0;cd src/features
+: 1731992484:0;cd shipping-fee
+: 1731992486:0;clear
+: 1731992487:0;ls
+: 1731992493:0;..
+: 1731992494:0;l
+: 1731992497:0;plop
+: 1731998853:0;brew install --cask tomatobar\
+
+: 1732005151:0;npm run dev
+: 1732005200:0;npm run build
+: 1732006237:0;git add src/features/shipping-fee
+: 1732007162:0;npm run build
+: 1732007381:0;git-cz
+: 1732007433:0;git push origin feature/BT-3320-shipping-fee 
+: 1732007459:0;npm run build
+: 1732007720:0;git add src/features/shipping-fee
+: 1732007726:0;git-cz
+: 1732007746:0;git push origin feature/BT-3320-shipping-fee 
+: 1732007754:0;gco development 
+: 1732007757:0;gl
+: 1732007774:0;git merge feature/BT-3320-shipping-fee
+: 1732011952:0;gco feature/BT-3320-shipping-fee
+: 1732013409:0;cd src/features
+: 1732013411:0;plop
+: 1732083453:0;git add shipping-fee/create-config
+: 1732083465:0;npm run build
+: 1732083541:0;git-cz
+: 1732085324:0;npm install @mui/joy\
+
+: 1732085457:0;npm run dev
+: 1732087841:0;npm i
+: 1732087926:0;npm run dev
+: 1732091898:0;npm i
+: 1732091902:0;npm run de
+: 1732091906:0;npm run dev
+: 1732094059:0;npm run build
+: 1732094120:0;git-cz
+: 1732094145:0;git push origin feature/BT-3320-shipping-fee 
+: 1732094820:0;git-cz
+: 1732094845:0;git push origin feature/BT-3320-shipping-fee 
+: 1732094945:0;npm run dev
+: 1732096179:0;git-cz
+: 1732096196:0;git push origin feature/BT-3320-shipping-fee 
+: 1732103988:0;git-cz
+: 1732104189:0;git push origin feature/BT-3320-shipping-fee 
+: 1732104196:0;git-cz
+: 1732104245:0;git push origin feature/BT-3320-shipping-fee 
+: 1732104274:0;npm run build
+: 1732139506:0;git-cz
+: 1732139601:0;git push origin feature/BT-3320-shipping-fee 
+: 1732139708:0;npm run build
+: 1732139745:0;npm run dev
+: 1732140207:0;git-cz
+: 1732140259:0;git push origin feature/BT-3320-shipping-fee 
+: 1732140263:0;git push origin feature/BT-3320-shipping-fee
+: 1732172000:0;dev
+: 1732172002:0;gcl git@github.com:raycast/extensions.git
+: 1732174827:0;git-cz
+: 1732174857:0;git push origin feature/BT-3320-shipping-fee
+: 1732174863:0;npm run build
+: 1732175823:0;git log
+: 1732185533:0;npm run build
+: 1732185882:0;git-cz
+: 1732185907:0;git push origin feature/BT-3320-shipping-fee
+: 1732186876:0;git-cz
+: 1732187001:0;git push origin feature/BT-3320-shipping-fee
+: 1732187726:0;git-cz
+: 1732188025:0;c
+: 1732188029:0;gco development 
+: 1732188032:0;gl
+: 1732188041:0;git merge feature/BT-3320-shipping-fee
+: 1732188628:0;npm run dev
+: 1732204086:0;npm run build
+: 1732226346:0;gco feature/BT-3320-shipping-fee
+: 1732226389:0;git-cz
+: 1732226425:0;git push origin feature/BT-3320-shipping-fee
+: 1732226778:0;npm run build
+: 1732227011:0;git-cz
+: 1732228713:0;npm run build
+: 1732228736:0;git-cz
+: 1732228759:0;git push origin feature/BT-3320-shipping-fee
+: 1732228937:0;npm run build
+: 1732229087:0;gco master 
+: 1732229088:0;gl
+: 1732229250:0;gcb feature/BT-2820-complete-batch-activity
+: 1732229723:0;cd src/features
+: 1732229726:0;cd fe
+: 1732229732:0;plop
+: 1732229860:0;git-cz
+: 1732229900:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732229915:0;gco feature/BT-3320-shipping-fee
+: 1732230340:0;git-cz
+: 1732262027:0;npm run dev
+: 1732269698:0;git-cz
+: 1732269856:0;npm run build
+: 1732276982:0;git-cz
+: 1732277019:0;npm run build
+: 1732337566:0;gco feature/BT-2820-complete-batch-activity
+: 1732340879:0;plop
+: 1732342427:0;git-cz
+: 1732342538:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732342553:0;git-cz
+: 1732342580:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732342678:0;git-cz
+: 1732342702:0;git log
+: 1732362909:0;git-cz
+: 1732362958:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732395439:0;git-cz
+: 1732395473:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732417549:0;git-cz
+: 1732417581:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732430469:0;npm run build
+: 1732430798:0;git-cz
+: 1732430831:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732430973:0;gco development 
+: 1732430975:0;gl
+: 1732430985:0;git mergre feature/BT-2820-complete-batch-activity
+: 1732431007:0;git merge feature/BT-2820-complete-batch-activity
+: 1732452006:0;gco feature/BT-2820-complete-batch-activity
+: 1732452009:0;npm run dev
+: 1732453563:0;git-cz
+: 1732453577:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732453602:0;npm run build
+: 1732453625:0;git-cz
+: 1732453674:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732453929:0;git-cz
+: 1732455067:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732458164:0;npm run build
+: 1732459007:0;gco feature/BT-3320-shipping-fee 
+: 1732463765:0;npm run dev
+: 1732464714:0;git log --oneline\
+
+: 1732465668:0;npm run build
+: 1732466237:0;git-cz
+: 1732475870:0;git push origin feature/BT-3320-shipping-fee 
+: 1732475935:0;npm run build
+: 1732478172:0;git-cz
+: 1732478235:0;git push origin feature/BT-3320-shipping-fee 
+: 1732478253:0;npm run build
+: 1732478406:0;npm run dev
+: 1732478422:0;gco development 
+: 1732478432:0;git-cz
+: 1732478457:0;gco development 
+: 1732478460:0;gl
+: 1732478467:0;git merge feature/BT-3320-shipping-fee
+: 1732502163:0;npm run dev
+: 1732502264:0;gco feature/BT-3320-shipping-fee
+: 1732502293:0;gco feature/BT-2820-complete-batch-activity
+: 1732502477:0;git-cz
+: 1732502497:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732502552:0;npm run build
+: 1732502581:0;git-cz
+: 1732512520:0;Ìƒ«
+: 1732512679:0;clear
+: 1732512681:0;git log
+: 1732524120:0;npm create vite@latest
+: 1732524123:0;work
+: 1732524124:0;npm create vite@latest
+: 1732524153:0;cd reactjs-blitz-seller
+: 1732524158:0;code .
+: 1732524326:0;npm i
+: 1732524397:0;npm run dev
+: 1732533695:0;npm i
+: 1732533902:0;npm run dev
+: 1732534104:0;git log
+: 1732534107:0;git init
+: 1732534207:0;git-cz
+: 1732534243:0;git remote add origin git@github.com:rideblitz/reactjs-blitz-seller.git
+: 1732534370:0;git remote get-url
+: 1732534392:0;git push -u origin master
+: 1732596832:0;gco staging
+: 1732596835:0;gl
+: 1732596841:0;git merge feature/BT-2820-complete-batch-activity
+: 1732596883:0;npm run build
+: 1732597042:0;gl
+: 1732597049:0;git merge feature/BT-3320-shipping-fee
+: 1732609278:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1732609302:0;npx tailwindcss init\
+
+: 1732613043:0;npm run dev
+: 1732616154:0;npm i
+: 1732616220:0;rm -rf node_modules
+: 1732616222:0;npm i
+: 1732617272:0;work
+: 1732617275:0;gcl git@github.com:rideblitz/reactjs-scanner.git
+: 1732617982:0;npm i
+: 1732620173:0;npm run dev
+: 1732620452:0;git-cz
+: 1732620491:0;git add index.html
+: 1732620495:0;git add public/favicon.ico
+: 1732620504:0;git add public
+: 1732620529:0;git add src/assets
+: 1732621220:0;git-cz
+: 1732644309:0;npm run dev
+: 1732644837:0;npm run build
+: 1732644851:0;npm run dev
+: 1732644861:0;npm i
+: 1732644866:0;rm -rf node_modules
+: 1732644873:0;npm i
+: 1732644913:0;npm run dev
+: 1732647864:0;git-cz
+: 1732648094:0;git log
+: 1732648202:0;gco feature/BT-2820-complete-batch-activity
+: 1732648206:0;git log
+: 1732648216:0;gcp 91a0c2fe5fef6cc031e2d48239844e5385de3f58
+: 1732648221:0;git log
+: 1732648334:0;npm run build
+: 1732648368:0;git-cz
+: 1732648423:0;npm run build
+: 1732648700:0;gco feature/BT-3320-shipping-fee
+: 1732648723:0;npm i
+: 1732648728:0;npm run dev
+: 1732650517:0;git-cz
+: 1732650630:0;git push origin feature/BT-3320-shipping-fee 
+: 1732650639:0;npm run build
+: 1732693607:0;npm run dev
+: 1732699388:0;npm i react-hot-toast
+: 1732700014:0;npm o
+: 1732700018:0;npm i
+: 1732700021:0;npm run dev
+: 1732709394:0;npm run build
+: 1732709406:0;npm run dev
+: 1732709600:0;git add src/assets
+: 1732709612:0;git add public
+: 1732709636:0;git-cz
+: 1732710055:0;git add src/App.tsx
+: 1732710063:0;git add src/app/hooks.ts
+: 1732710073:0;git add src/main.tsx
+: 1732710115:0;git-cz
+: 1732710133:0;git add src/common
+: 1732710168:0;git-cz
+: 1732710199:0;git push origin master
+: 1732710351:0;git branch -a
+: 1732710403:0;gcb dev/BT-3958-auth-login
+: 1732710423:0;git-cz
+: 1732710456:0;git push origin dev/BT-3958-auth-login 
+: 1732710656:0;git-cz
+: 1732710671:0;git push origin dev/BT-3958-auth-login 
+: 1732726419:0;git log
+: 1732726541:0;git-cz
+: 1732726567:0;git push origin feature/BT-3320-shipping-fee 
+: 1732726735:0;npm run dev
+: 1732735106:0;git-cz
+: 1732735127:0;git push origin feature/BT-3320-shipping-fee 
+: 1732739552:0;git-cz
+: 1732739643:0;git push origin feature/BT-3320-shipping-fee 
+: 1732739726:0;npm run build
+: 1732775115:0;npm run dev
+: 1732775316:0;gco staging
+: 1732775319:0;gl
+: 1732775382:0;npm run dev
+: 1732775785:0;npm i
+: 1732775862:0;rm -rf node_modules
+: 1732775878:0;npm i --no-optional
+: 1732775910:0;npm run de
+: 1732775912:0;npm run dev
+: 1732775942:0;npm i
+: 1732775946:0;npm run dev
+: 1732775960:0;rm -rf node_modules
+: 1732775978:0;npm i --no-optional
+: 1732775987:0;npm run dev
+: 1732776080:0;rm -rf node_modules
+: 1732776095:0;npm i
+: 1732776126:0;npm run dev
+: 1732783627:0;gco feature/BT-2820-complete-batch-activity
+: 1732783663:0;git-cz
+: 1732783731:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732784265:0;npm run build
+: 1732784278:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732785655:0;gco feature/BT-3320-shipping-fee
+: 1732785690:0;npm run dev
+: 1732786226:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1732787067:0;git-cz
+: 1732787263:0;git push origin feature/BT-3320-shipping-fee 
+: 1732827582:0;git-cz
+: 1732827662:0;git push origin feature/BT-3320-shipping-fee 
+: 1732827670:0;npm run build
+: 1732827805:0;gco feature/BT-2820-complete-batch-activity
+: 1732828099:0;git-cz
+: 1732828185:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1732828257:0;gco staging
+: 1732828258:0;gl
+: 1732828263:0;git merge feature/BT-3320-shipping-fee
+: 1732828363:0;npm run build
+: 1732828418:0;git push origin staging 
+: 1732850170:0;gco feature/BT-3320-shipping-fee
+: 1732850173:0;npm run dev
+: 1732850296:0;git-cz
+: 1732850337:0;git push origin feature/BT-3320-shipping-fee 
+: 1732852677:0;gco master 
+: 1732852678:0;gl
+: 1732852687:0;gco feature/BT-3320-shipping-fee
+: 1732852790:0;git merge master
+: 1732852861:0;git push origin feature/BT-3320-shipping-fee 
+: 1732855329:0;npm run build
+: 1732873652:0;git-cz
+: 1732876404:0;git push origin feature/BT-3320-shipping-fee 
+: 1732876411:0;npm run build
+: 1732876459:0;gco staging
+: 1732876461:0;gl
+: 1732876473:0;git merge feature/BT-3320-shipping-fee
+: 1732876699:0;npm run build
+: 1732876715:0;git push origin staging 
+: 1732882306:0;gco feature/BT-3320-shipping-fee
+: 1732882728:0;git-cz
+: 1732882741:0;git push origin feature/BT-3320-shipping-fee 
+: 1733110123:0;x\
+
+: 1733113280:0;npm run dev
+: 1733113358:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733118653:0;git-cz
+: 1733118720:0;git push origin feature/BT-3320-shipping-fee 
+: 1733118728:0;npm run build
+: 1733126884:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733126972:0;git-cz
+: 1733126982:0;git push origin feature/BT-3320-shipping-fee 
+: 1733131499:0;gco feature/BT-2820-complete-batch-activity
+: 1733131508:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733135233:0;git-cz
+: 1733135284:0;git push origin feature/BT-2820-complete-batch-activity 
+: 1733136540:0;gco staging
+: 1733136545:0;gl
+: 1733136549:0;gco staging
+: 1733136550:0;gl
+: 1733136556:0;gco master 
+: 1733136556:0;gl
+: 1733169113:0;gco master 
+: 1733169114:0;gl
+: 1733171631:0;plop
+: 1733171777:0;clar
+: 1733171784:0;clear
+: 1733171788:0;c src
+: 1733171813:0;cd src
+: 1733171863:0;plop
+: 1733194715:0;gco feature/BT-3320-shipping-fee 
+: 1733194719:0;npm run dev
+: 1733196998:0;git-cz
+: 1733197059:0;git push origin feature/BT-3320-shipping-fee 
+: 1733197687:0;git-cz
+: 1733197706:0;git push origin feature/BT-3320-shipping-fee 
+: 1733198215:0;git-cz
+: 1733198249:0;git push origin feature/BT-3320-shipping-fee 
+: 1733198369:0;npm run build
+: 1733198844:0;git-cz
+: 1733198878:0;git push origin feature/BT-3320-shipping-fee 
+: 1733210154:0;cd src
+: 1733210156:0;plop
+: 1733210257:0;git-cz
+: 1733210263:0;git add .
+: 1733210265:0;git-cz
+: 1733210299:0;git push origin master
+: 1733210316:0;git-cz
+: 1733210326:0;git push origin master
+: 1733210370:0;gcb dev/BT-3977-driver-management
+: 1733210384:0;plop
+: 1733211901:0;npm run dev
+: 1733212181:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733212339:0;git-cz
+: 1733212454:0;git push origin feature/BT-3320-shipping-fee 
+: 1733218796:0;npm run dev
+: 1733219387:0;git-cz
+: 1733219399:0;git push origin feature/BT-3320-shipping-fee 
+: 1733219441:0;git-cz
+: 1733219449:0;git push origin feature/BT-3320-shipping-fee 
+: 1733220835:0;npm run dev
+: 1733230138:0;git-cz
+: 1733230240:0;git push origin feature/BT-3320-shipping-fee 
+: 1733230648:0;npm run build
+: 1733231704:0;git-cz
+: 1733231722:0;git push origin feature/BT-3320-shipping-fee 
+: 1733242083:0;npm run dev
+: 1733254215:0;gco master 
+: 1733254231:0;gl
+: 1733254240:0;gco master 
+: 1733254241:0;gl
+: 1733265591:0;git add common/
+: 1733265604:0;git-cz
+: 1733267880:0;git add common/shared
+: 1733267885:0;git-cz
+: 1733267909:0;git add features/driver/driver-list
+: 1733267914:0;git-cz
+: 1733267978:0;git push origin dev/BT-3977-driver-management 
+: 1733283077:0;npm run dev
+: 1733283390:0;gco staging
+: 1733283404:0;gl
+: 1733284261:0;gco master 
+: 1733284424:0;gcb hotfix/empty-filters-shipping-fee
+: 1733285048:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733285611:0;git-cz
+: 1733285657:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733285749:0;gco staging
+: 1733285759:0;gl
+: 1733285766:0;npm run build
+: 1733285835:0;git stash
+: 1733285846:0;git stash apply
+: 1733285856:0;git-cz
+: 1733285877:0;git push origin staging 
+: 1733285882:0;npm run build
+: 1733295909:0;npm run dev
+: 1733298352:0;npm run build
+: 1733304263:0;gco feature/BT-3320-shipping-fee 
+: 1733304434:0;gl
+: 1733304439:0;git log
+: 1733305193:0;npm run dev
+: 1733305354:0;rm -rf node_modules
+: 1733305362:0;npm i
+: 1733305375:0;npm run dev
+: 1733306296:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733306493:0;git stash push -m "changes for sameday"
+: 1733306497:0;gco hotfix/empty-filters-shipping-fee 
+: 1733306506:0;git statsh apply
+: 1733306515:0;git stash apply
+: 1733306826:0;git-cz
+: 1733306842:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733306853:0;npm run build
+: 1733306891:0;git-cz
+: 1733306901:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733307828:0;npm run build
+: 1733307839:0;git-cz
+: 1733307857:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733310296:0;npm run dev
+: 1733313742:0;git-cz
+: 1733313750:0;git add src/common/routing
+: 1733313760:0;git add src/common/shared
+: 1733313774:0;git-cz
+: 1733313804:0;git add src/features/login
+: 1733313831:0;npm run dev
+: 1733372943:0;git add src/features/driver
+: 1733372999:0;git-cz
+: 1733376221:0;git add src/features/driver/driver-list
+: 1733376225:0;git-cz
+: 1733376290:0;git push origin dev/BT-3977-driver-management 
+: 1733383665:0;npm run dev
+: 1733393465:0;git add src/features/driver/driver-list
+: 1733395099:0;git-cz
+: 1733395106:0;git add src/features/driver/driver-list
+: 1733395110:0;git-cz
+: 1733395137:0;git push origin dev/BT-3977-driver-management 
+: 1733395307:0;git-cz
+: 1733395311:0;git add src/features/driver/driver-list
+: 1733395313:0;git-cz
+: 1733395331:0;git push origin dev/BT-3977-driver-management 
+: 1733424215:0;git-cz
+: 1733424241:0;git add src/features/driver/sales-history
+: 1733424488:0;git-cz
+: 1733424587:0;git push origin dev/BT-3977-driver-management 
+: 1733424934:0;npm run dev
+: 1733427389:0;git add src/features/driver/sales-history
+: 1733427460:0;git-cz
+: 1733427538:0;git push origin dev/BT-3977-driver-management 
+: 1733427648:0;npm run dev
+: 1733427998:0;git add src/features/driver/sales-history
+: 1733428008:0;git-cz
+: 1733428055:0;git push origin dev/BT-3977-driver-management 
+: 1733430524:0;git add src/features/driver/sales-history
+: 1733430536:0;git add src/features/driver/inventory-sales
+: 1733430543:0;git-cz
+: 1733430692:0;git push origin dev/BT-3977-driver-management 
+: 1733433329:0;git add src/features/user/user-list
+: 1733433494:0;git-cz
+: 1733433535:0;git push origin dev/BT-3977-driver-management 
+: 1733433565:0;git-cz
+: 1733433587:0;git push origin dev/BT-3977-driver-management 
+: 1733433597:0;git-cz
+: 1733433611:0;git push origin dev/BT-3977-driver-management 
+: 1733478229:0;gl
+: 1733478262:0;npm run dev
+: 1733478710:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1733478890:0;git-cz
+: 1733478921:0;git push origin hotfix/empty-filters-shipping-fee 
+: 1733488754:0;git add src/features/user/
+: 1733488758:0;git-cz
+: 1733488855:0;git push origin dev/BT-3977-driver-management 
+: 1733488871:0;git-cz
+: 1733488900:0;git push origin dev/BT-3977-driver-management 
+: 1733507188:0;gl
+: 1733507204:0;git pull origin dev/BT-3977-driver-management 
+: 1733510839:0;gl
+: 1733510846:0;git pull origin dev/BT-3977-driver-management 
+: 1733510859:0;git-cz
+: 1733510875:0;git push origin dev/BT-3977-driver-management 
+: 1733511285:0;git-cz
+: 1733511303:0;git push origin dev/BT-3977-driver-management 
+: 1733511759:0;gco master 
+: 1733511760:0;gl
+: 1733566430:0;gcb dev/BT-3613-sales-insights
+: 1733566450:0;git add src/common
+: 1733566506:0;git-cz
+: 1733566618:0;git add src/features/sales
+: 1733566775:0;git-cz
+: 1733566801:0;git push origin dev/BT-3613-sales-insights 
+: 1734414754:0;gco development 
+: 1734414783:0;git stash
+: 1734414785:0;gl
+: 1734414801:0;git pull origin dev/BT-3613-sales-insights 
+: 1734414813:0;git log
+: 1734414871:0;npm run dev
+: 1734414911:0;git stash apply
+: 1734415167:0;git stash
+: 1734415169:0;gl
+: 1734415175:0;git pull origin dev/BT-3613-sales-insights 
+: 1734415217:0;gco development 
+: 1734415219:0;g
+: 1734415233:0;npm i
+: 1734415259:0;npm npm install @rideblitz/reactjs-design-library@1.0.6
+: 1734415276:0;npm install @rideblitz/reactjs-design-library@1.0.6
+: 1734415290:0;npm i
+: 1734415432:0;npm run dev
+: 1734429619:0;gcb dev/BT-3606-inventory-list-inetgration-ui-updation
+: 1734429629:0;git push origin dev/BT-3606-inventory-list-inetgration-ui-updation 
+: 1734429644:0;git log
+: 1734429649:0;git-cz
+: 1734429969:0;git push origin dev/BT-3606-inventory-list-inetgration-ui-updation 
+: 1734430184:0;gco development 
+: 1734430185:0;gl
+: 1734430205:0;gco development 
+: 1734430206:0;gl
+: 1734430212:0;gco master 
+: 1734430216:0;gl
+: 1734430359:0;gcb dev/BT-4102-ui-global-app-users
+: 1734430362:0;npm run dev
+: 1734430616:0;cd src
+: 1734430619:0;l
+: 1734430622:0;ls
+: 1734430627:0;plop
+: 1734432201:0;npm run dev
+: 1734435208:0;npm i
+: 1734435211:0;npm run dev
+: 1734435226:0;npm u
+: 1734435229:0;npm i
+: 1734435240:0;npm run dev
+: 1734442793:0;git-cz
+: 1734442821:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734517407:0;git-cz
+: 1734517465:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734517482:0;git-cz
+: 1734519048:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734523622:0;git-cz
+: 1734523665:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734523706:0;git-cz
+: 1734523724:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734577884:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1734583452:0;git-cz
+: 1734585431:0;git log
+: 1734585436:0;git-cz
+: 1734587211:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734587222:0;git-cz
+: 1734587245:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734590371:0;npm run build
+: 1734590459:0;git-cz
+: 1734590564:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734590584:0;npm run build
+: 1734590597:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1734603092:0;gl
+: 1734603118:0;gco master 
+: 1734603119:0;gl
+: 1734603134:0;gco development 
+: 1734603136:0;gl
+: 1734605795:0;gcb feat/seller-navigation
+: 1734605801:0;npm run dev
+: 1734622025:0;git-cz
+: 1734622052:0;git push origin feat/seller-navigation 
+: 1734666826:0;gco development 
+: 1734666827:0;gl
+: 1734710402:0;npm run dev
+: 1734778921:0;git-cz
+: 1734778945:0;gcb feat/driver-list-integration
+: 1734779072:0;git-cz
+: 1734779496:0;git push origin feat/driver-list-integration 
+: 1734869638:0;npm run bdev
+: 1734869642:0;npm run build
+: 1734871688:0;git-cz
+: 1734871771:0;git push origin feat/driver-list-integration 
+: 1734931043:0;git-cz
+: 1734931080:0;git push origin feat/driver-list-integration 
+: 1734931085:0;npm run build
+: 1734931132:0;git-cz
+: 1734931148:0;git push origin feat/driver-list-integration 
+: 1734931153:0;npm run build
+: 1734941686:0;git-cz
+: 1734941860:0;git push origin feat/driver-list-integration 
+: 1734941865:0;npm run build
+: 1734941902:0;git push origin feat/driver-list-integration 
+: 1734941974:0;gco development 
+: 1734942146:0;gl
+: 1734942152:0;git merge feat/driver-list-integration
+: 1734943961:0;gco feat/driver-list-integration 
+: 1734943964:0;npm run dev
+: 1734944361:0;git-cz
+: 1734944389:0;git push origin feat/driver-list-integration 
+: 1734944395:0;npm run build
+: 1734944468:0;gco development 
+: 1734944471:0;gl
+: 1734944490:0;gco feat/driver-list-integration 
+: 1734944513:0;gcb feat/prathamesh-seller-changes
+: 1734946519:0;git stash push -m "changes for user list"
+: 1734946522:0;gco development 
+: 1734946523:0;gl
+: 1734946532:0;gco feat/prathamesh-seller-changes 
+: 1734946541:0;git merge development 
+: 1734946563:0;npm i
+: 1734946569:0;npm run dev
+: 1734946599:0;git stash apply stash@{0} 
+: 1734946737:0;git checkout -f
+: 1734951532:0;npm run build
+: 1734955697:0;git-cz
+: 1734955721:0;git push origin feat/prathamesh-seller-changes 
+: 1734955727:0;npm run build
+: 1734955770:0;git-cz
+: 1734955798:0;git push origin feat/prathamesh-seller-changes 
+: 1734955820:0;git push origin feat/prathamesh-seller-changes
+: 1734955893:0;gco development 
+: 1734955894:0;gl
+: 1734955899:0;npm run build
+: 1735026751:0;gl
+: 1735029819:0;wprl
+: 1735029820:0;work
+: 1735029822:0;gcl git@github.com:rideblitz/reactjs-design-library.git
+: 1735029832:0;cd reactjs-design-library
+: 1735029833:0;coee .
+: 1735029836:0;code .
+: 1735029854:0;npm run build
+: 1735029865:0;npm i
+: 1735030002:0;npm link
+: 1735030012:0;npm link reactjs-design-library\
+
+: 1735030044:0;npm link reactjs-design-library
+: 1735030211:0;npm link reactjs-design-library\
+
+: 1735030221:0;npm link
+: 1735030233:0;npm link reactjs-design-library\
+
+: 1735030280:0;npm install ../reactjs-design-library
+: 1735030334:0;npm run build
+: 1735030461:0;npm install -g eslin
+: 1735030464:0;npm install -g eslint
+: 1735030486:0;npm run dev
+: 1735030764:0;npm run build
+: 1735030960:0;npm i lucide-react
+: 1735031070:0;npm run build
+: 1735031329:0;npm i lucide-react
+: 1735031333:0;npm run build
+: 1735031912:0;git stash
+: 1735031918:0;npm run build
+: 1735031937:0;history 
+: 1735032272:0;npm run build
+: 1735032322:0;npm run build-watch
+: 1735039470:0;gcb feat/sort-col-implementation
+: 1735039475:0;git-cz
+: 1735039493:0;git push origin feat/sort-col-implementation 
+: 1735040030:0;npm run build
+: 1735040313:0;git-cz
+: 1735040323:0;git push origin feat/sort-col-implementation 
+: 1735041071:0;git-cz
+: 1735041087:0;git push origin feat/sort-col-implementation 
+: 1735041125:0;git-cz
+: 1735041134:0;git push origin feat/sort-col-implementation 
+: 1735041179:0;gco main 
+: 1735041182:0;gl
+: 1735041229:0;npm publish
+: 1735041533:0;npm i
+: 1735041597:0;npm unlink
+: 1735041629:0;history | grep "../reactjs-design-library/"
+: 1735041655:0;npm unlink reactjs-design-library\
+
+: 1735041660:0;npm i
+: 1735041967:0;gcb feat/prathamesh-seller-changes 
+: 1735041981:0;gco feat/prathamesh-seller-changes 
+: 1735042008:0;gcb feat/user-list-chanegs
+: 1735042022:0;git-cz
+: 1735042088:0;git push origin feat/user-list-chanegs 
+: 1735042093:0;gco feat/prathamesh-seller-changes 
+: 1735042095:0;gl
+: 1735042100:0;gco development 
+: 1735042102:0;gl
+: 1735042109:0;gco feat/prathamesh-seller-changes 
+: 1735042119:0;git merge feat/user-list-chanegs 
+: 1735042127:0;git push origin feat/prathamesh-seller-changes 
+: 1735042180:0;npm run build
+: 1735042203:0;git-cz
+: 1735042212:0;git push origin feat/prathamesh-seller-changes 
+: 1735042333:0;gco development 
+: 1735042334:0;gl
+: 1735042339:0;npm run build
+: 1735042474:0;gk
+: 1735042476:0;gl
+: 1735042482:0;npm run build
+: 1735189580:0;gco master 
+: 1735189581:0;gl
+: 1735190328:0;gcb dev/BT-3870-unbatched-orders
+: 1735190447:0;npm run dev
+: 1735190561:0;npm i
+: 1735190565:0;npm run dev
+: 1735191092:0;gl
+: 1735191429:0;gcb feat/prathamesh-seller-changes 
+: 1735191439:0;gco feat/prathamesh-seller-changes 
+: 1735191440:0;gl
+: 1735191446:0;git merge development 
+: 1735191452:0;npm i
+: 1735191457:0;npm run dev
+: 1735192432:0;npm run build
+: 1735192493:0;npm run build-watch
+: 1735192542:0;npm link @rideblitz/reactjs-design-library
+: 1735192585:0;npm run dev
+: 1735192669:0;npm unlink @rideblitz/reactjs-design-library
+: 1735192675:0;npm link
+: 1735192681:0;npm link @rideblitz/reactjs-design-library
+: 1735192709:0;npm run build-watch
+: 1735192734:0;npm run dev
+: 1735200621:0;npm i lucide-react
+: 1735200663:0;gcb feat/fixed-table-text-font
+: 1735200679:0;npm run build-watch
+: 1735200691:0;git-cz
+: 1735200806:0;git push origin feat/fixed-table-text-font 
+: 1735200850:0;gco main
+: 1735200851:0;gl
+: 1735200869:0;gco feat/prathamesh-seller-changes 
+: 1735200874:0;gco feat/fixed-table-text-font 
+: 1735200890:0;npm run build-watch
+: 1735201101:0;git-cz
+: 1735201119:0;git push origin feat/prathamesh-seller-changes 
+: 1735203645:0;git log
+: 1735203687:0;git-cz
+: 1735203704:0;git push origin feat/fixed-table-text-font 
+: 1735203850:0;gco main
+: 1735203851:0;gl
+: 1735203899:0;npm publish
+: 1735203929:0;npm unlink @rideblitz/reactjs-design-library
+: 1735203957:0;npm i
+: 1735203976:0;npm run dev
+: 1735204019:0;git-cz
+: 1735204085:0;npm run build-watch
+: 1735204088:0;npm run build
+: 1735204118:0;git-cz
+: 1735204141:0;git push origin feat/prathamesh-seller-changes 
+: 1735207907:0;npm run build
+: 1735207927:0;npm link
+: 1735207932:0;npm unlink @rideblitz/reactjs-design-library
+: 1735207945:0;npm run build-watch
+: 1735207949:0;npm run dev
+: 1735207987:0;npm link @rideblitz/reactjs-design-library
+: 1735207990:0;npm run dev
+: 1735209057:1;npm unlink @rideblitz/reactjs-design-library
+: 1735209061:0;npm i
+: 1735209083:0;npm run dev
+: 1735209147:0;git-cz
+: 1735209165:0;git push origin feat/prathamesh-seller-changes 
+: 1735209551:0;npm run dev
+: 1735209718:0;git-cz
+: 1735209734:0;git push origin feat/prathamesh-seller-changes 
+: 1735209804:0;npm run build-watch
+: 1735209807:0;npm run build
+: 1735210932:0;git-cz
+: 1735211150:0;npm run dev
+: 1735211160:0;npm run build
+: 1735216029:0;git-cz
+: 1735229066:0;work
+: 1735229071:0;gcl git@github.com:Pratham82/factwise-assessment-2025.git
+: 1735229079:0;cd factwise-assessment-2025
+: 1735229080:0;code .
+: 1735230494:0;npm create vite@latest
+: 1735230519:0;npm i
+: 1735230634:0;npm run dev
+: 1735231371:0;npm create vite@latest
+: 1735231433:0;npm i
+: 1735231470:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1735231477:0;npx tailwindcss init\
+
+: 1735231526:0;npm run dev
+: 1735231775:0;npm ls tailwindcss\
+
+: 1735231905:0;npm create vite@latest\
+
+: 1735231930:0;npm i
+: 1735231949:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1735231958:0;npx tailwind init -p\
+
+: 1735232335:0;dev
+: 1735232355:0;npm create vite@latest factwise-assessment-2025 -- --template react-ts\
+
+: 1735232359:0;cd factwise-assessment-2025
+: 1735232362:0;mpm i
+: 1735232364:0;npm i
+: 1735232386:0;code .
+: 1735232413:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1735232421:0;npx tailwindcss init\
+
+: 1735232461:0;npm run dev\
+
+: 1735232527:0;npm run dev
+: 1735232902:0;rm -rf node_modules/.vite\
+
+: 1735232907:0;npm run dev
+: 1735242408:0;history
+: 1735242435:0;npm create vite@latest .  -- --template react-ts
+: 1735242449:0;npm i
+: 1735242486:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1735242494:0;npx tailwindcss init\
+
+: 1735242531:0;npm run dev\
+
+: 1735242592:0;npm run dev
+: 1735247304:0;npm install @heroicons/react\
+
+: 1735247544:0;npm i lucide-react
+: 1735269023:0;gco development 
+: 1735269026:0;gl
+: 1735269227:0;gco dev/BT-4102-ui-global-app-users
+: 1735269240:0;npm run dev
+: 1735269315:0;npm run de
+: 1735269317:0;npm run dev
+: 1735269331:0;npm i
+: 1735269337:0;npm run dev
+: 1735269364:0;git-cz
+: 1735269385:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1735269395:0;gl
+: 1735269403:0;git push origin dev/BT-4102-ui-global-app-users
+: 1735269434:0;gco development 
+: 1735269439:0;git branch -D  dev/BT-4102-ui-global-app-users
+: 1735269440:0;gl
+: 1735269457:0;gco dev/BT-4102-ui-global-app-users
+: 1735269473:0;git-cz
+: 1735269493:0;git push origin dev/BT-4102-ui-global-app-users
+: 1735271266:0;npm run dev
+: 1735271274:0;gco development 
+: 1735271275:0;gl
+: 1735271285:0;gco feat/prathamesh-seller-changes 
+: 1735271290:0;git merge development 
+: 1735273678:0;git-cz
+: 1735281163:0;git push origin feat/prathamesh-seller-changes 
+: 1735281567:0;npm run dev
+: 1735302776:0;gl
+: 1735302837:0;npm run build
+: 1735302863:0;npm link
+: 1735302905:0;npm link @rideblitz/reactjs-design-library
+: 1735302912:0;npm link
+: 1735302920:0;npm link @rideblitz/reactjs-design-library
+: 1735302941:0;npm run build-watch
+: 1735302943:0;npm run dev
+: 1735303006:0;npm run build
+: 1735303016:0;npm unlink @rideblitz/reactjs-design-library
+: 1735303022:0;npm link
+: 1735303025:0;npm link @rideblitz/reactjs-design-library
+: 1735303044:0;npm run build-watch
+: 1735303048:0;npm run dev
+: 1735303433:0;git-cz
+: 1735303458:0;gcb fix/fixed-titel-bar-nav
+: 1735303468:0;git-cz
+: 1735303508:0;git push origin fix/fixed-titel-bar-nav 
+: 1735303755:0;git-cz
+: 1735303804:0;git push origin fix/fixed-titel-bar-nav 
+: 1735303861:0;npm run build
+: 1735303933:0;npm unlink @rideblitz/reactjs-design-library\
+
+: 1735303977:0;npm i
+: 1735303995:0;gco main
+: 1735303995:0;gl
+: 1735304002:0;npm publish
+: 1735304013:0;npm i
+: 1735304027:0;npm run build
+: 1735304052:0;npm i
+: 1735304056:0;npm run build
+: 1735304089:0;npm unlink @rideblitz/reactjs-design-library\
+
+: 1735304092:0;npm i
+: 1735304096:0;npm run dev
+: 1735304146:0;npm unlink @rideblitz/reactjs-design-library\
+
+: 1735304160:0;npm i
+: 1735304168:0;npm run dev
+: 1735304244:0;npm i
+: 1735304250:0;npm run dev
+: 1735304303:0;history
+: 1735304345:0;npm run build
+: 1735304373:0;npm publish
+: 1735304600:0;npm run dev
+: 1735304604:0;npm i
+: 1735304608:0;npm run dev
+: 1735304676:0;npm i
+: 1735304680:0;npm run dev
+: 1735304744:22;git-cz
+: 1735304771:0;git push origin feat/prathamesh-seller-changes 
+: 1735304851:0;npm run build
+: 1735304901:0;npm i
+: 1735304910:0;npm run build
+: 1735304950:0;git-cz
+: 1735304970:0;git push origin main
+: 1735304976:0;npm publish
+: 1735304991:2;npm i
+: 1735304995:0;npm run dev
+: 1735305027:0;git-cz
+: 1735305046:0;git push origin feat/prathamesh-seller-changes 
+: 1735306079:0;npm link
+: 1735306084:0;npm link @rideblitz/reactjs-design-library
+: 1735306094:0;npm run build-watch
+: 1735306100:0;npm run dev
+: 1735306164:0;npm link @rideblitz/reactjs-design-library
+: 1735306170:0;npm run de
+: 1735306172:0;npm run dev
+: 1735306207:0;npm u @rideblitz/reactjs-design-library\
+
+: 1735306230:0;npm run dev
+: 1735306243:0;npm run build-watch
+: 1735306252:0;npm link @rideblitz/reactjs-design-library
+: 1735306257:0;npm run dev
+: 1735313254:0;npm unlink @rideblitz/reactjs-design-library\
+
+: 1735313272:0;git-cz
+: 1735313345:0;gcb fix/fixed-table-column-heading
+: 1735313351:0;git-cz
+: 1735313417:0;npm i
+: 1735313514:0;git-cz
+: 1735313553:0;git push origin fix/fixed-table-column-heading 
+: 1735313625:0;gco main
+: 1735313625:0;gl
+: 1735313637:0;npm run build
+: 1735313649:0;npm publish
+: 1735313684:0;npm i
+: 1735318600:0;git-cz
+: 1735318641:0;git stash push -m "changes for store list"
+: 1735318652:0;git push origin feat/prathamesh-seller-changes 
+: 1735318699:0;npm run build
+: 1735327698:0;npm run dev
+: 1735329032:0;git add src
+: 1735329040:0;git-cz
+: 1735329113:0;git push origin master
+: 1735361182:0;git-cz
+: 1735361487:0;git add src
+: 1735361493:0;git-cz
+: 1735361517:0;git push origin master
+: 1735361823:0;git-cz
+: 1735361893:0;git push origin master
+: 1735371168:0;git-cz
+: 1735371356:0;git push origin master
+: 1735371485:0;npm run build
+: 1735456998:0;brew install --cask ghostty\
+\
+
+: 1735457075:0;dev
+: 1735457077:0;clear
+: 1735457078:0;ls
+: 1735543931:0;gco development 
+: 1735543933:0;gl
+: 1735544023:0;gcb feat/BT-3615-sales-insights
+: 1735544030:0;npm run dev
+: 1735544830:0;git branch -a
+: 1735544908:0;git merge dev/BT-3613-sales-insights 
+: 1735553713:0;git-cz
+: 1735554320:0;git push origin feat/BT-3615-sales-insights 
+: 1735554437:0;git-cz
+: 1735554452:0;git push origin feat/BT-3615-sales-insights 
+: 1735561959:0;git-cz
+: 1735563197:0;git push origin feat/BT-3615-sales-insights 
+: 1735563204:0;npm run build
+: 1735563725:0;npm i
+: 1735563730:0;npm run dev
+: 1735563745:0;npm run build
+: 1735568312:0;git-cz
+: 1735568325:0;git push origin feat/BT-3615-sales-insights 
+: 1735620065:0;clear
+: 1735620076:0;gco master 
+: 1735620077:0;gl
+: 1735620139:0;gcb feature/BT-3866-ui-enhancements-instant-services
+: 1735620145:0;npm run dev
+: 1735631627:0;git-cz
+: 1735631789:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735631795:0;npm run build
+: 1735632956:0;git-cz
+: 1735633013:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735633343:0;git-cz
+: 1735633367:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735638495:0;npm run build
+: 1735638712:0;git-cz
+: 1735638742:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735638754:0;git-cz
+: 1735638803:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735639302:0;gco dee
+: 1735639306:0;gco development 
+: 1735639316:0;gl
+: 1735639322:0;npm run build
+: 1735639676:0;gco development 
+: 1735639677:0;gl
+: 1735639691:0;gcb feat/prathamesh-seller-changes 
+: 1735639695:0;gco feat/prathamesh-seller-changes 
+: 1735639696:0;gl
+: 1735639705:0;git merge development 
+: 1735639712:0;npm run dev
+: 1735639765:0;npm i
+: 1735639769:0;npm run dev
+: 1735641738:0;git-cz
+: 1735715943:0;git push origin feat/prathamesh-seller-changes 
+: 1735716083:0;npm run build
+: 1735720614:0;plop
+: 1735787720:0;git log
+: 1735787726:0;npm run dev
+: 1735788346:0;gco feature/BT-3866-ui-enhancements-instant-services 
+: 1735788349:0;gcp 28561675c6a628906c4ce5f5de9ec2a4d04cab9d
+: 1735788354:0;npm run dev
+: 1735788386:0;git log
+: 1735788392:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735788399:0;npm run build
+: 1735789546:0;npm run dev
+: 1735790877:0;git-cz
+: 1735791066:0;git push origin feature/BT-3866-ui-enhancements-instant-services 
+: 1735791127:0;gco dev/BT-4102-ui-global-app-users
+: 1735800058:0;gco feature/BT-3866-ui-enhancements-instant-services 
+: 1735800061:0;npm run dev
+: 1735800597:0;git stash
+: 1735800603:0;gco development 
+: 1735800604:0;gl
+: 1735817949:0;gco feat/prathamesh-seller-changes 
+: 1735817953:0;git stash
+: 1735817956:0;gco feat/prathamesh-seller-changes 
+: 1735817959:0;git merge development 
+: 1735817965:0;git stash apply stash@{0} 
+: 1735817986:0;git-cz
+: 1735818045:0;git push origin feat/prathamesh-seller-changes 
+: 1735818094:0;git-cz
+: 1735818421:0;git push origin feat/prathamesh-seller-changes 
+: 1735818429:0;npm run build
+: 1735873772:0;npm run dev
+: 1735873910:0;gco dev/BT-4102-ui-global-app-users
+: 1735894810:0;git-cz
+: 1735894825:0;git push origin dev/BT-4102-ui-global-app-users
+: 1735894867:0;git-cz
+: 1735894876:0;git push origin dev/BT-4102-ui-global-app-users
+: 1735904224:0;git add src/features/driver/sales-history
+: 1735904230:0;git-cz
+: 1735904254:0;git add src/features/driver/selling-areas
+: 1735904259:0;git-cz
+: 1735904319:0;git log
+: 1735904356:0;git push origin feat/prathamesh-seller-changes 
+: 1735904360:0;gco feat/BT-3615-sales-insights
+: 1735904368:0;git merge feat/prathamesh-seller-changes 
+: 1735904421:0;git log
+: 1735904482:0;gco development 
+: 1735904487:0;gl
+: 1735904503:0;gco feat/BT-3615-sales-insights
+: 1735904507:0;git merge deve
+: 1735904509:0;git merge development 
+: 1736132874:0;npm run dev
+: 1736135268:0;git-cz
+: 1736135287:0;npm run dev
+: 1736135291:0;npm run build
+: 1736135306:0;git-cz
+: 1736135320:0;npm run build
+: 1736135384:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1736157355:0;git-cz
+: 1736157378:0;git push origin feat/BT-3615-sales-insights 
+: 1736157410:0;npm run build
+: 1736165116:0;git-cz
+: 1736165882:0;git push origin feat/BT-3615-sales-insights 
+: 1736165949:0;git-cz
+: 1736165967:0;git push origin feat/BT-3615-sales-insights 
+: 1736193538:0;npm run dev
+: 1736219388:0;git-cz
+: 1736235202:0;git push origin feat/BT-3615-sales-insights 
+: 1736235217:0;git-cz
+: 1736235269:0;git push origin feat/BT-3615-sales-insights 
+: 1736235274:0;npm run b
+: 1736235283:0;npm run build
+: 1736250279:0;git add src/features/driver/
+: 1736250285:0;git-cz
+: 1736250325:0;git add src/common/network
+: 1736250329:0;git-cz
+: 1736250344:0;git add src/features/sales/driver-sales
+: 1736250349:0;git add src/features
+: 1736250353:0;git-cz
+: 1736250372:0;git push origin feat/BT-3615-sales-insights 
+: 1736250377:0;npm run build
+: 1736250432:0;gco development 
+: 1736250433:0;gl
+: 1736250439:0;npm run build
+: 1736267981:0;npm run dev
+: 1736271664:0;git-cz
+: 1736271698:0;git log
+: 1736271716:0;gco dev/BT-3613-sales-insights 
+: 1736271720:0;git stash
+: 1736271722:0;gco dev/BT-3613-sales-insights 
+: 1736271728:0;git stash apply stash@{0} 
+: 1736275609:0;git merge development 
+: 1736275638:0;git checkout -f
+: 1736275656:0;git log
+: 1736275664:0;git merge development 
+: 1736276419:0;npm run build
+: 1736277617:0;git-cz
+: 1736277630:0;git push origin feat/BT-3615-sales-insights 
+: 1736277666:0;git log
+: 1736277716:0;gco feat/BT-3615-sales-insights
+: 1736277726:0;git merge dev/BT-3613-sales-insights 
+: 1736277734:0;git push origin feat/BT-3615-sales-insights 
+: 1736278160:0;git merge dev/BT-3613-sales-insights Â¸
+: 1736278162:0;git-cz
+: 1736278185:0;git push origin feat/BT-3615-sales-insights 
+: 1736304701:0;git-cz
+: 1736304750:0;git push origin feat/BT-3615-sales-insights 
+: 1736304755:0;npm run build
+: 1736304951:0;git-cz
+: 1736304962:0;git push origin feat/BT-3615-sales-insights 
+: 1736304970:0;npm run build
+: 1736305099:0;gco staging
+: 1736306920:0;gl
+: 1736306944:0;git log
+: 1736306962:0;npm run build
+: 1736312152:0;git-cz
+: 1736312185:0;gco feat/BT-3615-sales-insights
+: 1736312194:0;git push origin feat/BT-3615-sales-insights 
+: 1736312207:0;gco development 
+: 1736312209:0;gl
+: 1736312216:0;gco feat/BT-3615-sales-insights
+: 1736312225:0;git merge development 
+: 1736312232:0;git push origin feat/BT-3615-sales-insights 
+: 1736312269:0;npm run build
+: 1736316585:0;git-cz
+: 1736316623:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1736321603:0;git-cz
+: 1736331673:0;git push origin feat/BT-3615-sales-insights 
+: 1736331679:0;npm run build
+: 1736331778:0;gco development 
+: 1736331779:0;gl
+: 1736331785:0;npm run build
+: 1736331793:0;gco staging
+: 1736331794:0;gl
+: 1736331800:0;npm run build
+: 1736340140:0;gco feat/BT-3615-sales-insights
+: 1736340145:0;git-cz
+: 1736340178:0;git push origin feat/BT-3615-sales-insights 
+: 1736340185:0;npm run build
+: 1736395940:0;git-cz
+: 1736395966:0;git push origin feat/BT-3615-sales-insights 
+: 1736395970:0;gl
+: 1736396189:0;git-cz
+: 1736396206:0;git push origin feat/BT-3615-sales-insights 
+: 1736400650:0;git-cz
+: 1736400686:0;git push origin feat/BT-3615-sales-insights 
+: 1736400695:0;npm run build
+: 1736400785:0;gco staging
+: 1736400786:0;gl
+: 1736400791:0;npm run build
+: 1736400862:0;npm run dev
+: 1736403663:0;git-cz
+: 1736403684:0;git push origin dev/BT-4102-ui-global-app-users 
+: 1736403781:0;gco development 
+: 1736403782:0;gl
+: 1736403788:0;npm run build
+: 1736403810:0;gco staging
+: 1736403810:0;gl
+: 1736403817:0;npm run build
+: 1736404886:0;gco feat/BT-3615-sales-insights
+: 1736404891:0;git-cz
+: 1736404941:0;git push origin feat/BT-3615-sales-insights 
+: 1736416727:0;git-cz
+: 1736416779:0;git push origin feat/BT-3615-sales-insights 
+: 1736416784:0;npm run build
+: 1736416808:0;git-cz
+: 1736416823:0;git push origin feat/BT-3615-sales-insights 
+: 1736420855:0;git-cz
+: 1736421538:0;git push origin feat/BT-3615-sales-insights 
+: 1736479331:0;gl
+: 1736487265:0;npm run dev
+: 1736489405:0;git-cz
+: 1736489409:0;git add .
+: 1736489412:0;git-cz
+: 1736489431:0;git push origin feat/BT-3615-sales-insights 
+: 1736489502:0;npm run build
+: 1736489518:0;git-cz
+: 1736489533:0;git push origin feat/BT-3615-sales-insights 
+: 1736494903:0;git-cz
+: 1736494979:0;git push origin feat/BT-3615-sales-insights 
+: 1736495024:0;npm run dev
+: 1736495093:0;git-cz
+: 1736496141:0;git push origin feat/BT-3615-sales-insights 
+: 1736496151:0;npm run build
+: 1736496233:0;333333333333
+: 1736500166:0;git-cz
+: 1736500180:0;git push origin feat/BT-3615-sales-insights 
+: 1736532880:0;pnpm i -g vercel\
+
+: 1736532890:0;npm i -g vercel
+: 1736533719:0;vercel version
+: 1736533735:0;vercel --version
+: 1736533866:0;vercel alias rm
+: 1736533966:0;vercel ls
+: 1736534212:0;vercel alias set https://pratham82.vercel.app/ www.pratham82.in
+: 1736534398:0;vercel alias set www.pratham82.vercel.app/ www.pratham82.in
+: 1736534434:0;vercel alias set pratham82.vercel.app/ www.pratham82.in
+: 1736534454:0;vercel alias set pratham82 www.pratham82.in
+: 1736534476:0;vercel switch\
+
+: 1736534485:0;vercel ls
+: 1736534523:0;00~vercel~
+: 1736534525:0;vercel
+: 1736534535:0;l
+: 1736534536:0;dev
+: 1736534537:0;ls
+: 1736534563:0;gcl git@github.com:Pratham82/portfolio-v5.git
+: 1736534569:0;npm i
+: 1736534576:0;cd portfolio-v5
+: 1736534578:0;npm i
+: 1736534626:0;vercel
+: 1736534800:0;vercel --prod
+: 1736537200:0;work
+: 1736537201:0;dev
+: 1736537202:0;clear
+: 1736537215:0;cd portfolio-v5
+: 1736537217:0;code .
+: 1736537280:0;sudo unlink /usr/local/bin/code\
+
+: 1736537322:0;code .
+: 1736537686:0;dev
+: 1736537691:0;cd portfolio-v5
+: 1736537694:0;code .
+: 1736538387:0;gcb feat/add-link-preview
+: 1736538390:0;npm run dev
+: 1736539559:0;git-cz
+: 1736539622:0;git push origin feat/add-link-preview 
+: 1736667280:0;cd
+: 1736667455:0;cd /Users
+: 1736667456:0;ls
+: 1736667459:0;cd pratham82
+: 1736667460:0;l
+: 1736667473:0;cd Library
+: 1736667483:0;pwd
+: 1736669189:0;cd Mobile Documents/
+: 1736669189:0;ls
+: 1736669197:0;cd Mobile\ Documents
+: 1736669199:0;ls
+: 1736669201:0;cd com\~apple\~Automator
+: 1736669204:0;..
+: 1736669210:0;cd com\~apple\~CloudDocs
+: 1736669211:0;ls
+: 1736669219:0;git init
+: 1736669239:0;touch .gitignore
+: 1736669254:0;vim .gitignore
+: 1736669312:0;vim .zsh_sessions
+: 1736669318:0;vim .zshrcs
+: 1736669321:0;vim .zshrc
+: 1736669350:0;history
+: 1736669464:0;cd /Users/pratham82/Library/Mobile\ Documents/iCloud\~md\~obsidian
+: 1736669467:0;l
+: 1736669471:0;cd Documents
+: 1736669471:0;ls
+: 1736669474:0;cd Prathamesh\'s\ Vault
+: 1736669475:0;ls
+: 1736669478:0;git init
+: 1736669486:0;touch .gitignore
+: 1736669489:0;vim .zshrc
+: 1736669519:0;git remote add origin git@github.com:Pratham82/obsidian-vault.git
+: 1736669524:0;git add .
+: 1736669546:0;git status
+: 1736669564:0;vim .gitignore
+: 1736669603:0;git status
+: 1736669618:0;vim .gitignore
+: 1736669625:0;git status
+: 1736669638:0;git checkout -f
+: 1736669640:0;git status
+: 1736669645:0;code .
+: 1736669682:0;git-cz
+: 1736669701:0;git push origin master
+: 1736747549:0;gco master 
+: 1736747550:0;gk
+: 1736747555:0;gl
+: 1736747568:0;gco master 
+: 1736747569:0;gl
+: 1736748192:0;gcb dev/BT-4282-edit-deactivate-store-listing
+: 1736748197:0;npm run dev
+: 1736822314:0;npm run build
+: 1736834088:0;npm link
+: 1736834098:0;npm link @rideblitz/reactjs-design-library\
+
+: 1736834111:0;npm run dev
+: 1736834228:0;gl
+: 1736834253:0;git stash
+: 1736834254:0;gl
+: 1736834262:0;git stash apply stash@{0} 
+: 1736834385:0;npm run build-watch
+: 1736834452:0;npm run dev
+: 1736834473:0;npm run build
+: 1736834548:0;npm unlink @rideblitz/reactjs-design-library
+: 1736834553:0;npm i
+: 1736834563:0;npm run build\
+
+: 1736834570:0;npm link 
+: 1736834579:0;npm link @rideblitz/reactjs-design-library\
+
+: 1736834588:0;npm run build-watch\
+
+: 1736834592:0;npm run dev
+: 1736840707:0;gcb feat/add-input-fields-in-blitzinput
+: 1736840716:0;git-cz
+: 1736840736:0;git push origin feat/add-input-fields-in-blitzinput 
+: 1736840834:0;git add src/features/driver
+: 1736840860:0;git add src/features/store
+: 1736840869:0;git-cz
+: 1736840955:0;git push origin dev/BT-4282-edit-deactivate-store-listing 
+: 1736845568:0;git-cz
+: 1736845655:0;git push origin dev/BT-4282-edit-deactivate-store-listing 
+: 1736845737:0;git-cz
+: 1736845762:0;git push origin feat/add-input-fields-in-blitzinput 
+: 1736872627:0;git-cz
+: 1736872688:0;git push origin dev/BT-4282-edit-deactivate-store-listing 
+: 1736872719:0;npm unlink @rideblitz/reactjs-design-library
+: 1736872826:0;npm i
+: 1736872845:0;git-cz
+: 1736872867:0;git push origin feat/add-input-fields-in-blitzinput 
+: 1736872872:0;gco main
+: 1736872874:0;gl
+: 1736872899:0;gco main
+: 1736872908:0;gl
+: 1736872931:0;npm publish
+: 1736873124:0;gco dev/BT-4282-edit-deactivate-store-listing
+: 1736873476:0;npm i
+: 1736873519:0;npm run dev
+: 1736873534:0;npm i
+: 1736873547:0;git-cz
+: 1736873578:0;git push origin dev/BT-4282-edit-deactivate-store-listing 
+: 1736873605:0;gco master
+: 1736873607:0;gl
+: 1736873613:0;gco main
+: 1736873615:0;gl
+: 1736873670:0;gcb feat/BT-4267-blitz-seller-enhancement
+: 1736873683:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1736873875:0;ghostty +list-fonts\
+\
+
+: 1736875935:0;gco dev/BT-4282-edit-deactivate-store-listing
+: 1736875959:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1736875960:0;gl
+: 1736876008:0;gcb dev/BT-4313-edit-deactivate-inventory
+: 1736876014:0;npm run dev
+: 1736883855:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1736883858:0;gl
+: 1736883898:0;git branch -a
+: 1736883945:0;gco dev/BT-4313-edit-deactivate-inventory 
+: 1736883966:0;git-cz
+: 1736883989:0;git push origin dev/BT-4313-edit-deactivate-inventory 
+: 1736883999:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1736884000:0;gl
+: 1736884007:0;git log
+: 1736884037:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1736884040:0;git log
+: 1736884076:0;git pull origin feat/BT-4267-blitz-seller-enhancement
+: 1736884087:0;gco dev/BT-4313-edit-deactivate-inventory 
+: 1736884092:0;git merge feat/BT-4267-blitz-seller-enhancement
+: 1736912019:0;gco master
+: 1736912025:0;git branch -D staging 
+: 1736912027:0;gl
+: 1736912074:0;gcb dev/BT-4391-app-info-global-app-users
+: 1736912078:0;npm run dev
+: 1736920010:0;git-cz
+: 1736920017:0;git add .
+: 1736920019:0;git-cz
+: 1736920037:0;git push origin dev/BT-4391-app-info-global-app-users 
+: 1736920103:0;gco master
+: 1736920104:0;gl
+: 1736920160:0;gco development 
+: 1736920160:0;gl
+: 1736920166:0;git merge master
+: 1736920177:0;git push origin development 
+: 1736920658:0;gl
+: 1736920667:0;npm run build
+: 1736923668:0;gco dev/BT-4391-app-info-global-app-users
+: 1736923673:0;git-cz
+: 1736923701:0;git push origin dev/BT-4391-app-info-global-app-users 
+: 1736925859:0;npm i
+: 1736927485:0;npm run dev
+: 1736927503:0;npm un @rideblitz/reactjs-design-library
+: 1736927517:0;npm i @rideblitz/reactjs-design-library
+: 1736927534:0;npm run dev
+: 1736927713:0;rm -rf node_modules
+: 1736927723:0;npm i
+: 1736927742:0;npm run dev
+: 1736927769:0;gl
+: 1736927798:0;git-cz
+: 1736927829:0;npm run build
+: 1736927850:0;npm publish
+: 1736927864:0;git-cz
+: 1736927884:0;git push origin main
+: 1736927890:0;npm publish
+: 1736927911:0;npm i
+: 1736927916:0;npm run dev
+: 1736928236:0;rm -rf node_modules
+: 1736928246:0;npm i
+: 1736928262:0;npm run dev
+: 1736939748:0;npm run build
+: 1736939757:0;npm link
+: 1736939772:0;npm link @rideblitz/reactjs-design-library\
+
+: 1736939779:0;npm run dev
+: 1736939819:0;npm run build-watch\
+
+: 1736939836:0;npm run dev
+: 1736939858:0;npm link @rideblitz/reactjs-design-library\
+
+: 1736939862:0;npm run dev
+: 1736939888:0;npm un @rideblitz/reactjs-design-library
+: 1736939893:0;npm link @rideblitz/reactjs-design-library\
+
+: 1736939897:0;npm run dev
+: 1736956676:0;git-cz
+: 1737011371:0;git push origin main
+: 1737011397:0;git-cz
+: 1737011413:0;git push origin main
+: 1737011423:0;npm publish
+: 1737011439:0;npm unlink @rideblitz/reactjs-design-library
+: 1737011447:0;npm i @rideblitz/reactjs-design-library
+: 1737011457:0;npm run dev
+: 1737021816:0;npm run build
+: 1737022115:0;git-cz
+: 1737022157:0;git push origin dev/BT-4313-edit-deactivate-inventory 
+: 1737022173:0;git-cz
+: 1737022206:0;git push origin dev/BT-4313-edit-deactivate-inventory 
+: 1737022462:0;git-cz
+: 1737022478:0;git push origin dev/BT-4313-edit-deactivate-inventory 
+: 1737092748:0;git-cz
+: 1737092776:0;git push origin dev/BT-4313-edit-deactivate-inventory 
+: 1737092782:0;gco master
+: 1737092783:0;gl
+: 1737092861:0;gcb feat/BT-4418-real-time-order-data
+: 1737092864:0;npm run dev
+: 1737094367:0;gco master
+: 1737094370:0;gl
+: 1737094375:0;npm run dev
+: 1737094726:0;gco main
+: 1737094727:0;gl
+: 1737095187:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737095198:0;git stash
+: 1737095201:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737095207:0;git merge main
+: 1737095215:0;git log
+: 1737095226:0;git merge main
+: 1737095257:0;git stash apply stash@{0} 
+: 1737100138:0;git add src/common/routing/app-router.ts
+: 1737100191:0;git add src/features/driver
+: 1737100226:0;git-cz
+: 1737100317:0;git add src/features/store
+: 1737100321:0;git-cz
+: 1737100344:0;git log
+: 1737100433:0;gcb feat/BT-4418-real-time-order-data-2
+: 1737100497:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737100517:0;git push origin feat/BT-4418-real-time-order-data-2 
+: 1737100566:0;git branch -D feat/BT-4418-real-time-order-data 
+: 1737100577:0;gco main
+: 1737100596:0;gcb feat/BT-4418-real-time-order-data
+: 1737100604:0;git log
+: 1737100641:0;gcp 16637a6e5b947a99a7ce2adbcf6a387b061141d6
+: 1737100646:0;gcp 934e03f5c8621f165246bf6a72dbdd27f400a3a9
+: 1737100676:0;git push origin feat/BT-4418-real-time-order-data
+: 1737112357:0;git-cz
+: 1737112386:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737112403:0;npm run build
+: 1737112617:0;npm ru
+: 1737112622:0;npm run build
+: 1737112674:0;git add src/features/driver/
+: 1737112701:0;git log
+: 1737112706:0;git-cz
+: 1737112792:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737112888:0;gco development 
+: 1737112888:0;gl
+: 1737112910:0;git merge feat/BT-4418-real-time-order-data
+: 1737112973:0;np
+: 1737112976:0;npm run build
+: 1737193660:0;git add src/features/driver
+: 1737193849:0;git-cz
+: 1737193872:0;gco feat/BT-4418-real-time-order-data 
+: 1737193896:0;git stash push -m "changes for real time"
+: 1737193899:0;gco feat/BT-4418-real-time-order-data 
+: 1737193906:0;git stash apply stash@{0}
+: 1737193916:0;git add src/features/driver
+: 1737193989:0;git-cz
+: 1737198403:0;git add src/common/routing
+: 1737198411:0;git-cz
+: 1737198453:0;git add src/features/driver
+: 1737198480:0;git-cz
+: 1737198500:0;git add src/features/sales
+: 1737198518:0;git add src/features/sales/common
+: 1737198542:0;git add src/features/sales/orders
+: 1737198564:0;git-cz
+: 1737199153:0;npm run build
+: 1737202240:0;git add .
+: 1737202243:0;git-cz
+: 1737202260:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737203259:0;npm run build
+: 1737204327:0;git-cz
+: 1737204358:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737204372:0;git log
+: 1737204921:0;npm run build
+: 1737204929:0;npm run dev
+: 1737205579:0;git-cz
+: 1737205599:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737205604:0;npm run build
+: 1737232439:0;git-cz
+: 1737232464:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737233696:0;git add src/features/store
+: 1737233713:0;git add src/features/store/detail/
+: 1737233717:0;git-cz
+: 1737233778:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737233783:0;npm run build
+: 1737233892:0;git-cz
+: 1737233920:0;git push origin feat/BT-4418-real-time-order-data 
+: 1737233968:0;gco development 
+: 1737233972:0;git merge feat/BT-4418-real-time-order-data
+: 1737234271:0;git checkout -f
+: 1737234278:0;gl
+: 1737234359:0;gco feat/BT-4418-real-time-order-data
+: 1737234406:0;gco development 
+: 1737234411:0;git merge feat/BT-4418-real-time-order-data
+: 1737235334:0;git checkout -f
+: 1737235337:0;gl
+: 1737235343:0;gco feat/BT-4418-real-time-order-data
+: 1737235358:0;gcb feat/BT-4418-real-time-order-data-dev-copy
+: 1737235365:0;git merge development 
+: 1737236134:0;npm run dev
+: 1737236346:0;git push origin feat/BT-4418-real-time-order-data-dev-copy 
+: 1737236403:0;gco feat/BT-4418-real-time-order-data
+: 1737236408:0;gco development 
+: 1737236417:0;git merge import { AppDate } from "@/common/utils/date.util";\
+import { OrderEntity } from "../../domain/entity/store-detail-orders.entity";\
+\
+export type OrdersResponse =\
+    | { result: false }\
+    | {\
+          data: {\
+              content: OrderItemEntity[];\
+              metaData: Pagination;\
+              totalOrders: number;\
+              totalAmount: number;\
+          };\
+          result: true;\
+      };\
+\
+export type OrderItemEntity = {\
+    orderId: number;\
+    orderAmount: number;\
+    paymentType: string;\
+    noOfItems: number;\
+    lat: number;\
+    lon: number;\
+    coordinates: {\
+        lat: number;\
+        lon: number;\
+    };\
+    dateTime: number;\
+    sellerContact?: string;\
+    sellerId?: number;\
+    sellerName?: string;\
+};\
+\
+export type Pagination = {\
+    totalItems: number;\
+    totalPages: number;\
+    currentPage: number;\
+    pageSize: number;\
+};\
+\
+export const toRequest = (\
+    entity: OrderEntity\
+): { [key: string]: string | string[] } => {\
+    console.log("ðƒ¿ƒº€ ~ entity:", entity);\
+    const startDateUnix =\
+        (entity.filters.createdAt?.from?.timestamp || 0) * 1000000;\
+    const endDateUnix =\
+        (entity.filters.createdAt?.to?.timestamp || 0) * 1000000;\
+    const returnValue: { [key: string]: string | string[] } = {\
+        startDateUnix: startDateUnix?.toString(),\
+        endDateUnix: endDateUnix?.toString(),\
+        sort: ((): string => {\
+            switch (entity.sort) {\
+                case "newest":\
+                    return "-1";\
+                case "oldest":\
+                    return "1";\
+            }\
+        })(),\
+        page: (() => {\
+            switch (entity.drivers.type) {\
+                case "loaded":\
+                    return entity.drivers.pagination.currentPage.toString();\
+                case "loading":\
+                    return "1";\
+                case "error":\
+                    return "1";\
+            }\
+        })(),\
+        offset: "100",\
+        term: entity.filters.search ?? "",\
+        // sortCol: entity.sortCol,\
+        paymentType: entity?.filters?.paymentType?.selected?.id ?? "",\
+\
+        // sortCol: sortColMap[entity.sortCol],\
+    };\
+\
+    return returnValue;\
+};\
+\
+export const entityFromModel = (\
+    model: OrdersResponse,\
+    request: OrderEntity\
+): OrderEntity => {\
+    if (!model.result) {\
+        return {\
+            drivers: {\
+                type: "loading",\
+            },\
+            filters: {\
+                ...request.filters,\
+                createdAt: {\
+                    from: AppDate.now,\
+                    to: AppDate.now,\
+                },\
+                search: "",\
+                paymentType: {\
+                    ...request.filters.paymentType,\
+                    selected: request.filters.paymentType.selected,\
+                },\
+            },\
+            sort: "newest",\
+            // sortCol: "date",\
+            tabs: {\
+                options: [],\
+            },\
+        };\
+    }\
+\
+    return {\
+        filters: {\
+            ...request.filters,\
+        },\
+        sort: request.sort,\
+        // sortCol: request.sortCol,\
+\
+        drivers: {\
+            list: model.data.content,\
+            pagination: {\
+                ...model.data.metaData,\
+                itemsPerPage: model.data.metaData.pageSize,\
+            },\
+            totalOrders: model.data.totalOrders,\
+            totalAmount: model.data.totalAmount,\
+\
+            type: "loaded",\
+        },\
+        tabs: {\
+            options: [],\
+        },\
+    };\
+};
+: 1737236457:0;git megre feat/BT-4418-real-time-order-data
+: 1737236470:0;git merge feat/BT-4418-real-time-order-data
+: 1737236996:0;git checkout -f
+: 1737257134:0;gco feat/BT-4418-real-time-order-data
+: 1737257138:0;npm run dev
+: 1737257454:0;gco development 
+: 1737257463:0;git merge feat/BT-4418-real-time-order-data
+: 1737257575:0;npm run dev
+: 1737257641:0;git lo
+: 1737257643:0;git log
+: 1737258345:0;npm run build
+: 1737258516:0;git-cz
+: 1737258535:0;git push origin development 
+: 1737258564:0;gco feat/BT-4418-real-time-order-data
+: 1737263160:0;Ç¥it
+: 1737263162:0;git-cz
+: 1737263217:0;git push origin feat/BT-4418-real-time-order-data-dev-copy 
+: 1737263222:0;git push origin feat/BT-4418-real-time-order-data
+: 1737263286:0;npm run build
+: 1737263424:0;git-cz
+: 1737263448:0;git push origin feat/BT-4418-real-time-order-data
+: 1737278392:0;/bin/bash -c "$(curl -fsSL https://php.new/install/mac/8.4)"\
+\
+
+: 1737278721:0;cd .config
+: 1737278728:0;..
+: 1737278751:0;cd
+: 1737278753:0;vim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1737428808:0;gco development 
+: 1737428819:0;gco feat/BT-4418-real-time-order-data
+: 1737428868:0;npm run dev
+: 1737431438:0;npm run build
+: 1737437336:0;git-cz
+: 1737437505:0;git push origin feat/BT-4418-real-time-order-data
+: 1737437509:0;npm run build
+: 1737437541:0;git-cz
+: 1737437553:0;git push origin feat/BT-4418-real-time-order-data
+: 1737437593:0;gco development 
+: 1737437594:0;gl
+: 1737437607:0;git merge feat/BT-4418-real-time-order-data
+: 1737437782:0;npm run build
+: 1737438171:0;git-cz
+: 1737438186:0;git push origin development 
+: 1737438229:0;gco feat/BT-4418-real-time-order-data
+: 1737438283:0;git-cz
+: 1737438295:0;git push origin feat/BT-4418-real-time-order-data
+: 1737439604:0;gco development 
+: 1737439812:0;git-cz
+: 1737439865:0;git push origin development 
+: 1737439991:0;gco feat/BT-4418-real-time-order-data
+: 1737440068:0;git-cz
+: 1737440087:0;git push origin feat/BT-4418-real-time-order-data
+: 1737440334:0;npm run build
+: 1737440637:0;gco development 
+: 1737440638:0;gl
+: 1737440643:0;npm run build
+: 1737442131:0;git branch -D staging 
+: 1737442132:0;gl
+: 1737442136:0;gco staging
+: 1737442137:0;gl
+: 1737442142:0;git log
+: 1737442155:0;npm run build
+: 1737442176:0;gco feat/BT-4418-real-time-order-data
+: 1737442192:0;gl
+: 1737442206:0;git pull origin feat/BT-4418-real-time-order-data
+: 1737442223:0;npm run build
+: 1737442236:0;npm run dev
+: 1737442239:0;npm run build
+: 1737442250:0;git-cz
+: 1737442263:0;git push origin feat/BT-4418-real-time-order-data
+: 1737444433:0;git-cz
+: 1737444461:0;git push origin feat/BT-4418-real-time-order-data
+: 1737486729:0;gco main
+: 1737486729:0;gl
+: 1737517587:0;gcb feat/BT-4426-restock-details
+: 1737529478:0;npm run dev
+: 1737548143:0;git add src/assets/svg/ActivitiesIcon.tsx
+: 1737548147:0;git-cz
+: 1737548233:0;git add src/features/seller-activities
+: 1737548236:0;git-cz
+: 1737548261:0;git add src/common/network
+: 1737548265:0;git-v
+: 1737548267:0;git-cz
+: 1737548293:0;git push origin feat/BT-4426-restock-details 
+: 1737548302:0;npm run build
+: 1737548822:0;git-cz
+: 1737548844:0;git push origin feat/BT-4426-restock-details 
+: 1737548902:0;git-cz
+: 1737548922:0;git push origin feat/BT-4426-restock-details 
+: 1737548931:0;npm run build
+: 1737549339:0;git-cz
+: 1737549358:0;git push origin feat/BT-4426-restock-details 
+: 1737619873:0;git add src/common/routing
+: 1737619885:0;git-cz
+: 1737619926:0;git add src/features/driver
+: 1737620020:0;git-cz
+: 1737620233:0;npm run dev
+: 1737620327:0;git-cz
+: 1737620352:0;git push origin feat/BT-4426-restock-details 
+: 1737620360:0;npm run build
+: 1737622375:0;git-cz
+: 1737622472:0;git push origin feat/BT-4426-restock-details 
+: 1737622513:0;brew install gh
+: 1737622590:0;gh pr create
+: 1737622595:0;gh auth login
+: 1737622765:0;gh pr create
+: 1737622806:0;gh pr create --help
+: 1737622831:0;gh pr create --base development
+: 1737622969:0;gco development 
+: 1737622980:0;git merge feat/BT-4426-restock-details
+: 1737623057:0;git push origin dev
+: 1737623064:0;git push origin development 
+: 1737623075:0;npm run build
+: 1737623195:0;gco feat/BT-4418-real-time-order-data
+: 1737623205:0;gco feat/BT-4426-restock-details 
+: 1737623873:0;git stash push -m "API integration"
+: 1737624611:0;gco development 
+: 1737624611:0;gl
+: 1737624616:0;npm run build
+: 1737624743:0;gco feat/BT-4426-restock-details 
+: 1737627256:0;npm run build
+: 1737627414:0;git-cz
+: 1737627492:0;npm run build
+: 1737627508:0;git-cz
+: 1737627537:0;git push origin feat/BT-4426-restock-details 
+: 1737627545:0;gh pr create --base development
+: 1737632118:0;git-cz
+: 1737632250:0;git add .
+: 1737632252:0;git-cz
+: 1737632405:0;git push origin feat/BT-4426-restock-details 
+: 1737632414:0;npm run build
+: 1737632423:0;gh pr create --base development
+: 1737632481:0;gco development 
+: 1737632483:0;gl
+: 1737632489:0;git merge feat/BT-4426-restock-details
+: 1737632509:0;git push origin development 
+: 1737632513:0;npm run build
+: 1737633081:0;gco feat/BT-4426-restock-details 
+: 1737633087:0;git-cz
+: 1737633100:0;git push origin feat/BT-4426-restock-details 
+: 1737637822:0;git-cz
+: 1737639222:0;git push origin feat/BT-4426-restock-details 
+: 1737639227:0;npm run build
+: 1737639268:0;gh pr create --base development
+: 1737641766:0;dev
+: 1737641768:0;clear
+: 1737641769:0;npx create-expo-app@latest\
+
+: 1737641881:0;cd my-first-expo-app/
+: 1737641882:0;code .
+: 1737641934:0;npm i
+: 1737641939:0;npx expo start
+: 1737641951:0;npm run ios
+: 1737642184:0;npx expo start
+: 1737643420:0;git stash
+: 1737691598:0;npm run dev
+: 1737692834:0;gh pr create --base staging
+: 1737693696:0;npm run dev
+: 1737695663:0;gco staging 
+: 1737695665:0;gl
+: 1737695684:0;gh 
+: 1737695755:0;npm run build
+: 1737700053:0;gco feat/BT-4426-restock-details 
+: 1737700057:0;git-cz
+: 1737700068:0;git push origin feat/BT-4426-restock-details 
+: 1737700075:0;gh pr create --base staging
+: 1737700107:0;npm run build
+: 1737700129:0;git-cz
+: 1737700137:0;git push origin feat/BT-4426-restock-details 
+: 1737700144:0;gh pr create --base staging
+: 1737703072:0;npm run dev
+: 1737705129:4;npm run build
+: 1737705135:0;git-cz
+: 1737708459:0;git add src/common/shared
+: 1737708468:0;git-cz
+: 1737708503:0;npm run build
+: 1737708594:0;git-cz
+: 1737708602:0;git add src/common/shared/data
+: 1737708607:0;git-cz
+: 1737708626:0;git add src/common/shared/presentation/components/OrderDetailsModal
+: 1737708631:0;git log
+: 1737708639:0;git-cz
+: 1737708661:0;git stash push -m "changes for order details"
+: 1737709030:0;git-cz
+: 1737709049:0;git push origin feat/BT-4426-restock-details 
+: 1737709055:0;gh pr create --base staging
+: 1737709104:0;gco development 
+: 1737709105:0;gl
+: 1737709110:0;npm run build
+: 1737709117:0;gco staging 
+: 1737709119:0;npm riunn build
+: 1737709122:0;npm run build
+: 1737709318:0;gl
+: 1737709322:0;npm run build
+: 1737709359:0;gco feat/BT-4426-restock-details 
+: 1737712829:0;git add src/common/di/index.ts
+: 1737712834:0;git add src/common/network
+: 1737712840:0;git add src/common/shared
+: 1737712853:0;git-cz
+: 1737712917:0;git push origin feat/BT-4426-restock-details 
+: 1737713171:0;git-cz
+: 1737713190:0;git push origin feat/BT-4426-restock-details 
+: 1737713410:0;git-cz
+: 1737713420:0;git push origin feat/BT-4426-restock-details 
+: 1737713426:0;gh pr create --base staging
+: 1737713434:0;gh pr create --base dev/BT-3606-inventory-list-inetgration-ui-updation
+: 1737713446:0;gh pr create --base development
+: 1737713593:0;gco development 
+: 1737713594:0;gl
+: 1737713602:0;npm run build
+: 1737713618:0;gco feat/BT-4426-restock-details 
+: 1737713633:0;git add
+: 1737713635:0;git add .
+: 1737713645:0;npm run build
+: 1737713653:0;git-cz
+: 1737713662:0;git push origin feat/BT-4426-restock-details 
+: 1737713667:0;gh pr create --base development
+: 1737714653:0;git-cz
+: 1737714684:0;git push origin feat/BT-4426-restock-details 
+: 1737714689:0;npm run build
+: 1737714697:0;gh pr create --base development
+: 1737715201:0;gh pr create --base staging
+: 1737717697:0;git-cz
+: 1737717712:0;git push origin feat/BT-4426-restock-details 
+: 1737717717:0;gh pr create --base staging
+: 1737720219:0;git-cz
+: 1737720257:0;git log
+: 1737720262:0;gh pr create --base staging
+: 1737721523:0;git-cz
+: 1737721540:0;npm run build
+: 1737721546:0;git push origin feat/BT-4426-restock-details 
+: 1737721550:0;gh pr create --base staging
+: 1737868320:0;q integrations install input-method
+: 1737868339:0;work
+: 1737868714:0;git
+: 1737868718:0;git 
+: 1737868922:0;q integrations install ssh\
+
+: 1737869062:0;ls
+: 1737869069:0;dev
+: 1737869071:0;clear
+: 1737869080:0;ls
+: 1737869105:0;dev
+: 1737869108:0;gcl git@github.com:larskarbo/napchart.git
+: 1737869117:0;cd napchart
+: 1737869118:0;code .
+: 1737869128:0;npm install napchart --save\
+
+: 1737869172:0;npm run dev
+: 1737872603:0;ls AndroidStudioProjects
+: 1737872708:0;git 
+: 1737872793:0;dev
+: 1737872794:0;work
+: 1737888179:0;q integrations install ssh\
+
+: 1737891106:0;dev
+: 1737891107:0;gcl git@github.com:larskarbo/napchart-website.git
+: 1737891119:0;cd napchart-website
+: 1737891120:0;code .
+: 1737891159:0;cd 
+: 1737891166:0;cd dev
+: 1737891173:0;cd napchart-website/
+: 1737891178:0;cd server/
+: 1737891180:0;npm i
+: 1737891188:0;,,
+: 1737891189:0;..
+: 1737891196:0;cd web/
+: 1737891198:0;npm i
+: 1737952537:0;gco main
+: 1737952538:0;g;
+: 1737952539:0;gl
+: 1737957157:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737957161:0;npm run dev
+: 1737957165:0;git log
+: 1737957896:0;gco development 
+: 1737957898:0;git log
+: 1737957910:0;gl
+: 1737957917:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737957919:0;git log
+: 1737958065:0;git stash list
+: 1737958119:0;git merge main
+: 1737960333:0;npm run dev
+: 1737960580:0;git checkout -f
+: 1737960588:0;gcb merge main
+: 1737960600:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737960623:0;git log
+: 1737960645:0;git checkout -f
+: 1737960647:0;git log
+: 1737960654:0;gco main
+: 1737960655:0;gl
+: 1737960660:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737960662:0;git log
+: 1737960684:0;gco main
+: 1737960691:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737960693:0;git log
+: 1737960751:0;gcb feat/BT-4267-copy-seller-enhancements
+: 1737960774:0;git branch -D feat/BT-4267-blitz-seller-enhancement
+: 1737960775:0;gl
+: 1737960781:0;gco feat/BT-4267-blitz-seller-enhancement
+: 1737960783:0;git log
+: 1737960788:0;git merge main
+: 1737960990:0;npm run dev
+: 1737961705:0;git checkout -f
+: 1737961725:0;gco feat/BT-4267-copy-seller-enhancements
+: 1737961751:0;git push origin feat/BT-4267-copy-seller-enhancements
+: 1737962279:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1737962281:0;gl
+: 1737962290:0;git merge main
+: 1737963196:0;npm run build
+: 1737963813:0;npm run dev
+: 1737965412:0;work
+: 1737965469:0;git-cz
+: 1737965473:0;git add .
+: 1737965476:0;git-cz
+: 1737965514:0;ls
+: 1737965516:0;..
+: 1737965518:0;gcl git@github.com:rideblitz/reactjs-blitz-seller.git
+: 1737965541:0;mv reactjs-blitz-seller reactjs-blitz-seller-copy
+: 1737965548:0;cd reactjs-blitz-seller-copy
+: 1737965550:0;code .
+: 1737965587:0;..
+: 1737965600:0;mv reactjs-blitz-seller-copy work
+: 1737965602:0;cd work
+: 1737965603:0;l
+: 1737997681:0;git-cz
+: 1737997729:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1737997739:0;npm run build
+: 1737997799:0;git-cz
+: 1737997822:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738056892:0;git-cz
+: 1738056919:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738056956:0;gco main
+: 1738056960:0;gco master
+: 1738056960:0;gl
+: 1738056968:0;git branch -D development
+: 1738056970:0;gl
+: 1738056976:0;gco development 
+: 1738056977:0;gl
+: 1738056982:0;gco master
+: 1738057119:0;gcb feat/BT-4437-enable-edit-driver-details
+: 1738057123:0;npm run dev
+: 1738060224:0;npm run build
+: 1738060599:0;gh pr create --base dev/BT-2365-increase-page-limit-listing-pages
+: 1738060608:0;gh pr create --base development
+: 1738060685:0;gh config get editor
+: 1738060690:0;gh config get editor\
+
+: 1738060748:0;vim .zshrc
+: 1738060847:0;gh config get editor\
+
+: 1738060850:0;gh pr create --base development
+: 1738060879:0;git log
+: 1738060891:0;git-cz
+: 1738060958:0;gh pr create --base development
+: 1738061086:0;gco development 
+: 1738061087:0;gl
+: 1738061095:0;npm run build
+: 1738066501:0;git-cz
+: 1738066601:0;gh pr create --base development
+: 1738066718:0;gco development 
+: 1738066720:0;gl
+: 1738066779:0;git config pull.rebase false
+: 1738066781:0;gl
+: 1738066795:0;git merge feat/BT-4267-blitz-seller-enhancement
+: 1738067021:0;npm run build
+: 1738121665:0;gco main
+: 1738121668:0;gco master
+: 1738121668:0;gl
+: 1738121674:0;npm run dev
+: 1738130092:0;gco main
+: 1738130092:0;gl
+: 1738130177:0;gcb feat/BT-4516-hotfix-realtime-seller-location
+: 1738130184:0;npm run dev
+: 1738142629:0;gco main
+: 1738142630:0;gl
+: 1738145535:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738145541:0;git-cz
+: 1738145679:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738145701:0;gh pr create --base development
+: 1738146530:0;git-cz
+: 1738146568:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738146593:0;gco dev
+: 1738146596:0;gco development 
+: 1738146600:0;gl
+: 1738146605:0;git merge feat/BT-4516-hotfix-realtime-seller-location
+: 1738146665:0;npm run build
+: 1738146707:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738146712:0;git-cz
+: 1738146736:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738146751:0;gh pr create --base development
+: 1738147982:0;git-cz
+: 1738148040:0;npm run build
+: 1738148049:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738148056:0;gh pr create --base development
+: 1738148717:0;git-cz
+: 1738148735:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738148744:0;gh pr create --base development
+: 1738148757:0;npm run build
+: 1738170362:0;npm run dev
+: 1738170404:0;gl
+: 1738170409:0;npm run dev
+: 1738170428:0;git pull origin master
+: 1738170444:0;npm run dev
+: 1738170613:0;gco feature/BT-3866-ui-enhancements-instant-services
+: 1738212315:0;git-cz
+: 1738212331:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738212336:0;gh pr create --base development
+: 1738212356:0;npm run build
+: 1738212366:0;gco staging 
+: 1738212367:0;gl
+: 1738212410:0;gco main
+: 1738212411:0;gl
+: 1738212417:0;gco staging 
+: 1738212418:0;gl
+: 1738212428:0;gco maain
+: 1738212433:0;gco main
+: 1738212440:0;git branch -D staging
+: 1738212441:0;gl
+: 1738212447:0;gco staging 
+: 1738212449:0;gl
+: 1738212463:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738212464:0;l
+: 1738212465:0;git log
+: 1738212472:0;gh pr create --base staging
+: 1738212503:0;gco staging 
+: 1738212504:0;gl
+: 1738212512:0;npm run build
+: 1738216497:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738220602:0;git-cz
+: 1738220635:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738220641:0;gh pr create --base staging
+: 1738220650:0;npm run build
+: 1738221966:0;git-cz
+: 1738221995:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738221999:0;gh pr create --base staging
+: 1738225785:0;gco main
+: 1738225786:0;gl
+: 1738225826:0;gcb feat/BT-4514-blitz-seller-enahncement-p2
+: 1738238653:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738238672:0;git log
+: 1738238682:0;gco feat/BT-4514-blitz-seller-enahncement-p2
+: 1738238710:0;gco feat/BT-4516-hotfix-realtime-seller-location 
+: 1738238728:0;npm run dev
+: 1738238753:0;git-cz
+: 1738238774:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738261359:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738261362:0;npm run dev
+: 1738325864:0;git log
+: 1738325881:0;git-cz
+: 1738325925:0;git push origin feat/BT-4516-hotfix-realtime-seller-location 
+: 1738325986:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738326001:0;gh pr create --base development
+: 1738562829:0;npm run dev
+: 1738563184:0;plop
+: 1738572385:0;npm run dev
+: 1738574856:0;npm i
+: 1738574860:0;npm run dev
+: 1738647576:0;gco master
+: 1738647577:0;gl
+: 1738647603:0;gcb feat/BT-4232-geolocation-check-enahncements
+: 1738647607:0;npm run dev
+: 1738648523:0;open -n /Applications/Arc.app --args --user-data-dir="/var/tmp/ArcDevSession" --disable-web-security\
+
+: 1738648534:0;open -n /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+: 1738648575:0;npm run dev
+: 1738660584:0;git add  src/features/detail-batch
+: 1738662014:0;git-cz
+: 1738662126:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738662136:0;gh pr create --base staging
+: 1738664519:0;git-cz
+: 1738664535:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738664550:0;git-cz
+: 1738664562:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738664569:0;npm run build
+: 1738666352:0;git-cz
+: 1738666361:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738666367:0;npm run build
+: 1738666568:0;gco staging 
+: 1738666569:0;gl
+: 1738666577:0;git config pull.rebase false
+: 1738666581:0;gco master
+: 1738666583:0;git branch -D staging
+: 1738666584:0;gl
+: 1738666590:0;gco staging 
+: 1738666591:0;gl
+: 1738666596:0;git log
+: 1738666600:0;npm run build
+: 1738690429:0;git add package-lock.json
+: 1738690435:0;git-cz
+: 1738690458:0;git add src/common/
+: 1738690466:0;git-cz
+: 1738690486:0;git add src/features/user/@common
+: 1738724933:0;git-cz
+: 1738724963:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738724975:0;gh pr create --base development
+: 1738725657:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738725661:0;npm run dev
+: 1738727194:0;gco master
+: 1738727194:0;gl
+: 1738727247:0;npm run dev
+: 1738727326:0;gl
+: 1738727330:0;git log
+: 1738727383:0;gco feat/BT-4437-enable-edit-driver-details
+: 1738727503:0;git-cz
+: 1738727539:0;git push origin feat/BT-4437-enable-edit-driver-details 
+: 1738727546:0;gh pr create --base development
+: 1738727560:0;gh pr create --base master
+: 1738727571:0;gh pr create --base staging
+: 1738728961:0;gco feat/BT-4232-geolocation-check-enahncements 
+: 1738729182:0;git-cz
+: 1738729387:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738729393:0;gh pr create --base staging
+: 1738732213:0;git-cz
+: 1738732264:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738732270:0;npm run build
+: 1738732282:0;gh pr create --base staging
+: 1738734196:0;git-cz
+: 1738734757:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738734768:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738735336:0;gh pr create --base staging
+: 1738735403:0;gco development 
+: 1738735403:0;gl
+: 1738735409:0;npm run build
+: 1738736654:0;npm run dev
+: 1738736709:0;git-cz
+: 1738736734:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738736739:0;gh pr create --base staging
+: 1738737408:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738737415:0;gh pr create --base staging
+: 1738737511:0;gco staging 
+: 1738737515:0;gl
+: 1738737652:0;git merge feat/BT-4267-blitz-seller-enhancement
+: 1738737712:0;npm run build
+: 1738739913:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738740092:0;npm run dev
+: 1738741479:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738741524:0;git-cz
+: 1738741561:0;git push origin feat/BT-4232-geolocation-check-enahncements 
+: 1738741569:0;git push origin  feat/BT-4267-blitz-seller-enhancement
+: 1738741575:0;gh pr create --base staging
+: 1738741619:0;gco staging 
+: 1738741620:0;gl
+: 1738741625:0;npm run build
+: 1738742253:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738742324:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738742383:0;gco main
+: 1738742384:0;gl
+: 1738742432:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738742447:0;git merge main
+: 1738742507:0;npm run dev
+: 1738742754:0;git push
+: 1738742846:0;gco master
+: 1738742847:0;gk
+: 1738742849:0;gl
+: 1738742854:0;npm run de
+: 1738742856:0;npm run dev
+: 1738744165:0;npm run bdev
+: 1738744169:0;npm run build
+: 1738744231:0;git-cz
+: 1738744252:0;git push origin  feat/BT-4267-blitz-seller-enhancement
+: 1738744262:0;gh pr create --base staging
+: 1738744720:0;gco staging 
+: 1738744722:0;gl
+: 1738744730:0;npm run build
+: 1738744800:0;git-cz
+: 1738744820:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738744834:0;gco staging 
+: 1738744839:0;git push origin staging 
+: 1738744845:0;gh pr create --base staging
+: 1738744879:0;gco master
+: 1738744897:0;gco main
+: 1738744901:0;g;
+: 1738744902:0;gl
+: 1738745132:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738745207:0;git-cz
+: 1738745226:0;git push
+: 1738745231:0;gh pr create --base staging
+: 1738746308:0;git-cz
+: 1738746329:0;git push
+: 1738746335:0;gh pr create --base staging
+: 1738746344:0;npm run build
+: 1738746999:0;gco staging 
+: 1738747000:0;gl
+: 1738747361:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738747365:0;git-cz
+: 1738747388:0;git push
+: 1738747417:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738747423:0;gh pr create --base staging
+: 1738750531:0;git stash push -m "changes for disabling future dates"
+: 1738751024:0;gl
+: 1738751039:0;git stash apply stash@{0} 
+: 1738754845:0;git-cz
+: 1738754882:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738754892:0;gl
+: 1738754902:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738754909:0;gh pr create --base staging
+: 1738754917:0;npm run build
+: 1738755105:0;git push
+: 1738756171:0;git log
+: 1738756198:0;npm run dev
+: 1738756430:0;git stash push -m "changes for disabling future dates"
+: 1738756432:0;gl
+: 1738756456:0;npm run dev
+: 1738756469:0;rm -rf node_modules
+: 1738756477:0;npm i
+: 1738756487:0;npm run dev
+: 1738758963:0;git log
+: 1738758969:0;git stash apply stash@{0} 
+: 1738771231:0;gco feat/BT-4437-enable-edit-driver-details 
+: 1738771234:0;npm run dev
+: 1738772413:0;gco master
+: 1738772723:0;gco feat/BT-4437-enable-edit-driver-details 
+: 1738772726:0;npm run dev
+: 1738774291:0;git stash
+: 1738783413:0;npm run build
+: 1738783465:0;git push origin feat/BT-4437-enable-edit-driver-details 
+: 1738783544:0;l
+: 1738783548:0;c
+: 1738783552:0;git push origin feat/BT-4437-enable-edit-driver-details 
+: 1738783558:0;git log
+: 1738783563:0;gh pr create --base staging
+: 1738819365:0;git-cz
+: 1738819405:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738819411:0;npm run build
+: 1738819492:0;git-cz
+: 1738819502:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738819508:0;gh pr create --base staging
+: 1738821527:0;gl
+: 1738821533:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738821545:0;npm run build
+: 1738821675:0;git-cz
+: 1738821687:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738821776:0;gh pr create --base staging
+: 1738821813:0;gco staging 
+: 1738821814:0;gl
+: 1738821818:0;npm run build
+: 1738825713:0;cd '/Users/pratham82/work/reactjs-blitz-seller'
+: 1738825748:2;gl
+: 1738825763:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738825795:0;npm run dev
+: 1738825811:0;git log
+: 1738825845:0;gl
+: 1738825873:0;git log
+: 1738825987:0;npm run build
+: 1738826023:0;git-cz
+: 1738826031:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738826036:0;gh pr create --base staging
+: 1738828529:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1738831312:0;gco feat/BT-4267-blitz-seller-enhancement 
+: 1738831467:0;npm run dev
+: 1738831559:0;npm i
+: 1738831566:0;npm run de
+: 1738831568:0;npm run dev
+: 1738831620:0;rm -rf node_modules
+: 1738831635:0;npm i
+: 1738831661:0;npm run dev
+: 1738833840:0;npm runn build
+: 1738833843:0;npm run build
+: 1738833862:0;git-cz
+: 1738833893:0;git push origin feat/BT-4267-blitz-seller-enhancement 
+: 1738833901:0;gh pr create --base staging
+: 1738833911:0;npm run build
+: 1739080049:0;dev
+: 1739080051:0;clear
+: 1739080053:0;gcl git@github.com:williamfiset/Algorithms.git
+: 1739080395:0;cd Algorithms
+: 1739080396:0;code .
+: 1739163864:0;gco main
+: 1739163865:0;gl
+: 1739163913:0;gcb feat/BT-4579-mobile-seller-real-time
+: 1739163917:0;npm run dev
+: 1739163984:0;rm -rf node_modules
+: 1739163992:0;npm i
+: 1739164007:0;npm run dev
+: 1739172223:0;rm -rf node_modules
+: 1739172232:0;npm i
+: 1739172244:0;npm run dev
+: 1739185230:0;git-cz
+: 1739185257:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739185265:0;gh pr create --base development
+: 1739214954:0;npm run bdev
+: 1739214958:0;npm run build
+: 1739215241:0;git-cz
+: 1739215263:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739216303:0;npm run build
+: 1739216319:0;git-cz
+: 1739216333:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739216497:0;git-cz
+: 1739216513:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739217501:0;npm run build
+: 1739217642:0;gco development 
+: 1739217645:0;git merge main
+: 1739217663:0;gco main
+: 1739217669:0;git branch -D main
+: 1739217673:0;git branch -D development
+: 1739217674:0;gl
+: 1739217685:0;gco development 
+: 1739217685:0;gl
+: 1739217692:0;git merge main
+: 1739217717:0;git log
+: 1739217748:0;git push origin development 
+: 1739217808:0;npm run build
+: 1739243676:0;gco feat/BT-4579-mobile-seller-real-time 
+: 1739244901:0;git-cz
+: 1739244915:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739244922:0;gh pr create --base development
+: 1739244940:0;npm run build
+: 1739245203:0;gh pr create --base staging
+: 1739245235:0;gh pr create --base main
+: 1739249852:0;gco staging 
+: 1739249853:0;gl
+: 1739249859:0;git merge feat/BT-4579-mobile-seller-real-time
+: 1739249912:0;git push origin staging 
+: 1739250128:0;gco feat/BT-4579-mobile-seller-real-time 
+: 1739250812:0;git log
+: 1739250847:0;git push origin feat/BT-4579-mobile-seller-real-time 
+: 1739250854:0;git log
+: 1739250860:0;gh pr create --base staging
+: 1739250967:0;gco staging 
+: 1739250967:0;gl
+: 1739250973:0;npm run build
+: 1739253386:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739253497:0;npm run dev
+: 1739264928:0;git-cz
+: 1739264974:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739269039:0;gco feat/BT-4579-mobile-seller-real-time 
+: 1739269041:0;git log
+: 1739269079:0;npm run dev
+: 1739269085:0;rm -rf node_modules
+: 1739269092:0;npm i
+: 1739269137:0;npm run dev
+: 1739270313:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739270317:0;git merge main
+: 1739349885:0;git-cz
+: 1739349940:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739349948:0;npm run build
+: 1739445484:0;git add src/common/network
+: 1739445497:0;git-cz
+: 1739445533:0;git add src/features/user/@common
+: 1739445545:0;git-cz
+: 1739445606:0;git add src/features/user/details
+: 1739445610:0;git-cz
+: 1739445635:0;git add src/features/user/edit
+: 1739445642:0;git-cz
+: 1739445703:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739446605:0;git-cz
+: 1739446660:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739502442:0;gh pr create --base development
+: 1739519228:0;gl
+: 1739519232:0;git log
+: 1739522601:0;npm run dev
+: 1739530343:0;git-cz
+: 1739530407:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739530419:0;npm run build
+: 1739531328:0;npm run dev
+: 1739561581:0;dev
+: 1739561581:0;ls
+: 1739561583:0;npx create-expo-app@latest StickerSmash
+: 1739561803:0;cd StickerSmash
+: 1739561805:0;code .
+: 1739561911:0;npm run reset-project
+: 1739561938:0;npx expo start\
+
+: 1739562022:0;npm expo start
+: 1739562028:0;npx expo start
+: 1739588528:0;npm expo start
+: 1739588534:0;npx expo start
+: 1739591094:0;git log
+: 1739591103:0;git remote add origin git@github.com:Pratham82/stickersmash-expo.git
+: 1739591111:0;git remoe -v
+: 1739591116:0;git remote -v
+: 1739591133:0;git add app/
+: 1739591145:0;git-cz
+: 1739591180:0;git add assets
+: 1739591191:0;git-cz
+: 1739591216:0;git push origin master
+: 1739591310:0;npx expo install expo-image
+: 1739591323:0;npx expo start
+: 1739761450:0;npm run dev
+: 1739761459:0;npm run b
+: 1739761462:0;npm run build
+: 1739764294:0;npm run dev
+: 1739785848:7;npm run build
+: 1739785901:0;gh pr create --base development
+: 1739785940:0;gco main
+: 1739785940:0;gl
+: 1739785946:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739785948:0;git merge main
+: 1739785996:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739786003:0;git log
+: 1739786128:0;gco master
+: 1739786129:0;gl
+: 1739786215:0;gcb feat/BT-4234-shipping-fee-enahancements
+: 1739786219:0;npm run dev
+: 1739788010:0;git-cz
+: 1739788034:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739788041:0;npm run build
+: 1739791152:0;git-cz
+: 1739791164:0;npm run build
+: 1739791254:0;git-cz
+: 1739791279:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739791687:0;gh pr create --base development
+: 1739791766:0;npm run build
+: 1739858546:0;npm run dev
+: 1739860093:0;git log
+: 1739866494:0;npm run build
+: 1739866635:0;gh pr create --base development
+: 1739866657:0;gco development 
+: 1739866660:0;git merge feat/BT-4514-blitz-seller-enahncement-p2
+: 1739866750:0;npm run build
+: 1739866765:0;git push origin development 
+: 1739866786:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739866789:0;npm run dev
+: 1739871137:0;npm run build
+: 1739871181:0;gh pr create --base staging
+: 1739872792:0;gco staging 
+: 1739872793:0;gl
+: 1739872802:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739872822:0;gco master
+: 1739872824:0;gl
+: 1739872982:0;gcb feat/BT-4612-instant-system-improvements
+: 1739873054:0;gco staging 
+: 1739873056:0;git merge feat/BT-4514-blitz-seller-enahncement-p2
+: 1739873166:0;npm run build
+: 1739873176:0;git push origin staging 
+: 1739882269:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739882289:0;git stash push -m "changes for user profile"
+: 1739882292:0;gco feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739882296:0;git stash apply 
+: 1739882311:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739882321:0;gh pr create --base staging
+: 1739882366:0;npm run build
+: 1739937611:0;git-cz
+: 1739937616:0;git log
+: 1739937618:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739937624:0;gh pr create --base staging
+: 1739942993:0;npm run build
+: 1739949363:0;git push origin feat/BT-4514-blitz-seller-enahncement-p2 
+: 1739949369:0;gh pr create --base staging
+: 1739955479:0;npm run dev
+: 1739955576:0;gco master
+: 1739955599:0;gco feat/BT-4612-instant-system-improvements 
+: 1739955628:0;gco master
+: 1739955666:0;gcb feat/BT-4295-shipping-fee-enhancements
+: 1739955700:0;gco master
+: 1739955701:0;gl
+: 1739955721:0;gcb feat/BT-3745-fixes-and-improvements
+: 1739957143:0;gh pr create --base development
+: 1739957152:0;npm run dev
+: 1739957158:0;npm run  build
+: 1739957229:0;gh pr create --base development
+: 1739957246:0;gco master
+: 1739957247:0;gl
+: 1739957346:0;gco development 
+: 1739957369:0;gh pr create --base staging
+: 1739957431:0;gl
+: 1739957438:0;npm run  build
+: 1739957487:0;gco feat/BT-4612-instant-system-improvements 
+: 1739961380:0;npm run dev
+: 1739962385:0;npm run build
+: 1739962704:0;gh pr create --base staging
+: 1739963881:0;npm run build
+: 1739964201:0;git add src/features/order/order-list
+: 1739964205:0;git-cz
+: 1739964240:0;git add src/features/order/unbatched-orders
+: 1739964243:0;git-cz
+: 1739964277:0;git push origin feat/BT-4612-instant-system-improvements 
+: 1739964286:0;gh pr create --base development
+: 1739964935:0;git log
+: 1739980615:0;git-cz
+: 1739980657:0;npm run build
+: 1739980672:0;git push origin feat/BT-4612-instant-system-improvements 
+: 1739980685:0;git push
+: 1739980689:0;git log
+: 1739980700:0;npm run build
+: 1739980723:0;gh pr create --base staging
+: 1740021345:0;git-cz
+: 1740021382:0;git push
+: 1740021389:0;gh pr create --base staging
+: 1740028867:0;git-cz
+: 1740028884:0;git push
+: 1740028888:0;gh pr create --base staging
+: 1740028906:0;gco staging 
+: 1740028908:0;gl
+: 1740028913:0;git merge 
+: 1740028917:0;git mergre feat/BT-4514-blitz-seller-enahncement-p2
+: 1740028921:0;git merge feat/BT-4514-blitz-seller-enahncement-p2
+: 1740028946:0;git push
+: 1740113708:0;ls
+: 1740113720:0;ghostty --help
+: 1740113727:0;ghostty +list-fonts\
+\
+
+: 1740113750:0;ghostty +list-themes
+: 1740113877:0;dev
+: 1740113879:0;cd
+: 1740113881:0;clear
+: 1740113923:0;ls
+: 1740113923:0;dev
+: 1740113968:0;ghostty --help fonts
+: 1740113971:0;ghostty --help
+: 1740113979:0;ghostty +list-fonts
+: 1740114001:0;dev
+: 1740114001:0;ks
+: 1740114004:0;ls
+: 1740114006:0;cd
+: 1740114008:0;ls
+: 1740114092:0;dev
+: 1740114137:0;cd
+: 1740114157:0;vim ~/.ghostty
+: 1740114178:0;dev
+: 1740114179:0;ks
+: 1740114201:0;ghostty +show-config
+: 1740114217:0;ghostty --help
+: 1740114279:0;ls
+: 1740114280:0;dev
+: 1740114397:0;l
+: 1740114398:0;dev
+: 1740114438:0;
+: 1740114450:0;dev
+: 1740114452:0;ls
+: 1740114490:0;dev
+: 1740114619:0;gco main
+: 1740114620:0;gl
+: 1740114663:0;gcb feat/BT-4450-restock-return-validation
+: 1740200746:0;npm run dev
+: 1740208422:0;git add src/common/network/AppApiRequests.ts
+: 1740208427:0;git add src/common/routing
+: 1740208433:0;git-cz
+: 1740208485:0;git add src/features/seller-activities/common
+: 1740208489:0;git-cz
+: 1740208527:0;git add src/components/ui/badge.tsx
+: 1740208535:0;git-cz
+: 1740208629:0;git add src/features/seller-activities
+: 1740208633:0;git-cz
+: 1740208665:0;git push
+: 1740208672:0;git push --set-upstream origin feat/BT-4450-restock-return-validation
+: 1740208692:0;git help config
+: 1740208732:0;git config --global push.autoSetupRemote true
+: 1740209187:0;git log
+: 1740209191:0;npm run build
+: 1740372113:0;npm run dev
+: 1740382405:0;git-cz
+: 1740382576:0;git push
+: 1740382584:0;gh pr create --base development
+: 1740382802:0;npm run build
+: 1740383274:0;git-cz
+: 1740383367:0;git push
+: 1740388071:0;npm run build
+: 1740391620:0;git-cz
+: 1740391878:0;git push
+: 1740391885:0;npm run build
+: 1740391958:0;gh pr create --base development
+: 1740391979:0;gco development 
+: 1740391980:0;gl
+: 1740391995:0;gco main
+: 1740391996:0;gl
+: 1740392002:0;gco development 
+: 1740392005:0;git merge main
+: 1740392797:0;gco feat/BT-4450-restock-return-validation 
+: 1740463639:0;gco master
+: 1740463640:0;gk
+: 1740463641:0;gl
+: 1740463657:0;gcb feat/BT-4512-driver-perf-improvements
+: 1740463660:0;npm run dev
+: 1740464718:0;git-cz
+: 1740464762:0;git push origin feat/BT-4512-driver-perf-improvements 
+: 1740464771:0;gh pr create --base development
+: 1740470964:0;git-cz
+: 1740471156:0;npm run build
+: 1740482358:0;gh pr create --base development
+: 1740482388:0;npm run build
+: 1740544664:0;git-cz
+: 1740544683:0;git push
+: 1740544689:0;gh pr create --base development
+: 1740544706:0;npm run dev
+: 1740544739:0;npm run build
+: 1740544822:0;git-cz
+: 1740544835:0;git push
+: 1740549070:0;git-cz
+: 1740549141:0;git push
+: 1740549147:0;gh pr create --base development
+: 1740550023:0;npm run build
+: 1740550071:0;git-cz
+: 1740553926:0;git push
+: 1740567637:0;gh pr create --base development
+: 1740567647:0;gco development 
+: 1740567647:0;gl
+: 1740567652:0;git merge master
+: 1740643972:0;gco master
+: 1740643973:0;gl
+: 1740644281:0;npm run dev
+: 1740650125:0;npm run dev -p 3074
+: 1740650938:0;npm run dev --port 3074
+: 1740650960:0;npm run dev -- --port 3074
+: 1740650975:0;npm run dev -- --port 5174
+: 1740652544:0;gl
+: 1740726385:0;gco feat/BT-4234
+: 1740726393:0;gco feat/BT-4234-shipping-fee-enahancements 
+: 1740780065:0;docker --version\
+
+: 1740780075:0;docke
+: 1740780248:0;docker --version\
+
+: 1740780250:0;docker ls
+: 1740780255:0;docker --ls
+: 1740780304:0;docker ps
+: 1740780348:0;docker stop bc1707d84a66
+: 1740813781:0;dev
+: 1740813782:0;ls
+: 1740813784:0;cd DSA
+: 1740813789:0;vim ,
+: 1740813792:0;vim
+: 1740813833:0;GdfdfVV
+: 1740813853:0;vim .zshrc
+: 1740814021:0;l
+: 1740814023:0;dev
+: 1740814025:0;vim .
+: 1740814106:0;mv ~/.config/nvim{,.bak}\
+
+: 1740814228:0;brew update\
+
+: 1740814238:0;brew install neovim\
+
+: 1740814267:0;nvim --version\
+
+: 1740814309:0;git clone https://github.com/NvChad/starter ~/.config/nvim && nvim\
+
+: 1740814356:0;nvim
+: 1740814365:0;dev
+: 1740814368:0;cd DSA
+: 1740814370:0;nvim .
+: 1740850074:0;brew install clang-format
+: 1740850087:0;cd
+: 1740850300:0;vim .config/nvim/lua
+: 1740850306:0;cd .config/nvim
+: 1740850308:0;cd lua
+: 1740850309:0;ls
+: 1740850312:0;l
+: 1740850319:0;cd configs
+: 1740850320:0;ls
+: 1740850340:0;cd
+: 1740850343:0;vim ~/.config/nvim/lua/custom/init.lua\
+
+: 1740850357:0;vim ~/.config/nvim/lua/custom/chadrc.lua\
+
+: 1740850442:0;nvim AndroidStudioProjects
+: 1740850447:0;l
+: 1740850465:0;cd
+: 1740850487:0;dev
+: 1740850495:0;cd DSA
+: 1740850498:0;clear
+: 1740850499:0;ls
+: 1740850502:0;nvim .
+: 1740850603:0;nvim
+: 1740986832:0;npm run dev
+: 1740989811:0;npm run build
+: 1740990327:0;git add src/features/seller-activities/return-history
+: 1740990331:0;git-cz
+: 1740990369:0;git add src/features/store/@common/data/model/store-create.model.ts
+: 1740990373:0;git-cz
+: 1740990524:0;git add src/features/store/
+: 1740990529:0;git-cz
+: 1740990942:0;git push origin feat/BT-4512-driver-perf-improvements 
+: 1740990949:0;git push origin feat/BT-4450-restock-return-validation 
+: 1740990980:0;gh pr create --base development
+: 1741000176:0;brew install --cask nikitabobko/tap/aerospace\
+
+: 1741000206:0;vim ~/.aerospace.toml
+: 1741058784:0;gco feat/BT-4612-instant-system-improvements
+: 1741058905:0;gco feat/BT-4234-shipping-fee-enahancements 
+: 1741058908:0;git log
+: 1741058920:0;gco feat/BT-4295-shipping-fee-enhancements 
+: 1741058922:0;git log
+: 1741058968:0;gco feat/BT-4234-shipping-fee-enahancements 
+: 1741059033:0;git-cz
+: 1741059160:0;git push origin feat/BT-4234-shipping-fee-enahancements 
+: 1741059308:0;gco feat/BT-4612-instant-system-improvements
+: 1741059620:0;npm run dev
+: 1741075458:0;npm run build
+: 1741080819:0;git-cz
+: 1741080872:0;git add src/features/order/unbatched-orders
+: 1741080876:0;git-cz
+: 1741080901:0;git push origin feat/BT-4612-instant-system-improvements 
+: 1741080940:0;gh pr create --base development
+: 1741119009:0;npm run build
+: 1741121142:0;git-cz
+: 1741121243:0;git push origin feat/BT-4450-restock-return-validation 
+: 1741121253:0;gh pr create --base development
+: 1741121423:0;gco feat/BT-3745-fixes-and-improvements 
+: 1741121974:0;npm run build
+: 1741121989:0;git-cz
+: 1741122046:0;git push origin feat/BT-3745-fixes-and-improvements 
+: 1741122065:0;gh pr create --base development
+: 1741122084:0;gco development 
+: 1741122085:0;gl
+: 1741122122:0;git merge feat/BT-3745-fixes-and-improvements
+: 1741122170:0;npm run build
+: 1741147026:0;gco feat/BT-4512-driver-perf-improvements
+: 1741148591:0;git push origin feat/BT-4512-driver-perf-improvements 
+: 1741148595:0;npm run build
+: 1741148609:0;git push
+: 1741148614:0;git log
+: 1741148620:0;gh pr create --base staging
+: 1741155084:0;gco staging 
+: 1741155085:0;gl
+: 1741155092:0;git merge feat/BT-3745-fixes-and-improvements
+: 1741155134:0;npm run build
+: 1741169518:0;npm run dev
+: 1741252781:0;git-cz
+: 1741252804:0;git push
+: 1741252809:0;gco master
+: 1741252810:0;gl
+: 1741252816:0;gco master
+: 1741252818:0;gl
+: 1741253945:0;git log
+: 1741253949:0;gco release/06-MAR-2025
+: 1741253951:0;gl
+: 1741253956:0;gco release/06-MAR-2025
+: 1741253985:0;git pull--fetch
+: 1741253990:0;git pull --help
+: 1741254006:0;gl
+: 1741254021:0;gco release/06-MAR-2025
+: 1741254036:0;gco feat/BT-4512-driver-perf-improvements
+: 1741254045:0;gco master
+: 1741254046:0;gl
+: 1741254051:0;gco release/06-MAR-2025
+: 1741254058:0;gl
+: 1741254063:0;git log
+: 1741254071:0;gco master
+: 1741254073:0;gl
+: 1741254077:0;git log
+: 1741254170:0;gco release/06-MAR-2025
+: 1741254181:0;git merge feat/BT-3745-fixes-and-improvements
+: 1741254240:0;git log
+: 1741254271:0;gl
+: 1741254279:0;git log
+: 1741254289:0;gco master
+: 1741254294:0;git branch -D release/06-MAR-2025 
+: 1741254309:0;gco release/06-MAR-2025
+: 1741254310:0;git log
+: 1741254318:0;git merge feat/BT-3745-fixes-and-improvements
+: 1741254355:0;npm run build
+: 1741254532:0;gco feat/BT-4450-restock-return-validation
+: 1741254536:0;git log
+: 1741255069:0;gco main
+: 1741255072:0;gl
+: 1741255756:0;gcb feat/BT-4602-ksj-payment-options
+: 1741261185:0;git-cz
+: 1741261740:0;git push
+: 1741261754:0;gh pr create --base development
+: 1741274314:0;gco feat/BT-4450-restock-return-validation
+: 1741292044:0;vim ~/.aerospace.toml
+: 1741369023:0;nvim
+: 1741369026:0;dev
+: 1741369029:0;cd DSA
+: 1741369030:0;nvim
+: 1741369177:0;npm install -g typescript typescript-language-server eslint
+: 1741369183:0;npm install -g pyright\
+
+: 1741369189:0;nvim nvim ~/.config/nvim/lua/custom/configs/lspconfig.lua\
+
+: 1741369262:0;nvim ~/.config/nvim/lua/custom/configs/lspconfig.lua\
+
+: 1741369465:0;cat ~/.config/nvim/lua/custom/configs/lspconfig.lua
+: 1741369472:0;touch ~/.config/nvim/lua/custom/configs/lspconfig.lua
+: 1741369478:0;cd
+: 1741369979:0;cd .config/nvim/lua
+: 1741369983:0;cd configs
+: 1741369984:0;ls
+: 1741369992:0;vim lspconfig.lua
+: 1741370031:0;nvim
+: 1741370252:0;vim lspconfig.lua
+: 1741370293:0;nvim
+: 1741370364:0;cd
+: 1741370365:0;dev
+: 1741370374:0;ls
+: 1741370380:0;cd my-first-expo-app
+: 1741370381:0;nvim
+: 1741370417:0;nvim ~/.config/nvim/lua/custom/configs/lspconfig.lua\
+
+: 1741370424:0;nvim
+: 1741370431:0;cd .config/nvim/lua
+: 1741370437:0;cd 
+: 1741370446:0;cd .config/nvim/lua/configs
+: 1741370447:0;ls
+: 1741370450:0;vim lspconfig.lua
+: 1741370475:0;dev
+: 1741370490:0;cd portfolio-v5
+: 1741370494:0;nvim
+: 1741370886:0;cd
+: 1741370896:0;cd .config/nvim/lua/configs/
+: 1741370897:0;ls
+: 1741370909:0;cd
+: 1741370925:0;nvim .config/nvim/lua/configs/lspconfig.lua
+: 1741371026:0;nvim
+: 1741371028:0;cd
+: 1741371032:0;dev
+: 1741371037:0;cd DSA
+: 1741371038:0;nvim
+: 1741371141:0;b
+: 1741371143:0;npm install -g prettier\
+
+: 1741371153:0;cd
+: 1741371157:0;nvim .config/nvim/lua/configs/lspconfig.lua
+: 1741371176:0;nvim
+: 1741371237:0;cd .config/nvim/lua/
+: 1741371242:0;mkdir customs
+: 1741371244:0;cd customs
+: 1741371253:0;touch autocmds.lua
+: 1741371262:0;nvim autocmds.lua
+: 1741371291:0;cd
+: 1741371294:0;dev
+: 1741371296:0;cd DSA
+: 1741371298:0;nvim 
+: 1741371403:0;cd
+: 1741371895:0;cd .config/nvim/lua/
+: 1741371897:0;ls
+: 1741371906:0;cd configs
+: 1741371906:0;ls
+: 1741371916:0;vim lazy.lua
+: 1741371921:0;vim lspconfig.lua
+: 1741371947:0;nvim
+: 1741371949:0;cd
+: 1741371952:0;dev
+: 1741371956:0;cd DSA
+: 1741371957:0;nvim
+: 1741372057:0;cd
+: 1741372061:0;cd .config/nvim
+: 1741372063:0;cd lua
+: 1741372063:0;ls
+: 1741372074:0;mv customs custom
+: 1741372076:0;ls
+: 1741372079:0;dev
+: 1741372080:0;nvim
+: 1741372090:0;cd DSA
+: 1741372091:0;nvim
+: 1741372176:0;cd
+: 1741372189:0;cd .config/nvim/
+: 1741372214:0;ls
+: 1741372217:0;cd lua
+: 1741372219:0;cd configs
+: 1741372221:0;ls
+: 1741372232:0;nvim conform.lua
+: 1741372241:0;nvim lspconfig.lua
+: 1741372356:0;brew install stylua
+: 1741372375:0;nvim
+: 1741372424:0;nvim lspconfig.lua
+: 1741372456:0;dev
+: 1741372458:0;cd DSA
+: 1741372459:0;nvim
+: 1741373129:0;cd
+: 1741373131:0;cd .config/nvim/
+: 1741373133:0;cd lua
+: 1741373140:0;ls
+: 1741373144:0;cd configs
+: 1741373145:0;ls
+: 1741373149:0;..
+: 1741373154:0;cd custom
+: 1741373154:0;ls
+: 1741373157:0;..
+: 1741373163:0;nvim mappings.lua
+: 1741373188:0;nvim
+: 1741373203:0;dev
+: 1741373210:0;cd .config/nvim/
+: 1741373211:0;cd
+: 1741373219:0;dev
+: 1741373223:0;cd DSA
+: 1741373224:0;nvim
+: 1741373317:0;npm install -g typescript-language-server typescript
+: 1741373325:0;cd
+: 1741373332:0;cd .config/nvim/lua/configs
+: 1741373333:0;ls
+: 1741373336:0;nvim lspconfig.lua
+: 1741373423:0;dev
+: 1741373425:0;nvim
+: 1741373541:0;nvm_cache_dir
+: 1741373542:0;nvim
+: 1741373917:0;dev
+: 1741373921:0;DSA
+: 1741373923:0;nvim
+: 1741373986:0;mkdir -p ~/.config/ghostty/themes\
+
+: 1741373987:0;cd
+: 1741374002:0;cd .config/
+: 1741374003:0;ls
+: 1741374006:0;cd ghostty
+: 1741374006:0;ls
+: 1741374010:0;cd themes
+: 1741374011:0;ls
+: 1741374015:0;ls -la
+: 1741374025:0;git clone https://github.com/catppuccin/ghostty.git ~/.config/ghostty/themes/catppuccin\
+
+: 1741374035:0;nvim ~/.config/ghostty/config.toml\
+
+: 1741374052:0;ls
+: 1741374053:0;..
+: 1741374054:0;ls
+: 1741374057:0;ls -la
+: 1741374117:0;cat ~/.config/ghostty/config.toml\
+
+: 1741374124:0;ghostty --help
+: 1741374141:0;ghostty list-themes
+: 1741374149:0;ghostty +list-fonts
+: 1741374155:0;ghostty +list-themes
+: 1741374179:0;ghostty +show-config
+: 1741374202:0;ls
+: 1741374223:0;ghostty --config-path\
+
+: 1741374234:0;cd
+: 1741374238:0;ls ~/.ghostty/\
+
+: 1741374242:0;ls ~/.local/share/ghostty/\
+
+: 1741374243:0;cd
+: 1741374250:0;nvim config-path
+: 1741374302:0;ghostty --config-default-files
+: 1741374312:0;ghostty --config-file
+: 1741374333:0;ghostty +show-config --docs
+: 1741374432:0;find ~/.config ~/.local -type d -name "com.mitchellh.ghostty"\
+
+: 1741374443:0;ls ~/.config/com.mitchellh.ghostty/
+: 1741374451:0;ls ~/.local/share/com.mitchellh.ghostty/\
+
+: 1741374605:0;nvim 
+: 1741374611:0;dev
+: 1741374633:0;ghostty +list-themes
+: 1741374654:0;nvim
+: 1741374684:0;cat ~/.local/share/com.mitchellh.ghostty/config.toml
+: 1741374754:0;nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741374880:0;cd .config/ghostty
+: 1741374880:0;ls
+: 1741374915:0;touch config.toml
+: 1741374917:0;nvim config.toml
+: 1741374937:0;nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741374958:0;ghostty +list-themes
+: 1741375056:0;dev
+: 1741375058:0;cd DSA
+: 1741375059:0;nvim
+: 1741409476:0;:q
+: 1741409498:0;nvim
+: 1741409501:0;:q
+: 1741409505:0;quit
+: 1741409523:0;exit
+: 1741409527:0;nvim
+: 1741409654:0;exit
+: 1741409666:0;\
+
+: 1741409713:0;npm run dev
+: 1741422999:0;git-cz
+: 1741423271:0;git-
+: 1741423274:0;git-cz
+: 1741423326:0;git push
+: 1741423389:0;npm run build
+: 1741466671:0;CÂ±
+: 1741466688:0;clear
+: 1741466690:0;cev
+: 1741466691:0;dev
+: 1741466693:0;cd DSA
+: 1741466711:0;history 
+: 1741466725:0;cd
+: 1741466730:0;nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741466741:0;dev
+: 1741466743:0;cd DSA
+: 1741466744:0;nvim
+: 1741466921:0;nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741467074:0;brew install lazygit
+: 1741467130:0;lazygit
+: 1741467139:0;dev
+: 1741467143:0;cd DSA
+: 1741467147:0;lazygit
+: 1741467975:0;clear
+: 1741468712:0;history 
+: 1741468850:0;nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741499406:0;dev
+: 1741499408:0;cd DSA
+: 1741499409:0;ls
+: 1741499411:0;nvim
+: 1741499433:0;cd
+: 1741499435:0;cd .config
+: 1741499436:0;ls
+: 1741499440:0;cd nvim
+: 1741499441:0;ls
+: 1741499445:0;cd lua
+: 1741499446:0;ls
+: 1741499545:0;nvim
+: 1741499639:0;rm -rf ~/.config/nvim
+: 1741499642:0;cd
+: 1741499644:0;nvim
+: 1741499660:0;brew update\
+
+: 1741499668:0;brew upgrade neovim
+: 1741500362:0;mv ~/.config/nvim{,.bak}\
+
+: 1741500366:0;mv ~/.local/share/nvim{,.bak}\
+
+: 1741500370:0;mv ~/.local/state/nvim{,.bak}\
+
+: 1741500387:0;mv ~/.cache/nvim{,.bak}\
+\
+
+: 1741500397:0;git clone https://github.com/LazyVim/starter ~/.config/nvim\
+\
+
+: 1741500421:0;rm -rf ~/.config/nvim/.git\
+\
+
+: 1741500426:0;nvim
+: 1741501454:0;cd .config
+: 1741501459:0;cd nvim
+: 1741501460:0;ls
+: 1741501466:0;cd lua/plugins
+: 1741501466:0;ls
+: 1741501493:0;l
+: 1741501501:0;touch colorscheme.lua
+: 1741501509:0;nvim colorscheme.lua
+: 1741501583:0;nvim
+: 1741502035:0;rm -rf ~/.config/nvim\
+
+: 1741502039:0;rm -rf ~/.local/share/nvim\
+rm -rf ~/.cache/nvim\
+rm -rf ~/.config/nvim/lazy
+: 1741502042:0;nvim
+: 1741502047:0;cd ~/.config\
+
+: 1741502058:0;rm -rf ~/.local/share/nvim ~/.cache/nvim\
+
+: 1741502091:0;git clone https://github.com/LazyVim/starter ~/.config/nvim\
+\
+
+: 1741502096:0;nvim
+: 1741502133:0;rm -rf ~/.config/nvim/.git\
+\
+
+: 1741502138:0;nvim
+: 1741502162:0;cd
+: 1741502167:0;dev
+: 1741502169:0;cd DSA
+: 1741502170:0;nvim
+: 1741502498:0;cd
+: 1741502511:0;cd .config/nvim/lua/plugins
+: 1741502511:0;ls
+: 1741502517:0;touch colorscheme.lua
+: 1741502527:0;nvim
+: 1741502535:0;nvim colorscheme.lua
+: 1741502563:0;nvim
+: 1741502603:0;nim
+: 1741502604:0;nvim
+: 1741502760:0;grep -r "colorscheme" ~/.config/nvim/lua\
+
+: 1741502772:0;nvim
+: 1741502801:0;grep -r "colorscheme" ~/.config/nvim/lua\
+
+: 1741502815:0;nvim
+: 1741503414:0;de
+: 1741503415:0;dev
+: 1741503416:0;clear
+: 1741503418:0;dev
+: 1741503420:0;clear
+: 1741503423:0;cd DSA
+: 1741503424:0;nvim
+: 1741503497:0;cd
+: 1741503511:0;go version
+: 1741504231:0;dev
+: 1741504234:0;clear
+: 1741504235:0;dev
+: 1741504240:0;ls
+: 1741504241:0;cd portfolio-v5
+: 1741504242:0;nvim
+: 1741504387:0;dev
+: 1741504390:0;cd DSA
+: 1741504391:0;nvim
+: 1741512285:0;dev
+: 1741512345:0;clear
+: 1741512346:0;dev
+: 1741512348:0;cd DSA
+: 1741512349:0;ls
+: 1741512426:0;ghostty +list-fonts
+: 1741512453:0;dev
+: 1741512455:0;ls
+: 1741512457:0;cd 1app5stacks
+: 1741512459:0;dev
+: 1741512461:0;cd DSA
+: 1741512461:0;ls
+: 1741512522:0;CDB[1;
+: 1741512527:0;dev
+: 1741512536:0;ghostty action
+: 1741512541:0;ghostty --help
+: 1741512573:0;dev
+: 1741512599:0;ghostty +show-config\
+
+: 1741512620:0;history | grep "config"
+: 1741512635:0;vim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741512654:0;ghostty +show-config\
+
+: 1741512677:0;dev
+: 1741512718:0;fc-list | grep "Dank Mono"
+: 1741512766:0;ghostty +show-face
+: 1741512794:0;ghostty +list-fonts
+: 1741512838:0;dev
+: 1741512850:0;ghostty +show-config
+: 1741512937:0;ghostty +set font-family="Comic Mono"
+: 1741512952:0;ghostty set font-family="Comic Mono"
+: 1741512972:0;ghostty +list-fonts\
+\
+
+: 1741512988:0;vim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741513013:0;dev
+: 1741513018:0;vim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+: 1741513058:0;cd 
+: 1741513064:0;cd .config/ghostty
+: 1741513065:0;ls
+: 1741513069:0;nvim config.toml
+: 1741513081:0;dev
+: 1741513085:0;clear
+: 1741513089:0;cd DSA
+: 1741513091:0;nvim
+: 1741513522:0;pythonbrew install python\
+
+: 1741513528:0;brew install python
+: 1741513586:0;python3 --version\
+
+: 1741513594:0;clear
+: 1741513602:0;python3 --version
+: 1741513636:0;pip install black isort ruff autope:q
+: 1741513639:0;clear
+: 1741513860:0;nvim
+: 1741513995:0;vim
+: 1741513997:0;nvim
+: 1741514398:0;clear
+: 1741514581:0;go to warp config
+: 1741514584:0;cd
+: 1741514592:0;nvim
+: 1741514702:0;dev
+: 1741514703:0;clear
+: 1741514705:0;dev
+: 1741514710:0;cd DSA/
+: 1741514713:0;nvim
+: 1741514984:0;cd
+: 1741515065:0;mkdir -p $HOME/.warp\
+
+: 1741515068:0;cd $HOME/.warp/\
+
+: 1741515072:0;git clone https://github.com/warpdotdev/themes.git\
+
+: 1741515078:0;ls
+: 1741515144:0;cd themes/
+: 1741515145:0;ls
+: 1741515163:0;touch themes/catppuccin_mocha.yml
+: 1741515173:0;touch catppuccin_mocha.yml
+: 1741515177:0;nvim catppuccin_mocha.yml 
+: 1741515241:0;nvim
+: 1741515253:0;lazygit 
+: 1741515267:0;clear
+: 1741515293:0;ls
+: 1741515294:0;dev
+: 1741515295:0;ls
+: 1741515297:0;dev
+: 1741515298:0;cd DSA/
+: 1741515300:0;ls
+: 1741515418:0;nvim
+: 1741515440:0;pwd
+: 1741515442:0;nvim
+: 1741515777:0;dev
+: 1741515779:0;cd DSA
+: 1741515780:0;nvim
+: 1741591280:0;gh pr create --base development
+: 1741607672:0;work
+: 1741607677:0;gcl git@github.com:rideblitz/reactjs-live-tracker.git
+: 1741607687:0;cd reactjs-live-tracker
+: 1741607689:0;clear
+: 1741607692:0;git log
+: 1741607705:0;gcb main
+: 1741607714:0;git branch -D master
+: 1741607718:0;git branch -a
+: 1741607722:0;git branches
+: 1741607726:0;git branch
+: 1741607733:0;git push
+: 1741607755:0;npm create vite@latest my-project --template react-ts
+: 1741607773:0;npm i
+: 1741607787:0;ls
+: 1741607795:0;rm -rf my-project
+: 1741607799:0;rm package-lock.json
+: 1741607801:0;clear
+: 1741607816:0;npm create vite@latest . --template react-ts
+: 1741607821:0;npm i
+: 1741607836:0;npm run dev
+: 1741607850:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1741607879:0;nvim
+: 1741608146:0;npm run dev
+: 1741608170:0;npm i @tailwindcss/postcss
+: 1741608177:0;npm run dev
+: 1741608272:0;npm i
+: 1741608278:0;npm run dev
+: 1741608313:0;rm -rf .
+: 1741608317:0;ls
+: 1741608343:0;rm -rf node_modules src public
+: 1741608364:0;git log
+: 1741608403:0;npm create vite@latest . --template react-ts
+: 1741608433:0;npm i
+: 1741608443:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1741608451:0;npx tailwindcss init -p\
+
+: 1741608515:0;node -v
+: 1741608520:0;npx clear-npx-cache\
+
+: 1741608540:0;npx tailwindcss init -p
+: 1741608640:0;npm run dev
+: 1741608661:0;rm -rf node_modules package-lock.json\
+
+: 1741608666:0;npm install\
+
+: 1741608757:0;npm run dev
+: 1741608771:0;npx tailwindcss -v\
+
+: 1741608786:0;npm uninstall tailwindcss postcss autoprefixer\
+
+: 1741608792:0;npm install -D tailwindcss postcss autoprefixer\
+
+: 1741608804:0;npm run dev
+: 1741624574:0;rm -rf *
+: 1741624580:0;git log
+: 1741624599:0;clear
+: 1741624915:0;npm create vite@latest . --template react-ts
+: 1741624925:0;npm i
+: 1741624946:0;npm run dev
+: 1741625088:0;npm install tailwindcss @tailwindcss/postcss postcss\
+
+: 1741625180:0;npx tailwindcss init -p\
+
+: 1741625211:0;node -v
+: 1741625214:0;nvm ls
+: 1741625235:0;q
+: 1741625237:0;clear
+: 1741625290:0;npm run dev
+: 1741625403:0;npm i
+: 1741625408:0;npm run dev
+: 1741633141:0;git-cz
+: 1741633194:0;git push origin main
+: 1741678170:0;npm run dev
+: 1741694153:0;aerospace --help
+: 1741694171:0;aerospace list-workspaces
+: 1741694177:0;aerospace list-workspaces --all
+: 1741694191:0;aerospace list-workspaces --visible
+: 1741694206:0;aerospace list-workspaces --monitor
+: 1741694212:0;aerospace list-workspaces --focused
+: 1741694222:0;aerospace list-workspaces --help
+: 1741707417:0;npx tailwindcss -o output.css --watch
+: 1741707453:0;npm ERR! could not determine executable to run
+: 1741707477:0;rm -rf node_modules package-lock.json\
+
+: 1741707481:0;npm cache clean --force\
+
+: 1741707487:0;npm install\
+
+: 1741707501:0;npm run dev\
+
+: 1741707509:0;npm install vite --save-dev\
+
+: 1741707514:0;npx vite\
+
+: 1741707522:0;npx tailwindcss -o output.css --watch\
+
+: 1741707531:0;npm install -g yarn\
+
+: 1741707540:0;npx tailwindcss -o output.css --watch\
+
+: 1741707568:0;npm i
+: 1741707613:0;npm run dev
+: 1741707618:0;npx
+: 1741707628:0;npx tailwindcss -o output.css --watch\
+
+: 1741707673:0;npx vite\
+
+: 1741707703:0;npm list tailwindcss\
+
+: 1741707714:0;npm install -D tailwindcss\
+\
+
+: 1741707721:0;npx tailwindcss init\
+\
+
+: 1741707733:0;npx clear-npx-cache\
+\
+\
+
+: 1741707747:0;npx tailwindcss init\
+\
+
+: 1741707776:0;npm run dev
+: 1741712834:0;npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+: 1741712854:0;npm run dev
+: 1741836262:0;gcb feat/ui-skeleton
+: 1741836270:0;git-cz
+: 1741836335:0;git push origin main feat/ui-skeleton 
+: 1741884881:0;npm run dev
+: 1741884883:0;gl
+: 1741884887:0;gco master
+: 1741884888:0;gl
+: 1741884925:0;gco master
+: 1741884926:0;gl
+: 1742105696:0;dev
+: 1742105698:0;cd DSA/
+: 1742105700:0;nvim
+: 1742106392:0;quit
+: 1742106395:0;exit
+: 1742118455:0;i =>:q
+: 1742118460:0;clear
+: 1742118462:0;nvim
+: 1742118536:0;dev
+: 1742118539:0;cd DSA
+: 1742118540:0;nvim
+: 1742118604:0;dev
+: 1742118606:0;cd DSA/
+: 1742118609:0;clear
+: 1742118710:0;dev
+: 1742118714:0;cd DSA/
+: 1742118715:0;nvim
+: 1742119162:0;brew install --cask font-jetbrains-mono-nerd-font\
+
+: 1742119673:0;nvim
+: 1742119682:0;brew install fontconfig\
+
+: 1742119695:0;fc-cache -fv\
+
+: 1742119700:0;nvim
+: 1742119777:0;dev
+: 1742119781:0;cd DSA
+: 1742119782:0;nvim
+: 1742119909:0;git log
+: 1742119914:0;git status
+: 1742119916:0;gs
+: 1742180502:0;npm run dev
+: 1742180535:0;gl
+: 1742180599:0;git log
+: 1742180609:0;git pull
+: 1742180633:0;git branch --set-upstream-to=origin/<branch> feat/ui-skeleton
+: 1742180671:0;git pull origin feat/ui-skeleton 
+: 1742180685:0;npm run dev
+: 1742182348:0;gl
+: 1742182353:0;gco dev/BT-2365-increase-page-limit-listing-pages 
+: 1742182356:0;gco development 
+: 1742182357:0;gl
+: 1742182362:0;npm run dev
+: 1742182368:0;npm i
+: 1742182433:0;npm run build
+: 1742206356:0;git-cz
+: 1742206382:0;git push origin feat/ui-skeleton 
+: 1742206450:0;npm run dev
+: 1742207249:0;git-cz
+: 1742207262:0;git push
+: 1742266975:0;git-cz
+: 1742266991:0;git push origin feat/ui-skeleton 
+: 1742267053:0;npm i @vis.gl/react-google-maps
+: 1742268977:0;npm run dev
+: 1742269973:0;gco master
+: 1742269974:0;gl
+: 1742269984:0;gco master
+: 1742269985:0;gl
+: 1742270297:0;gco feat/BT-4612-instant-system-improvements
+: 1742270333:0;npm run dev
+: 1742273362:0;git-cz
+: 1742273410:0;git push origin feat/BT-4612-instant-system-improvements 
+: 1742273418:0;gh pr create --base development
+: 1742273442:0;gco development 
+: 1742273444:0;gl
+: 1742273450:0;npm run build
+: 1742279737:0;npm install lucide-react\
+
+: 1742279828:0;npm run dev
+: 1742284173:0;git-cz
+: 1742284281:0;git push
+: 1742318282:0;git-cz
+: 1742320139:0;git push
+: 1742320251:0;gco development 
+: 1742320252:0;gl
+: 1742320307:0;gcb feat/BT-4829-liver-tracking-API-integration
+: 1742352444:0;gco feat/BT-4612-instant-system-improvements
+: 1742352892:0;npm run de
+: 1742352895:0;npm run dev
+: 1742356554:0;git-cz
+: 1742356589:0;git push origin feat/BT-4612-instant-system-improvements 
+: 1742356598:0;gh pr create --base development
+: 1742356637:0;git-cz
+: 1742356646:0;git push
+: 1742356667:0;npm run build
+: 1742358536:0;gco staging 
+: 1742358536:0;gl
+: 1742371789:0;git-cz
+: 1742371803:0;git push
+: 1742371817:0;gco development 
+: 1742371823:0;git-cz
+: 1742371867:0;git push origin development 
+: 1742371878:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1742371897:0;gco development 
+: 1742371898:0;git log
+: 1742371901:0;git push
+: 1742372478:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1742372517:0;npm run dev
+: 1742377123:0;git-cz
+: 1742377167:0;git push
+: 1742377178:0;gco development 
+: 1742377238:0;git-cz
+: 1742377259:0;git push
+: 1742377268:0;npm run build
+: 1742377342:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1742377402:0;git 
+: 1742377406:0;git merge development 
+: 1742377436:0;git log
+: 1742378495:0;git push
+: 1742382109:0;git-cz
+: 1742382130:0;git push
+: 1742437533:0;npm run dev
+: 1742438032:0;npm i axios
+: 1742456455:0;npm run build
+: 1742456729:0;git-cz
+: 1742457335:0;git push
+: 1742457343:0;gh pr create --base development
+: 1742457366:0;gco development 
+: 1742457367:0;gl
+: 1742457372:0;npm run build
+: 1742457738:0;git-cz
+: 1742457752:0;git push
+: 1742463611:0;git log
+: 1742463613:0;gl
+: 1742463636:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1742463640:0;git merge development 
+: 1742463647:0;git push
+: 1742463666:0;gco feat/BT-4612-instant-system-improvements 
+: 1742463669:0;npm run dev
+: 1742466701:0;git-cz
+: 1742466760:0;git push
+: 1742466764:0;gh pr create --base development
+: 1742466783:0;npm run build
+: 1742485272:0;npm run dev
+: 1742489970:0;gco master
+: 1742489971:0;gl
+: 1742498449:0;aerospace list-workspaces --help
+: 1742498452:0;aerospace list-workspaces
+: 1742498458:0;aerospace list-workspaces --all
+: 1742498471:0;aerospace list-workspaces --all --focused
+: 1742498485:0;aerospace list-workspaces --visible
+: 1742498491:0;aerospace list-workspaces --help
+: 1742498717:0;gcb feat/BT-4816-live-tracking-changes-in-admin
+: 1742498758:0;npm run dev
+: 1742499783:0;git-cz
+: 1742499829:0;git push
+: 1742499834:0;gh pr create --base development
+: 1742499842:0;npm run build
+: 1742499855:0;gh pr create --base development
+: 1742499869:0;gco development 
+: 1742499871:0;gl
+: 1742499878:0;git merge feat/BT-4816-live-tracking-changes-in-admin
+: 1742499923:0;npm run build
+: 1742537070:0;gcb bug/BT-5060
+: 1742537107:0;git branch -m bug/BT-5060 bug/BT-5060-missing-timezone
+: 1742537111:0;git-cz
+: 1742537127:0;git push
+: 1742537143:0;gh pr create --base development
+: 1742537219:0;gco feat/BT-4612-instant-system-improvements 
+: 1742537222:0;gcp 7ebc235
+: 1742537226:0;git log
+: 1742537232:0;git push
+: 1742538684:0;git-cz
+: 1742538800:0;git push
+: 1742539048:0;gco staging 
+: 1742539050:0;gl
+: 1742539074:0;npm run build
+: 1742539188:0;git-cz
+: 1742539198:0;git push
+: 1742548142:0;gl
+: 1742553888:0;npx tailwindcss -o output.css\
+
+: 1742553894:0;npx
+: 1742553903:0;npx tailwindcss -o output.css\
+
+: 1742553937:0;ls node_modules\
+
+: 1742553956:0;rm -rf node_modules package-lock.json\
+
+: 1742553969:0;npm install\
+
+: 1742554007:0;npm run dev
+: 1742554021:0;node -v\
+
+: 1742554025:0;npx tailwindcss -o output.css\
+
+: 1742554070:0;node -v
+: 1742554078:0;npx tailwindcss -v\
+
+: 1742557423:0;npm run build
+: 1742557439:0;git-cz
+: 1742557490:0;git push
+: 1742557507:0;git log
+: 1742557512:0;gh pr create --base development
+: 1742559797:0;nvim
+: 1742559834:0;:q
+: 1742559840:0;nvim
+: 1742714232:0;dev
+: 1742714234:0;cd StickerSmash
+: 1742714236:0;code .
+: 1742714297:0;npm run start
+: 1742718097:0;npx expo install expo-image-picker
+: 1742723311:0;npm run dev
+: 1742723316:0;npm run start
+: 1742730990:0;git-cz
+: 1742731020:0;git add package-lock.json package-lock.json
+: 1742731028:0;git-cz
+: 1742731044:0;git push
+: 1742732902:0;git-cz
+: 1742732922:0;git push
+: 1742732931:0;npx expo install react-native-view-shot expo-media-library\
+
+: 1742733971:0;git-cz
+: 1742752214:0;adb devices
+: 1742753002:0;adb kill-server\
+
+: 1742753034:0;adb devices\
+
+: 1742753068:0;adb kill-server\
+
+: 1742753072:0;adb start-server\
+
+: 1742753080:0;adb devices\
+
+: 1742785984:0;npm run dev
+: 1742803632:0;git-cz
+: 1742803685:0;git push
+: 1742803694:0;gh pr create --base development
+: 1742803717:0;npm run build
+: 1742804060:0;gl
+: 1742804067:0;gcp mas
+: 1742804070:0;gco master
+: 1742804071:0;gl
+: 1742804564:0;gcb feat/BT-4788-instant-order-batching-visibility
+: 1742804569:0;npm run dev
+: 1742818212:0;npx tailwindcss -v\
+
+: 1742818526:0;npm i -D tailwindcss
+: 1742818539:0;npm run dev
+: 1742818598:0;npx tailwindcss -v\
+
+: 1742818944:0;nvm ls
+: 1742818973:0;nvm install lts
+: 1742818981:0;nvm ls-remote
+: 1742818995:0;nvm  install 22.14.0
+: 1742819099:0;nvm ls
+: 1742819107:0;nvm use 22.14.0
+: 1742819111:0;node 0v
+: 1742819122:0;rm -rf node_modules
+: 1742819131:0;npm i
+: 1742819141:0;npm run dev
+: 1742819283:0;git-cz
+: 1742819369:0;git push
+: 1742820068:0;gh pr create --base development
+: 1742878708:0;npm i moment moment-timezone
+: 1742878779:0;npm run de
+: 1742878785:0;npm run dev
+: 1742879332:0;git-cz
+: 1742879491:0;git push
+: 1742879502:0;gh pr create --base development
+: 1742879520:0;npm run build
+: 1742879567:0;git-cz
+: 1742879585:0;git push
+: 1742879645:0;npm run build
+: 1742879655:0;git-cz
+: 1742879663:0;git push
+: 1742882792:0;git-cz
+: 1742882886:0;git push
+: 1742882890:0;gh pr create --base development
+: 1742882907:0;npm run build
+: 1742884056:0;git-cz
+: 1742884065:0;git push
+: 1742884074:0;gh pr create --base development
+: 1742889651:0;npm run dev
+: 1742889913:0;git-cz
+: 1742889926:0;git push
+: 1742889932:0;gh pr create --base development
+: 1742890086:0;npm run build
+: 1742890100:0;gp
+: 1742890107:0;gpp
+: 1742890109:0;gp
+: 1742890112:0;gl
+: 1742890117:0;git log
+: 1742890163:0;gst
+: 1742890171:0;glo
+: 1742890219:0;alias | grep '^g'\
+
+: 1742890644:0;npm run dev
+: 1742890724:0;npm i
+: 1742890731:0;npm run dev
+: 1742890750:0;rm -rf node_modules
+: 1742890755:0;npm i
+: 1742890762:0;npm run dev
+: 1742890785:0;npm run build
+: 1742890809:0;npm i
+: 1742890831:0;npm run dev
+: 1742894151:0;git-cz
+: 1742894162:0;gp
+: 1742894168:0;gh pr create --base development
+: 1742933026:0;Nothing Phone 2a
+: 1742933039:0;aerospace list-apps
+: 1742956922:0;gco staging 
+: 1742956923:0;gl
+: 1742956929:0;npm run build
+: 1742956951:0;gm feat/BT-4829-liver-tracking-API-integration 
+: 1742956956:0;gp
+: 1742956962:0;npm run build
+: 1742957402:0;gp
+: 1742957408:0;gco feat/BT-4816-live-tracking-changes-in-admin
+: 1742957412:0;gco staging 
+: 1742957413:0;lg
+: 1742957415:0;gl
+: 1742957421:0;npm run build
+: 1742957525:0;git reset --soft HEAD~1\
+
+: 1742957527:0;git log
+: 1742957536:0;git reset --soft HEAD~1\
+
+: 1742957539:0;git log
+: 1742957667:0;gp
+: 1742957673:0;gl
+: 1742957680:0;git log
+: 1742957704:0;npm run build
+: 1742957864:0;git log
+: 1742957872:0;npm run dev
+: 1742958221:0;rm -rf node_modules
+: 1742958229:0;npm i
+: 1742958242:0;npm run dev
+: 1742958311:0;git log
+: 1742958634:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1742958661:0;glo
+: 1742958674:0;gh pr create --base development
+: 1742958692:0;npm run build
+: 1742959693:0;gl
+: 1742959718:0;npm run build
+: 1742959821:0;npm i
+: 1742959826:0;npm run build
+: 1742959861:0;npm run dev
+: 1742968006:0;dev
+: 1742968007:0;ls
+: 1742968039:0;brew install tmux
+: 1742968058:0;tmux
+: 1742968066:0;exit
+: 1742968071:0;tmux --help
+: 1742968082:0;tmux -V\
+
+: 1742968124:0;tmux kill-server
+: 1742968131:0;tmux --help
+: 1742968135:0;cd
+: 1742968258:0;touch .tmux.conf
+: 1742968262:0;vim .tmux.conf
+: 1742968271:0;tmux
+: 1742968274:0;:q
+: 1742968420:0;tmux
+: 1742968429:0;work
+: 1742968453:0;cd reactjs-admin-management
+: 1742968459:0;work
+: 1742968467:0;cd reactjs-live-tracker
+: 1742968474:0;work
+: 1742968486:0;npm run dev
+: 1742968523:0;clear
+: 1742968572:0;work
+: 1742968579:0;cd reactjs-admin-management
+: 1742968597:0;npm run dev
+: 1742968623:0;tmux
+: 1742968635:0;exit
+: 1742968668:0;tmux --help
+: 1742968670:0;tmux ls
+: 1742968696:0;tmux a
+: 1742968771:0;vim .tmux.conf
+: 1742968946:0;tmux kill-server
+: 1742968950:0;tmux ls
+: 1742968955:0;nvim .tmux.conf
+: 1742969003:0;tmux
+: 1742969047:0;exit
+: 1742969056:0;tmux kill-server
+: 1742969071:0;nvim .tmux.conf
+: 1742969082:0;tmux
+: 1742969116:0;exit
+: 1742969129:0;nvim .tmux.conf
+: 1742969137:0;tmux
+: 1742969166:0;exit
+: 1742969182:0;nvim .tmux.conf
+: 1742969197:0;tmux
+: 1742969245:0;exit
+: 1742969247:0;nvim .tmux.conf
+: 1742969255:0;tmux
+: 1742969257:0;exit
+: 1742969260:0;tmux kill-server
+: 1742969262:0;tmux
+: 1742969272:0;exit
+: 1742969276:0;tmux kill-server
+: 1742969278:0;nvim .tmux.conf
+: 1742969287:0;tmux
+: 1742969301:0;nvim .tmux.conf
+: 1742969381:0;tmux kill-server
+: 1742969385:0;tmux
+: 1742969440:0;exit
+: 1742969444:0;tmux kill-server
+: 1742969446:0;nvim .tmux.conf
+: 1742969454:0;tmux
+: 1742969468:0;exit
+: 1742969471:0;tmux kill-server
+: 1742969472:0;nvim .tmux.conf
+: 1742969481:0;tmux
+: 1742969528:0;exit
+: 1742969530:0;tmux kill-server
+: 1742969534:0;vim .tmux.conf
+: 1742969537:0;nvim .tmux.conf
+: 1742969648:0;tmux
+: 1742969667:0;exit
+: 1742969670:0;nvim .tmux.conf
+: 1742969681:0;nvim
+: 1742969683:0;tmux
+: 1742969688:0;:q
+: 1742969690:0;exit
+: 1742969698:0;nvim .tmux.conf
+: 1742969748:0;tmux
+: 1742969769:0;tmux kill-server
+: 1742969781:0;tmux
+: 1742969785:0;work
+: 1742969824:0;vim
+: 1742969835:0;cd reactjs-live-tracker
+: 1742969839:0;npm run dev
+: 1742969866:0;work
+: 1742969872:0;cd reactjs-admin-management
+: 1742969876:0;npm run dev
+: 1742969891:0;work
+: 1742969897:0;cd reactjs-live-tracker
+: 1742969903:0;work
+: 1742969909:0;cd reactjs-admin-management
+: 1742970075:0;..
+: 1742970086:0;cd reactjs-live-tracker
+: 1742970093:0;npm run dev
+: 1742970098:0;work
+: 1742970103:0;cd reactjs-admin-management
+: 1742970110:0;npm run dev
+: 1742970115:0;work
+: 1742970122:0;cd reactjs-admin-management
+: 1742971145:0;tmux
+: 1742971149:0;exit
+: 1742971150:0;tmux a
+: 1742971244:0;gb
+: 1742971262:0;git brach -a
+: 1742971267:0;git branch
+: 1742971288:0;gb
+: 1742971306:0;gco feat/BT-4788-instant-order-batching-visibility
+: 1742972756:0;gco staging 
+: 1742972758:0;gl
+: 1743062326:0;tmux a
+: 1743062995:0;git-cz
+: 1743063025:0;git log
+: 1743063062:0;gco feat/BT-4788-instant-order-batching-visibility
+: 1743063067:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1743063072:0;git stash
+: 1743063074:0;gco feat/BT-4829-liver-tracking-API-integration 
+: 1743063078:0;git stash apply
+: 1743063108:0;gp
+: 1743063115:0;gh pr create --base development
+: 1743063137:0;gh pr create --base staging
+: 1743063759:0;tmux ls
+: 1743063765:0;tmux a
+: 1743068331:0;git-cz
+: 1743068982:0;git push
+: 1743068990:0;gh pr create --base development
+: 1743069089:0;gp
+: 1743071027:0;npm run dev
+: 1743071048:0;tmux a
+: 1743071054:0;work
+: 1743071070:0;cd reactjs-blitz-seller
+: 1743071072:0;npm run dev
+: 1743071202:0;git log
+: 1743075547:0;gco master
+: 1743075559:0;gco main
+: 1743075626:0;gp
+: 1743077561:0;git-cz
+: 1743077578:0;gp
+: 1743077583:0;gh pr create --base development
+: 1743077598:0;npm run build
+: 1743129960:0;gco main
+: 1743129961:0;gl
+: 1743129989:0;gcb feat/BT-4860-prod-bugs
+: 1743136920:0;tmux a
+: 1743136935:0;work
+: 1743136941:0;cd reactjs-blitz-seller
+: 1743140420:0;npm add react-hot-toast
+: 1743142055:0;npm run dev
+: 1743145367:0;git-cz
+: 1743145482:0;gp
+: 1743145490:0;gh pr create --base staging
+: 1743145501:0;npm run build
+: 1743146252:0;gl
+: 1743149520:0;git-cz
+: 1743149540:0;gp
+: 1743149544:0;gh pr create --base staging
+: 1743155347:0;npm run build
+: 1743176534:0;gco main
+: 1743176555:0;gl
+: 1743329131:0;work
+: 1743329137:0;cd
+: 1743329138:0;dev
+: 1743329139:0;clear
+: 1743329141:0;cd DSA
+: 1743329143:0;clear
+: 1743329143:0;ls
+: 1743329146:0;nvim
+: 1743329163:0;ls
+: 1743329165:0;..
+: 1743329165:0;ls
+: 1743329173:0;cd Algorithms
+: 1743329174:0;ls
+: 1743329177:0;..
+: 1743329182:0;cd DSA
+: 1743329183:0;clear
+: 1743329184:0;ls
+: 1743329186:0;nvim
+: 1743329253:0;tmux a
+: 1743329376:0;tmuz
+: 1743329378:0;tmux
+: 1743329430:0;tmux ls
+: 1743329432:0;tmux a
+: 1743329448:0;tmux d
+: 1743329468:0;tmux ls
+: 1743329490:0;tmux new-session -d -s dsa_practice
+: 1743329493:0;tmux ls
+: 1743329522:0;tmux attach -t dsa_practice
+: 1743329535:0;dev
+: 1743329540:0;cd DSA
+: 1743329541:0;nvim
+: 1743329716:0;de
+: 1743329718:0;dev
+: 1743329720:0;cd DSA
+: 1743330092:0;npm i -g nodemon
+: 1743330127:0;cd Courses/JS\ Algo\ and\ DS\ Masterclass
+: 1743330129:0;ls
+: 1743330131:0;cd 5.\ Problem\ Solving\ Patterns
+: 1743330132:0;l
+: 1743330135:0;ls
+: 1743330161:0;nodemon same-revisit.js
+: 1743335430:0;exit
+: 1743340008:0;dev
+: 1743340010:0;cd DSA
+: 1743340013:0;git log
+: 1743340017:0;gst
+: 1743340023:0;gaa
+: 1743340029:0;git log
+: 1743340031:0;gs
+: 1743340033:0;gst
+: 1743340051:0;lg
+: 1743340055:0;lazygit 
+: 1743340072:0;dev
+: 1743340074:0;cd DSA
+: 1743340078:0;lazygit 
+: 1743340403:0;nodemon anagram-revisit.js
+: 1743341562:0;clear
+: 1743341564:0;gst
+: 1743341645:0;lazygit 
+: 1743350837:0;touch ~/.zshrc
+: 1743350839:0;cd
+: 1743350844:0;clear
+: 1743350853:0;nvim .zshrc
+: 1743350887:0;source .zshrc
+: 1743350894:0;lg
+: 1743350897:0;dev
+: 1743350899:0;cd 1app5stacks
+: 1743350900:0;lg
+: 1743350913:0;..
+: 1743350913:0;ls
+: 1743350916:0;cd portfolio-v5
+: 1743350917:0;lg
+: 1743351102:0;ls
+: 1743351109:0;gco master 
+: 1743351110:0;gl
+: 1743351134:0;gcb feat/update-blog-ui
+: 1743351140:0;npm run dev
+: 1743351189:0;nvim
+: 1743351209:0;npm run dev
+: 1743351213:0;dev
+: 1743351215:0;cd portfolio-v5
+: 1743351216:0;npm run dev
+: 1743354124:0;cd
+: 1743354138:0;vim .zshrc
+: 1743355936:0;npm run dev
+: 1743356002:0;nvim
+: 1743356021:0;dev
+: 1743356023:0;cd DSA
+: 1743356025:0;npm run dev
+: 1743356030:0;cd..
+: 1743356032:0;cd ..
+: 1743356037:0;cd portfolio-v5
+: 1743356041:0;npm run dev
+: 1743356297:0;nvim
+: 1743356312:0;nvim .zsh_sessions
+: 1743356324:0;nvim .zshrc
+: 1743356380:0;tmux a
+: 1743360115:0;git branch -m feat/update-blog-ui feat/design-refresh
+: 1743360124:0;nvim
+: 1743360966:0;lg
+: 1743361046:0;gst
+: 1743361053:0;lg
+: 1743361196:0;gst
+: 1743361199:0;glo
+: 1743361202:0;gst
+: 1743361206:0;lg
+: 1743361252:0;gst
+: 1743361263:0;lg
+: 1743361271:0;git log
+: 1743361273:0;gst
+: 1743361278:0;git add components
+: 1743361283:0;git-cz
+: 1743361326:0;dev
+: 1743361328:0;cd por
+: 1743361331:0;cd portfolio-v5
+: 1743361337:0;npm run build
+: 1743361345:0;nvim
+: 1743361427:0;npm run build
+: 1743361447:0;code .
+: 1743361462:0;npm run build
+: 1743361524:0;lg
+: 1743361600:0;gh pr create --base master
+: 1743361780:0;gco master 
+: 1743361819:0;gl
+: 1743361823:0;nvim
+: 1743361890:0;npm run dev
+: 1743361964:0;nvim
+: 1743362239:0;tmux ls
+: 1743362251:0;tmux attach -t portfolio
+: 1743362270:0;tmux new-session -d -s portfolio
+: 1743362276:0;tmux attach -t portfolio
+: 1743362280:0;de
+: 1743362281:0;dev
+: 1743362283:0;cd portfolio-v5
+: 1743362318:0;gcb feat/change-blogs-from-mdx-to-md
+: 1743362321:0;gst
+: 1743362327:0;lg
+: 1743362362:0;gh pr create --base master
+: 1743362724:0;cd /Users/pratham82/Library/Mobile\ Documents
+: 1743362725:0;ls
+: 1743362744:0;cd iCloud\~md\~obsidian
+: 1743362748:0;cd Documents
+: 1743362751:0;nvim
+: 1743362758:0;pwd
+: 1743362777:0;nvim /Users/pratham82/Library/Mobile Documents/iCloud~md~obsidian/Documents
+: 1743362790:0;cd /Users/pratham82/Library/Mobile Documents/iCloud~md~obsidian/Documents
+: 1743362798:0;cd /Users/pratham82/Library/Mobile Documents/
+: 1743362803:0;cd /Users/pratham82/Library/
+: 1743362805:0;cd Mobile\ Documents
+: 1743362810:0;cd iCloud\~md\~obsidian
+: 1743362814:0;cd Documents
+: 1743362815:0;nvim
+: 1743362822:0;cd Prathamesh\'s\ Vault
+: 1743362823:0;nvim
+: 1743362840:0;gst
+: 1743362865:0;touch Testing-Folder/
+: 1743362879:0;mkdir Testing-folder
+: 1743362889:0;cd Templates
+: 1743362894:0;..
+: 1743362896:0;cd Testing-folder
+: 1743362902:0;touch test.md
+: 1743362907:0;..
+: 1743362908:0;nvim
+: 1743362944:0;pwd
+: 1743362998:0;git log
+: 1743363002:0;glo
+: 1743363007:0;gst
+: 1743363023:0;gh pr create --base master
+: 1743363965:0;dev
+: 1743363967:0;gcl git@github.com:rishimohan/rishimohan.me.git
+: 1743364100:0;nvim
+: 1743364109:0;cd rishimohan.me
+: 1743364112:0;code .
+: 1743364122:0;npm run dev
+: 1743364137:0;npm i
+: 1743364187:0;npm run dev
+: 1743473687:0;tmux a
+: 1743484739:1;git log
+: 1743484742:0;gst
+: 1743484758:0;work
+: 1743484760:0;cd
+: 1743484804:0;ls -la
+: 1743484807:0;cd .config
+: 1743484807:0;ls
+: 1743484827:0;..
+: 1743484829:0;clear
+: 1743484830:0;ls
+: 1743484837:0;gcl git@github.com:Pratham82/dotfiles.git
+: 1743485459:0;gco dotfiles
+: 1743485460:0;sl
+: 1743485463:0;cd Documents
+: 1743485466:0;cd
+: 1743485469:0;cd dotfiles
+: 1743485470:0;sl
+: 1743485474:0;git log
+: 1743485476:0;ls
+: 1743485477:0;la
+: 1743485500:0;git branch -a
+: 1743485512:0;gcb mac-mini-m4
+: 1743485515:0;..
+: 1743485522:0;cd dotfiles
+: 1743485523:0;l
+: 1743485524:0;la
+: 1743485555:0;rm -rf .config .hyper.js .tmux.conf .vimrc .zshrc Desktop.png Neovim\ Setup.png PC\ Specs.png
+: 1743485556:0;ls
+: 1743485557:0;la
+: 1743485851:0;rm -rf Neovim.png
+: 1743485868:0;nvim
+: 1743485889:0;la
+: 1743485895:0;rm -rf Wallpapers config terminal-bg-colors.conf
+: 1743485902:0;..
+: 1743485913:0;cp .config dotfiles
+: 1743485925:0;cp -r .config dotfiles
+: 1743485937:0;cd dotfiles
+: 1743485937:0;ls
+: 1743485940:0;la
+: 1743485943:0;cd .config
+: 1743485944:0;ls
+: 1743485946:0;la
+: 1743485954:0;..
+: 1743486435:0;la
+: 1743486453:0;cd .vim
+: 1743486454:0;ls
+: 1743486456:0;..
+: 1743486458:0;clear
+: 1743486459:0;ls
+: 1743486462:0;nvim
+: 1743486472:0;cd Documents
+: 1743486474:0;cd
+: 1743486477:0;cd dotfiles
+: 1743486480:0;l
+: 1743486482:0;..
+: 1743486520:0;cp .zshrc dotfiles
+: 1743486595:0;cp .vimrc .tmux.conf .aerospace.toml .bashrc .zsh_history .ghostty dotfiles

@@ -1,0 +1,68 @@
+# Set default terminal type
+set -g default-terminal "xterm-256color"
+
+# Prefix key configuration
+set-option -g prefix C-a
+unbind-key C-a
+bind-key C-a send-prefix
+
+# Pane navigation using Alt + Arrow Keys
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Window navigation using Shift + Arrow Keys
+bind -n S-Left previous-window
+bind -n S-Right next-window
+
+# Enable mouse support
+setw -g mouse on
+
+# Easier window splitting
+bind-key v split-window -h
+bind-key h split-window -v
+
+# 12-hour clock format
+set-window-option -g clock-mode-style 12
+
+# Disable notifications and visual distractions
+set -g visual-activity off
+set -g visual-bell off
+set -g visual-silence off
+setw -g monitor-activity off
+set -g bell-action none
+
+# Catppuccin Theme (Mocha)
+set -g status-position bottom
+set -g status-justify left
+set -g status-style 'bg=#313244 fg=#CDD6F4'
+set -g status-left '#[bg=#313244 fg=#89B4FA] #[bg=#89B4FA fg=#313244]  #[bg=#313244 fg=#89B4FA] '
+set -g status-right '#[fg=#A6ADC8,bg=#313244] #[bg=#89B4FA fg=#313244] Pratham_82@MacMini-M4 #[fg=#A6ADC8,bg=#313244] %d %b %a #[fg=#313244,bg=#89B4FA] %I:%M:%S %p '
+set -g status-right-length 50
+set -g status-left-length 20
+
+# Window status styling
+setw -g window-status-current-style 'fg=#313244 bg=#A6E3A1 bold'
+setw -g window-status-current-format ' #I#[fg=#313244]:#[fg=#313244]#W#[fg=#F38BA8]#F '
+setw -g window-status-style 'fg=#CDD6F4 bg=#45475A'
+setw -g window-status-format ' #I#[fg=#CDD6F4]:#[fg=#A6ADC8]#W#[fg=#F38BA8]#F '
+setw -g window-status-bell-style 'fg=#F38BA8 bg=#45475A bold'
+
+# Pane border styles
+set -g pane-border-style 'fg=#45475A bg=#313244'
+set -g pane-active-border-style 'bg=#313244 fg=#A6E3A1'
+
+# Message styling
+set -g message-style 'fg=#CDD6F4 bg=#313244 bold'
+
+# Easy config reload
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
+
+# Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Initialize TMUX plugin manager
+run '~/.tmux/plugins/tpm/tpm'
+
