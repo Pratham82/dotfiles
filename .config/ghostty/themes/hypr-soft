@@ -1,0 +1,31 @@
+# Hypr Soft Theme (Converted from Foot)
+
+background = #1d2433
+foreground = #bfd3ff
+
+cursor-color = #54678c
+cursor-text = #1d2433
+
+selection-background = #293145
+selection-foreground = #bfd3ff
+
+# --- Regular colors ---
+palette = 0=#1d2433
+palette = 1=#D0879D
+palette = 2=#9FD6B6
+palette = 3=#CDD2AF
+palette = 4=#92b7ea
+palette = 5=#AD9BEA
+palette = 6=#acd9ec
+palette = 7=#54678c
+
+# --- Bright colors ---
+palette = 8=#3d4a66
+palette = 9=#D0B1A2
+palette = 10=#9FD6B6
+palette = 11=#CDD2AF
+palette = 12=#92b7ea
+palette = 13=#CD9BCC
+palette = 14=#acd9ec
+palette = 15=#bfd3ff
+
